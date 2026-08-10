@@ -71,7 +71,7 @@ joint_term_label <- function(term) {
 
 # The Titanic prior
 
-For many people in my network the word *Titanic* brings to mind not James Cameron’s film, but the passenger manifest they encountered as one of their first datasets while trying to break into the field. Kaggle’s famous [“Titanic: Machine Learning from Disaster”](https://www.kaggle.com/competitions/titanic) has served as a beginner competition for more than a decade, while versions of the dataset appear in introductory courses built around R, Python, and Stata.
+For many people in my network, the word *Titanic* brings to mind not James Cameron’s film, but the passenger manifest they encountered as one of their first datasets while trying to break into the field of data science. Kaggle’s famous [“Titanic: Machine Learning from Disaster”](https://www.kaggle.com/competitions/titanic) has served as a beginner competition for more than a decade, while versions of the dataset appear in introductory courses built around R, Python, and Stata.
 
 <div style="text-align:center">
 
@@ -1186,7 +1186,7 @@ The child comparison shifts the moral reading without settling it: the estimated
 
 So, where did we end up? The Titanic can definitely keep its place in the data-science classroom. That one ship taught many of us logistic regression, but the others teach the harder lesson: a sturdy coefficient is not the same thing as a tidy explanation 😉
 
-P.S. Kudos to Elinder and Erixson for making the data public and letting the rest of us take it for another spin 🤓
+P.S. Kudos to Elinder and Erixson for making the data public and letting the rest of us take it for another spin.
 
 ```r
 sessionInfo()
@@ -1196,9 +1196,9 @@ sessionInfo()
 ## Related notes
 - [[did-with-repeated-cross-sectional-data|What a European cigarette tax study taught me about employee listening]]
 - [[segmentedregression|Modeling impact of the COVID-19 pandemic on people’s interest in work-life balance and well-being]]
-- [[dag-and-double-ml|A plausible model of data-generating process eats ML algorithms for breakfast]]
 - [[impact-of-pets-on-life-satisfaction|Before you believe the £70,000 cat]]
-- [[car-accidents-near-home|Before you blame the driver, check the denominator]]
+- [[causal-inference-in-people-analytics|Beyond prediction: Exploiting organizational events for causal inference in people analytics]]
+- [[ols-vs-logistic-regression|The statistical "sin" as best / common practice?]]
 <!-- RELATED:END -->
 
 ---

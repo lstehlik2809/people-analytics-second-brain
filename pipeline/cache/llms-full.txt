@@ -66,7 +66,7 @@ joint_term_label <- function(term) {
 
 # The Titanic prior
 
-For many people in my network the word *Titanic* brings to mind not James Cameron’s film, but the passenger manifest they encountered as one of their first datasets while trying to break into the field. Kaggle’s famous [“Titanic: Machine Learning from Disaster”](https://www.kaggle.com/competitions/titanic) has served as a beginner competition for more than a decade, while versions of the dataset appear in introductory courses built around R, Python, and Stata.
+For many people in my network, the word *Titanic* brings to mind not James Cameron’s film, but the passenger manifest they encountered as one of their first datasets while trying to break into the field of data science. Kaggle’s famous [“Titanic: Machine Learning from Disaster”](https://www.kaggle.com/competitions/titanic) has served as a beginner competition for more than a decade, while versions of the dataset appear in introductory courses built around R, Python, and Stata.
 
 <div style="text-align:center">
 
@@ -1181,7 +1181,7 @@ The child comparison shifts the moral reading without settling it: the estimated
 
 So, where did we end up? The Titanic can definitely keep its place in the data-science classroom. That one ship taught many of us logistic regression, but the others teach the harder lesson: a sturdy coefficient is not the same thing as a tidy explanation 😉
 
-P.S. Kudos to Elinder and Erixson for making the data public and letting the rest of us take it for another spin 🤓
+P.S. Kudos to Elinder and Erixson for making the data public and letting the rest of us take it for another spin.
 
 ```r
 sessionInfo()
