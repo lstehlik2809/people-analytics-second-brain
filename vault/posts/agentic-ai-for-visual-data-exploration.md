@@ -48,7 +48,7 @@ P.P.S. Click the GitHub icon in the top right corner of the app to get to the co
 - [[hr-tech-ai-shift|How AI is reshaping HR-tech]]
 - [[employee-feedback-analysis-using-openai|Employee feedback analysis using tools from OpenAI]]
 - [[agentic-workflow-for-causal-inference|Agentic workflow for causal inference]]
-- [[genai-and-leadership-judgement|Can genAI help people managers lead better?]]
+- [[meeting-ego-network-app|Turning Outlook calendar data into a collaboration map]]
 <!-- RELATED:END -->
 
 ---

@@ -26,8 +26,8 @@ Curious if anyone’s already used ONA techniques with skill data like this—es
 
 <!-- RELATED:BEGIN -->
 ## Related notes
-- [[meeting-ego-network-app|Turning Outlook calendar data into a collaboration map]]
 - [[org-chart-and-collaboration|Org chart and collaboration]]
+- [[meeting-ego-network-app|Turning Outlook calendar data into a collaboration map]]
 - [[psychometric-network-analysis|Psychometric network analysis & employee survey data]]
 - [[induced-centrality|Induced centralities]]
 - [[big-consultancies-in-the-skills-semantic-space|Big consultancies in the skills semantic space]]
