@@ -35,10 +35,10 @@ P.S. This was also a nice test of current agentic tools (Google [Antigravity](ht
 <!-- RELATED:BEGIN -->
 ## Related notes
 - [[ai-powered-data-exploration-assistant|Testing my GenAI skepticism]]
+- [[meeting-ego-network-app|Turning Outlook calendar data into a collaboration map]]
 - [[agentic-ai-for-visual-data-exploration|Agentic AI for visual data exploration]]
 - [[genai-and-disrupt-of-labor-market-signalling|Making talk cheap: How GenAI may disrupt labor-market signalling]]
 - [[employee-feedback-analysis-using-openai|Employee feedback analysis using tools from OpenAI]]
-- [[causal-inference-in-people-analytics|Beyond prediction: Exploiting organizational events for causal inference in people analytics]]
 <!-- RELATED:END -->
 
 ---

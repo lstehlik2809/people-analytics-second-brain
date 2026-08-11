@@ -25,9 +25,9 @@ May the Excel be with you 🙂
 ## Related notes
 - [[chatgpt-emails-and-causalpy|ChatGPT as a new email writing coach?]]
 - [[employee-feedback-analysis-using-openai|Employee feedback analysis using tools from OpenAI]]
+- [[meeting-ego-network-app|Turning Outlook calendar data into a collaboration map]]
 - [[cv-job-match-career-site|Improving a company career site with tools from OpenAI]]
 - [[r-and-power-bi|Embedding R (or Python) ML models in Power BI dashboards]]
-- [[ai-powered-data-exploration-assistant|Testing my GenAI skepticism]]
 <!-- RELATED:END -->
 
 ---

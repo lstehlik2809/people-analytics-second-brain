@@ -1,9 +1,10 @@
 # Ludek's People Analytics Second Brain
 
-> A public second brain of 206 posts on people analytics, statistics, causal inference, psychometrics, machine learning, and AI by Ludek Stehlik. Browsable knowledge graph at https://lstehlik2809.github.io/people-analytics-second-brain. The complete corpus is in /llms-full.txt.
+> A public second brain of 207 posts on people analytics, statistics, causal inference, psychometrics, machine learning, and AI by Ludek Stehlik. Browsable knowledge graph at https://lstehlik2809.github.io/people-analytics-second-brain. The complete corpus is in /llms-full.txt.
 
 ## Notes
 
+- [Turning Outlook calendar data into a collaboration map](https://lstehlik2809.github.io/people-analytics-second-brain/posts/meeting-ego-network-app): About another example of how generative AI is commoditizing previously specialized data products - this time, turning Outlook calendar data into a simple collaboration ego-network.
 - [Women, men, and sixteen sinking ships](https://lstehlik2809.github.io/people-analytics-second-brain/posts/female-survival-in-marital-disasters): A reproducible reanalysis of Elinder & Erixson (2012).
 - [My second People Analytics brain - both for people and AI agents](https://lstehlik2809.github.io/people-analytics-second-brain/posts/people-analytics-second-brain): So I finally gave the “second brain” idea a try - to see how it works in practice and whether it’s actually useful.
 - [Evidence-Based Management: Boring basics and better questions](https://lstehlik2809.github.io/people-analytics-second-brain/posts/beyond-belief): What can People Analytics learn from the wider evidence revolution? Inspired by Helen Pearson’s Beyond Belief, this post highlights two simple ideas: focus on evidence-backed management fundamentals, and ask better questions before jumping into action.
