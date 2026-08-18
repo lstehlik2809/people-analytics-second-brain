@@ -54,8 +54,8 @@ P.S. If interested, you can check out [this simple interactive dashboard](https:
 - [[siop-2025-conference-events|What topics might you encounter at the SIOP 2025 conference?]]
 - [[siop-2026-recommender|SIOP 2026 Recommender]]
 - [[siop-2026-causal-inference-workshop|No Experiment, No Problem? Causal Inference in Applied Quasi-Experimental Settings (Session ID 830)]]
+- [[directionally-correct-podcast-topic-explorer|Turning 152 Directionally Correct podcast episodes into an interactive topic explorer]]
 - [[linkedin-contacts-job-positions|Analyzing LinkedIn connections' jobs using LLMs and the BERTopic package]]
-- [[hr-tech-ai-shift|How AI is reshaping HR-tech]]
 <!-- RELATED:END -->
 
 ---

@@ -80,9 +80,9 @@ htmltools::div(
 ## Related notes
 - [[siop-2026-reflection|SIOP through the wisdom of crowds: What I may have missed]]
 - [[siop-2025-conference-events|What topics might you encounter at the SIOP 2025 conference?]]
+- [[directionally-correct-podcast-topic-explorer|Turning 152 Directionally Correct podcast episodes into an interactive topic explorer]]
 - [[siop-2026-causal-inference-workshop|No Experiment, No Problem? Causal Inference in Applied Quasi-Experimental Settings (Session ID 830)]]
 - [[cv-job-match-career-site|Improving a company career site with tools from OpenAI]]
-- [[meeting-ego-network-app|Turning Outlook calendar data into a collaboration map]]
 <!-- RELATED:END -->
 
 ---

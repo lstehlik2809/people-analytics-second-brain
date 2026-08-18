@@ -31,6 +31,8 @@ MANIFEST = CACHE / "manifest.json"
 IMG_RE = re.compile(r"!\[([^\]]*)\]\(([^)]*)\)")
 TITLE_RE = re.compile(r"\s+\"[^\"]*\"\s*$")
 HTML_IMG_RE = re.compile(r"<img\b([^>]*?)/?>", re.I)
+HTML_OBJECT_RE = re.compile(r"<object\b([^>]*?)>", re.I)
+HTML_LINK_RE = re.compile(r"<a\b([^>]*?)>", re.I)
 ATTR_KV_RE = re.compile(r"""([\w-]+)\s*=\s*(["'])(.*?)\2""")
 ATTR_RE = re.compile(r"(\)|\`)\{[^{}\n]*\}")  # pandoc attribute blocks after ) or `
 CHUNK_RE = re.compile(r"^```\{(r|R)\b[^}]*\}\s*$", re.M)
@@ -46,6 +48,12 @@ EMBEDDED_FIGURE_RE = re.compile(
     re.I | re.S,
 )
 EMBEDDED_FIGURE_HASH_MARKER = b"\0embedded-generated-figures-v1"
+# Keep local attachments embedded through raw HTML (for example a PDF carousel)
+# alongside their note. The marker lets existing manifests rebuild only affected
+# posts when this support is introduced.
+LOCAL_HTML_ASSET_RE = re.compile(
+    rb"<(?:object|a)\b[^>]*(?:data|href)\s*=\s*[\"']files/", re.I)
+LOCAL_HTML_ASSET_HASH_MARKER = b"\0local-html-assets-v1"
 DATA_IMAGE_RE = re.compile(
     r"^data:(image/[a-z0-9.+-]+)((?:;[^,]*)?),(.*)$", re.I | re.S)
 
@@ -112,6 +120,25 @@ def convert_body(body: str, post_dir: Path, asset_dir: Path, slug: str, warnings
         return f"![{attrs.get('alt', '')}]({new})" if new else m.group(0)
 
     body = HTML_IMG_RE.sub(html_img_sub, body)
+
+    def html_asset_sub(m, attr: str):
+        attrs = dict((k.lower(), v) for k, _, v in ATTR_KV_RE.findall(m.group(1)))
+        path = attrs.get(attr, "").strip()
+        # Only rewrite post-local attachments. Other relative links can point to
+        # pages or anchors and should remain untouched.
+        if not path.startswith("files/"):
+            return m.group(0)
+        new = copy_asset(path)
+        if not new:
+            return m.group(0)
+        return re.sub(
+            rf"({attr}\s*=\s*)([\"']).*?\2",
+            lambda match: f"{match.group(1)}{match.group(2)}{new}{match.group(2)}",
+            m.group(0), count=1, flags=re.I,
+        )
+
+    body = HTML_OBJECT_RE.sub(lambda m: html_asset_sub(m, "data"), body)
+    body = HTML_LINK_RE.sub(lambda m: html_asset_sub(m, "href"), body)
     # strip pandoc attribute blocks like ){width=100%}
     body = ATTR_RE.sub(r"\1", body)
     body = escape_inline_hashtags(body)
@@ -337,6 +364,8 @@ def main():
             h.update(html_bytes)
             if EMBEDDED_FIGURE_RE.search(html_bytes):
                 h.update(EMBEDDED_FIGURE_HASH_MARKER)
+            if LOCAL_HTML_ASSET_RE.search(html_bytes):
+                h.update(LOCAL_HTML_ASSET_HASH_MARKER)
         src_hash = h.hexdigest()
         slug = note_slug(post_dir.name)
         if slug in seen_slugs:

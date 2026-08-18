@@ -85,6 +85,25 @@ class EmbeddedFigureTests(unittest.TestCase):
 
         self.assertEqual((asset_dir / "chart.png").read_bytes(), b"new chart")
 
+    def test_copies_local_html_attachment_and_rewrites_embed_and_download(self):
+        files_dir = self.root / "files"
+        files_dir.mkdir()
+        attachment = files_dir / "carousel.pdf"
+        attachment.write_bytes(b"pdf bytes")
+        asset_dir = self.root / "assets"
+        body = (
+            '<object data="files/carousel.pdf" type="application/pdf">\n'
+            '  <a href="files/carousel.pdf" download>Download</a>\n'
+            '</object>'
+        )
+
+        result = convert.convert_body(
+            body, self.root, asset_dir, "post", [])
+
+        target = "./post/carousel.pdf"
+        self.assertEqual(result.count(target), 2)
+        self.assertEqual((asset_dir / "carousel.pdf").read_bytes(), b"pdf bytes")
+
 
 if __name__ == "__main__":
     unittest.main()

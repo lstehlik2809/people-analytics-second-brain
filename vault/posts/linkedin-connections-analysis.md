@@ -44,7 +44,7 @@ P.P.S. Big thanks to [Sebastian Vorac](https://www.linkedin.com/in/sebastian-vor
 - [[david-green-hr-people-sna-network|Mapping the People Analytics universe]]
 - [[job-comparator|A bet on a new job]]
 - [[network-graph-employee-comments|Using network graph modeling to capture overarching thematic clusters in employee comments]]
-- [[overview-of-predictors-of-voluntary-employee-turnover|Overview of predictors of voluntary employee turnover]]
+- [[directionally-correct-podcast-topic-explorer|Turning 152 Directionally Correct podcast episodes into an interactive topic explorer]]
 <!-- RELATED:END -->
 
 ---

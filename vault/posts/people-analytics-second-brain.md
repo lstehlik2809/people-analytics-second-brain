@@ -35,7 +35,7 @@ GitHub repo
 👉 https://github.com/lstehlik2809/people-analytics-second-brain
 
 <object
-  data="files/people_analytics_second_brain_prezi.pdf"
+  data="./people-analytics-second-brain/people_analytics_second_brain_prezi.pdf"
   type="application/pdf"
   width="100%"
   height="800px">
@@ -43,14 +43,14 @@ GitHub repo
   <p>
 
     Your browser cannot display this PDF.
-    <a href="files/people_analytics_second_brain_prezi.pdf" download>Download the PDF</a>.
+    <a href="./people-analytics-second-brain/people_analytics_second_brain_prezi.pdf" download>Download the PDF</a>.
 
   </p>
 </object>
 
 <p>
 
-  <a href="files/people_analytics_second_brain_prezi.pdf" download>
+  <a href="./people-analytics-second-brain/people_analytics_second_brain_prezi.pdf" download>
     Download the PDF
   </a>
 
@@ -58,11 +58,11 @@ GitHub repo
 
 <!-- RELATED:BEGIN -->
 ## Related notes
+- [[directionally-correct-podcast-topic-explorer|Turning 152 Directionally Correct podcast episodes into an interactive topic explorer]]
 - [[searching-and-querying-aihr-blog-posts|Searching & querying AIHR blog posts on People Analytics topics]]
 - [[hr-tech-ai-shift|How AI is reshaping HR-tech]]
 - [[agentic-ai-for-visual-data-exploration|Agentic AI for visual data exploration]]
 - [[employee-feedback-analysis-using-openai|Employee feedback analysis using tools from OpenAI]]
-- [[nlp-llm-and-onboarding|Using NLP & LLM to combat 'tip-of-the-tongue' moments during onboarding]]
 <!-- RELATED:END -->
 
 ---

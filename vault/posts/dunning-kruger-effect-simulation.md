@@ -32,9 +32,9 @@ If you’ve come across or built simple simulators, demos, or visualizations tha
 ## Related notes
 - [[ai-powered-data-exploration-assistant|Testing my GenAI skepticism]]
 - [[gai-simulation-work-habits|Does GenAI make me a better (more rational) thinker?]]
+- [[directionally-correct-podcast-topic-explorer|Turning 152 Directionally Correct podcast episodes into an interactive topic explorer]]
 - [[agentic-ai-for-visual-data-exploration|Agentic AI for visual data exploration]]
 - [[ai-as-friction|AI as friction]]
-- [[ai-suggestibility|Loftus & Palmer 2.0: Replicating human bias in AI]]
 <!-- RELATED:END -->
 
 ---

@@ -33,9 +33,9 @@ P.S. To get a better sense of how the app works, you can check it out [here](htt
 ## Related notes
 - [[hr-tech-ai-shift|How AI is reshaping HR-tech]]
 - [[ai-powered-data-exploration-assistant|Testing my GenAI skepticism]]
+- [[directionally-correct-podcast-topic-explorer|Turning 152 Directionally Correct podcast episodes into an interactive topic explorer]]
 - [[agentic-ai-for-visual-data-exploration|Agentic AI for visual data exploration]]
 - [[linkedin-contacts-job-positions|Analyzing LinkedIn connections' jobs using LLMs and the BERTopic package]]
-- [[gai-simulation-work-habits|Does GenAI make me a better (more rational) thinker?]]
 <!-- RELATED:END -->
 
 ---

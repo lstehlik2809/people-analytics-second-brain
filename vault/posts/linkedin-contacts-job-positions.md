@@ -149,9 +149,9 @@ P.S. If interested, feel free to check out [one of my earlier apps](https://blog
 ## Related notes
 - [[linkedin-connections-analysis|R Shiny app for LinkedIn connections analysis]]
 - [[network-graph-employee-comments|Using network graph modeling to capture overarching thematic clusters in employee comments]]
+- [[directionally-correct-podcast-topic-explorer|Turning 152 Directionally Correct podcast episodes into an interactive topic explorer]]
 - [[employee-feedback-analysis-using-openai|Employee feedback analysis using tools from OpenAI]]
 - [[agentic-ai-for-visual-data-exploration|Agentic AI for visual data exploration]]
-- [[cv-job-match-career-site|Improving a company career site with tools from OpenAI]]
 <!-- RELATED:END -->
 
 ---

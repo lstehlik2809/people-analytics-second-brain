@@ -92,8 +92,8 @@ for topic in topic_labels:
 - [[employee-feedback-analysis-using-openai|Employee feedback analysis using tools from OpenAI]]
 - [[sentiment-analysis-validation|Sentiment analysis of employee survey comments using zero-shot classification]]
 - [[ai-powered-data-exploration-assistant|Testing my GenAI skepticism]]
+- [[directionally-correct-podcast-topic-explorer|Turning 152 Directionally Correct podcast episodes into an interactive topic explorer]]
 - [[rebuilding-a-survey-with-the-help-of-nlp-tools|Rebuilding an employee survey with the help of NLP tools]]
-- [[agentic-ai-for-visual-data-exploration|Agentic AI for visual data exploration]]
 <!-- RELATED:END -->
 
 ---

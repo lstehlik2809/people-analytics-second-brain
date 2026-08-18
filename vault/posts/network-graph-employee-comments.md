@@ -316,8 +316,8 @@ networkD3::forceNetwork(
 - [[psychometric-network-analysis|Psychometric network analysis & employee survey data]]
 - [[employee-feedback-analysis-using-openai|Employee feedback analysis using tools from OpenAI]]
 - [[linkedin-contacts-job-positions|Analyzing LinkedIn connections' jobs using LLMs and the BERTopic package]]
+- [[directionally-correct-podcast-topic-explorer|Turning 152 Directionally Correct podcast episodes into an interactive topic explorer]]
 - [[latent-class-analysis|Latent Class Analysis of responses from employee surveys]]
-- [[probability-of-comments-in-a-survey|What makes people more likely to comment on a question in an employee survey?]]
 <!-- RELATED:END -->
 
 ---
