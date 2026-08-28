@@ -8,7 +8,7 @@ tags:
 original: https://blog-about-people-analytics.netlify.app/posts/2024-04-28-netlogo/
 ---
 
-Recently, my 10-year-old son came across the concept of the [exploration vs. exploitation dilemma](https://en.wikipedia.org/wiki/Exploration-exploitation_dilemma) in one of his books and wanted me to help him understand it.
+Recently, my 10-year-old son came across the concept of the [exploration vs. exploitation dilemma](https://en.wikipedia.org/wiki/Exploration-exploitation_dilemma) in one of his popular science books and asked me to help him understand it.
 
 I got quite sweaty in explaining it before I remembered [NetLogo](https://ccl.northwestern.edu/netlogo/), which contains a series of pre-programmed simulations of various multi-agent systems and emergent phenomena. 
 
@@ -28,15 +28,15 @@ One of them shows how this particular dilemma is solved by a colony of ants fora
 </div>
 <br>
 
-After watching a few rounds of the simulation and a brief explanation, everything became much clearer to my son. If you are ever faced with similar types of questions, give NetLogo a chance. It's free to use, contains a number of pre-programmed simulations, and if you don't find what you're looking for there, it's not hard to learn how to program what you need in NetLogo.
+After watching a few rounds of the simulation and a brief explanation, everything became much clearer to him. If you are ever faced with similar types of questions, give NetLogo a chance. It's free to use, contains a number of pre-programmed simulations, and if you don't find what you're looking for there, it's not hard to learn how to program what you need in NetLogo.
 
 Btw, I can't wait for my son to stumble upon the topic of how order can arise without some central controlling authority - there's a very effective bird flocking simulation in NetLog for that 😉
 
 <!-- RELATED:BEGIN -->
 ## Related notes
 - [[dunning-kruger-effect-simulation|Making abstract ideas digestible with knobs and sliders]]
-- [[bayesian-belief-updating|A visual introduction to Bayesian belief updating]]
 - [[exploration-vs-exploitation-tradeoff|Exploration vs. Exploitation trade-off in our calendars]]
+- [[bayesian-belief-updating|A visual introduction to Bayesian belief updating]]
 - [[kohonen-self-organizing-maps|Kohonen's Self-Organizing Maps]]
 - [[passive-versus-active-information-acquisition|From passive to active information acquisition]]
 <!-- RELATED:END -->
