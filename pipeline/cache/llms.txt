@@ -1,9 +1,10 @@
 # Ludek's People Analytics Second Brain
 
-> A public second brain of 208 posts on people analytics, statistics, causal inference, psychometrics, machine learning, and AI by Ludek Stehlik. Browsable knowledge graph at https://lstehlik2809.github.io/people-analytics-second-brain. The complete corpus is in /llms-full.txt.
+> A public second brain of 209 posts on people analytics, statistics, causal inference, psychometrics, machine learning, and AI by Ludek Stehlik. Browsable knowledge graph at https://lstehlik2809.github.io/people-analytics-second-brain. The complete corpus is in /llms-full.txt.
 
 ## Notes
 
+- [From passive to active information acquisition](https://lstehlik2809.github.io/people-analytics-second-brain/posts/passive-versus-active-information-acquisition): Using what we know to choose what to observe next.
 - [Turning 152 Directionally Correct podcast episodes into an interactive topic explorer](https://lstehlik2809.github.io/people-analytics-second-brain/posts/directionally-correct-podcast-topic-explorer): On using GenAI, topic analysis, and network visualization to make 152 Directionally Correct podcast episodes easier to explore.
 - [Turning Outlook calendar data into a collaboration map](https://lstehlik2809.github.io/people-analytics-second-brain/posts/meeting-ego-network-app): About another example of how generative AI is commoditizing previously specialized data products - this time, turning Outlook calendar data into a simple collaboration ego-network.
 - [Women, men, and sixteen sinking ships](https://lstehlik2809.github.io/people-analytics-second-brain/posts/female-survival-in-marital-disasters): A reproducible reanalysis of Elinder & Erixson (2012).

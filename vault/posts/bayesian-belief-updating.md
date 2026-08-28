@@ -176,11 +176,11 @@ For those who would like to incorporate Bayesian reasoning into their managerial
 
 <!-- RELATED:BEGIN -->
 ## Related notes
+- [[passive-versus-active-information-acquisition|From passive to active information acquisition]]
 - [[bayesian-simulation|Harnessing Bayesian analysis for business process simulation]]
 - [[visual-inference-statistics|Visual statistical inference]]
 - [[job-comparator|A bet on a new job]]
 - [[garden-of-forking-paths-redo|Refactoring the "Garden of Forking Paths"]]
-- [[conspiracy-theories-and-overfitting|Conspiracy theories as a specific example of overfitting?]]
 <!-- RELATED:END -->
 
 ---

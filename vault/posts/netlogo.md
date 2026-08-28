@@ -38,7 +38,7 @@ Btw, I can't wait for my son to stumble upon the topic of how order can arise wi
 - [[bayesian-belief-updating|A visual introduction to Bayesian belief updating]]
 - [[exploration-vs-exploitation-tradeoff|Exploration vs. Exploitation trade-off in our calendars]]
 - [[kohonen-self-organizing-maps|Kohonen's Self-Organizing Maps]]
-- [[directionally-correct-podcast-topic-explorer|Turning 152 Directionally Correct podcast episodes into an interactive topic explorer]]
+- [[passive-versus-active-information-acquisition|From passive to active information acquisition]]
 <!-- RELATED:END -->
 
 ---
