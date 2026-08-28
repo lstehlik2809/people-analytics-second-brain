@@ -23,7 +23,7 @@ Once you upload your LinkedIn connections data to the app (you can easily downlo
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 
   <video controls style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-    <source src="video_tour.mp4" type="video/mp4">
+    <source src="./linkedin-connections-analysis/video_tour.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 

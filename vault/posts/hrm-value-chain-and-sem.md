@@ -640,7 +640,7 @@ playersSalariesAvg %>%
 
 Finally, let's breathe some life into the dry numbers by watching a short clip from the [Moneyball film](https://www.imdb.com/title/tt1210166/), which nicely summarizes some of the ideas presented in this blog post.
 
-<video src="MoneyballClip1.mp4" controls preload></video>
+<video src="./hrm-value-chain-and-sem/MoneyballClip1.mp4" controls preload></video>
 
 <!-- RELATED:BEGIN -->
 ## Related notes

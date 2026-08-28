@@ -4067,7 +4067,7 @@ If interested, check out, for example, the [following video](https://www.youtube
 <div style="text-align: center;">
 
   <video controls style="width: 100%; max-width: 100%; height: auto;">
-    <source src="git_dag_video.mp4" type="video/mp4">
+    <source src="./git-and-dags/git_dag_video.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 
@@ -10796,7 +10796,7 @@ One of them shows how this particular dilemma is solved by a colony of ants fora
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 
   <video controls style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-    <source src="netlogo-ants-colony.mp4" type="video/mp4">
+    <source src="./netlogo/netlogo-ants-colony.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 
@@ -15973,7 +15973,7 @@ playersSalariesAvg %>%
 
 Finally, let's breathe some life into the dry numbers by watching a short clip from the [Moneyball film](https://www.imdb.com/title/tt1210166/), which nicely summarizes some of the ideas presented in this blog post.
 
-<video src="MoneyballClip1.mp4" controls preload></video>
+<video src="./hrm-value-chain-and-sem/MoneyballClip1.mp4" controls preload></video>
 
 
 ---
@@ -19197,7 +19197,7 @@ Once you upload your LinkedIn connections data to the app (you can easily downlo
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 
   <video controls style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-    <source src="video_tour.mp4" type="video/mp4">
+    <source src="./linkedin-connections-analysis/video_tour.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 

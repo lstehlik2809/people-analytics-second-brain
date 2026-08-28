@@ -33,6 +33,7 @@ TITLE_RE = re.compile(r"\s+\"[^\"]*\"\s*$")
 HTML_IMG_RE = re.compile(r"<img\b([^>]*?)/?>", re.I)
 HTML_OBJECT_RE = re.compile(r"<object\b([^>]*?)>", re.I)
 HTML_LINK_RE = re.compile(r"<a\b([^>]*?)>", re.I)
+HTML_MEDIA_RE = re.compile(r"<(?:source|video|audio)\b([^>]*?)/?>", re.I)
 ATTR_KV_RE = re.compile(r"""([\w-]+)\s*=\s*(["'])(.*?)\2""")
 ATTR_RE = re.compile(r"(\)|\`)\{[^{}\n]*\}")  # pandoc attribute blocks after ) or `
 CHUNK_RE = re.compile(r"^```\{(r|R)\b[^}]*\}\s*$", re.M)
@@ -52,8 +53,11 @@ EMBEDDED_FIGURE_HASH_MARKER = b"\0embedded-generated-figures-v1"
 # alongside their note. The marker lets existing manifests rebuild only affected
 # posts when this support is introduced.
 LOCAL_HTML_ASSET_RE = re.compile(
-    rb"<(?:object|a)\b[^>]*(?:data|href)\s*=\s*[\"']files/", re.I)
-LOCAL_HTML_ASSET_HASH_MARKER = b"\0local-html-assets-v1"
+    rb"<(?:object|a)\b[^>]*(?:data|href)\s*=\s*[\"']files/"
+    rb"|<(?:source|video|audio)\b[^>]*src\s*=\s*[\"'](?!https?://|//|data:)",
+    re.I,
+)
+LOCAL_HTML_ASSET_HASH_MARKER = b"\0local-html-assets-v2"
 DATA_IMAGE_RE = re.compile(
     r"^data:(image/[a-z0-9.+-]+)((?:;[^,]*)?),(.*)$", re.I | re.S)
 
@@ -121,12 +125,19 @@ def convert_body(body: str, post_dir: Path, asset_dir: Path, slug: str, warnings
 
     body = HTML_IMG_RE.sub(html_img_sub, body)
 
-    def html_asset_sub(m, attr: str):
+    media_extensions = {
+        ".mp4", ".m4v", ".mov", ".ogv", ".webm", ".avi",
+        ".mp3", ".m4a", ".ogg", ".oga", ".wav",
+    }
+
+    def html_asset_sub(m, attr: str, *, media: bool = False):
         attrs = dict((k.lower(), v) for k, _, v in ATTR_KV_RE.findall(m.group(1)))
         path = attrs.get(attr, "").strip()
         # Only rewrite post-local attachments. Other relative links can point to
         # pages or anchors and should remain untouched.
-        if not path.startswith("files/"):
+        is_attachment = path.startswith("files/")
+        is_media = media and Path(unquote(path).split("?", 1)[0]).suffix.lower() in media_extensions
+        if not (is_attachment or is_media):
             return m.group(0)
         new = copy_asset(path)
         if not new:
@@ -139,6 +150,7 @@ def convert_body(body: str, post_dir: Path, asset_dir: Path, slug: str, warnings
 
     body = HTML_OBJECT_RE.sub(lambda m: html_asset_sub(m, "data"), body)
     body = HTML_LINK_RE.sub(lambda m: html_asset_sub(m, "href"), body)
+    body = HTML_MEDIA_RE.sub(lambda m: html_asset_sub(m, "src", media=True), body)
     # strip pandoc attribute blocks like ){width=100%}
     body = ATTR_RE.sub(r"\1", body)
     body = escape_inline_hashtags(body)

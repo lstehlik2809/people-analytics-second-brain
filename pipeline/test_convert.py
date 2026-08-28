@@ -104,6 +104,21 @@ class EmbeddedFigureTests(unittest.TestCase):
         self.assertEqual(result.count(target), 2)
         self.assertEqual((asset_dir / "carousel.pdf").read_bytes(), b"pdf bytes")
 
+    def test_copies_local_media_source_and_rewrites_video_url(self):
+        source = self.root / "simulation.mp4"
+        source.write_bytes(b"video bytes")
+        asset_dir = self.root / "assets"
+        body = (
+            '<video controls><source src="simulation.mp4" '
+            'type="video/mp4"></video>'
+        )
+
+        result = convert.convert_body(
+            body, self.root, asset_dir, "post", [])
+
+        self.assertIn('src="./post/simulation.mp4"', result)
+        self.assertEqual((asset_dir / "simulation.mp4").read_bytes(), b"video bytes")
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -19,7 +19,7 @@ If interested, check out, for example, the [following video](https://www.youtube
 <div style="text-align: center;">
 
   <video controls style="width: 100%; max-width: 100%; height: auto;">
-    <source src="git_dag_video.mp4" type="video/mp4">
+    <source src="./git-and-dags/git_dag_video.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 
