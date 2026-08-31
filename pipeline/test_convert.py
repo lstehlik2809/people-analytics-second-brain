@@ -119,6 +119,45 @@ class EmbeddedFigureTests(unittest.TestCase):
         self.assertIn('src="./post/simulation.mp4"', result)
         self.assertEqual((asset_dir / "simulation.mp4").read_bytes(), b"video bytes")
 
+    def test_extracts_and_injects_plotly_widget_in_a_local_iframe(self):
+        library_dir = self.root / "post_files" / "plotly-main-2.11.1"
+        library_dir.mkdir(parents=True)
+        library = library_dir / "plotly-latest.min.js"
+        library.write_text("window.Plotly = {};", encoding="utf-8")
+        widget = {
+            "x": {
+                "data": [{"x": [1, 2], "y": [3, 4], "type": "scatter"}],
+                "layout": {"height": 480},
+                "config": {"displayModeBar": False},
+            },
+            "evals": [],
+            "jsHooks": [],
+        }
+        (self.root / "post.html").write_text(
+            '<pre>plot(1)</pre>'
+            '<div id="widget" class="plotly html-widget"></div>'
+            f'<script data-for="widget" type="application/json">'
+            f'{convert.json.dumps(widget)}</script>'
+            '<script src="post_files/plotly-main-2.11.1/plotly-latest.min.js"></script>',
+            encoding="utf-8",
+        )
+
+        widgets = convert.extract_plotly_widgets(self.root, "post")
+        result = convert.inject_plotly_widgets(
+            "```r\nplot(1)\n```", widgets, self.root, self.root / "assets",
+            "post", [],
+        )
+
+        self.assertIn('srcdoc="', result)
+        self.assertIn('Plotly.newPlot', result)
+        self.assertIn('responsive:true', result)
+        self.assertIn('./post/plotly-widget-01.min.js', result)
+        self.assertEqual(
+            (self.root / "assets" / "plotly-widget-01.min.js").read_text(
+                encoding="utf-8"),
+            "window.Plotly = {};",
+        )
+
 
 if __name__ == "__main__":
     unittest.main()

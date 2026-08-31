@@ -13,6 +13,7 @@ import json
 import re
 import shutil
 import sys
+from html import escape as html_escape
 from pathlib import Path
 
 import yaml
@@ -58,6 +59,11 @@ LOCAL_HTML_ASSET_RE = re.compile(
     re.I,
 )
 LOCAL_HTML_ASSET_HASH_MARKER = b"\0local-html-assets-v2"
+PLOTLY_WIDGET_RE = re.compile(
+    rb"<div[^>]*class=[\"'][^\"']*\bplotly\b[^\"']*\bhtml-widget\b[^\"']*[\"']",
+    re.I,
+)
+PLOTLY_WIDGET_HASH_MARKER = b"\0plotly-widgets-v2"
 DATA_IMAGE_RE = re.compile(
     r"^data:(image/[a-z0-9.+-]+)((?:;[^,]*)?),(.*)$", re.I | re.S)
 
@@ -227,6 +233,50 @@ def extract_generated_figures(post_dir: Path, base_name: str):
     return figs
 
 
+def extract_plotly_widgets(post_dir: Path, base_name: str):
+    """Extract standard R Plotly htmlwidgets from rendered post HTML.
+
+    Quartz deliberately does not execute scripts embedded in markdown pages.
+    Each widget is therefore rendered in a local iframe with its original
+    serialized Plotly figure and library, preserving the chart's interactivity.
+    """
+    html_path = post_dir / f"{base_name}.html"
+    if not html_path.exists():
+        return []
+    soup = BeautifulSoup(
+        html_path.read_text(encoding="utf-8", errors="replace"), "html.parser")
+    library = next((script.get("src") for script in soup.find_all("script")
+                    if "plotly-main" in (script.get("src") or "")
+                    and (script.get("src") or "").endswith(".js")), None)
+    if not library:
+        return []
+
+    widgets, last_pre = [], None
+    for el in soup.find_all(["pre", "div"]):
+        if el.name == "pre":
+            last_pre = norm_code(el.get_text())
+            continue
+        classes = set(el.get("class") or [])
+        if not {"plotly", "html-widget"}.issubset(classes):
+            continue
+        widget_id = el.get("id")
+        data_tag = soup.find("script", attrs={"data-for": widget_id})
+        if not widget_id or data_tag is None:
+            continue
+        try:
+            widget = json.loads(data_tag.string or data_tag.get_text())
+        except json.JSONDecodeError:
+            continue
+        figure = widget.get("x")
+        # Widgets requiring custom JavaScript hooks cannot safely be recreated
+        # with Plotly.newPlot alone.
+        if (not isinstance(figure, dict) or "data" not in figure
+                or widget.get("evals") or widget.get("jsHooks")):
+            continue
+        widgets.append((last_pre, figure, library))
+    return widgets
+
+
 FENCE_RE = re.compile(r"```[a-z]*\n(.*?)\n```", re.S)
 
 
@@ -311,6 +361,72 @@ def inject_figures(body: str, figs, post_dir: Path, asset_dir: Path,
     return body
 
 
+def inject_plotly_widgets(body: str, widgets, post_dir: Path, asset_dir: Path,
+                          slug: str, warnings: list) -> str:
+    """Write standalone Plotly iframes and place them after their code blocks."""
+    if not widgets:
+        return body
+    fences = [(norm_code(m.group(1)), m.end()) for m in FENCE_RE.finditer(body)]
+    used = set()
+    insertions, appendix = [], []
+    asset_dir.mkdir(parents=True, exist_ok=True)
+    for number, (anchor, figure, library_ref) in enumerate(widgets, start=1):
+        library = post_dir / unquote(library_ref)
+        if not library.exists():
+            warnings.append(f"{slug}: missing Plotly library {library_ref}")
+            continue
+        library_name = f"plotly-widget-{number:02d}.min.js"
+        library_dest = asset_dir / library_name
+        if not library_dest.exists() or library.read_bytes() != library_dest.read_bytes():
+            shutil.copy2(library, library_dest)
+
+        payload = json.dumps(
+            {"data": figure["data"], "layout": figure.get("layout", {}),
+             "config": figure.get("config", {})},
+            ensure_ascii=False, separators=(",", ":"),
+        ).replace("</", "<\\/")
+        frame = f"""<!doctype html>
+<html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
+<style>html,body,#chart{{width:100%;height:100%;margin:0}}body{{overflow:hidden}}</style>
+</head><body><div id=\"chart\"></div><script src=\"./{slug}/{library_name}\"></script><script>
+const figure={payload};
+Plotly.newPlot(\"chart\",figure.data,figure.layout,{{...figure.config,responsive:true}});
+</script></body></html>
+"""
+
+        height = figure.get("layout", {}).get("height", 600)
+        try:
+            height = max(240, int(height))
+        except (TypeError, ValueError):
+            height = 600
+        iframe = (
+            f'<iframe srcdoc="{html_escape(frame, quote=True)}" '
+            f'title="Interactive Plotly chart" '
+            f'loading="lazy" style="width:100%; height:{height}px; border:0;"></iframe>'
+        )
+        pos = None
+        if anchor:
+            for i, (code, end) in enumerate(fences):
+                if code == anchor and i not in used:
+                    used.add(i)
+                    pos = end
+                    break
+            if pos is None:
+                for code, end in fences:
+                    if code == anchor:
+                        pos = end
+                        break
+        if pos is None:
+            appendix.append(iframe)
+        else:
+            insertions.append((pos, len(insertions), iframe))
+    for pos, _, iframe in sorted(insertions, key=lambda x: (-x[0], -x[1])):
+        body = body[:pos] + f"\n\n{iframe}" + body[pos:]
+    if appendix:
+        body += "\n\n## Interactive charts\n\n" + "\n\n".join(appendix)
+    return body
+
+
 def build_note(post_dir: Path) -> tuple[str, str] | None:
     rmds = sorted(post_dir.glob("*.Rmd"))
     if not rmds:
@@ -331,6 +447,9 @@ def build_note(post_dir: Path) -> tuple[str, str] | None:
     figs = extract_generated_figures(post_dir, rmds[0].stem)
     converted = inject_figures(converted, figs, post_dir, NOTES_DIR / slug,
                                slug, warnings)
+    widgets = extract_plotly_widgets(post_dir, rmds[0].stem)
+    converted = inject_plotly_widgets(converted, widgets, post_dir,
+                                      NOTES_DIR / slug, slug, warnings)
     for w in warnings:
         print(f"  warn: {w}")
 
@@ -378,6 +497,8 @@ def main():
                 h.update(EMBEDDED_FIGURE_HASH_MARKER)
             if LOCAL_HTML_ASSET_RE.search(html_bytes):
                 h.update(LOCAL_HTML_ASSET_HASH_MARKER)
+            if PLOTLY_WIDGET_RE.search(html_bytes):
+                h.update(PLOTLY_WIDGET_HASH_MARKER)
         src_hash = h.hexdigest()
         slug = note_slug(post_dir.name)
         if slug in seen_slugs:
