@@ -2,7 +2,7 @@
  "moneyball-v-hr-od-hr-analytiky-ke-sportovn-analytice-a-zpt": "cffda0cc075b8437d021e81e0ce653f1d4e3f6e1d1fa465b26e1b7d169a1d136",
  "hr-analytika-a-odchodovost-zamstnanc": "3223363b5c0f4d4f71e889e14145246dc16c9136424e7863aed693423171b80d",
  "segmentedregression": "72fe5456f92430a32c7101af524a6c7201e0f02505acb0fb935dac4e2a0bede5",
- "paygap": "929d7dd1a4feea8c1fa08f880c87de8993ec34babcb20fa0a52cf548968650ff",
+ "paygap": "3a0d8df3f723c7b17acc558edff1909d254aaf82ef8c16abdb77c85de16016d6",
  "overview-of-predictors-of-voluntary-employee-turnover": "d34c23ba6e03aad07cb9d2104275832f6bd07a7cf6f5a1b65efedf8f6a6a7a4a",
  "linkedin-connections-analysis": "491a34ecb00d0cbd4ad6f45c70c4742be41240205c8a8c0e6efa14feb1448209",
  "makers-and-managers-schedule": "f1dd9478e856c32b03bfdbaff37de259ea0b9b5790d0ed2b8cb390e94b5ae5be",
@@ -22,7 +22,7 @@
  "police-cadet-evaluation-dataset": "8c7439cd570ada5732894117795194fee5671778fcaff9eed4fbe26ae90f4032",
  "bayesian-belief-updating": "04f8496369dc75c86a860ba904d8b1ec8b3863dd97007f74e8b05622a246a357",
  "people-related-metrics-distribution": "63af1815a90830e1d5a65971823e90b3a2b3e1b5620643a0fbda8171de761504",
- "interventions-reducing-gender-pay-gap": "5873846742b1fc7c6288e0fde0b75a66aedee48e1c1038a141ea753ba86bef0f",
+ "interventions-reducing-gender-pay-gap": "402c6b678d662200b28296dc5be49ed44d9c7bed3766719671a8f88f4abc6ca0",
  "meeting-matrix": "2b010c1169c222096ca2ef167b2ccd038df4ee9d559884cced9dfcef326ba11a",
  "resources-on-retention-and-downsizing": "a5c0bff5f910155d1af513f37a017d829a46d323374fd043ba5c060340592632",
  "change-detection": "6d347241827470bb768f00357bb92aaebfabc7d7600c743964aea1d6cc911bd9",
@@ -79,7 +79,7 @@
  "sentiment-analysis-validation": "daf014237d0b5d7bae32427ab4b8ca30b2ef3f5150b3016d8317acdae9e326cd",
  "personas-based-on-ml-local-interpretation-algos": "86751f5bec2e68bab9cb441a4e6fb0322fb815bd45f1f2f1e2038ab5f292e194",
  "job-demands-job-control-wellbeing": "7fcdc6aaee98996ad3280ddca9b62346d66120e864851cfbce3199373c4c4e85",
- "gender-gap-in-hiring-decisions": "46b302e4498e53a7223e9af7404707c9e264fcd56654a53d857ad9c85737ffca",
+ "gender-gap-in-hiring-decisions": "8c33d30ae63e14345b41ddda8d3261f7c06aa7c9d1dd55bb40278de6bf18ffba",
  "rebuilding-a-survey-with-the-help-of-nlp-tools": "73fa3e2cc991e47386e19b93848abc95cb507427e1322391d4b059e07e2ae2e7",
  "big-five-personality-and-earnings": "20f60d25d8b09940e33a94d6a350f42d39642ae1fbc4f0756c87b1033a51c37e",
  "ebm-gpt-bot": "faac2f55596d3fc9934b273d3de6909fbf4af2a2fa220336990d8c92cc194283",
@@ -207,5 +207,6 @@
  "female-survival-in-marital-disasters": "ac70a5cd01f03940813f345b8cc704d56e14d5b7bf8d003552df0829f7b6897e",
  "meeting-ego-network-app": "2326f75856949d3c45e47bb7ddf163da810febc9e5fec427df07e688db5cbb76",
  "directionally-correct-podcast-topic-explorer": "7d8c541a0366c4aa5de399ba275fd02414c0cb8df98acdae15a493b0e56262d4",
- "passive-versus-active-information-acquisition": "19ff964ff3756e3bb58e210014fb413d04989705455b84ab4637e1788755fcaf"
+ "passive-versus-active-information-acquisition": "19ff964ff3756e3bb58e210014fb413d04989705455b84ab4637e1788755fcaf",
+ "the-daughter-effect": "3c9954fd9359c0f9c49fecbe0f7b9547bbb13c7bae8aa025437280849f641410"
 }

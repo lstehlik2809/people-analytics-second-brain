@@ -4,6 +4,7 @@ description: Pay inequality between men and women is not only an ethical and leg
 date: '2022-11-18'
 tags:
 - gender-pay-gap
+- gender-bias
 - evidence-based-management
 original: https://blog-about-people-analytics.netlify.app/posts/2022-11-18-interventions-reducing-gender-pay-gap/
 ---
@@ -53,7 +54,7 @@ A final note. As useful as it is to know which interventions have a decent chanc
 - [[euptd-pay-gap-reporting|Pay gap estimation for small worker categories]]
 - [[gender-gap-in-hiring-decisions|Evidence on the presence of gender bias in selection settings]]
 - [[engagement-interventions|Effectiveness of interventions for encreasing employee engagement]]
-- [[beyond-belief|Evidence-Based Management: Boring basics and better questions]]
+- [[the-daughter-effect|The daughter effect]]
 <!-- RELATED:END -->
 
 ---

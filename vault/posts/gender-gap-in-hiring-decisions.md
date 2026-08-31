@@ -3,6 +3,7 @@ title: Evidence on the presence of gender bias in selection settings
 description: Interesting results from a pre-registered meta-analysis of 44 years of field experiments on gender gaps in hiring decisions.
 date: '2023-11-22'
 tags:
+- gender-bias
 - diversity
 - experiments
 - meta-analysis
@@ -30,9 +31,9 @@ original: https://blog-about-people-analytics.netlify.app/posts/2023-11-22-gende
 <!-- RELATED:BEGIN -->
 ## Related notes
 - [[interventions-reducing-gender-pay-gap|Evidence-based interventions that help reduce the gender pay gap]]
+- [[the-daughter-effect|The daughter effect]]
 - [[selection-procedures-validity-update|Visualizing shifts in validity estimates for selection procedures]]
 - [[vocational-interests|Vocational interests don't seem so uninteresting after all]]
-- [[euptd-pay-gap-reporting|Pay gap estimation for small worker categories]]
 - [[video-interviews-and-biases|Biases introduced by video backgrounds during video interviews]]
 <!-- RELATED:END -->
 

@@ -4,6 +4,7 @@ description: Platová nerovnost mezi muži a ženami není pro firmy jen zálež
 date: '2021-01-29'
 tags:
 - gender-pay-gap
+- gender-bias
 - regression-analysis
 - r
 original: https://blog-about-people-analytics.netlify.app/posts/2021-01-29-paygap/
@@ -24,7 +25,9 @@ library(ggpubr)
 if (!require(remotes)) {
     install.packages("remotes")
 }
-remotes::install_github('jorvlan/raincloudplots')
+if (!requireNamespace("raincloudplots", quietly = TRUE)) {
+    remotes::install_github('jorvlan/raincloudplots')
+}
 
 library(raincloudplots)
 library(PupillometryR)
@@ -32,7 +35,8 @@ library(PupillometryR)
 library(brms)
 library(tidybayes)
 
-Sys.setlocale("LC_CTYPE", "czech")
+# Keep Czech text in UTF-8 so Distill can read the embedded JSON metadata.
+Sys.setlocale("LC_CTYPE", "Czech_Czechia.UTF-8")
 
 
 ```
@@ -46,38 +50,120 @@ Sys.setlocale("LC_CTYPE", "czech")
 Bez ohledu na způsob měření GPG, je dobře doloženým faktem, že ženy jsou obecně hůře placeny než muži, jakkoli [se tento rozdíl postupem času zmenšuje](http://www.econ.jku.at/papers/2003/wp0311.pdf). Rozdíly v platech se přitom mohou v jednotlivých zemích poměrně dost lišit. Názorně to ilustruje níže uvedený graf, který ukazuje vývoj (neadjustované) GPG (definované jako poměr rozdílu mediánové mzdy zaměstnaných mužů a žen a mediánové mzdy zaměstnaných mužů) v průběhu několika minulých let v zemích [OECD](https://data.oecd.org/earnwage/gender-wage-gap.htm).
 
 ```r
-# uploading data
-gpgoecd <- readr::read_csv("./DP_LIVE_29012021212234147.csv")
+# Keep all available years, including 2016.
+gpgoecd <- readr::read_csv("./DP_LIVE_29012021212234147.csv", show_col_types = FALSE)
+gpg_years <- sort(unique(gpgoecd$TIME))
+country_names <- c(
+  AUS = "Austrálie", AUT = "Rakousko", BEL = "Belgie", CAN = "Kanada",
+  CHE = "Švýcarsko", CHL = "Chile", COL = "Kolumbie", CRI = "Kostarika",
+  CZE = "Česko", DEU = "Německo", DNK = "Dánsko", FIN = "Finsko",
+  FRA = "Francie", GBR = "Spojené království", GRC = "Řecko", HUN = "Maďarsko",
+  ISL = "Island", ISR = "Izrael", ITA = "Itálie", JPN = "Japonsko",
+  KOR = "Jižní Korea", MEX = "Mexiko", NOR = "Norsko", NZL = "Nový Zéland",
+  OECD = "OECD", POL = "Polsko", PRT = "Portugalsko", SVK = "Slovensko",
+  SWE = "Švédsko", USA = "Spojené státy"
+)
+gpg_plot_data <- gpgoecd %>%
+  dplyr::filter(is.finite(Value))
 
-# creating color palette
-# list of R color Brewer's palettes: https://www.r-graph-gallery.com/38-rcolorbrewers-palettes.html
-nbCols <- length(unique(gpgoecd$LOCATION))
-myColors <- colorRampPalette(brewer.pal(8, "Set1"))(nbCols)
+# Read panels from left to right, starting with the highest latest value.
+gpg_latest <- gpg_plot_data %>%
+  dplyr::group_by(LOCATION) %>%
+  dplyr::slice_max(TIME, n = 1, with_ties = FALSE) %>%
+  dplyr::ungroup() %>%
+  dplyr::arrange(dplyr::desc(Value), LOCATION)
+gpg_country_order <- unname(country_names[gpg_latest$LOCATION])
+gpg_plot_data <- gpg_plot_data %>%
+  dplyr::mutate(
+    country = factor(unname(country_names[LOCATION]), levels = gpg_country_order),
+    series = if_else(LOCATION == "CZE", "Česko", "Ostatní"),
+    hover = paste0(
+      "Země: ", country, "<br>Rok: ", TIME, "<br>GPG: ",
+      scales::number(Value, accuracy = 0.1, decimal.mark = ","), " %"
+    )
+  ) %>%
+  dplyr::arrange(LOCATION, TIME)
 
-# creating a graph
-g <- gpgoecd %>%
-  ggplot2::ggplot(aes(x = forcats::fct_reorder(LOCATION, Value), y = Value, fill = LOCATION,
-                      text = paste('Země: ', LOCATION,
-                                 '</br></br>GPG: ', round(Value))))+
-  ggplot2::geom_col() +
-  ggplot2::facet_wrap(~ TIME, nrow = 4) +
-  ggplot2::labs(x = "",
-                y = "GPG",
-                title = "Genderová příjmová nerovnost v zemích OECD v letech 2016-2019") +
-  ggthemes::theme_few() +
-  ggplot2::scale_fill_manual(values = myColors) +
-  ggplot2::theme(legend.position = "",
-                 legend.title = element_blank(),
-                 axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
+# Explicit NAs break lines at missing years; no values are interpolated.
+gpg_line_data <- gpg_plot_data %>%
+  dplyr::select(LOCATION, TIME, Value) %>%
+  dplyr::group_by(LOCATION) %>%
+  tidyr::complete(TIME = gpg_years) %>%
+  dplyr::filter(sum(!is.na(Value)) > 1) %>%
+  dplyr::ungroup() %>%
+  dplyr::mutate(
+    country = factor(unname(country_names[LOCATION]), levels = gpg_country_order),
+    series = if_else(LOCATION == "CZE", "Česko", "Ostatní")
+  )
 
+# Small multiples give every country the same time axis and percentage scale.
+g <- ggplot2::ggplot(gpg_plot_data, aes(x = TIME, y = Value, colour = series)) +
+  ggplot2::geom_line(
+    data = gpg_line_data, aes(group = LOCATION), linewidth = 0.75, na.rm = TRUE
+  ) +
+  ggplot2::geom_point(aes(text = hover), size = 2) +
+  # Separate x axes repeat year labels; the explicit limits below stay identical.
+  ggplot2::facet_wrap(~ country, ncol = 5, scales = "free_x") +
+  ggplot2::scale_colour_manual(
+    values = c("Ostatní" = "#326781", "Česko" = "#B96236"), guide = "none"
+  ) +
+  ggplot2::scale_y_continuous(
+    limits = c(0, 40), breaks = c(0, 20, 40),
+    labels = scales::label_number(suffix = " %", decimal.mark = ","),
+    expand = expansion(add = 2)
+  ) +
+  ggplot2::scale_x_continuous(
+    breaks = gpg_years, limits = range(gpg_years),
+    expand = expansion(add = 0.25)
+  ) +
+  ggplot2::labs(
+    x = NULL, y = "Gender pay gap (GPG)",
+    title = "Genderová příjmová nerovnost v zemích OECD",
+    subtitle = paste0(min(gpg_years), "–", max(gpg_years),
+                      " · Stejná stupnice pro všechny země · Česko zvýrazněno"),
+    caption = paste0(
+      "Zdroj: OECD · Panely seřazeny podle poslední dostupné hodnoty.\n",
+      "Chybějící roky zůstávají prázdné; jediný dostupný údaj je zobrazen jako bod."
+    )
+  ) +
+  ggplot2::theme_minimal(base_size = 11) +
+  ggplot2::theme(
+    legend.position = "none",
+    panel.grid.minor = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.major.y = element_line(colour = "#E5E9EC", linewidth = 0.35),
+    panel.spacing = grid::unit(1.1, "lines"),
+    strip.text = element_text(face = "bold", colour = "#374151", hjust = 0, size = 10),
+    axis.text = element_text(colour = "#59636E", size = 8),
+    axis.title.y = element_text(margin = margin(r = 10)),
+    plot.title = element_text(face = "bold", size = 15),
+    plot.subtitle = element_text(colour = "#59636E", margin = margin(b = 12)),
+    plot.caption = element_text(hjust = 0, colour = "#59636E", margin = margin(t = 14)),
+    plot.title.position = "plot", plot.caption.position = "plot"
+  )
 
-# making the graph interactive
-plotly::ggplotly(
-  g, 
-  width = 800,
-  height = 700,
+# Plotly appends the source note to its existing panel labels.
+gpg_widget <- plotly::ggplotly(
+  g,
+  width = 900,
+  height = 1100,
   tooltip = "text"
 )
+gpg_widget %>%
+  plotly::layout(
+    title = list(
+      text = paste0(g$labels$title, "<br><sup>", g$labels$subtitle, "</sup>"),
+      x = 0, xanchor = "left"
+    ),
+    margin = list(l = 65, r = 20, t = 105, b = 90),
+    hovermode = "closest",
+    annotations = list(list(
+      text = gsub("\n", "<br>", g$labels$caption, fixed = TRUE),
+      x = 0, y = -0.065, xref = "paper", yref = "paper",
+      xanchor = "left", yanchor = "top", align = "left", showarrow = FALSE,
+      font = list(size = 11, color = "#59636E")
+    ))
+  )
 
 ```
 
@@ -222,7 +308,7 @@ ggstatsplot::ggbetweenstats(
   y = basePay,
   type = "bayes",
   title = "Rozdíl v základní mzdě mezi muži a ženami",
-  palette = "Dark2"
+  palette = "RColorBrewer::Dark2"
 ) +
   ggplot2::scale_y_continuous(
     labels = scales::number_format(
@@ -343,10 +429,28 @@ K odhadu hodnot parametrů našeho modelu použijeme **inferenční rámec bayes
 
 
 ```r
-# defining and running the model
+# Keep the compiled model and fitted draws outside the blog repository.
+paygap_cache <- file.path(
+  tools::R_user_dir("PeopleAnalyticsBlog", "cache"),
+  "2021-01-29-paygap"
+)
+dir.create(paygap_cache, recursive = TRUE, showWarnings = FALSE)
+options(cmdstanr_write_stan_file_dir = paygap_cache)
 
+# Start salary-scale parameters near the data rather than near zero.
+# Other parameters still receive independent random starts in each chain.
+paygap_init <- function() {
+  list(
+    Intercept = mean(mydata$basePay),
+    sigma = sd(mydata$basePay),
+    sd_1 = rep(sd(mydata$basePay) / 10, 2)
+  )
+}
+
+# QR improves sampling of correlated predictors and interactions.
+# brms returns coefficients on their original scales (including USD).
 model <- brms::brm(
-  basePay | trunc(lb = 0) 
+  brms::bf(basePay | trunc(lb = 0)
   ~ 1 
   + jobTitle 
   + gender 
@@ -358,18 +462,26 @@ model <- brms::brm(
   + gender:seniority 
   + gender:age 
   + gender:perfEval 
-  + (1 + gender | dept),  
+  + (1 + gender | dept),
+  decomp = "QR"),
   data = mydata %>% dplyr::mutate_if(is.factor, as.character),
   family = gaussian(link = "identity"),
+  backend = "cmdstanr",
   iter = 3000,
   chains = 3,
-  cores = 6,
+  cores = 3,
   warmup = 1000,
   seed = 2809,
+  init = paygap_init,
   control = list(
-    adapt_delta = 0.99, 
-    max_treedepth = 20
-    )
+    adapt_delta = 0.99,
+    max_treedepth = 10
+    ),
+  file = file.path(paygap_cache, "model"),
+  # Refit when the data, formula or priors change. Use "always" after
+  # changing iterations, initialization or sampler control settings.
+  file_refit = "on_change",
+  output_dir = tempdir()
 )
 
 ```
@@ -401,7 +513,32 @@ brms::pp_check(
 ![](./paygap/unnamed-chunk-14-1.png)  
 
 
-Níže je uveden souhrn informací o našem odhadnutém modelu. Primárně nás zajímá hodnota parametru pohlaví (*genderMale*) v sekci věnované efektům na úrovni celé populace (*Population-Level Effects*). 95% interval kredibility (*Credible Interval*), který udává kam v posteriorním rozdělení spadá hodnota nepozorovaného parametru s 95% pravděpodobností, se nachází v rozmezí od -3750.04 USD do 9081.92 USD, se střední hodnotou 2717.57. Tzn., že podle našeho modelu má muž - při zohlednění ostatních faktorů a jejich vybraných interakcí - typicky o cca 2700 USD vyšší základní mzdu než její ženský protějšek. Analýza našich dat tak do určité míry podporuje hypotézu o existenci platové diskriminace na základě pohlaví zaměstnance v námi studované firmě. Síla důkazu ve prospěch této hypotézy však není nijak výrazná, což vyplývá z toho, že 95% interval kredibility zahrnuje vedle kladných hodnot i nulovou hodnotu a záporné hodnoty parametru pohlaví jako jeho plauzibilní hodnoty.    
+```r
+gender_effect <- brms::fixef(model, probs = c(0.025, 0.975))["genderMale", ]
+gender_estimate <- gender_effect[["Estimate"]]
+gender_lower <- gender_effect[["Q2.5"]]
+gender_upper <- gender_effect[["Q97.5"]]
+gender_usd <- function(x, digits = 2) {
+  formatC(round(x, digits), format = "f", digits = max(0, digits),
+          big.mark = " ", decimal.mark = ",")
+}
+gender_difference <- if (round(gender_estimate, -2) == 0) {
+  "přibližně stejnou základní mzdu jako jeho ženský protějšek"
+} else {
+  paste0("typicky o cca ", gender_usd(abs(gender_estimate), -2), " USD ",
+         if (gender_estimate > 0) "vyšší" else "nižší",
+         " základní mzdu než jeho ženský protějšek")
+}
+gender_interpretation <- if (gender_lower > 0) {
+  "Analýza našich dat tak v rámci tohoto modelu podporuje hypotézu o vyšší základní mzdě mužů při těchto hodnotách prediktorů. 95% interval kredibility totiž obsahuje pouze kladné hodnoty parametru pohlaví."
+} else if (gender_upper < 0) {
+  "Analýza našich dat tak v rámci tohoto modelu podporuje hypotézu o nižší základní mzdě mužů při těchto hodnotách prediktorů. 95% interval kredibility totiž obsahuje pouze záporné hodnoty parametru pohlaví."
+} else {
+  "Analýza našich dat však nedává jednoznačný závěr o směru tohoto platového rozdílu, protože 95% interval kredibility zahrnuje nulovou hodnotu parametru pohlaví."
+}
+```
+
+Níže je uveden souhrn informací o našem odhadnutém modelu. Primárně nás zajímá hodnota parametru pohlaví (*genderMale*) v sekci věnované efektům na úrovni celé populace (*Population-Level Effects*). 95% interval kredibility (*Credible Interval*), který udává kam v posteriorním rozdělení spadá hodnota nepozorovaného parametru s 95% pravděpodobností, se nachází v rozmezí od `r gender_usd(gender_lower)` USD do `r gender_usd(gender_upper)` USD, se střední hodnotou `r gender_usd(gender_estimate)`. Tzn., že podle našeho modelu má muž - při referenčních hodnotách ostatních prediktorů - `r gender_difference`. `r gender_interpretation`
 
 ```r
 summary(model)
