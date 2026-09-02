@@ -16,9 +16,9 @@ Out of three possible challenges, I chose one that was quite far from what I'm c
 
 Although the dummy data provided was quite limited for obvious reasons and did not allow to answer all relevant questions (but you could also use your own data which would not suffer from this shortcoming), after combining them and enriching them slightly based on realistic assumptions, it was possible to arrive at quite interesting insights and recommendations. See for yourself - the resulting presentation is attached to this post below.
 
-<object data="OrgnosticSummerPeopleAnalyticsChallenge_Ludek_Stehlik.pdf" type="application/pdf" height="400px">
-    <embed src="OrgnosticSummerPeopleAnalyticsChallenge_Ludek_Stehlik.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="OrgnosticSummerPeopleAnalyticsChallenge_Ludek_Stehlik.pdf">Download PDF</a>.</p>
+<object data="./people-analytics-challenge-from-orgnostic/OrgnosticSummerPeopleAnalyticsChallenge_Ludek_Stehlik.pdf" type="application/pdf" height="400px">
+    <embed src="./people-analytics-challenge-from-orgnostic/OrgnosticSummerPeopleAnalyticsChallenge_Ludek_Stehlik.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="./people-analytics-challenge-from-orgnostic/OrgnosticSummerPeopleAnalyticsChallenge_Ludek_Stehlik.pdf">Download PDF</a>.</p>
     </embed>
 </object>
 <br>

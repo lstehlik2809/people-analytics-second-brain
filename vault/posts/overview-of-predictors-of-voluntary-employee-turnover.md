@@ -24,9 +24,9 @@ To make it easier to assimilate these findings, I extracted them from the origin
 
 And here is the original research paper on which the shiny app is based.
 
-<object data="Rubenstein_et_al-2017-Personnel_Psychology.pdf" type="application/pdf" height="400px">
-    <embed src="Rubenstein_et_al-2017-Personnel_Psychology.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="Rubenstein_et_al-2017-Personnel_Psychology.pdf">Download PDF</a>.</p>
+<object data="./overview-of-predictors-of-voluntary-employee-turnover/Rubenstein_et_al-2017-Personnel_Psychology.pdf" type="application/pdf" height="400px">
+    <embed src="./overview-of-predictors-of-voluntary-employee-turnover/Rubenstein_et_al-2017-Personnel_Psychology.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="./overview-of-predictors-of-voluntary-employee-turnover/Rubenstein_et_al-2017-Personnel_Psychology.pdf">Download PDF</a>.</p>
     </embed>
 </object>
 

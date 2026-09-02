@@ -34,7 +34,7 @@ TITLE_RE = re.compile(r"\s+\"[^\"]*\"\s*$")
 HTML_IMG_RE = re.compile(r"<img\b([^>]*?)/?>", re.I)
 HTML_OBJECT_RE = re.compile(r"<object\b([^>]*?)>", re.I)
 HTML_LINK_RE = re.compile(r"<a\b([^>]*?)>", re.I)
-HTML_MEDIA_RE = re.compile(r"<(?:source|video|audio)\b([^>]*?)/?>", re.I)
+HTML_MEDIA_RE = re.compile(r"<(?:source|video|audio|embed)\b([^>]*?)/?>", re.I)
 ATTR_KV_RE = re.compile(r"""([\w-]+)\s*=\s*(["'])(.*?)\2""")
 ATTR_RE = re.compile(r"(\)|\`)\{[^{}\n]*\}")  # pandoc attribute blocks after ) or `
 CHUNK_RE = re.compile(r"^```\{(r|R)\b[^}]*\}\s*$", re.M)
@@ -59,6 +59,13 @@ LOCAL_HTML_ASSET_RE = re.compile(
     re.I,
 )
 LOCAL_HTML_ASSET_HASH_MARKER = b"\0local-html-assets-v2"
+# Local documents can be referenced directly (rather than from a ``files/``
+# subdirectory), especially when the same attachment is embedded by multiple
+# posts. Hash those referenced files too, so a document-only update rebuilds
+# every note that embeds it.
+LOCAL_DIRECT_ATTACHMENT_RE = re.compile(
+    rb"(?:data|href|src)\s*=\s*[\"'](?!https?://|//|data:|#)([^\"']+)", re.I)
+LOCAL_DIRECT_ATTACHMENT_HASH_MARKER = b"\0local-direct-attachments-v1"
 PLOTLY_WIDGET_RE = re.compile(
     rb"<div[^>]*class=[\"'][^\"']*\bplotly\b[^\"']*\bhtml-widget\b[^\"']*[\"']",
     re.I,
@@ -99,7 +106,7 @@ def convert_body(body: str, post_dir: Path, asset_dir: Path, slug: str, warnings
     body = OTHER_CHUNK_RE.sub("```", body)
 
     def copy_asset(path: str):
-        """Copy a local image into the note's asset dir; return its new ref,
+        """Copy a local asset into the note's asset dir; return its new ref,
         or None if it is remote or missing."""
         if path.startswith(("http://", "https://", "data:")):
             return None
@@ -135,14 +142,16 @@ def convert_body(body: str, post_dir: Path, asset_dir: Path, slug: str, warnings
         ".mp4", ".m4v", ".mov", ".ogv", ".webm", ".avi",
         ".mp3", ".m4a", ".ogg", ".oga", ".wav",
     }
+    attachment_extensions = {".pdf"}
 
     def html_asset_sub(m, attr: str, *, media: bool = False):
         attrs = dict((k.lower(), v) for k, _, v in ATTR_KV_RE.findall(m.group(1)))
         path = attrs.get(attr, "").strip()
         # Only rewrite post-local attachments. Other relative links can point to
         # pages or anchors and should remain untouched.
-        is_attachment = path.startswith("files/")
-        is_media = media and Path(unquote(path).split("?", 1)[0]).suffix.lower() in media_extensions
+        suffix = Path(unquote(path).split("?", 1)[0]).suffix.lower()
+        is_attachment = path.startswith("files/") or suffix in attachment_extensions
+        is_media = media and suffix in media_extensions
         if not (is_attachment or is_media):
             return m.group(0)
         new = copy_asset(path)
@@ -499,6 +508,14 @@ def main():
                 h.update(LOCAL_HTML_ASSET_HASH_MARKER)
             if PLOTLY_WIDGET_RE.search(html_bytes):
                 h.update(PLOTLY_WIDGET_HASH_MARKER)
+        for path_bytes in LOCAL_DIRECT_ATTACHMENT_RE.findall(rmds[0].read_bytes()):
+            path = unquote_to_bytes(path_bytes.decode("utf-8", errors="replace")).decode(
+                "utf-8", errors="replace")
+            asset = post_dir / path.split("?", 1)[0]
+            if asset.is_file():
+                h.update(LOCAL_DIRECT_ATTACHMENT_HASH_MARKER)
+                h.update(path_bytes)
+                h.update(asset.read_bytes())
         src_hash = h.hexdigest()
         slug = note_slug(post_dir.name)
         if slug in seen_slugs:

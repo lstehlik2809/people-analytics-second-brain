@@ -38,9 +38,9 @@ If you are responsible for DEI initiatives in your company, you might be interes
 
 For those interested, here is the original document for a closer look.
 
-<object data="Gender-Pay-Gap-actions.pdf" type="application/pdf" height="400px">
-    <embed src="Gender-Pay-Gap-actions.pdf">
-        <p>This browser does not support PDF files. Please download the PDF file to view it: <a href="Gender-Pay-Gap-actions.pdf">Download PDF</a>.</p>
+<object data="./interventions-reducing-gender-pay-gap/Gender-Pay-Gap-actions.pdf" type="application/pdf" height="400px">
+    <embed src="./interventions-reducing-gender-pay-gap/Gender-Pay-Gap-actions.pdf">
+        <p>This browser does not support PDF files. Please download the PDF file to view it: <a href="./interventions-reducing-gender-pay-gap/Gender-Pay-Gap-actions.pdf">Download PDF</a>.</p>
     </embed>
 </object>
 <br>

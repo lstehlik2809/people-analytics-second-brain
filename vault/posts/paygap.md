@@ -684,9 +684,9 @@ A mezi **akce se smíšenými doklady o jejich účinnosti** potom řadí násle
 
 Zde je pro zájemce originální dokument k bližšímu prostudování.
 
-<object data="Gender-Pay-Gap-actions.pdf" type="application/pdf" height="400px">
-    <embed src="Gender-Pay-Gap-actions.pdf">
-        <p>Tento prohlížeč nepodporuje soubory PDF. Pro zobrazení si, prosím, PDF soubor stáhněte: <a href="Gender-Pay-Gap-actions.pdf">Stáhnout PDF</a>.</p>
+<object data="./paygap/Gender-Pay-Gap-actions.pdf" type="application/pdf" height="400px">
+    <embed src="./paygap/Gender-Pay-Gap-actions.pdf">
+        <p>Tento prohlížeč nepodporuje soubory PDF. Pro zobrazení si, prosím, PDF soubor stáhněte: <a href="./paygap/Gender-Pay-Gap-actions.pdf">Stáhnout PDF</a>.</p>
     </embed>
 </object>
 <br>

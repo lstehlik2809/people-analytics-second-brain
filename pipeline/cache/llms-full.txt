@@ -16528,9 +16528,9 @@ If you are responsible for DEI initiatives in your company, you might be interes
 
 For those interested, here is the original document for a closer look.
 
-<object data="Gender-Pay-Gap-actions.pdf" type="application/pdf" height="400px">
-    <embed src="Gender-Pay-Gap-actions.pdf">
-        <p>This browser does not support PDF files. Please download the PDF file to view it: <a href="Gender-Pay-Gap-actions.pdf">Download PDF</a>.</p>
+<object data="./interventions-reducing-gender-pay-gap/Gender-Pay-Gap-actions.pdf" type="application/pdf" height="400px">
+    <embed src="./interventions-reducing-gender-pay-gap/Gender-Pay-Gap-actions.pdf">
+        <p>This browser does not support PDF files. Please download the PDF file to view it: <a href="./interventions-reducing-gender-pay-gap/Gender-Pay-Gap-actions.pdf">Download PDF</a>.</p>
     </embed>
 </object>
 <br>
@@ -18299,9 +18299,9 @@ Out of three possible challenges, I chose one that was quite far from what I'm c
 
 Although the dummy data provided was quite limited for obvious reasons and did not allow to answer all relevant questions (but you could also use your own data which would not suffer from this shortcoming), after combining them and enriching them slightly based on realistic assumptions, it was possible to arrive at quite interesting insights and recommendations. See for yourself - the resulting presentation is attached to this post below.
 
-<object data="OrgnosticSummerPeopleAnalyticsChallenge_Ludek_Stehlik.pdf" type="application/pdf" height="400px">
-    <embed src="OrgnosticSummerPeopleAnalyticsChallenge_Ludek_Stehlik.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="OrgnosticSummerPeopleAnalyticsChallenge_Ludek_Stehlik.pdf">Download PDF</a>.</p>
+<object data="./people-analytics-challenge-from-orgnostic/OrgnosticSummerPeopleAnalyticsChallenge_Ludek_Stehlik.pdf" type="application/pdf" height="400px">
+    <embed src="./people-analytics-challenge-from-orgnostic/OrgnosticSummerPeopleAnalyticsChallenge_Ludek_Stehlik.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="./people-analytics-challenge-from-orgnostic/OrgnosticSummerPeopleAnalyticsChallenge_Ludek_Stehlik.pdf">Download PDF</a>.</p>
     </embed>
 </object>
 <br>
@@ -19277,9 +19277,9 @@ To make it easier to assimilate these findings, I extracted them from the origin
 
 And here is the original research paper on which the shiny app is based.
 
-<object data="Rubenstein_et_al-2017-Personnel_Psychology.pdf" type="application/pdf" height="400px">
-    <embed src="Rubenstein_et_al-2017-Personnel_Psychology.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="Rubenstein_et_al-2017-Personnel_Psychology.pdf">Download PDF</a>.</p>
+<object data="./overview-of-predictors-of-voluntary-employee-turnover/Rubenstein_et_al-2017-Personnel_Psychology.pdf" type="application/pdf" height="400px">
+    <embed src="./overview-of-predictors-of-voluntary-employee-turnover/Rubenstein_et_al-2017-Personnel_Psychology.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="./overview-of-predictors-of-voluntary-employee-turnover/Rubenstein_et_al-2017-Personnel_Psychology.pdf">Download PDF</a>.</p>
     </embed>
 </object>
 
@@ -19969,9 +19969,9 @@ A mezi **akce se smíšenými doklady o jejich účinnosti** potom řadí násle
 
 Zde je pro zájemce originální dokument k bližšímu prostudování.
 
-<object data="Gender-Pay-Gap-actions.pdf" type="application/pdf" height="400px">
-    <embed src="Gender-Pay-Gap-actions.pdf">
-        <p>Tento prohlížeč nepodporuje soubory PDF. Pro zobrazení si, prosím, PDF soubor stáhněte: <a href="Gender-Pay-Gap-actions.pdf">Stáhnout PDF</a>.</p>
+<object data="./paygap/Gender-Pay-Gap-actions.pdf" type="application/pdf" height="400px">
+    <embed src="./paygap/Gender-Pay-Gap-actions.pdf">
+        <p>Tento prohlížeč nepodporuje soubory PDF. Pro zobrazení si, prosím, PDF soubor stáhněte: <a href="./paygap/Gender-Pay-Gap-actions.pdf">Stáhnout PDF</a>.</p>
     </embed>
 </object>
 <br>
