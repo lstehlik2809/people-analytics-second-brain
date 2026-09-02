@@ -347,8 +347,8 @@ Na příkladu oaklandského baseballového mužstva jsme takto mohli sledovat ob
 <!-- RELATED:BEGIN -->
 ## Related notes
 - [[hr-analytika-a-odchodovost-zamstnanc|HR analytika a odchodovost zaměstnanců]]
-- [[paygap|Firemní audit rozdílu mezi platy mužů a žen]]
 - [[hrm-value-chain-and-sem|HRM value chain and structural equation modeling - Moneyball case]]
+- [[paygap|Firemní audit rozdílu mezi platy mužů a žen]]
 - [[value-added-modeling|Goals saved above expected… for managers?]]
 - [[multilevel-modeling|Multilevel modeling in people analytics]]
 <!-- RELATED:END -->

@@ -38,6 +38,14 @@ library(tidybayes)
 # Keep Czech text in UTF-8 so Distill can read the embedded JSON metadata.
 Sys.setlocale("LC_CTYPE", "Czech_Czechia.UTF-8")
 
+# One formatter for every inline number in the post: space as the thousands
+# separator, comma as the decimal mark (Czech convention). A negative
+# `digits` rounds to tens/hundreds and prints no decimal places.
+gender_usd <- function(x, digits = 2) {
+  formatC(round(x, digits), format = "f", digits = max(0, digits),
+          big.mark = " ", decimal.mark = ",")
+}
+
 
 ```
 
@@ -190,21 +198,21 @@ V situaci, kdy při reportování GPG nerozlišujeme mezi různými důvody pro 
 
 I kdybychom odhlédli od etických či právních aspektů platové nerovnosti mezi muži a ženami, je ve velice pragmatickém zájmu každé firmy, aby se tento druh nespravedlnosti v jejím systému odměňování nevyskytoval. V době sociálních sítí a platforem na hodnocení firem jejich současnými i bývalými zaměstnanci (za všechny zmiňme např. [Glassdoor](https://www.glassdoor.com/Reviews/index.htm) nebo český [Atmoskop](https://www.atmoskop.cz/)) se totiž informace o nerovném přístupu může velice snadno rozšířit mezi potenciální i stávající zaměstnance, kteří ji mohou zohlednit při svém rozhodování, zda se v dané firmě ucházet o práci, resp. zda v ní i nadále zůstat.  
 
-Tuto skutečnost dokládají např. výsledky [průzkumu provedeného společností Glassdoor](https://about-content.glassdoor.com//app/uploads/sites/2/2019/03/Gender-Pay-Gap-Fact-Sheet-2019.pdf), podle kterého cca 67 % (U.S.) zaměstnanců by se neucházelo o práci tam, kde by si myslelo, že muži a ženy mají nerovné platové podmínky.
+Tuto skutečnost dokládají např. výsledky [průzkumu provedeného společností Glassdoor](https://media.glassdoor.com/pr/press/pdf/GD_Survey_GlobalGenderPayGap.pdf), podle kterého cca 67 % (U.S.) zaměstnanců by se neucházelo o práci tam, kde by si myslelo, že muži a ženy mají nerovné platové podmínky.
 
 
 ## Audit platové nerovnosti mezi muži a ženami 
 
 Stejně jako při řešení jakéhokoli jiného problému, i v tomto případě platí, že **v první řadě je především potřeba ověřit, že nějaký problém k řešení vůbec existuje**. K tomu poslouží **firemní audit platové nerovnosti mezi muži a ženami**. Ten prostřednictvím analýzy platových, demografických a organizačních dat ověří, zda máme nějaké doklady pro to, že v dané společnosti existují platové rozdíly mezi zaměstnanci spojené s jejich pohlavím. Teprve na základě výsledků takové analýzy je možné se začít poohlížet po možných opatřeních v oblastech náboru, odměňování a/nebo povyšování, která by mohla pomoct nespravedlivé platové nerovnosti odstranit nebo alespoň zmírnit.  
 
-Níže uvedený příklad takového auditu vychází z článku [How to Analyze Your Gender Pay Gap: An Employer's Guide](https://www.glassdoor.com/research/app/uploads/sites/2/2019/03/GD_Report_AnalyzingGenderPayGap_v2-2.pdf) od [Andrew Chamberlaina, Ph.D.](https://www.linkedin.com/in/andrewdavidchamberlain/), hlavního ekonoma a vedoucího výzkumu ve společnosti Glassdoor.
+Níže uvedený příklad takového auditu vychází z článku [How to Analyze Your Gender Pay Gap: An Employer's Guide](https://www.glassdoor.com/blog/how-to-analyze-gender-pay-gap-employers-guide/) od [Andrew Chamberlaina, Ph.D.](https://www.linkedin.com/in/andrewdavidchamberlain/), hlavního ekonoma a vedoucího výzkumu ve společnosti Glassdoor.
 
 
 ## Plán analýzy
 
 Analýzu platové nerovnosti mezi muži a ženami provedeme v následujících několika krocích:  
 
-* Načteme si data, která obsahují informace o platech vzorku zaměstnanců, jejich pohlaví, demografických a organizačních charakteristikách, na kterých budeme testovat naše hypotézy. Za tímto účelem použijeme [ilustrační data poskytnutá společností Glassdoor](https://glassdoor.app.box.com/v/gender-pay-data). 
+* Načteme si data, která obsahují informace o platech vzorku zaměstnanců, jejich pohlaví, demografických a organizačních charakteristikách, na kterých budeme testovat naše hypotézy. Za tímto účelem použijeme [ilustrační data poskytnutá společností Glassdoor](https://www.kaggle.com/datasets/nilimajauhari/glassdoor-analyze-gender-pay-gap). 
 * V případě potřeby si upravíme data tak, aby lépe vyhovovala potřebám naší analýzy.
 * Provedeme explorační analýzu, která nám poskytne základní představu o našich datech. 
 * Spočítáme si neadjustovanou GPG.  
@@ -220,7 +228,7 @@ data <- readr::read_csv("./GenderPay_Data.csv")
 
 ```
 
-K dispozici máme následující data ke vzorku `r nrow(data)` zaměstnanců:  
+K dispozici máme následující data ke vzorku `r gender_usd(nrow(data), 0)` zaměstnanců:  
 
 * Typ pozice, na které zaměstnanec pracuje (*jobTitle*)
 * Pohlaví zaměstnance (*gender*)
@@ -303,9 +311,9 @@ GGally::ggpairs(mydata, aes(color = gender, alpha = 0.4)) +
 
 ![](./paygap/unnamed-chunk-8-1.png)
 
-Vizuální dojem o rozdílné výši základní mzdy u mužů a žen potvrzuje i detailnější analýza tohoto rozdílu. Ta ukazuje, že v našem vzorku mediánová mzda žen činí `r format(round(median(mydata[mydata['gender'] == 'Female', 'basePay'] %>% pull()),2), scientific=FALSE)` USD a mediánová mzda mužů `r format(round(median(mydata[mydata['gender'] == 'Male', 'basePay'] %>% pull()),2), scientific=FALSE)` USD. To odpovídá rozdílu `r round((median(mydata[mydata['gender'] == 'Male', 'basePay'] %>% pull()) - median(mydata[mydata['gender'] == 'Female', 'basePay'] %>% pull())), 1)` USD, resp. neadjustované GPG (definované jako poměr rozdílu mediánové mzdy mužů a žen a mediánové mzdy mužů) `r round((median(mydata[mydata['gender'] == 'Male', 'basePay'] %>% pull()) - median(mydata[mydata['gender'] == 'Female', 'basePay'] %>% pull())) / median(mydata[mydata['gender'] == 'Male', 'basePay'] %>% pull()) * 100, 1)` %. Míra platové nerovnosti se tak v námi sledované firmě zdá být spíše nižší, srovnatelná s celkovou hodnotou tohoto ukazatele v zemích jako je např. Švédsko nebo Nový Zéland (viz graf z úvodu tohoto článku).
+Vizuální dojem o rozdílné výši základní mzdy u mužů a žen potvrzuje i detailnější analýza tohoto rozdílu. Ta ukazuje, že v našem vzorku mediánová mzda žen činí `r gender_usd(median(mydata[mydata['gender'] == 'Female', 'basePay'] %>% pull()))` USD a mediánová mzda mužů `r gender_usd(median(mydata[mydata['gender'] == 'Male', 'basePay'] %>% pull()))` USD. To odpovídá rozdílu `r gender_usd(median(mydata[mydata['gender'] == 'Male', 'basePay'] %>% pull()) - median(mydata[mydata['gender'] == 'Female', 'basePay'] %>% pull()))` USD, resp. neadjustované GPG (definované jako poměr rozdílu mediánové mzdy mužů a žen a mediánové mzdy mužů) `r gender_usd((median(mydata[mydata['gender'] == 'Male', 'basePay'] %>% pull()) - median(mydata[mydata['gender'] == 'Female', 'basePay'] %>% pull())) / median(mydata[mydata['gender'] == 'Male', 'basePay'] %>% pull()) * 100, 1)` %. Míra platové nerovnosti se tak v námi sledované firmě zdá být spíše nižší, srovnatelná s celkovou hodnotou tohoto ukazatele v zemích jako je např. Švédsko nebo Nový Zéland (viz graf z úvodu tohoto článku).
 
-Pokud bychom chtěli zohlednit míru naší nejistoty při odhadu velikosti rozdílu mezi typickým platem mužů a žen, která je daná tím, že pracujeme pouze se vzorkem zaměstnanců a nikoli s celou firmou, měli bychom sáhnout po inferenční statistice. Při použití bayesovského ekvivalentu t-testu pro dva nezávislé výběry získáme takto informaci o posteriorní distribuci velikosti tohoto rozdílu. Na grafu níže můžeme vidět, že 95% interval kredibility se nachází v rozmezí od 5511 do 11615 USD, s mediánovou hodnotou 8392 USD. Z grafu také můžeme vyčíst, že dostupná data mluví silně v neprospěch nulové hypotézy o neexistenci rozdílu mezi průměrným platem mužů a žen - viz velmi nízká hodnota logaritmu [Bayesova faktoru](https://en.wikipedia.org/wiki/Bayes_factor) ve prospěch nulové hypotézu BF~01~.      
+Pokud bychom chtěli zohlednit míru naší nejistoty při odhadu velikosti rozdílu mezi typickým platem mužů a žen, která je daná tím, že pracujeme pouze se vzorkem zaměstnanců a nikoli s celou firmou, měli bychom sáhnout po inferenční statistice. Při použití bayesovského ekvivalentu t-testu pro dva nezávislé výběry získáme takto informaci o posteriorní distribuci velikosti tohoto rozdílu. Na grafu níže můžeme vidět, že 95% interval kredibility se nachází v rozmezí cca od -11 500 do -5 400 USD, s mediánovou hodnotou okolo -8 400 USD. Z grafu také můžeme vyčíst, že dostupná data mluví silně v neprospěch nulové hypotézy o neexistenci rozdílu mezi průměrným platem mužů a žen - viz velmi nízká hodnota logaritmu [Bayesova faktoru](https://en.wikipedia.org/wiki/Bayes_factor) ve prospěch nulové hypotézu BF~01~.      
 
 
 
@@ -527,10 +535,6 @@ gender_effect <- brms::fixef(model, probs = c(0.025, 0.975))["genderMale", ]
 gender_estimate <- gender_effect[["Estimate"]]
 gender_lower <- gender_effect[["Q2.5"]]
 gender_upper <- gender_effect[["Q97.5"]]
-gender_usd <- function(x, digits = 2) {
-  formatC(round(x, digits), format = "f", digits = max(0, digits),
-          big.mark = " ", decimal.mark = ",")
-}
 gender_difference <- if (round(gender_estimate, -2) == 0) {
   "přibližně stejnou základní mzdu jako jeho ženský protějšek"
 } else {
@@ -615,7 +619,7 @@ the_test <- brms::hypothesis(model, "genderMale > 0")
 ```
 
 
-Po provedení tohoto výpočtu nám vychází hodnota `r round(prop*100,1)` %. To je v souladu s předchozím tvrzením, že důkaz ve prospěch testované hypotézy není příliš silný. Další možností by bylo použití tzv. [Bayesova faktoru](https://en.wikipedia.org/wiki/Bayes_factor), který vyjadřuje míru s níž dostupná data favorizují testovanou hypotézu ve srovnání s modelem odpovídajícím nulové hypotéze. Ten má pro naši hypotézu hodnotu `r round(the_test$hypothesis$Evid.Ratio, 1)`, což odpovídá významnému, ale zdaleka nikoli silnému či rozhodnému důkazu ve prospěch naší hypotézy.  
+Po provedení tohoto výpočtu nám vychází hodnota `r gender_usd(prop * 100, 1)` %. To je v souladu s předchozím tvrzením, že důkaz ve prospěch testované hypotézy není příliš silný. Další možností by bylo použití tzv. [Bayesova faktoru](https://en.wikipedia.org/wiki/Bayes_factor), který vyjadřuje míru s níž dostupná data favorizují testovanou hypotézu ve srovnání s modelem odpovídajícím nulové hypotéze. Ten má pro naši hypotézu hodnotu `r gender_usd(the_test$hypothesis$Evid.Ratio, 1)`, což odpovídá významnému, ale zdaleka nikoli silnému či rozhodnému důkazu ve prospěch naší hypotézy.  
 
 Vedle parametru pohlaví může být pro nás potenciálně užitečné podívat se také na vztah základní mzdy a ostatních prediktorů použitých v našem modelu. Za tímto účelem můžeme použít vizualizaci marginálních efektů jednotlivých prediktorů, které vyjadřují vztah mezi prediktorem a kritériem při zohlednění vlivu ostatních prediktorů. Takto např. můžeme na jednom z grafů vidět, že vztah mezi úrovní vzdělání a výší základního platu se má tendenci u mužů a žen lišit. Na jiném grafu si můžeme zase všimnout toho, že rozdíl mezi základní mzdou mužů a žen má tendenci narůstat s tím, jak klesá seniorita zaměstnanců. Tyto a další podobné vhledy nám mohou pomoct přiblížit se k důvodům za pozorovanými nerovnostmi v platech mužů a žen.          
 
