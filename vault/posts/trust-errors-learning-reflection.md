@@ -26,8 +26,8 @@ P.S. This rant-ish post was prompted by my recent reading on causal inference, w
 - [[conspiracy-theories-and-overfitting|Conspiracy theories as a specific example of overfitting?]]
 - [[ols-vs-logistic-regression|The statistical "sin" as best / common practice?]]
 - [[ai-and-bullshit-asymmetry|Can AI help us fight the bullshit asymmetry?]]
+- [[causal-inference-with-bayesian-networks|Causal Inference with Bayesian Networks]]
 - [[garden-of-forking-paths-redo|Refactoring the "Garden of Forking Paths"]]
-- [[matthew-effect-and-success-stories|Luck, cutoffs, and the stories we tell about success]]
 <!-- RELATED:END -->
 
 ---

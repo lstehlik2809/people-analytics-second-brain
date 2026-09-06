@@ -31,7 +31,7 @@ If interested, check out, for example, the [following video](https://www.youtube
 - [[causal-inference-in-people-analytics|Beyond prediction: Exploiting organizational events for causal inference in people analytics]]
 - [[org-stats-and-graph-analysis|A graph approach to reporting structures: stop wrestling recursion]]
 - [[visual-diff-in-diff|Causal insights with no code?]]
-- [[directionally-correct-podcast-topic-explorer|Turning 152 Directionally Correct podcast episodes into an interactive topic explorer]]
+- [[causal-inference-with-bayesian-networks|Causal Inference with Bayesian Networks]]
 <!-- RELATED:END -->
 
 ---

@@ -38,11 +38,11 @@ Methodological note on the knowledge graph: The relationships were not inferred 
 
 <!-- RELATED:BEGIN -->
 ## Related notes
+- [[causal-inference-with-bayesian-networks|Causal Inference with Bayesian Networks]]
 - [[directionally-correct-podcast-topic-explorer|Turning 152 Directionally Correct podcast episodes into an interactive topic explorer]]
 - [[people-analytics-second-brain|My second People Analytics brain - both for people and AI agents]]
 - [[conspiracy-theories-and-overfitting|Conspiracy theories as a specific example of overfitting?]]
 - [[trust-errors-learning-reflection|When to forgive, when to close the book]]
-- [[causal-impact-of-leadership-skills|Novel way to measure leadership skills via causal inference (and AI)?]]
 <!-- RELATED:END -->
 
 ---
