@@ -20,8 +20,10 @@ One thing I found interesting, though not super-surprising, is that there isn’
 Specifically, they estimated the contributions of both profile shape (the relative peaks and valleys across the five traits) and elevation (the average level across those traits). 
 
 <figure style="text-align:center;">
+
   ![](./life-success-personality-profiles/chart_pic.png)
   <figcaption>The figure showing Big Five personality patterns for representative outcomes within three broad families of life success and their ten constituent clusters. The different peaks and valleys illustrate how the relative contributions of the five traits vary across outcomes such as life satisfaction, salary, job performance and leadership. Each panel represents one example outcome, rather than the average profile of its entire cluster. These patterns describe associations, not causal effects or a person’s probability of success. ES = emotional stability; A = agreeableness; C = conscientiousness; Ex = extraversion; O = openness. Source: Wilmot, Wiernik & Ones (2025), Figure 6.</figcaption>
+
 </figure>
 
 For context, the two together explained an average of 8.2% of the variance in the success-related variables: about 5.8 percentage points from elevation and 2.4 from shape. The figures varied substantially across domains, but most of the variation remained unexplained. That puts “personality is your destiny” into perspective, though, to be fair, these estimates only cover five broad traits, not every aspect of personality.

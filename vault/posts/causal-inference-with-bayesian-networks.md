@@ -10,8 +10,6 @@ tags:
 original: https://blog-about-people-analytics.netlify.app/posts/2026-09-06-causal-inference-with-bayesian-networks/
 ---
 
-![Causal Inference with Bayesian Networks](./causal-inference-with-bayesian-networks/book_pic.jpg)
-
 I recently got early access to [*Causal Inference with Bayesian Networks*](https://www.packtpub.com/en-us/product/causal-inference-with-bayesian-networks-9781835084984) by Yousri El Fattah and Reza Bagheri and was asked to review it. Here are a few thoughts in case they’re useful.
 
 The book starts with probability and Bayesian networks, then moves into causal models and estimating intervention effects, with practical R and Python examples in economics, epidemiology, and social science, and [accompanying code available on GitHub](https://github.com/PacktPublishing/Causal-Inference-with-Bayesian-Networks).

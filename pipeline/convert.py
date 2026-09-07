@@ -187,14 +187,15 @@ def escape_inline_hashtags(body: str) -> str:
     return "".join(parts)
 
 
-WRAP_OPEN_RE = re.compile(r"^<(div|center|aside|p)\b[^>]*>$", re.I)
-WRAP_CLOSE_RE = re.compile(r"^</(div|center|aside|p)>$", re.I)
+WRAP_OPEN_RE = re.compile(r"^<(div|center|aside|p|figure)\b[^>]*>$", re.I)
+WRAP_CLOSE_RE = re.compile(r"^</(div|center|aside|p|figure)>$", re.I)
 
 
 def blank_pad_html_wrappers(body: str) -> str:
     """Pandoc parses markdown inside HTML blocks; CommonMark does not unless
     the markdown is separated from the wrapper tags by blank lines. Pad them
-    so e.g. images centered via <div> wrappers still render on the site."""
+    so e.g. images centered via <div> or <figure> wrappers still render on
+    the site."""
     lines = body.split("\n")
     out = []
     for i, line in enumerate(lines):
@@ -452,20 +453,6 @@ def build_note(post_dir: Path) -> tuple[str, str] | None:
     tags = [slugify_tag(c) for c in (meta.get("categories") or [])]
     original_url = f"{BLOG_BASE_URL}{post_dir.name}/"
     warnings = []
-    preview = str(meta.get("preview") or "").strip()
-    preview_markdown = ""
-    if preview and not preview.startswith(("http://", "https://", "data:")):
-        preview_source = post_dir / unquote(preview)
-        if preview_source.is_file():
-            preview_name = preview_source.name.replace(" ", "-")
-            preview_dir = NOTES_DIR / slug
-            preview_dir.mkdir(parents=True, exist_ok=True)
-            preview_dest = preview_dir / preview_name
-            if (not preview_dest.exists() or
-                    preview_source.read_bytes() != preview_dest.read_bytes()):
-                shutil.copy2(preview_source, preview_dest)
-            preview_markdown = (
-                f"![{str(meta.get('title', slug))}](./{slug}/{preview_name})\n\n")
     converted = convert_body(body, post_dir, NOTES_DIR / slug, slug, warnings)
     figs = extract_generated_figures(post_dir, rmds[0].stem)
     converted = inject_figures(converted, figs, post_dir, NOTES_DIR / slug,
@@ -486,7 +473,6 @@ def build_note(post_dir: Path) -> tuple[str, str] | None:
     front = yaml.safe_dump(fm, sort_keys=False, allow_unicode=True, width=10000).strip()
     note = (
         f"---\n{front}\n---\n\n"
-        f"{preview_markdown}"
         f"{converted}\n\n"
         f"<!-- RELATED:BEGIN -->\n<!-- RELATED:END -->\n\n"
         f"---\n"
