@@ -452,6 +452,20 @@ def build_note(post_dir: Path) -> tuple[str, str] | None:
     tags = [slugify_tag(c) for c in (meta.get("categories") or [])]
     original_url = f"{BLOG_BASE_URL}{post_dir.name}/"
     warnings = []
+    preview = str(meta.get("preview") or "").strip()
+    preview_markdown = ""
+    if preview and not preview.startswith(("http://", "https://", "data:")):
+        preview_source = post_dir / unquote(preview)
+        if preview_source.is_file():
+            preview_name = preview_source.name.replace(" ", "-")
+            preview_dir = NOTES_DIR / slug
+            preview_dir.mkdir(parents=True, exist_ok=True)
+            preview_dest = preview_dir / preview_name
+            if (not preview_dest.exists() or
+                    preview_source.read_bytes() != preview_dest.read_bytes()):
+                shutil.copy2(preview_source, preview_dest)
+            preview_markdown = (
+                f"![{str(meta.get('title', slug))}](./{slug}/{preview_name})\n\n")
     converted = convert_body(body, post_dir, NOTES_DIR / slug, slug, warnings)
     figs = extract_generated_figures(post_dir, rmds[0].stem)
     converted = inject_figures(converted, figs, post_dir, NOTES_DIR / slug,
@@ -472,6 +486,7 @@ def build_note(post_dir: Path) -> tuple[str, str] | None:
     front = yaml.safe_dump(fm, sort_keys=False, allow_unicode=True, width=10000).strip()
     note = (
         f"---\n{front}\n---\n\n"
+        f"{preview_markdown}"
         f"{converted}\n\n"
         f"<!-- RELATED:BEGIN -->\n<!-- RELATED:END -->\n\n"
         f"---\n"
@@ -483,7 +498,10 @@ def build_note(post_dir: Path) -> tuple[str, str] | None:
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--force", action="store_true", help="rebuild all notes")
+    ap.add_argument("--slug", action="append", default=[],
+                    help="rebuild only this note slug (repeatable)")
     args = ap.parse_args()
+    selected_slugs = set(args.slug)
 
     NOTES_DIR.mkdir(parents=True, exist_ok=True)
     CACHE.mkdir(parents=True, exist_ok=True)
@@ -522,7 +540,10 @@ def main():
             slug = post_dir.name  # de-collide by keeping the date prefix
         seen_slugs[slug] = post_dir.name
 
-        if manifest.get(slug) == src_hash and (NOTES_DIR / f"{slug}.md").exists():
+        if selected_slugs and slug not in selected_slugs:
+            continue
+        if (not args.force and slug not in selected_slugs and
+                manifest.get(slug) == src_hash and (NOTES_DIR / f"{slug}.md").exists()):
             skipped += 1
             continue
         result = build_note(post_dir)
