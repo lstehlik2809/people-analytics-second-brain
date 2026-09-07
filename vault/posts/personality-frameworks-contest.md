@@ -33,11 +33,11 @@ Note: [Link](https://www.scientificamerican.com/article/personality-tests-arent-
 
 <!-- RELATED:BEGIN -->
 ## Related notes
+- [[life-success-personality-profiles|The Big Five and different ways of succeeding]]
 - [[big-five-vs-hexaco|Big Five vs. HEXACO]]
 - [[detecting-personality-in-the-face|Can a simple algorithm read your personality from your face?]]
 - [[insights-discovery-and-skills|Do Insights Discovery ‘colors’ relate to self-reported skills?]]
 - [[personality-and-cultural-values|We are probably more similar - and different - than expected]]
-- [[big-five-personality-and-earnings|Link between the Big Five personality traits and earnings]]
 <!-- RELATED:END -->
 
 ---

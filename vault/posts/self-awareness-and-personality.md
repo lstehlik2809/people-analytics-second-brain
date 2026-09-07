@@ -70,7 +70,7 @@ Caveat: The sample used was very small (just 72 people!) and highly specific—m
 - [[personality-and-work-engagement|Putting the "ideal" personality for high work engagement in a broader context]]
 - [[how-personality-risks-co-occur|How personality risks co-occur?]]
 - [[insights-discovery-and-skills|Do Insights Discovery ‘colors’ relate to self-reported skills?]]
-- [[big-five-personality-and-earnings|Link between the Big Five personality traits and earnings]]
+- [[managers-overconfidence|Where do managers put on their rose-tinted glasses the most?]]
 <!-- RELATED:END -->
 
 ---

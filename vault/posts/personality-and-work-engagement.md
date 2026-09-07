@@ -5,6 +5,7 @@ date: '2025-04-08'
 tags:
 - employee-engagement
 - personality
+- big-five
 - meta-analysis
 original: https://blog-about-people-analytics.netlify.app/posts/2025-04-08-personality-and-work-engagement/
 ---
@@ -53,9 +54,9 @@ In short, personality matters, but it seems to be far from the one-ideal-persona
 ## Related notes
 - [[collaboration-and-personality|Collaboration and personality]]
 - [[big-five-personality-and-earnings|Link between the Big Five personality traits and earnings]]
+- [[life-success-personality-profiles|The Big Five and different ways of succeeding]]
 - [[self-awareness-and-personality|Does your personality interfere with your self-awareness?]]
 - [[personality-and-cultural-values|We are probably more similar - and different - than expected]]
-- [[job-personality-fit|Do people’s personalities vary across different jobs?]]
 <!-- RELATED:END -->
 
 ---

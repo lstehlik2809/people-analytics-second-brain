@@ -4,6 +4,73 @@ Source: https://lstehlik2809.github.io/people-analytics-second-brain | Author: L
 
 ---
 
+# The Big Five and different ways of succeeding
+URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/life-success-personality-profiles
+Date: 2026-09-07
+Tags: personality, big-five, meta-analysis, career-development, psychometrics
+Original post: https://blog-about-people-analytics.netlify.app/posts/2026-09-07-life-success-personality-profiles/
+
+Recently, I came across a [study by Michael Wilmot, Brenton Wiernik and Deniz Ones (2025)](https://www.researchgate.net/publication/393373619_Mapping_Domains_of_Life_Success_Insights_From_Meta-Analytic_Criterion_Profile_Analysis) that looks at how Big Five personality traits relate to different forms of life success.
+
+The authors combined 111 meta-analyses covering 206 variables, more than 3,300 studies and over 2.25 million participants. They identified ten clusters of success-related variables across three broader families: Contentment, Agentic Engagement and Self-Transcendence.
+
+One thing I found interesting, though not super-surprising, is that there isn’t a single personality profile associated with all forms of success. The pattern linked to leadership, for example, looks different from those linked to ingenuity, balance, inclusion or high performance.
+
+Specifically, they estimated the contributions of both profile shape (the relative peaks and valleys across the five traits) and elevation (the average level across those traits). 
+
+<figure style="text-align:center;">
+  ![](./life-success-personality-profiles/chart_pic.png)
+  <figcaption>The figure showing Big Five personality patterns for representative outcomes within three broad families of life success and their ten constituent clusters. The different peaks and valleys illustrate how the relative contributions of the five traits vary across outcomes such as life satisfaction, salary, job performance and leadership. Each panel represents one example outcome, rather than the average profile of its entire cluster. These patterns describe associations, not causal effects or a person’s probability of success. ES = emotional stability; A = agreeableness; C = conscientiousness; Ex = extraversion; O = openness. Source: Wilmot, Wiernik & Ones (2025), Figure 6.</figcaption>
+</figure>
+
+For context, the two together explained an average of 8.2% of the variance in the success-related variables: about 5.8 percentage points from elevation and 2.4 from shape. The figures varied substantially across domains, but most of the variation remained unexplained. That puts “personality is your destiny” into perspective, though, to be fair, these estimates only cover five broad traits, not every aspect of personality.
+
+Still, the authors suggest that matching people’s Big Five profiles to the cluster patterns could help inform people-related practices like career counselling.
+
+However, they didn’t provide a tool for doing the comparison, so I made one 🤓
+
+You enter your Big Five percentiles and the app converts them into standardized scores. It then compares the shape of your profile with the average trait pattern associated with each success type.
+
+Under the hood, it uses a Pearson correlation across the five traits, based on the study’s centred regression profiles. Overall personality elevation is shown separately, and there’s also an optional exploratory regression view that includes both level and pattern effects.
+
+In the default view, what you get is a ranking of how closely your profile resembles the research profiles.
+
+If you want to try it, go 👉 [here](https://lstehlik2809.github.io/life-success-profile-match/).
+
+<object
+  data="./life-success-personality-profiles/life-success-linkedin-carousel.pdf"
+  type="application/pdf"
+  width="100%"
+  height="800px">
+
+  <p>
+
+    Your browser cannot display this PDF.
+    <a href="./life-success-personality-profiles/life-success-linkedin-carousel.pdf" download>Download the PDF</a>.
+
+  </p>
+</object>
+
+<p>
+
+  <a href="./life-success-personality-profiles/life-success-linkedin-carousel.pdf" download>
+    Download the PDF
+  </a>
+
+</p>
+
+A few caveats are worth keeping in mind. Most of the evidence in the study is cross-sectional and correlational. A strong match may suggest greater aptitude for that form of success, but it doesn’t give you a precise probability of achieving it, and it doesn’t mean that changing a personality trait would cause a particular outcome.
+
+The ten profiles are clusters of success-related variables, not ten types of people. And while the matching method in the app is based on the paper’s results, the individual-level use of it hasn’t been independently validated.
+
+I’d treat it as something for reflection and conversation, rather than a hiring filter or a verdict on what you should do.
+
+
+---
+> 📄 Read the [original post with full outputs](https://blog-about-people-analytics.netlify.app/posts/2026-09-07-life-success-personality-profiles/) on my blog.
+
+---
+
 # Causal Inference with Bayesian Networks
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/causal-inference-with-bayesian-networks
 Date: 2026-09-06
@@ -7175,7 +7242,7 @@ What do you think? Could this be a useful piece of the puzzle in boosting data l
 # Putting the "ideal" personality for high work engagement in a broader context
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/personality-and-work-engagement
 Date: 2025-04-08
-Tags: employee-engagement, personality, meta-analysis
+Tags: employee-engagement, personality, big-five, meta-analysis
 Original post: https://blog-about-people-analytics.netlify.app/posts/2025-04-08-personality-and-work-engagement/
 
 It's well-known that personality explains a large part of work engagement. For example, a recent meta-analysis by [Fokuzaki & Iwata (2022)](https://pmc.ncbi.nlm.nih.gov/articles/PMC8980698/?hl=en-US) on this topic concluded that “*conscientiousness had the strongest association with WE (ρ=0.41), followed by extraversion and openness to experience (0.38), neuroticism (−0.36), and agreeableness (0.27). Moreover, 30% of the WE variance could be explained by the five-factor model (R^2^=0.33, 95%CI=0.26–0.49)*”.
@@ -8272,7 +8339,7 @@ Caveat: The sample used was very small (just 72 people!) and highly specific—m
 # We are probably more similar - and different - than expected
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/personality-and-cultural-values
 Date: 2025-01-17
-Tags: personality, organizational-culture, multilevel-modeling, cross-cultural-differences
+Tags: personality, big-five, organizational-culture, multilevel-modeling, cross-cultural-differences
 Original post: https://blog-about-people-analytics.netlify.app/posts/2025-01-17-personality-and-cultural-values/
 
 An interesting research paper by [Stackhouse et al. (2024)](https://www.sciencedirect.com/science/article/pii/S0191886924002551?ssrnid=4460757&dgcid=SSRN_redirect_SD) looked at the sources of variance in people’s [Big Five personality](https://www.sciencedirect.com/topics/psychology/five-factor-model-of-personality) and [Hofstede cultural values](https://en.wikipedia.org/wiki/Hofstede%27s_cultural_dimensions_theory) (individual-level vs nation-level differences), and at the relationship between these two types of individual characteristics, while taking into account the multi-level nature of the data.
@@ -8894,7 +8961,7 @@ P.S. The attached charts were created with [Xmrit, a free online tool](https://c
 # Do people’s personalities vary across different jobs?
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/job-personality-fit
 Date: 2024-10-29
-Tags: personality, career-development
+Tags: personality, big-five, career-development
 Original post: https://blog-about-people-analytics.netlify.app/posts/2024-10-29-job-personality-fit/
 
 Over the years, it seems I’ve gravitated toward a job family that aligns well with my personality - or at least, that’s how it appears when you find job choices of other similarly-minded people as a validation of your own choices 😉
@@ -11697,7 +11764,7 @@ It seems that a reflective thinking style may bear some extra clues to workplace
 # Link between the Big Five personality traits and earnings
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/big-five-personality-and-earnings
 Date: 2023-11-29
-Tags: personality, labor-economics, meta-analysis
+Tags: personality, big-five, labor-economics, meta-analysis
 Original post: https://blog-about-people-analytics.netlify.app/posts/2023-11-29-big-five-personality-and-earnings/
 
 I recently stumbled upon [a meta-analysis by Alderotti, Rapallini, & Traverso (2023)](https://www.econstor.eu/bitstream/10419/237085/1/GLO-DP-0902rev.pdf) that explores the interesting topic of the link between the Big Five personality traits and earnings.

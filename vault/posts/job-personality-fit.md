@@ -4,6 +4,7 @@ description: And if they do, are those differences big enough to be useful for c
 date: '2024-10-29'
 tags:
 - personality
+- big-five
 - career-development
 original: https://blog-about-people-analytics.netlify.app/posts/2024-10-29-job-personality-fit/
 ---
@@ -32,10 +33,10 @@ If you’d like to try the tool yourself, here’s the [link](https://apps.psych
 
 <!-- RELATED:BEGIN -->
 ## Related notes
-- [[collaboration-and-personality|Collaboration and personality]]
+- [[life-success-personality-profiles|The Big Five and different ways of succeeding]]
 - [[big-five-personality-and-earnings|Link between the Big Five personality traits and earnings]]
+- [[collaboration-and-personality|Collaboration and personality]]
 - [[personality-and-work-engagement|Putting the "ideal" personality for high work engagement in a broader context]]
-- [[self-awareness-and-personality|Does your personality interfere with your self-awareness?]]
 - [[personality-and-cultural-values|We are probably more similar - and different - than expected]]
 <!-- RELATED:END -->
 

@@ -1,9 +1,10 @@
 # Ludek's People Analytics Second Brain
 
-> A public second brain of 211 posts on people analytics, statistics, causal inference, psychometrics, machine learning, and AI by Ludek Stehlik. Browsable knowledge graph at https://lstehlik2809.github.io/people-analytics-second-brain. The complete corpus is in /llms-full.txt.
+> A public second brain of 212 posts on people analytics, statistics, causal inference, psychometrics, machine learning, and AI by Ludek Stehlik. Browsable knowledge graph at https://lstehlik2809.github.io/people-analytics-second-brain. The complete corpus is in /llms-full.txt.
 
 ## Notes
 
+- [The Big Five and different ways of succeeding](https://lstehlik2809.github.io/people-analytics-second-brain/posts/life-success-personality-profiles): See how your Big Five traits compare with 10 different success profiles from a large meta-analysis.
 - [Causal Inference with Bayesian Networks](https://lstehlik2809.github.io/people-analytics-second-brain/posts/causal-inference-with-bayesian-networks): A short book review.
 - [The daughter effect](https://lstehlik2809.github.io/people-analytics-second-brain/posts/the-daughter-effect): Can having a daughter make a manager more gender-equal?
 - [From passive to active information acquisition](https://lstehlik2809.github.io/people-analytics-second-brain/posts/passive-versus-active-information-acquisition): Using what we know to choose what to observe next.

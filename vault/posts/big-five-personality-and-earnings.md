@@ -4,6 +4,7 @@ description: Check how your personality supports your earnings.
 date: '2023-11-29'
 tags:
 - personality
+- big-five
 - labor-economics
 - meta-analysis
 original: https://blog-about-people-analytics.netlify.app/posts/2023-11-29-big-five-personality-and-earnings/
@@ -25,10 +26,10 @@ I know of at least two aspects of my personality that are unnecessarily costing 
 <!-- RELATED:BEGIN -->
 ## Related notes
 - [[personality-and-work-engagement|Putting the "ideal" personality for high work engagement in a broader context]]
-- [[collaboration-and-personality|Collaboration and personality]]
+- [[life-success-personality-profiles|The Big Five and different ways of succeeding]]
 - [[job-personality-fit|Do people’s personalities vary across different jobs?]]
+- [[collaboration-and-personality|Collaboration and personality]]
 - [[self-awareness-and-personality|Does your personality interfere with your self-awareness?]]
-- [[personality-and-non-linearities|Nonlinear relationships between personality traits and business outcomes seem to be the norm rather than the exception]]
 <!-- RELATED:END -->
 
 ---

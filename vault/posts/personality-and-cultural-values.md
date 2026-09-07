@@ -4,6 +4,7 @@ description: A brief summary of the key findings from the research paper on the 
 date: '2025-01-17'
 tags:
 - personality
+- big-five
 - organizational-culture
 - multilevel-modeling
 - cross-cultural-differences
@@ -34,10 +35,10 @@ All this suggests that the next time you feel an urge to guess someone’s perso
 <!-- RELATED:BEGIN -->
 ## Related notes
 - [[hofstede-wfh|What does national culture have to do with working from home?]]
-- [[collaboration-and-personality|Collaboration and personality]]
 - [[personality-and-work-engagement|Putting the "ideal" personality for high work engagement in a broader context]]
-- [[self-awareness-and-personality|Does your personality interfere with your self-awareness?]]
-- [[big-five-vs-hexaco|Big Five vs. HEXACO]]
+- [[life-success-personality-profiles|The Big Five and different ways of succeeding]]
+- [[collaboration-and-personality|Collaboration and personality]]
+- [[job-personality-fit|Do people’s personalities vary across different jobs?]]
 <!-- RELATED:END -->
 
 ---

@@ -24,10 +24,10 @@ It seems that a reflective thinking style may bear some extra clues to workplace
 <!-- RELATED:BEGIN -->
 ## Related notes
 - [[vocational-interests|Vocational interests don't seem so uninteresting after all]]
-- [[personality-and-work-engagement|Putting the "ideal" personality for high work engagement in a broader context]]
 - [[insights-discovery-and-skills|Do Insights Discovery ‘colors’ relate to self-reported skills?]]
-- [[big-five-personality-and-earnings|Link between the Big Five personality traits and earnings]]
+- [[personality-and-work-engagement|Putting the "ideal" personality for high work engagement in a broader context]]
 - [[self-leadership|Self-Leadership: A New Superpower?]]
+- [[big-five-personality-and-earnings|Link between the Big Five personality traits and earnings]]
 <!-- RELATED:END -->
 
 ---

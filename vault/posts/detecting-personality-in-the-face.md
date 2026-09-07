@@ -196,7 +196,7 @@ It worked surprisingly well given how simple the approach is—at least for me a
 - [[ona-and-face-similarity|When facial similarity meets Network Science]]
 - [[personality-frameworks-contest|A showdown between the Big Five, Enneagram, MBTI, and astrology]]
 - [[self-awareness-and-personality|Does your personality interfere with your self-awareness?]]
-- [[collaboration-and-personality|Collaboration and personality]]
+- [[life-success-personality-profiles|The Big Five and different ways of succeeding]]
 <!-- RELATED:END -->
 
 ---

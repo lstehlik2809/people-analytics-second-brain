@@ -34,7 +34,7 @@ Definitely [worth reading](https://open.substack.com/pub/experimentalhistory/p/f
 - [[job-personality-fit|Do people’s personalities vary across different jobs?]]
 - [[self-awareness-and-personality|Does your personality interfere with your self-awareness?]]
 - [[conspiracy-theories-and-overfitting|Conspiracy theories as a specific example of overfitting?]]
-- [[insights-discovery-and-skills|Do Insights Discovery ‘colors’ relate to self-reported skills?]]
+- [[life-success-personality-profiles|The Big Five and different ways of succeeding]]
 <!-- RELATED:END -->
 
 ---
