@@ -27,7 +27,7 @@ Specifically, they estimated the contributions of both profile shape (the relati
 
 For context, the two together explained an average of 8.2% of the variance in the success-related variables: about 5.8 percentage points from elevation and 2.4 from shape. The figures varied substantially across domains, but most of the variation remained unexplained. That puts “personality is your destiny” into perspective, though, to be fair, these estimates only cover five broad traits, not every aspect of personality.
 
-Still, the authors suggest that matching people’s Big Five profiles to the cluster patterns could help inform people-related practices like career counselling.
+Still, the authors suggest that matching people’s Big Five profiles to the cluster patterns could help inform some people-related practices like career counselling.
 
 However, they didn’t provide a tool for doing the comparison, so I made one 🤓
 
@@ -57,7 +57,7 @@ If you want to try it, go 👉 [here](https://lstehlik2809.github.io/life-succes
 
 The ten profiles are clusters of success-related variables, not ten types of people. And while the matching method in the app is based on the paper’s results, the individual-level use of it hasn’t been independently validated.
 
-I’d treat it as something for reflection and conversation, rather than a hiring filter or a verdict on what you should do.
+I’d treat it as something useful for reflection and conversation, rather than a hiring filter or a verdict on what you should do.
 
 
 ---
