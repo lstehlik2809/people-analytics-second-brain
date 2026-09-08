@@ -203,8 +203,8 @@ How about you? Are you able to engage in interactions and networking in a way th
 - [[personality-and-work-engagement|Putting the "ideal" personality for high work engagement in a broader context]]
 - [[big-five-personality-and-earnings|Link between the Big Five personality traits and earnings]]
 - [[job-personality-fit|Do people’s personalities vary across different jobs?]]
-- [[self-awareness-and-personality|Does your personality interfere with your self-awareness?]]
 - [[life-success-personality-profiles|The Big Five and different ways of succeeding]]
+- [[self-awareness-and-personality|Does your personality interfere with your self-awareness?]]
 <!-- RELATED:END -->
 
 ---

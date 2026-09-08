@@ -57,7 +57,7 @@ Besides that, some other interesting patterns emerged. For example:
 - [[self-awareness-and-personality|Does your personality interfere with your self-awareness?]]
 - [[vocational-interests|Vocational interests don't seem so uninteresting after all]]
 - [[personality-frameworks-contest|A showdown between the Big Five, Enneagram, MBTI, and astrology]]
-- [[life-success-personality-profiles|The Big Five and different ways of succeeding]]
+- [[job-personality-fit|Do people’s personalities vary across different jobs?]]
 <!-- RELATED:END -->
 
 ---

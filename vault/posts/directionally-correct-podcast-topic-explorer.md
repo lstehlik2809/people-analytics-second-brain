@@ -34,7 +34,6 @@ Here is a [link to the webpage](https://lstehlik2809.github.io/directionally-cor
   type="application/pdf"
   width="100%"
   height="800px">
-
   <p>
 
     Your browser cannot display this PDF.
@@ -42,14 +41,7 @@ Here is a [link to the webpage](https://lstehlik2809.github.io/directionally-cor
 
   </p>
 </object>
-
-<p>
-
-  <a href="./directionally-correct-podcast-topic-explorer/directionally_correct_topic_map_carousel_pdf.pdf" download>
-    Download the PDF
-  </a>
-
-</p>
+<br>
 
 ⚠️ The topic assignments, topic syntheses, cluster labels, structured summaries, and related-episode recommendations were created with the help of GenAI. That makes it possible to process this amount of material, but it also means there will almost inevitably be some mistakes and imprecisions. So, treat the explorer as a tool for exploration rather than a substitute for the original episodes, which are linked throughout the app.
 

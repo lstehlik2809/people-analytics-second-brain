@@ -45,7 +45,6 @@ If you want to try it, go 👉 [here](https://lstehlik2809.github.io/life-succes
   type="application/pdf"
   width="100%"
   height="800px">
-
   <p>
 
     Your browser cannot display this PDF.
@@ -53,16 +52,9 @@ If you want to try it, go 👉 [here](https://lstehlik2809.github.io/life-succes
 
   </p>
 </object>
+<br>
 
-<p>
-
-  <a href="./life-success-personality-profiles/life-success-linkedin-carousel.pdf" download>
-    Download the PDF
-  </a>
-
-</p>
-
-A few caveats are worth keeping in mind. Most of the evidence in the study is cross-sectional and correlational. A strong match may suggest greater aptitude for that form of success, but it doesn’t give you a precise probability of achieving it, and it doesn’t mean that changing a personality trait would cause a particular outcome.
+⚠️ A few caveats are worth keeping in mind. Most of the evidence in the study is cross-sectional and correlational. A strong match may suggest greater aptitude for that form of success, but it doesn’t give you a precise probability of achieving it, and it doesn’t mean that changing a personality trait would cause a particular outcome.
 
 The ten profiles are clusters of success-related variables, not ten types of people. And while the matching method in the app is based on the paper’s results, the individual-level use of it hasn’t been independently validated.
 

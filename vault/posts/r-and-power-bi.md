@@ -329,7 +329,7 @@ This completed the work on our local computer. You can download the final dashbo
 - [[interpretable-ml|Interpretable machine learning with modelStudio]]
 - [[dag-and-double-ml|A plausible model of data-generating process eats ML algorithms for breakfast]]
 - [[bayesian-simulation|Harnessing Bayesian analysis for business process simulation]]
-- [[people-analytics-second-brain|My second People Analytics brain - both for people and AI agents]]
+- [[employee-feedback-analysis-using-openai|Employee feedback analysis using tools from OpenAI]]
 <!-- RELATED:END -->
 
 ---

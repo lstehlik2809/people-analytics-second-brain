@@ -33,7 +33,7 @@ P.S. Oh, I almost forgot - there are exciting prizes in the form of tickets to H
 - [[people-analytics-popularity-after-covid|The impact of the COVID pandemic on the popularity of people analytics]]
 - [[latent-class-analysis|Latent Class Analysis of responses from employee surveys]]
 - [[causal-inference-in-people-analytics|Beyond prediction: Exploiting organizational events for causal inference in people analytics]]
-- [[multilevel-modeling|Multilevel modeling in people analytics]]
+- [[people-analytics-second-brain|My second People Analytics brain - both for people and AI agents]]
 <!-- RELATED:END -->
 
 ---
