@@ -123,8 +123,10 @@ After the birth of a manager’s first daughter:
 * there is no detectable deterioration in firm performance
 
 <figure style="text-align:center;">
+
   ![](./the-daughter-effect/daddys_girl_plots.png)
   <figcaption>After a manager’s first daughter is born, women’s relative earnings and employment rise. Importantly, there is little sign of a pre-existing trend.</figcaption>
+
 </figure>
 
 The hiring result is particularly interesting: managers seem able to switch between similarly qualified male and female candidates without materially changing the observable composition or cost of the workforce.
