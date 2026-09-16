@@ -41,10 +41,10 @@ P.S. The page references above use the printed page numbers in the review copy I
 <!-- RELATED:BEGIN -->
 ## Related notes
 - [[causal-inference-in-people-analytics|Beyond prediction: Exploiting organizational events for causal inference in people analytics]]
+- [[bayesian-thinking-for-people-analytics|Bayesian Thinking for People Analytics]]
 - [[nobel-prize-and-causal-inference-popularity|Did the Nobel Prize put causal inference on the public radar?]]
 - [[dag-and-double-ml|A plausible model of data-generating process eats ML algorithms for breakfast]]
 - [[bayesian-networks-in-people-analytics|Use of Bayesian networks in people analytics?]]
-- [[the-laws-of-thought|The Laws of Thought: The Quest for a Mathematical Theory of the Mind]]
 <!-- RELATED:END -->
 
 ---

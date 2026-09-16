@@ -180,7 +180,7 @@ For those who would like to incorporate Bayesian reasoning into their managerial
 - [[bayesian-simulation|Harnessing Bayesian analysis for business process simulation]]
 - [[visual-inference-statistics|Visual statistical inference]]
 - [[job-comparator|A bet on a new job]]
-- [[garden-of-forking-paths-redo|Refactoring the "Garden of Forking Paths"]]
+- [[bayesian-thinking-for-people-analytics|Bayesian Thinking for People Analytics]]
 <!-- RELATED:END -->
 
 ---

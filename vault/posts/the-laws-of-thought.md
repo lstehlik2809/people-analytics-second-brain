@@ -41,8 +41,8 @@ Methodological note on the knowledge graph: The relationships were not inferred 
 - [[causal-inference-with-bayesian-networks|Causal Inference with Bayesian Networks]]
 - [[people-analytics-second-brain|My second People Analytics brain - both for people and AI agents]]
 - [[directionally-correct-podcast-topic-explorer|Turning 152 Directionally Correct podcast episodes into an interactive topic explorer]]
+- [[bayesian-thinking-for-people-analytics|Bayesian Thinking for People Analytics]]
 - [[conspiracy-theories-and-overfitting|Conspiracy theories as a specific example of overfitting?]]
-- [[trust-errors-learning-reflection|When to forgive, when to close the book]]
 <!-- RELATED:END -->
 
 ---
