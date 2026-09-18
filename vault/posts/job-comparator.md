@@ -38,7 +38,7 @@ If you have at least two job offers to choose from, you may find the app as usef
 - [[bayesian-simulation|Harnessing Bayesian analysis for business process simulation]]
 - [[overview-of-predictors-of-voluntary-employee-turnover|Overview of predictors of voluntary employee turnover]]
 - [[linkedin-connections-analysis|R Shiny app for LinkedIn connections analysis]]
-- [[people-analytics-challenge-from-orgnostic|People Analytics Challenge from Orgnostic: Plan for high growth]]
+- [[job-ai-exposure|How exposed are your job and other jobs to AI?]]
 <!-- RELATED:END -->
 
 ---
