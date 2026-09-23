@@ -64,11 +64,11 @@ Curious if anyone has done a similar exercise, and with what results.
 
 <!-- RELATED:BEGIN -->
 ## Related notes
+- [[importance-vs-satisfaction|Before weighting employee priorities, test what the rating actually means]]
 - [[probability-of-comments-in-a-survey|What makes people more likely to comment on a question in an employee survey?]]
 - [[honesty-in-engagement-vs-exit-surveys|Are people during exit surveys more honest in their responses than in engagement surveys?]]
 - [[glassdoor|When flawed statistical & causal reasoning leads to a valid conclusion anyway]]
 - [[psw-and-selection-bias-in-employee-surveys|How to analyze employee survey results with less (selection) bias?]]
-- [[cross-lagged-panel-modeling|Getting (more) causal insights from employee survey data (without an RCT)]]
 <!-- RELATED:END -->
 
 ---

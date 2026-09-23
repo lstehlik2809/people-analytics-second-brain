@@ -1,9 +1,10 @@
 # Ludek's People Analytics Second Brain
 
-> A public second brain of 215 posts on people analytics, statistics, causal inference, psychometrics, machine learning, and AI by Ludek Stehlik. Browsable knowledge graph at https://lstehlik2809.github.io/people-analytics-second-brain. The complete corpus is in /llms-full.txt.
+> A public second brain of 216 posts on people analytics, statistics, causal inference, psychometrics, machine learning, and AI by Ludek Stehlik. Browsable knowledge graph at https://lstehlik2809.github.io/people-analytics-second-brain. The complete corpus is in /llms-full.txt.
 
 ## Notes
 
+- [Before weighting employee priorities, test what the rating actually means](https://lstehlik2809.github.io/people-analytics-second-brain/posts/importance-vs-satisfaction): Stable answers are not automatically useful intervention weights.
 - [How exposed are your job and other jobs to AI?](https://lstehlik2809.github.io/people-analytics-second-brain/posts/job-ai-exposure): I built a small app to explore that using data from the U.S. Bureau of Labor Statistics and O*NET.
 - [Bayesian Thinking for People Analytics](https://lstehlik2809.github.io/people-analytics-second-brain/posts/bayesian-thinking-for-people-analytics): A recommendation for a free online book on Bayesian thinking in people analytics.
 - [Did 'Freefall' documentary move Boeing's share price?](https://lstehlik2809.github.io/people-analytics-second-brain/posts/boeing-freefall-stock-market-event-study): Netflix’s "Freefall: A Reckoning for Boeing" documentary changed how I saw a company I personally had long admired, mainly for its major role in space exploration. I wondered whether others shared that reaction more broadly, and whether it might show up in Boeing’s share price. So I tested it 🧐

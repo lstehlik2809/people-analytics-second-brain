@@ -324,9 +324,9 @@ Bottom line: CLPM can still be useful as a starting point, but directional effec
 ## Related notes
 - [[the-triple-filter-test|The Triple-Filter Test: How to prioritize HR interventions with panel data]]
 - [[causal-inference-in-people-analytics|Beyond prediction: Exploiting organizational events for causal inference in people analytics]]
+- [[importance-vs-satisfaction|Before weighting employee priorities, test what the rating actually means]]
 - [[did-with-repeated-cross-sectional-data|What a European cigarette tax study taught me about employee listening]]
 - [[visual-diff-in-diff|Causal insights with no code?]]
-- [[encouragement-design-and-ivs|Encouragement Design using instrumental variables]]
 <!-- RELATED:END -->
 
 ---

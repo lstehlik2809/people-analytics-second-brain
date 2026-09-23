@@ -32,7 +32,7 @@ What job attitudes do you regularly measure in your company? And does it pay off
 - [[vocational-interests|Vocational interests don't seem so uninteresting after all]]
 - [[predictors-of-stay-intentions-vs-actual-resignations|Talk vs. Walk: Predictors of staying intentions vs. actual quitting behavior]]
 - [[engagement-interventions|Effectiveness of interventions for encreasing employee engagement]]
-- [[personality-and-work-engagement|Putting the "ideal" personality for high work engagement in a broader context]]
+- [[importance-vs-satisfaction|Before weighting employee priorities, test what the rating actually means]]
 <!-- RELATED:END -->
 
 ---

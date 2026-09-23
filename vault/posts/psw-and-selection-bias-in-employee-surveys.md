@@ -205,8 +205,8 @@ Have you tried similar methods in your employee survey analyses? What's your exp
 - [[cross-lagged-panel-modeling|Getting (more) causal insights from employee survey data (without an RCT)]]
 - [[self-selection-and-proxy-measures|When self-selected behavior is a blessing, not a headache]]
 - [[causal-inference-in-people-analytics|Beyond prediction: Exploiting organizational events for causal inference in people analytics]]
+- [[importance-vs-satisfaction|Before weighting employee priorities, test what the rating actually means]]
 - [[rwa|RWA – A go-to tool for key drivers analysis of employee survey data?]]
-- [[you-said-we-did|‘You Said, We Did’ matters - maybe just not as distinctly as we assume]]
 <!-- RELATED:END -->
 
 ---
