@@ -204,7 +204,7 @@ modelStudio::modelStudio(
 
 ```
 
-<img src="./charts.png">
+<iframe src="./interpretable-ml/widget-r2d3-01.htm" title="Interactive r2d3 widget" loading="lazy" style="width:100%;height:900px;border:0"></iframe>
 
 ## Figures
 

@@ -14,6 +14,7 @@ import re
 import shutil
 import sys
 from html import escape as html_escape
+from html import unescape as html_unescape
 from pathlib import Path
 
 import yaml
@@ -40,6 +41,10 @@ ATTR_RE = re.compile(r"(\)|\`)\{[^{}\n]*\}")  # pandoc attribute blocks after ) 
 CHUNK_RE = re.compile(r"^```\{(r|R)\b[^}]*\}\s*$", re.M)
 PY_CHUNK_RE = re.compile(r"^```\{python[^}]*\}\s*$", re.M)
 OTHER_CHUNK_RE = re.compile(r"^```\{[^}]*\}\s*$", re.M)
+R_CHUNK_RE = re.compile(r"^```\{[rR]\b[^}]*\}\s*\n(.*?)^```\s*$", re.M | re.S)
+YOUTUBE_CALL_RE = re.compile(
+    r'''vembedr::embed_youtube\(\s*["']([A-Za-z0-9_-]{11})["']\s*\)'''
+)
 # Distill sometimes embeds knitr figures directly into the rendered HTML even
 # when other post assets are external. Including a converter marker in the
 # content hash rebuilds only posts with this representation when support for it
@@ -71,6 +76,12 @@ PLOTLY_WIDGET_RE = re.compile(
     re.I,
 )
 PLOTLY_WIDGET_HASH_MARKER = b"\0plotly-widgets-v2"
+OUTPUT_WIDGET_RE = re.compile(
+    rb'<div[^>]*class=["\'][^"\']*\b(?:datatables|r2d3|forceNetwork|swipeR)\b[^"\']*\bhtml-widget\b',
+    re.I,
+)
+OUTPUT_WIDGET_HASH_MARKER = b"\0rendered-output-widgets-v1"
+RELATED_BLOCK_RE = re.compile(r"<!-- RELATED:BEGIN -->.*?<!-- RELATED:END -->", re.S)
 DATA_IMAGE_RE = re.compile(
     r"^data:(image/[a-z0-9.+-]+)((?:;[^,]*)?),(.*)$", re.I | re.S)
 
@@ -100,6 +111,23 @@ def clean_description(desc) -> str:
 
 
 def convert_body(body: str, post_dir: Path, asset_dir: Path, slug: str, warnings: list) -> str:
+    # A vembedr chunk produces a video in the rendered blog, but Quartz does
+    # not run R. Replace simple video-only chunks with the equivalent embed.
+    def youtube_chunk_sub(m):
+        lines = [line.strip() for line in m.group(1).splitlines() if line.strip()]
+        calls = [YOUTUBE_CALL_RE.fullmatch(line) for line in lines
+                 if line != "library(vembedr)"]
+        if len(calls) != 1 or calls[0] is None:
+            return m.group(0)
+        video_id = calls[0].group(1)
+        return (
+            '<iframe title="YouTube video" '
+            f'src="https://www.youtube.com/embed/{video_id}" '
+            'style="width:100%;aspect-ratio:16/9;border:0" '
+            'loading="lazy" allowfullscreen></iframe>'
+        )
+
+    body = R_CHUNK_RE.sub(youtube_chunk_sub, body)
     # code chunk headers -> plain fenced blocks
     body = CHUNK_RE.sub("```r", body)
     body = PY_CHUNK_RE.sub("```python", body)
@@ -133,7 +161,12 @@ def convert_body(body: str, post_dir: Path, asset_dir: Path, slug: str, warnings
     # markdown so Quartz resolves their paths the same way it does elsewhere
     def html_img_sub(m):
         attrs = dict((k.lower(), v) for k, _, v in ATTR_KV_RE.findall(m.group(1)))
-        new = copy_asset(attrs.get("src", "").strip())
+        src = attrs.get("src", "").strip()
+        if (slug == "interpretable-ml" and src in {"charts.png", "./charts.png"}
+                and not (post_dir / "charts.png").exists()):
+            warnings.append(f"{slug}: omitted missing raw image {src}")
+            return ""
+        new = copy_asset(src)
         return f"![{attrs.get('alt', '')}]({new})" if new else m.group(0)
 
     body = HTML_IMG_RE.sub(html_img_sub, body)
@@ -212,6 +245,182 @@ def blank_pad_html_wrappers(body: str) -> str:
 def norm_code(text: str) -> str:
     lines = [ln.rstrip() for ln in text.replace("\xa0", " ").strip().splitlines()]
     return "\n".join(ln for ln in lines if ln)
+
+
+def widget_position(anchor, fences, used):
+    if anchor:
+        for i, (code, end) in enumerate(fences):
+            if code == anchor and i not in used:
+                used.add(i)
+                return end
+        for code, end in fences:
+            if code == anchor:
+                return end
+    return None
+
+
+def extract_output_widgets(post_dir: Path, base_name: str, warnings: list):
+    """Read rendered data tables and specialty widgets in document order."""
+    html_path = post_dir / f"{base_name}.html"
+    if not html_path.exists():
+        return []
+    soup = BeautifulSoup(html_path.read_text(encoding="utf-8", errors="replace"), "html.parser")
+    widgets, last_pre = [], None
+    kinds = {"datatables", "r2d3", "forceNetwork", "swipeR"}
+    for el in soup.find_all(["pre", "div"]):
+        if el.name == "pre":
+            last_pre = norm_code(el.get_text())
+            continue
+        kind = next((name for name in kinds if name in (el.get("class") or [])), None)
+        if not kind or "html-widget" not in (el.get("class") or []):
+            continue
+        widget_id = el.get("id")
+        data_tag = soup.find("script", attrs={"data-for": widget_id}) if widget_id else None
+        if data_tag is None:
+            warnings.append(f"{base_name}: missing {kind} widget data")
+            continue
+        try:
+            payload = json.loads(data_tag.string or data_tag.get_text())
+        except (ValueError, TypeError):
+            warnings.append(f"{base_name}: malformed {kind} widget data")
+            continue
+        if not isinstance(payload, dict) or not isinstance(payload.get("x"), dict):
+            warnings.append(f"{base_name}: invalid {kind} widget data")
+            continue
+        widgets.append((kind, last_pre, el, data_tag, payload, soup))
+    return widgets
+
+
+def render_table_preview(payload, original_url: str):
+    """Return bounded static HTML, or None for an inconsistent table payload."""
+    x = payload["x"]
+    columns = x.get("data")
+    if not isinstance(columns, list) or not columns or any(not isinstance(c, list) for c in columns):
+        return None
+    row_count = len(columns[0])
+    if any(len(c) != row_count for c in columns):
+        return None
+    container = BeautifulSoup(x.get("container", ""), "html.parser")
+    headers = [th.get_text(" ", strip=True) for th in container.select("thead th")]
+    if len(headers) != len(columns):
+        return None
+    head = "".join(f"<th>{html_escape(h)}</th>" for h in headers)
+    def cell_text(value):
+        if value is None:
+            return ""
+        text = html_unescape(str(value))
+        return html_escape(re.sub(r"[ \t]+(?=\r?\n)", "", text).rstrip())
+    rows = "".join(
+        "<tr>" + "".join(
+            f"<td>{cell_text(columns[col][row])}</td>"
+            for col in range(len(columns))) + "</tr>"
+        for row in range(min(20, row_count))
+    )
+    return (
+        f'<div class="data-table-preview"><p>Showing {min(20, row_count)} of {row_count:,} rows '
+        f'and all {len(columns)} columns. <a href="{html_escape(original_url, quote=True)}">'
+        'View the full interactive table in the original post</a>.</p>'
+        '<div style="overflow-x:auto;max-width:100%"><table><thead><tr>'
+        f'{head}</tr></thead><tbody>{rows}</tbody></table></div></div>'
+    )
+
+
+SPECIALTY_DEPS = {
+    "r2d3": ("htmlwidgets-", "r2d3-render-", "r2d3-binding-", "d3v4-"),
+    "forceNetwork": ("htmlwidgets-", "d3-", "forceNetwork-binding-"),
+    "swipeR": ("htmlwidgets-", "Swiper-", "swipeRstyles-", "swipeR-binding-"),
+}
+
+
+def render_specialty_widget(kind, element, data_tag, payload, soup,
+                            post_dir: Path, asset_dir: Path, slug: str,
+                            number: int, warnings: list):
+    """Bundle an htmlwidget with only the local dependencies its binding uses."""
+    deps = []
+    for tag in soup.find_all(["script", "link"]):
+        ref = tag.get("src") or tag.get("href")
+        if not ref or not any(part in ref for part in SPECIALTY_DEPS[kind]):
+            continue
+        relative = Path(unquote(ref))
+        if relative.is_absolute() or ".." in relative.parts or not (post_dir / relative).is_file():
+            warnings.append(f"{slug}: missing or invalid {kind} dependency {ref}")
+            return None
+        emitted_ref = f"widget-deps/{kind.lower()}/{relative.as_posix().lower()}"
+        deps.append((tag.name, emitted_ref, relative))
+    if not deps or not any("htmlwidgets-" in ref for _, ref, _ in deps):
+        warnings.append(f"{slug}: missing {kind} runtime dependencies")
+        return None
+    image_paths = []
+    if kind == "swipeR":
+        fragment = BeautifulSoup(payload["x"].get("html", ""), "html.parser")
+        image_paths = [img.get("src", "") for img in fragment.find_all("img")]
+        if not image_paths:
+            warnings.append(f"{slug}: missing swipeR slide images")
+            return None
+    for ref in image_paths:
+        relative = Path(unquote(ref))
+        if relative.is_absolute() or ".." in relative.parts or not (post_dir / relative).is_file():
+            warnings.append(f"{slug}: missing or invalid swipeR slide {ref}")
+            return None
+    for _, emitted_ref, relative in deps:
+        dest = asset_dir / emitted_ref
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        if not dest.exists() or dest.read_bytes() != (post_dir / relative).read_bytes():
+            shutil.copy2(post_dir / relative, dest)
+    for ref in image_paths:
+        relative = Path(unquote(ref))
+        dest = asset_dir / relative
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        if not dest.exists() or dest.read_bytes() != (post_dir / relative).read_bytes():
+            shutil.copy2(post_dir / relative, dest)
+    includes = "\n".join(
+        f'<script src="{html_escape(ref, quote=True)}"></script>' if tag == "script"
+        else f'<link rel="stylesheet" href="{html_escape(ref, quote=True)}">'
+        for tag, ref, _ in deps
+    )
+    frame = (
+        '<!doctype html><html lang="en"><head><meta charset="utf-8">'
+        '<meta name="viewport" content="width=device-width,initial-scale=1">'
+        '<style>html,body{margin:0;width:100%;height:100%;overflow:auto}</style>'
+        f'{includes}</head><body>{str(element)}{str(data_tag)}</body></html>'
+    )
+    name = f"widget-{kind.lower()}-{number:02d}.htm"
+    asset_dir.mkdir(parents=True, exist_ok=True)
+    (asset_dir / name).write_text(frame, encoding="utf-8", newline="\n")
+    height_match = re.search(r"height:\s*(\d+)px", element.get("style", ""))
+    height = int(height_match.group(1)) if height_match else 600
+    return (f'<iframe src="./{slug}/{name}" title="Interactive {html_escape(kind)} widget" '
+            f'loading="lazy" style="width:100%;height:{height}px;border:0"></iframe>')
+
+
+def inject_output_widgets(body: str, widgets, post_dir: Path, asset_dir: Path,
+                          slug: str, original_url: str, warnings: list):
+    fences = [(norm_code(m.group(1)), m.end()) for m in FENCE_RE.finditer(body)]
+    used, insertions, appendix = set(), [], []
+    serial = {kind: 0 for kind in SPECIALTY_DEPS}
+    for kind, anchor, element, data_tag, payload, soup in widgets:
+        if kind == "datatables":
+            output = render_table_preview(payload, original_url)
+            if output is None:
+                warnings.append(f"{slug}: invalid datatables columns or headers")
+                continue
+        else:
+            serial[kind] += 1
+            output = render_specialty_widget(kind, element, data_tag, payload,
+                                             soup, post_dir, asset_dir, slug,
+                                             serial[kind], warnings)
+            if output is None:
+                continue
+        pos = widget_position(anchor, fences, used)
+        if pos is None:
+            appendix.append(output)
+        else:
+            insertions.append((pos, len(insertions), output))
+    for pos, _, output in sorted(insertions, key=lambda x: (-x[0], -x[1])):
+        body = body[:pos] + "\n\n" + output + body[pos:]
+    if appendix:
+        body += "\n\n## Rendered outputs\n\n" + "\n\n".join(appendix)
+    return body
 
 
 def extract_generated_figures(post_dir: Path, base_name: str):
@@ -460,6 +669,9 @@ def build_note(post_dir: Path) -> tuple[str, str] | None:
     widgets = extract_plotly_widgets(post_dir, rmds[0].stem)
     converted = inject_plotly_widgets(converted, widgets, post_dir,
                                       NOTES_DIR / slug, slug, warnings)
+    output_widgets = extract_output_widgets(post_dir, rmds[0].stem, warnings)
+    converted = inject_output_widgets(converted, output_widgets, post_dir,
+                                      NOTES_DIR / slug, slug, original_url, warnings)
     for w in warnings:
         print(f"  warn: {w}")
 
@@ -479,6 +691,14 @@ def build_note(post_dir: Path) -> tuple[str, str] | None:
         f"> 📄 Read the [original post with full outputs]({original_url}) on my blog.\n"
     )
     return slug, note
+
+
+def preserve_related_block(note: str, previous: str) -> str:
+    """Keep computed related links when refreshing a note's rendered outputs."""
+    old = RELATED_BLOCK_RE.search(previous)
+    if old is None:
+        return note
+    return RELATED_BLOCK_RE.sub(lambda _: old.group(0), note, count=1)
 
 
 def main():
@@ -512,6 +732,8 @@ def main():
                 h.update(LOCAL_HTML_ASSET_HASH_MARKER)
             if PLOTLY_WIDGET_RE.search(html_bytes):
                 h.update(PLOTLY_WIDGET_HASH_MARKER)
+            if OUTPUT_WIDGET_RE.search(html_bytes):
+                h.update(OUTPUT_WIDGET_HASH_MARKER)
         for path_bytes in LOCAL_DIRECT_ATTACHMENT_RE.findall(rmds[0].read_bytes()):
             path = unquote_to_bytes(path_bytes.decode("utf-8", errors="replace")).decode(
                 "utf-8", errors="replace")
@@ -537,7 +759,10 @@ def main():
             print(f"  warn: could not parse {post_dir.name}")
             continue
         _, note = result
-        (NOTES_DIR / f"{slug}.md").write_text(note, encoding="utf-8", newline="\n")
+        note_path = NOTES_DIR / f"{slug}.md"
+        if note_path.exists():
+            note = preserve_related_block(note, note_path.read_text(encoding="utf-8"))
+        note_path.write_text(note, encoding="utf-8", newline="\n")
         manifest[slug] = src_hash
         written += 1
         print(f"  wrote: {slug}")

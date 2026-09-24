@@ -76,6 +76,8 @@ htmltools::div(
 
 ```
 
+<iframe src="./siop-2026-recommender/widget-swiper-01.htm" title="Interactive swipeR widget" loading="lazy" style="width:100%;height:800px;border:0"></iframe>
+
 <!-- RELATED:BEGIN -->
 ## Related notes
 - [[siop-2026-reflection|SIOP through the wisdom of crowds: What I may have missed]]
