@@ -4,7 +4,7 @@
 
 ## Notes
 
-- [Nothing changed. The dashboard disagrees.](https://lstehlik2809.github.io/people-analytics-second-brain/posts/turnover-signal-and-noise): Sharing an app that grew out of an internal discussion about how to report and interpret turnover rates.
+- [Nothing changed. The dashboard disagrees.](https://lstehlik2809.github.io/people-analytics-second-brain/posts/turnover-signal-and-noise): Sharing an app that grew as a byproduct of an internal discussion about how to report and interpret turnover rates.
 - [Before weighting employee priorities, test what the rating actually means](https://lstehlik2809.github.io/people-analytics-second-brain/posts/importance-vs-satisfaction): Stable answers are not automatically useful intervention weights.
 - [How exposed are your job and other jobs to AI?](https://lstehlik2809.github.io/people-analytics-second-brain/posts/job-ai-exposure): I built a small app to explore that using data from the U.S. Bureau of Labor Statistics and O*NET.
 - [Bayesian Thinking for People Analytics](https://lstehlik2809.github.io/people-analytics-second-brain/posts/bayesian-thinking-for-people-analytics): A recommendation for a free online book on Bayesian thinking in people analytics.

@@ -177,8 +177,8 @@ Although this mechanism seems to provide a plausible answer to the reader's ques
 ## Related notes
 - [[regression-to-the-mean|Employee commitment over time & regression to the mean]]
 - [[glassdoor|When flawed statistical & causal reasoning leads to a valid conclusion anyway]]
-- [[contagious-turnover|Is contagious turnover overrated? Probably only if you ignore the managers.]]
 - [[turnover-signal-and-noise|Nothing changed. The dashboard disagrees.]]
+- [[contagious-turnover|Is contagious turnover overrated? Probably only if you ignore the managers.]]
 - [[cross-lagged-panel-modeling|Getting (more) causal insights from employee survey data (without an RCT)]]
 <!-- RELATED:END -->
 

@@ -1,6 +1,6 @@
 ---
 title: Nothing changed. The dashboard disagrees.
-description: Sharing an app that grew out of an internal discussion about how to report and interpret turnover rates.
+description: Sharing an app that grew as a byproduct of an internal discussion about how to report and interpret turnover rates.
 date: '2026-09-28'
 tags:
 - employee-turnover
@@ -36,14 +36,14 @@ The second part of the app is a small game: 24 months of a monthly dashboard, ha
 
 You can play with it [here](https://lstehlik2809.github.io/turnover-signal-noise/).
 
-How do you report TR in your org - monthly annualized, rolling 12 months, control charts, something else? And how do you keep people from reacting to every wiggle? 🙂
+How do you report TR in your org - monthly annualized, rolling 12 months, control charts, something else? And how do you keep people from reacting to every wiggle? 🤔
 
 P.S. The first part builds on a neat Monte Carlo illustration credited to Lipinski (2017).
 
 <!-- RELATED:BEGIN -->
 ## Related notes
-- [[bayesian-shrinkage|Using Bayesian shrinkage in reporting employee turnover]]
 - [[change-detection|How to quickly navigate dashboard users to what they need to know?]]
+- [[bayesian-shrinkage|Using Bayesian shrinkage in reporting employee turnover]]
 - [[contagious-turnover|Is contagious turnover overrated? Probably only if you ignore the managers.]]
 - [[tenure-vs-satisfaction|Simulating the "survivorship" effect in employee satisfaction data over time]]
 - [[xmr-charts-in-people-analytics|Do you use XmR charts for People Analytics use cases?]]

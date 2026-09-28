@@ -179,8 +179,8 @@ Would be super grateful for any tips or suggestions on dataviz tools or approach
 - [[xmr-charts-in-people-analytics|Do you use XmR charts for People Analytics use cases?]]
 - [[org-chart-and-collaboration|Org chart and collaboration]]
 - [[change-detection|How to quickly navigate dashboard users to what they need to know?]]
-- [[doppelganger-for-career-pathing|Using Doppelgänger for career pathing?]]
 - [[turnover-signal-and-noise|Nothing changed. The dashboard disagrees.]]
+- [[doppelganger-for-career-pathing|Using Doppelgänger for career pathing?]]
 <!-- RELATED:END -->
 
 ---
