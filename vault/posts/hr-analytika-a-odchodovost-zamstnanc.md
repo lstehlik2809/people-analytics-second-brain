@@ -156,8 +156,8 @@ Jak je z výše uvedeného výčtu otázek patrné, dashboard obsahuje informace
 - [[moneyball-v-hr-od-hr-analytiky-ke-sportovn-analytice-a-zpt|Moneyball v HR]]
 - [[paygap|Firemní audit rozdílu mezi platy mužů a žen]]
 - [[overview-of-predictors-of-voluntary-employee-turnover|Overview of predictors of voluntary employee turnover]]
+- [[rwa|RWA – A go-to tool for key drivers analysis of employee survey data?]]
 - [[causal-inference-in-people-analytics|Beyond prediction: Exploiting organizational events for causal inference in people analytics]]
-- [[survey-participation-and-attrition-prediction|People may signal their exit intentions not only by their actions but also by their inactions]]
 <!-- RELATED:END -->
 
 ---

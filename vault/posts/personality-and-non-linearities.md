@@ -187,10 +187,10 @@ ggplot()+
 <!-- RELATED:BEGIN -->
 ## Related notes
 - [[dimensional-traits-vs-personality-types|Dimensional Traits vs. Personality Types]]
-- [[personas-based-on-ml-local-interpretation-algos|Personas based on ML local interpretation algorithms]]
 - [[collaboration-and-personality|Collaboration and personality]]
 - [[detecting-personality-in-the-face|Can a simple algorithm read your personality from your face?]]
 - [[conditional-inference-tree|Divide and... understand]]
+- [[causal-inference-in-people-analytics|Beyond prediction: Exploiting organizational events for causal inference in people analytics]]
 <!-- RELATED:END -->
 
 ---

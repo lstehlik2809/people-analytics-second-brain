@@ -39,9 +39,9 @@ If you would like to check the analysis output interactively and in greater deta
 <!-- RELATED:BEGIN -->
 ## Related notes
 - [[hr-tech-ai-shift|How AI is reshaping HR-tech]]
-- [[people-analytics-popularity-after-covid|The impact of the COVID pandemic on the popularity of people analytics]]
-- [[siop-2026-reflection|SIOP through the wisdom of crowds: What I may have missed]]
 - [[network-graph-employee-comments|Using network graph modeling to capture overarching thematic clusters in employee comments]]
+- [[siop-2026-reflection|SIOP through the wisdom of crowds: What I may have missed]]
+- [[people-analytics-popularity-after-covid|The impact of the COVID pandemic on the popularity of people analytics]]
 - [[big-consultancies-in-the-skills-semantic-space|Big consultancies in the skills semantic space]]
 <!-- RELATED:END -->
 

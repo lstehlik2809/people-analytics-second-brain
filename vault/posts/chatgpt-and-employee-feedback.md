@@ -28,7 +28,7 @@ Has anyone experimented with ChatGPT on similar kinds of HR data?
 - [[genai-and-leadership-judgement|Can genAI help people managers lead better?]]
 - [[openai-personality-interpretation|Ask your personality using GPT]]
 - [[chatgpt-emails-and-causalpy|ChatGPT as a new email writing coach?]]
-- [[gpt4-and-e-b-hrm-practices|GPT-4's performance in the knowledge test of evidence-based HRM practices]]
+- [[hr-tech-ai-shift|How AI is reshaping HR-tech]]
 <!-- RELATED:END -->
 
 ---

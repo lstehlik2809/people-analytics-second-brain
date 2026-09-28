@@ -169,7 +169,7 @@ If you find yourself in a similar situation, definitely give it a try. Happy exp
 - [[personality-and-non-linearities|Nonlinear relationships between personality traits and business outcomes seem to be the norm rather than the exception]]
 - [[team-maps|Experiencing and seeing team similarities and differences]]
 - [[detecting-personality-in-the-face|Can a simple algorithm read your personality from your face?]]
-- [[personas-based-on-ml-local-interpretation-algos|Personas based on ML local interpretation algorithms]]
+- [[psychometric-network-analysis|Psychometric network analysis & employee survey data]]
 <!-- RELATED:END -->
 
 ---

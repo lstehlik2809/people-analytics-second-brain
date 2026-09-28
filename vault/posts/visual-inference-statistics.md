@@ -178,8 +178,8 @@ If you would like to apply the visual statistical inference approach to your own
 <!-- RELATED:BEGIN -->
 ## Related notes
 - [[bayesian-belief-updating|A visual introduction to Bayesian belief updating]]
-- [[nobel-prize-and-causal-inference-popularity|Did the Nobel Prize put causal inference on the public radar?]]
 - [[visual-diff-in-diff|Causal insights with no code?]]
+- [[nobel-prize-and-causal-inference-popularity|Did the Nobel Prize put causal inference on the public radar?]]
 - [[segmentedregression|Modeling impact of the COVID-19 pandemic on people’s interest in work-life balance and well-being]]
 - [[causal-inference-in-people-analytics|Beyond prediction: Exploiting organizational events for causal inference in people analytics]]
 <!-- RELATED:END -->

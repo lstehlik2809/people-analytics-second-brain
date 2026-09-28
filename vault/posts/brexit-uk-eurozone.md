@@ -250,10 +250,10 @@ plt.show()
 <!-- RELATED:BEGIN -->
 ## Related notes
 - [[causal-inference-in-people-analytics|Beyond prediction: Exploiting organizational events for causal inference in people analytics]]
-- [[visual-diff-in-diff|Causal insights with no code?]]
-- [[nobel-prize-and-causal-inference-popularity|Did the Nobel Prize put causal inference on the public radar?]]
 - [[segmentedregression|Modeling impact of the COVID-19 pandemic on people’s interest in work-life balance and well-being]]
-- [[doppelganger-for-career-pathing|Using Doppelgänger for career pathing?]]
+- [[nobel-prize-and-causal-inference-popularity|Did the Nobel Prize put causal inference on the public radar?]]
+- [[people-analytics-popularity-after-covid|The impact of the COVID pandemic on the popularity of people analytics]]
+- [[did-with-repeated-cross-sectional-data|What a European cigarette tax study taught me about employee listening]]
 <!-- RELATED:END -->
 
 ---

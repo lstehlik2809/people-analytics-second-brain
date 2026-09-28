@@ -298,8 +298,8 @@ For an accessible discussion of this topic in the context of people analytics, i
 - [[mixed-level-ml|Beyond the “flat Earth”]]
 - [[causal-inference-in-people-analytics|Beyond prediction: Exploiting organizational events for causal inference in people analytics]]
 - [[cross-lagged-panel-modeling|Getting (more) causal insights from employee survey data (without an RCT)]]
-- [[latent-class-analysis|Latent Class Analysis of responses from employee surveys]]
 - [[value-added-modeling|Goals saved above expected… for managers?]]
+- [[latent-class-analysis|Latent Class Analysis of responses from employee surveys]]
 <!-- RELATED:END -->
 
 ---

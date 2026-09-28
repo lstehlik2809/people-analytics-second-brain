@@ -36,7 +36,7 @@ In my opinion, it works quite well and could represent a very time- and cost-eff
 - [[cv-job-match-career-site|Improving a company career site with tools from OpenAI]]
 - [[openai-personality-interpretation|Ask your personality using GPT]]
 - [[rebuilding-a-survey-with-the-help-of-nlp-tools|Rebuilding an employee survey with the help of NLP tools]]
-- [[network-graph-employee-comments|Using network graph modeling to capture overarching thematic clusters in employee comments]]
+- [[sentiment-analysis-validation|Sentiment analysis of employee survey comments using zero-shot classification]]
 <!-- RELATED:END -->
 
 ---

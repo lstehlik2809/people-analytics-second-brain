@@ -339,11 +339,11 @@ Maybe you'll find the method described here useful in one of your ML projects. H
 
 <!-- RELATED:BEGIN -->
 ## Related notes
-- [[r-and-power-bi|Embedding R (or Python) ML models in Power BI dashboards]]
-- [[personality-and-non-linearities|Nonlinear relationships between personality traits and business outcomes seem to be the norm rather than the exception]]
-- [[interpretable-ml|Interpretable machine learning with modelStudio]]
-- [[dag-and-double-ml|A plausible model of data-generating process eats ML algorithms for breakfast]]
 - [[latent-class-analysis|Latent Class Analysis of responses from employee surveys]]
+- [[interpretable-ml|Interpretable machine learning with modelStudio]]
+- [[personality-and-non-linearities|Nonlinear relationships between personality traits and business outcomes seem to be the norm rather than the exception]]
+- [[conditional-inference-tree|Divide and... understand]]
+- [[r-and-power-bi|Embedding R (or Python) ML models in Power BI dashboards]]
 <!-- RELATED:END -->
 
 ---

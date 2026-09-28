@@ -183,7 +183,7 @@ How about your perception of probability words? Is there anything in the graphs 
 - [[visual-inference-statistics|Visual statistical inference]]
 - [[ai-suggestibility|Loftus & Palmer 2.0: Replicating human bias in AI]]
 - [[predictors-of-stay-intentions-vs-actual-resignations|Talk vs. Walk: Predictors of staying intentions vs. actual quitting behavior]]
-- [[latent-class-analysis|Latent Class Analysis of responses from employee surveys]]
+- [[people-analytics-popularity-after-covid|The impact of the COVID pandemic on the popularity of people analytics]]
 <!-- RELATED:END -->
 
 ---

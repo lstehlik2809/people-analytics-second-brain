@@ -63,8 +63,8 @@ P.S. If interested in exploring the data visually, visit [this dashboard](https:
 - [[hofstede-theory-of-cultural-dimensions|Hofstede's theory of cultural dimensions]]
 - [[personality-and-cultural-values|We are probably more similar - and different - than expected]]
 - [[cultural-traveler|A nerdy way to choose your next holiday destination]]
-- [[corporate-culture-trade-offs|The hidden trade-offs in corporate culture?]]
 - [[company-culture-and-financial-performance|Company culture as a forward signal of financial performance?]]
+- [[corporate-culture-trade-offs|The hidden trade-offs in corporate culture?]]
 <!-- RELATED:END -->
 
 ---

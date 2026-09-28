@@ -700,7 +700,7 @@ Skript k analýze je k dispozici ke stažení v podobě Jupyter Notebooku na mý
 - [[interventions-reducing-gender-pay-gap|Evidence-based interventions that help reduce the gender pay gap]]
 - [[hr-analytika-a-odchodovost-zamstnanc|HR analytika a odchodovost zaměstnanců]]
 - [[moneyball-v-hr-od-hr-analytiky-ke-sportovn-analytice-a-zpt|Moneyball v HR]]
-- [[multilevel-modeling|Multilevel modeling in people analytics]]
+- [[rwa|RWA – A go-to tool for key drivers analysis of employee survey data?]]
 - [[euptd-pay-gap-reporting|Pay gap estimation for small worker categories]]
 <!-- RELATED:END -->
 

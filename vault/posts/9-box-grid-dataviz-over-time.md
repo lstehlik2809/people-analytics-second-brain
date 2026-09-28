@@ -180,7 +180,7 @@ Would be super grateful for any tips or suggestions on dataviz tools or approach
 - [[org-chart-and-collaboration|Org chart and collaboration]]
 - [[change-detection|How to quickly navigate dashboard users to what they need to know?]]
 - [[doppelganger-for-career-pathing|Using Doppelgänger for career pathing?]]
-- [[tenure-vs-satisfaction|Simulating the "survivorship" effect in employee satisfaction data over time]]
+- [[turnover-signal-and-noise|Nothing changed. The dashboard disagrees.]]
 <!-- RELATED:END -->
 
 ---

@@ -160,9 +160,9 @@ And it doesn't have to end there. For example, this estimate can be combined wit
 ## Related notes
 - [[bayesian-networks-in-people-analytics|Use of Bayesian networks in people analytics?]]
 - [[causal-inference-in-people-analytics|Beyond prediction: Exploiting organizational events for causal inference in people analytics]]
-- [[people-analytics-popularity-after-covid|The impact of the COVID pandemic on the popularity of people analytics]]
 - [[bayesian-belief-updating|A visual introduction to Bayesian belief updating]]
-- [[multilevel-modeling|Multilevel modeling in people analytics]]
+- [[hrm-value-chain-and-sem|HRM value chain and structural equation modeling - Moneyball case]]
+- [[people-analytics-popularity-after-covid|The impact of the COVID pandemic on the popularity of people analytics]]
 <!-- RELATED:END -->
 
 ---

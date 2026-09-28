@@ -30,9 +30,9 @@ While there are some limitations to consider - such as the relatively small numb
 ## Related notes
 - [[contagious-turnover|Is contagious turnover overrated? Probably only if you ignore the managers.]]
 - [[psychometric-network-analysis|Psychometric network analysis & employee survey data]]
-- [[corporate-culture-trade-offs|The hidden trade-offs in corporate culture?]]
 - [[predictors-of-stay-intentions-vs-actual-resignations|Talk vs. Walk: Predictors of staying intentions vs. actual quitting behavior]]
 - [[glassdoor|When flawed statistical & causal reasoning leads to a valid conclusion anyway]]
+- [[survey-participation-and-attrition-prediction|People may signal their exit intentions not only by their actions but also by their inactions]]
 <!-- RELATED:END -->
 
 ---

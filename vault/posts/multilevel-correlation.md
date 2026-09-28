@@ -130,8 +130,8 @@ ggplot2::ggplot(simulated_data, aes(y = JobSatisfaction, x = AgilityMaturity, co
 ## Related notes
 - [[multilevel-modeling|Multilevel modeling in people analytics]]
 - [[mixed-level-ml|Beyond the “flat Earth”]]
-- [[latent-class-analysis|Latent Class Analysis of responses from employee surveys]]
 - [[rwa|RWA – A go-to tool for key drivers analysis of employee survey data?]]
+- [[conditional-inference-tree|Divide and... understand]]
 - [[psychometric-network-analysis|Psychometric network analysis & employee survey data]]
 <!-- RELATED:END -->
 

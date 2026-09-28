@@ -325,8 +325,8 @@ This completed the work on our local computer. You can download the final dashbo
 
 <!-- RELATED:BEGIN -->
 ## Related notes
-- [[personas-based-on-ml-local-interpretation-algos|Personas based on ML local interpretation algorithms]]
 - [[interpretable-ml|Interpretable machine learning with modelStudio]]
+- [[personas-based-on-ml-local-interpretation-algos|Personas based on ML local interpretation algorithms]]
 - [[dag-and-double-ml|A plausible model of data-generating process eats ML algorithms for breakfast]]
 - [[bayesian-simulation|Harnessing Bayesian analysis for business process simulation]]
 - [[employee-feedback-analysis-using-openai|Employee feedback analysis using tools from OpenAI]]

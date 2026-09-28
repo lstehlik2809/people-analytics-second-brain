@@ -59,8 +59,8 @@ out = (pd.DataFrame(rows, columns=['manager_id','direct','indirect','total'])
 ## Related notes
 - [[span-of-control-and-managerial-behavior|Can flatter orgs undermine people management?]]
 - [[multilevel-modeling|Multilevel modeling in people analytics]]
-- [[network-graph-employee-comments|Using network graph modeling to capture overarching thematic clusters in employee comments]]
 - [[org-chart-and-collaboration|Org chart and collaboration]]
+- [[network-graph-employee-comments|Using network graph modeling to capture overarching thematic clusters in employee comments]]
 - [[induced-centrality|Induced centralities]]
 <!-- RELATED:END -->
 

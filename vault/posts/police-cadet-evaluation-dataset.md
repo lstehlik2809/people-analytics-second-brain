@@ -120,10 +120,10 @@ If you want to download the dataset, you can do so here via the table above or v
 <!-- RELATED:BEGIN -->
 ## Related notes
 - [[econml-and-employee-attriton|How to get causal interpretation for the Employee Attrition dataset?]]
-- [[people-analytics-challenge-from-orgnostic|People Analytics Challenge from Orgnostic: Plan for high growth]]
 - [[latent-class-analysis|Latent Class Analysis of responses from employee surveys]]
-- [[searching-and-querying-aihr-blog-posts|Searching & querying AIHR blog posts on People Analytics topics]]
-- [[employee-feedback-analysis-using-openai|Employee feedback analysis using tools from OpenAI]]
+- [[people-analytics-challenge-from-orgnostic|People Analytics Challenge from Orgnostic: Plan for high growth]]
+- [[psychometric-network-analysis|Psychometric network analysis & employee survey data]]
+- [[rwa|RWA – A go-to tool for key drivers analysis of employee survey data?]]
 <!-- RELATED:END -->
 
 ---

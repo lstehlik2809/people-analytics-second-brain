@@ -26,7 +26,7 @@ I know this use case is not that common, but IMO still enough to make it worth k
 - [[employee-feedback-analysis-using-openai|Employee feedback analysis using tools from OpenAI]]
 - [[chatgpt-and-employee-feedback|Using ChatGPT to summarize and explore employee feedback?]]
 - [[linkedin-contacts-job-positions|Analyzing LinkedIn connections' jobs using LLMs and the BERTopic package]]
-- [[network-graph-employee-comments|Using network graph modeling to capture overarching thematic clusters in employee comments]]
+- [[topic-analysis-with-genai|Creating new candidate topic labels on the fly during topic analysis with GenAI]]
 <!-- RELATED:END -->
 
 ---

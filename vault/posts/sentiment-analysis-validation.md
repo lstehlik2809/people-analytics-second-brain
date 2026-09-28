@@ -102,8 +102,8 @@ df['sentiment_score_mixed'] = prediction.apply(lambda x: x['scores'][x['labels']
 - [[employee-feedback-analysis-using-openai|Employee feedback analysis using tools from OpenAI]]
 - [[probability-of-comments-in-a-survey|What makes people more likely to comment on a question in an employee survey?]]
 - [[topic-analysis-with-genai|Creating new candidate topic labels on the fly during topic analysis with GenAI]]
-- [[network-graph-employee-comments|Using network graph modeling to capture overarching thematic clusters in employee comments]]
 - [[rebuilding-a-survey-with-the-help-of-nlp-tools|Rebuilding an employee survey with the help of NLP tools]]
+- [[ai-powered-data-exploration-assistant|Testing my GenAI skepticism]]
 <!-- RELATED:END -->
 
 ---

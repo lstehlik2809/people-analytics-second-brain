@@ -202,8 +202,8 @@ for item in items:
 - [[you-said-we-did|‘You Said, We Did’ matters - maybe just not as distinctly as we assume]]
 - [[honesty-in-engagement-vs-exit-surveys|Are people during exit surveys more honest in their responses than in engagement surveys?]]
 - [[glassdoor|When flawed statistical & causal reasoning leads to a valid conclusion anyway]]
-- [[network-graph-employee-comments|Using network graph modeling to capture overarching thematic clusters in employee comments]]
 - [[predictors-of-stay-intentions-vs-actual-resignations|Talk vs. Walk: Predictors of staying intentions vs. actual quitting behavior]]
+- [[psw-and-selection-bias-in-employee-surveys|How to analyze employee survey results with less (selection) bias?]]
 <!-- RELATED:END -->
 
 ---

@@ -179,9 +179,9 @@ ggraph::ggraph(g, layout = "kk") + # other available layouts: 'star', 'circle', 
 <!-- RELATED:BEGIN -->
 ## Related notes
 - [[psychometric-network-analysis|Psychometric network analysis & employee survey data]]
-- [[network-graph-employee-comments|Using network graph modeling to capture overarching thematic clusters in employee comments]]
 - [[david-green-hr-people-sna-network|Mapping the People Analytics universe]]
 - [[instrumental-and-expressive-networks|Not all workplace relationships are created equal when it comes to retaining talent]]
+- [[network-graph-employee-comments|Using network graph modeling to capture overarching thematic clusters in employee comments]]
 - [[ona-skills-exploration|ONA as a tool for exploring the skill space in your company?]]
 <!-- RELATED:END -->
 

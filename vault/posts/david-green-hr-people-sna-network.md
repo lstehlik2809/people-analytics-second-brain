@@ -32,8 +32,8 @@ P.S. You can consider this a prequel to the People Analytics Network Census (PAN
 
 <!-- RELATED:BEGIN -->
 ## Related notes
-- [[network-graph-employee-comments|Using network graph modeling to capture overarching thematic clusters in employee comments]]
 - [[psychometric-network-analysis|Psychometric network analysis & employee survey data]]
+- [[network-graph-employee-comments|Using network graph modeling to capture overarching thematic clusters in employee comments]]
 - [[directionally-correct-podcast-topic-explorer|Turning 152 Directionally Correct podcast episodes into an interactive topic explorer]]
 - [[linkedin-contacts-job-positions|Analyzing LinkedIn connections' jobs using LLMs and the BERTopic package]]
 - [[induced-centrality|Induced centralities]]

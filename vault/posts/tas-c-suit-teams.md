@@ -92,11 +92,11 @@ P.S. Kudos to ChatGPT for extracting the data from the screenshot of the data ta
 
 <!-- RELATED:BEGIN -->
 ## Related notes
-- [[corporate-culture-trade-offs|The hidden trade-offs in corporate culture?]]
 - [[how-personality-risks-co-occur|How personality risks co-occur?]]
 - [[managers-overconfidence|Where do managers put on their rose-tinted glasses the most?]]
 - [[causal-impact-of-leadership-skills|Novel way to measure leadership skills via causal inference (and AI)?]]
 - [[insights-discovery-and-skills|Do Insights Discovery ‘colors’ relate to self-reported skills?]]
+- [[span-of-control-and-managerial-behavior|Can flatter orgs undermine people management?]]
 <!-- RELATED:END -->
 
 ---

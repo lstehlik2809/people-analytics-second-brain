@@ -402,8 +402,8 @@ I hope you find this post useful and that it inspires you to try PNA on your own
 - [[network-graph-employee-comments|Using network graph modeling to capture overarching thematic clusters in employee comments]]
 - [[induced-centrality|Induced centralities]]
 - [[rwa|RWA – A go-to tool for key drivers analysis of employee survey data?]]
-- [[instrumental-and-expressive-networks|Not all workplace relationships are created equal when it comes to retaining talent]]
 - [[latent-class-analysis|Latent Class Analysis of responses from employee surveys]]
+- [[instrumental-and-expressive-networks|Not all workplace relationships are created equal when it comes to retaining talent]]
 <!-- RELATED:END -->
 
 ---

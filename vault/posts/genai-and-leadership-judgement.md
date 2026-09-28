@@ -140,8 +140,8 @@ The possible takeaway? With full awareness of the obvious limitations of this sm
 - [[causal-impact-of-leadership-skills|Novel way to measure leadership skills via causal inference (and AI)?]]
 - [[chatgpt-and-employee-feedback|Using ChatGPT to summarize and explore employee feedback?]]
 - [[ai-powered-data-exploration-assistant|Testing my GenAI skepticism]]
+- [[gpt4-and-e-b-hrm-practices|GPT-4's performance in the knowledge test of evidence-based HRM practices]]
 - [[employee-feedback-analysis-using-openai|Employee feedback analysis using tools from OpenAI]]
-- [[hr-tech-ai-shift|How AI is reshaping HR-tech]]
 <!-- RELATED:END -->
 
 ---

@@ -379,11 +379,11 @@ ggplot2::ggplot(final_results, aes(x = Predictor, y = RescaledWeight)) +
 
 <!-- RELATED:BEGIN -->
 ## Related notes
-- [[cross-lagged-panel-modeling|Getting (more) causal insights from employee survey data (without an RCT)]]
 - [[psychometric-network-analysis|Psychometric network analysis & employee survey data]]
-- [[psw-and-selection-bias-in-employee-surveys|How to analyze employee survey results with less (selection) bias?]]
-- [[importance-vs-satisfaction|Before weighting employee priorities, test what the rating actually means]]
 - [[latent-class-analysis|Latent Class Analysis of responses from employee surveys]]
+- [[cross-lagged-panel-modeling|Getting (more) causal insights from employee survey data (without an RCT)]]
+- [[importance-vs-satisfaction|Before weighting employee priorities, test what the rating actually means]]
+- [[psw-and-selection-bias-in-employee-surveys|How to analyze employee survey results with less (selection) bias?]]
 <!-- RELATED:END -->
 
 ---
