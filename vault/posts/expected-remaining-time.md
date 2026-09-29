@@ -202,7 +202,7 @@ remaining_time_bootstraping_plotting(data=data_wine)
 - [[econml-and-employee-attriton|How to get causal interpretation for the Employee Attrition dataset?]]
 - [[causal-inference-in-people-analytics|Beyond prediction: Exploiting organizational events for causal inference in people analytics]]
 - [[tenure-vs-satisfaction|Simulating the "survivorship" effect in employee satisfaction data over time]]
-- [[turnover-signal-and-noise|Nothing changed. The dashboard disagrees.]]
+- [[people-related-metrics-distribution|It's perfectly normal not to be normal]]
 <!-- RELATED:END -->
 
 ---
