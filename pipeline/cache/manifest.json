@@ -20,7 +20,7 @@
  "timeboxing": "1848faed7a1413072e53a17062363ce8499838e599559d77346d5b7d8a6cc41b",
  "conditional-inference-tree": "b5b7f4c0ef8268e400378d4bd4690bb7d40f65beeb690176cdcce54a5824caa5",
  "police-cadet-evaluation-dataset": "763fe92587317aa13691baa67d31c035d0c986f2781fce3f86dfd83143592b24",
- "bayesian-belief-updating": "948bff87baa5ab18a3dfce7163c4d3ef70a360dd5b388f5a7b5459c278751d24",
+ "bayesian-belief-updating": "7b982438d2f1e15e4ac33546bf25fee8c9a9d274c580d780f7c9c4025aa7e0b5",
  "people-related-metrics-distribution": "63af1815a90830e1d5a65971823e90b3a2b3e1b5620643a0fbda8171de761504",
  "interventions-reducing-gender-pay-gap": "8e9cbb5b0cf1e667a655c1ef88a2506613d6b08786afcc38ee08aaa42de3b964",
  "meeting-matrix": "bdaafe28760093633098dcb66907d58fbd99ba0d7561ac7e18ac76ec73b927f0",
@@ -84,7 +84,7 @@
  "big-five-personality-and-earnings": "362a20d2049215aa48f7cadbe4d8bbaca5d6c6a190a50b221830dc9bd837ed87",
  "ebm-gpt-bot": "faac2f55596d3fc9934b273d3de6909fbf4af2a2fa220336990d8c92cc194283",
  "reflective-and-intuitive-thinking-styles": "fd5ca7994ac5f18657abbb53e348ad5fa399d45511fa09561a31a4af7d56cd2a",
- "gai-simulation-work-habits": "5ff4eeb799e1bfd815831708449b1ff543090e00fa352b34a41f6850f0e204ad",
+ "gai-simulation-work-habits": "1afca5e7aed692bc21d89b2d0e02aa054233f9bbf0fc3d0769b836ab386b3504",
  "goal-setting": "1dfd964f1ee0a2967bcdb04f01cc79bbecd4b8fa19043d36ba94ac55a7a44b96",
  "strength-based-development-and-distributions": "19fd6d0e8b68b1b4548bda32285d45926fa7dfa3d6531ab8c91b1f854d4926cb",
  "team-design-creativity-innovation": "07762aa8f2ff8deaef393792a4e10253ce2ea5c747756fc88927ff9de75327a7",
@@ -161,7 +161,7 @@
  "corporate-culture-trade-offs": "b8d068e0567d7aeb832751e118d3efa3f67c47e8975fe1ae4bc7f12aeafffd6b",
  "genai-and-leadership-judgement": "3dce6f224ecaedb94ca8606c84c875669b0870622355e2d9d0eb832f31478dbd",
  "agentic-ai-for-visual-data-exploration": "e0c2cb4443113488f7aeeea244f4468bfc2c07ac3f7329ab3b82ea2b78f09988",
- "conspiracy-theories-and-overfitting": "3b701fca4c55b7b593d5bfcf66f5551a628c1b9e805aca4b5df79168aa423e9e",
+ "conspiracy-theories-and-overfitting": "8a90a743db0653f67167ef8b9fe2b026e6ff01fc88399e408ffe4da9a86b0030",
  "ai-powered-data-exploration-assistant": "2411c830b3bba0adb5e33d26c2e5335f5c2dae76b544563c620799b66122132d",
  "big-consultancies-in-the-skills-semantic-space": "ed3f455da42222fb9131c960cee2bc2b1865c964c7e909f21f5d921057625b44",
  "cross-lagged-panel-modeling": "48cbfb3a6308b2179daa197c3b5c1a0b57b465451826678f462fd31cd7230f50",
@@ -215,5 +215,6 @@
  "bayesian-thinking-for-people-analytics": "be2fc1535daa0426806ddbf9caeb93469669855a94fda578cfd46d8ec32cd06e",
  "job-ai-exposure": "475f08162e6f6298e1b05c107dbe8341bced53fad93533bc7943db5ed9030069",
  "importance-vs-satisfaction": "81ba9a5f20960c289210ed76fa704eacf20f263300b6ac0f6ca38ccfc3242ee6",
- "turnover-signal-and-noise": "8b2295a6ec2d834016ee9dcdf7b2cd1a2cfccbc456f281a29b0fdb9959b484b6"
+ "turnover-signal-and-noise": "8b2295a6ec2d834016ee9dcdf7b2cd1a2cfccbc456f281a29b0fdb9959b484b6",
+ "coincidence-or-evidence": "8387fb47b5c28315ee6076e12bb1fadeddb2b0bd90e7d7045abd35b0ff528308"
 }

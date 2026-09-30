@@ -8,6 +8,7 @@ tags:
 - time-series
 - critical-thinking
 - r
+- rationality
 original: https://blog-about-people-analytics.netlify.app/posts/2022-10-27-bayesian-belief-updating/
 ---
 
@@ -179,8 +180,8 @@ For those who would like to incorporate Bayesian reasoning into their managerial
 - [[passive-versus-active-information-acquisition|From passive to active information acquisition]]
 - [[bayesian-simulation|Harnessing Bayesian analysis for business process simulation]]
 - [[visual-inference-statistics|Visual statistical inference]]
+- [[coincidence-or-evidence|When does a coincidence become evidence?]]
 - [[job-comparator|A bet on a new job]]
-- [[bayesian-thinking-for-people-analytics|Bayesian Thinking for People Analytics]]
 <!-- RELATED:END -->
 
 ---

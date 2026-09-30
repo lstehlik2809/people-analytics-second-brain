@@ -39,11 +39,11 @@ P.S. For our household, the causal model is simpler: *Child wants cat → parent
 
 <!-- RELATED:BEGIN -->
 ## Related notes
+- [[coincidence-or-evidence|When does a coincidence become evidence?]]
 - [[ai-and-bullshit-asymmetry|Can AI help us fight the bullshit asymmetry?]]
 - [[dag-and-double-ml|A plausible model of data-generating process eats ML algorithms for breakfast]]
 - [[car-accidents-near-home|Before you blame the driver, check the denominator]]
 - [[happiness-and-income|Happy today, richer tomorrow?]]
-- [[causal-inference-in-people-analytics|Beyond prediction: Exploiting organizational events for causal inference in people analytics]]
 <!-- RELATED:END -->
 
 ---

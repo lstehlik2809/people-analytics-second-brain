@@ -181,9 +181,9 @@ How about your perception of probability words? Is there anything in the graphs 
 ## Related notes
 - [[probability-of-comments-in-a-survey|What makes people more likely to comment on a question in an employee survey?]]
 - [[visual-inference-statistics|Visual statistical inference]]
+- [[coincidence-or-evidence|When does a coincidence become evidence?]]
 - [[ai-suggestibility|Loftus & Palmer 2.0: Replicating human bias in AI]]
 - [[predictors-of-stay-intentions-vs-actual-resignations|Talk vs. Walk: Predictors of staying intentions vs. actual quitting behavior]]
-- [[people-analytics-popularity-after-covid|The impact of the COVID pandemic on the popularity of people analytics]]
 <!-- RELATED:END -->
 
 ---

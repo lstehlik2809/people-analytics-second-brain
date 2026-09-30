@@ -7,6 +7,7 @@ tags:
 - generative-ai
 - critical-thinking
 - decision-making
+- rationality
 original: https://blog-about-people-analytics.netlify.app/posts/2023-12-13-gai-simulation-work-habits/
 ---
 

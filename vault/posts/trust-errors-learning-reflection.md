@@ -24,10 +24,10 @@ P.S. This rant-ish post was prompted by my recent reading on causal inference, w
 <!-- RELATED:BEGIN -->
 ## Related notes
 - [[conspiracy-theories-and-overfitting|Conspiracy theories as a specific example of overfitting?]]
+- [[coincidence-or-evidence|When does a coincidence become evidence?]]
 - [[ols-vs-logistic-regression|The statistical "sin" as best / common practice?]]
 - [[ai-and-bullshit-asymmetry|Can AI help us fight the bullshit asymmetry?]]
 - [[causal-inference-with-bayesian-networks|Causal Inference with Bayesian Networks]]
-- [[garden-of-forking-paths-redo|Refactoring the "Garden of Forking Paths"]]
 <!-- RELATED:END -->
 
 ---

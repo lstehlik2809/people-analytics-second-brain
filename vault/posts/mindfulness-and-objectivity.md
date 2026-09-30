@@ -20,8 +20,8 @@ It's true that the observed effect was rather small and barely distinguishable f
 - [[coin-flip-as-a-decision-aid|Can a simple coin flip help you decide and avoid overanalyzing?]]
 - [[self-awareness-and-personality|Does your personality interfere with your self-awareness?]]
 - [[reflective-and-intuitive-thinking-styles|Reflective and intuitive thinking styles]]
-- [[gai-simulation-work-habits|Does GenAI make me a better (more rational) thinker?]]
 - [[timeboxing|Timeboxing. Does it really work?]]
+- [[systematic-review-of-happiness-interventions|What actually makes us happier?]]
 <!-- RELATED:END -->
 
 ---

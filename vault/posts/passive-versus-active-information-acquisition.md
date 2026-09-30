@@ -698,9 +698,9 @@ render_comparison_gif()
 ## Related notes
 - [[bayesian-belief-updating|A visual introduction to Bayesian belief updating]]
 - [[cat-and-irt-demo|An interactive demo of Computerized Adaptive Testing]]
+- [[coincidence-or-evidence|When does a coincidence become evidence?]]
 - [[bayesian-simulation|Harnessing Bayesian analysis for business process simulation]]
 - [[visual-inference-statistics|Visual statistical inference]]
-- [[garden-of-forking-paths-redo|Refactoring the "Garden of Forking Paths"]]
 <!-- RELATED:END -->
 
 ---

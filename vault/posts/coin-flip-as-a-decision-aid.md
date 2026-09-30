@@ -28,10 +28,10 @@ Curious if anyone here has experience with this specific decision aid and how it
 <!-- RELATED:BEGIN -->
 ## Related notes
 - [[mindfulness-and-objectivity|Another positive effect of mindfulness meditation on the horizon?]]
+- [[coincidence-or-evidence|When does a coincidence become evidence?]]
 - [[analytical-choices-and-variability|How variations in analytic choices affect results?]]
 - [[gai-simulation-work-habits|Does GenAI make me a better (more rational) thinker?]]
 - [[nudge-effectiveness|Signal vs. Noise: Why we can’t yet identify effective nudges]]
-- [[systematic-review-of-happiness-interventions|What actually makes us happier?]]
 <!-- RELATED:END -->
 
 ---

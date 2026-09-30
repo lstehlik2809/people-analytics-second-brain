@@ -34,7 +34,7 @@ The study thus serves as a valuable reminder that scientific disagreements may n
 - [[self-awareness-and-personality|Does your personality interfere with your self-awareness?]]
 - [[cognitive-diversity|Can there be too much cognitive diversity in teams?]]
 - [[personality-and-cultural-values|We are probably more similar - and different - than expected]]
-- [[personality-frameworks-contest|A showdown between the Big Five, Enneagram, MBTI, and astrology]]
+- [[coincidence-or-evidence|When does a coincidence become evidence?]]
 <!-- RELATED:END -->
 
 ---

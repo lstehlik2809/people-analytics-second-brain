@@ -38,11 +38,11 @@ P.S. I made [a simple tool](https://lstehlik2809.github.io/Car-Travel-Simulator/
 
 <!-- RELATED:BEGIN -->
 ## Related notes
+- [[coincidence-or-evidence|When does a coincidence become evidence?]]
 - [[impact-of-pets-on-life-satisfaction|Before you believe the £70,000 cat]]
 - [[people-related-metrics-distribution|It's perfectly normal not to be normal]]
 - [[conspiracy-theories-and-overfitting|Conspiracy theories as a specific example of overfitting?]]
 - [[ai-suggestibility|Loftus & Palmer 2.0: Replicating human bias in AI]]
-- [[dag-and-double-ml|A plausible model of data-generating process eats ML algorithms for breakfast]]
 <!-- RELATED:END -->
 
 ---
