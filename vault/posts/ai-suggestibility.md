@@ -59,8 +59,8 @@ P.S. By coincidence, while working on this post I stumbled upon a much more rigo
 - [[chatgpt-emails-and-causalpy|ChatGPT as a new email writing coach?]]
 - [[genai-and-leadership-judgement|Can genAI help people managers lead better?]]
 - [[ai-powered-data-exploration-assistant|Testing my GenAI skepticism]]
+- [[change-org-ai-outputs-vs-outcomes|Change.org: AI outputs vs outcomes]]
 - [[openai-personality-interpretation|Ask your personality using GPT]]
-- [[ai-and-bullshit-asymmetry|Can AI help us fight the bullshit asymmetry?]]
 <!-- RELATED:END -->
 
 ---
