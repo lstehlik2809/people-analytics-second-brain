@@ -58,8 +58,8 @@ P.S. By coincidence, while working on this post I stumbled upon a much more rigo
 ## Related notes
 - [[chatgpt-emails-and-causalpy|ChatGPT as a new email writing coach?]]
 - [[genai-and-leadership-judgement|Can genAI help people managers lead better?]]
-- [[ai-powered-data-exploration-assistant|Testing my GenAI skepticism]]
 - [[change-org-ai-outputs-vs-outcomes|Change.org: AI outputs vs outcomes]]
+- [[ai-powered-data-exploration-assistant|Testing my GenAI skepticism]]
 - [[openai-personality-interpretation|Ask your personality using GPT]]
 <!-- RELATED:END -->
 

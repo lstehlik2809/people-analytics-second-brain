@@ -128,7 +128,7 @@ az.summary(last_cumulative_estimate)
 - [[chatgpt-and-employee-feedback|Using ChatGPT to summarize and explore employee feedback?]]
 - [[employee-feedback-analysis-using-openai|Employee feedback analysis using tools from OpenAI]]
 - [[ai-powered-data-exploration-assistant|Testing my GenAI skepticism]]
-- [[openai-personality-interpretation|Ask your personality using GPT]]
+- [[change-org-ai-outputs-vs-outcomes|Change.org: AI outputs vs outcomes]]
 <!-- RELATED:END -->
 
 ---

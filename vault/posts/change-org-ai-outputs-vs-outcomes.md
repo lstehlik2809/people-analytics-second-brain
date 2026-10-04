@@ -1,6 +1,6 @@
 ---
 title: 'Change.org: AI outputs vs outcomes'
-description: With AI access, petitions got longer and were rated as better written and more persuasive, but signatures didn’t follow 🧐
+description: Change.org introduced a “write with AI” tool for petition writers. With access to it, petitions got longer and were rated as more persuasive, yet early engagement didn’t improve 🧐
 date: '2026-10-03'
 tags:
 - ai
@@ -37,11 +37,11 @@ What I find also interesting is that lexical features that used to predict early
 
 <!-- RELATED:BEGIN -->
 ## Related notes
-- [[genai-and-disrupt-of-labor-market-signalling|Making talk cheap: How GenAI may disrupt labor-market signalling]]
 - [[causal-inference-in-people-analytics|Beyond prediction: Exploiting organizational events for causal inference in people analytics]]
-- [[ai-and-bullshit-asymmetry|Can AI help us fight the bullshit asymmetry?]]
+- [[genai-and-disrupt-of-labor-market-signalling|Making talk cheap: How GenAI may disrupt labor-market signalling]]
 - [[chatgpt-emails-and-causalpy|ChatGPT as a new email writing coach?]]
-- [[hr-tech-ai-shift|How AI is reshaping HR-tech]]
+- [[ai-and-bullshit-asymmetry|Can AI help us fight the bullshit asymmetry?]]
+- [[ai-suggestibility|Loftus & Palmer 2.0: Replicating human bias in AI]]
 <!-- RELATED:END -->
 
 ---
