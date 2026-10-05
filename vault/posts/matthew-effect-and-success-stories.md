@@ -29,8 +29,8 @@ And of course, school entry dates are just one example. We could start with bein
 <!-- RELATED:BEGIN -->
 ## Related notes
 - [[garden-of-forking-paths-redo|Refactoring the "Garden of Forking Paths"]]
-- [[coincidence-or-evidence|When does a coincidence become evidence?]]
 - [[conspiracy-theories-and-overfitting|Conspiracy theories as a specific example of overfitting?]]
+- [[coincidence-or-evidence|When does a coincidence become evidence?]]
 - [[trust-errors-learning-reflection|When to forgive, when to close the book]]
 - [[causal-inference-in-people-analytics|Beyond prediction: Exploiting organizational events for causal inference in people analytics]]
 <!-- RELATED:END -->

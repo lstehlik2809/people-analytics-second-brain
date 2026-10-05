@@ -88,7 +88,7 @@ The most interesting result for me was the separation between the two 'dials.' A
 
 This matters because it suggests that a person who is quick to see hidden causes is not necessarily unable to read evidence. At least in these tasks, the evidence-processing part of the system could work reasonably well while the starting assumptions were set differently.
 
-There were also systematic differences between people in prior openness, but little evidence of stable differences in evidence reading across the two tasks. And it was mainly the prior-openness measure - not evidence-reading accuracy - that showed meaningful links with other cognitive characteristics associated with rational and irrational thinking.
+There were also systematic differences between people in prior openness, but little evidence of stable differences in evidence reading across the two tasks. And it was mainly the prior-openness measure - not evidence-reading accuracy - that showed meaningful links with other cognitive characteristics associated traditionally with rational and irrational thinking (e.g., lower cognitive reflection, poorer performance on heuristics-and-biases tasks, less critical and impartial thinking, greater trust in intuition, and stronger beliefs in superstition and precognition).
 
 The exploratory pattern pointed more toward intellectual skepticism than toward unusual or intense experience as the relevant difference. I would treat that as a hypothesis for another study, not as the final word. But it fits the broader idea: the important question may be less "Can this person recognize evidence?" and more "How much evidence do they require before accepting an unusual explanation?"
 
@@ -130,7 +130,7 @@ P.S. Both studies were preregistered, and the data and analyses are openly avail
 P.P.S. The project also included Czech pilot localizations of five psychometric measures: an extended Cognitive Reflection Test, a Heuristics and Biases Test, the Personal Need for Structure inventory, the Rational-Experiential Inventory, and the Revised Paranormal Belief Scale. Because apparently two studies were not enough.
 
 ---
-\* Source: Luděk Stehlík (2017), *Validation of Bayesian Model of Causal Inferences Made on the Basis of Perceived Coincidences*, Charles University. Figures adapted from Graphs 1, 7, and 9 of the dissertation.
+\* Luděk Stehlík (2017), *Validation of Bayesian Model of Causal Inferences Made on the Basis of Perceived Coincidences*, Charles University.
 
 <!-- RELATED:BEGIN -->
 ## Related notes
