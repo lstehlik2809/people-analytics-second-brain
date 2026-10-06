@@ -119,6 +119,22 @@ class EmbeddedFigureTests(unittest.TestCase):
         self.assertIn('src="./post/simulation.mp4"', result)
         self.assertEqual((asset_dir / "simulation.mp4").read_bytes(), b"video bytes")
 
+    def test_unwraps_raw_html_video_fence_and_copies_media(self):
+        source = self.root / "demo.mp4"
+        source.write_bytes(b"video bytes")
+        asset_dir = self.root / "assets"
+        body = (
+            '```{=html}\n<video controls><source src="demo.mp4" '
+            'type="video/mp4"></video>\n```'
+        )
+
+        result = convert.convert_body(body, self.root, asset_dir, "post", [])
+
+        self.assertIn('<video controls>', result)
+        self.assertIn('src="./post/demo.mp4"', result)
+        self.assertNotIn('```', result)
+        self.assertEqual((asset_dir / "demo.mp4").read_bytes(), b"video bytes")
+
     def test_converts_video_only_vembedr_chunk_to_youtube_embed(self):
         body = (
             'Before\n\n```{r echo=FALSE}\n\n'

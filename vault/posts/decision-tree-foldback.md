@@ -28,13 +28,10 @@ One option I gave a try is Foldback, a simple app where you build the tree by ty
 * It tells you which estimate is most worth pinning down first, and whether a "diagnostic month" (e.g., a month of coaching with a clear check-in) is worth its cost.
 * You get a plain-text note to paste into meeting minutes or an email.
 
-```
 <video controls preload="metadata" style="width: 100%; display: block; margin-bottom: 1.5rem;">
   <source src="./decision-tree-foldback/foldback_demo.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
-```
-
 ⚠️ A few things to keep in mind: The app catches mechanical slips (chances that don't add up to 100% stop the result instead of giving you a confident verdict), but it doesn't make your inputs any better - as Andrew puts it, a confident, narrow, invented range produces a confident, narrow, invented answer, only a more rigorous-looking one. It works with averages only, treats your estimates as independent, allows one decision at the start of the tree, and prices only what you put into it, so fairness or the impact on people stays outside unless you add it. And as Andrew stresses, the tree should be built with the decision-maker, not presented at them. Andrew, who saw an early version, also thinks users will need a knowledgeable facilitator, and the step-by-step guide may not be enough on its own: it makes the tree easier to build, but it won't tell you that you've missed an option or that your ranges are too narrow.
 
 Everything runs in your browser, nothing you type is sent anywhere, and the tree is gone when you close the tab, which is probably not unimportant when the tree is about a real person.
@@ -46,8 +43,8 @@ Let me know what works, what's confusing, or what's missing. I'd especially like
 <!-- RELATED:BEGIN -->
 ## Related notes
 - [[job-comparator|A bet on a new job]]
-- [[turnover-signal-and-noise|Nothing changed. The dashboard disagrees.]]
 - [[bayesian-simulation|Harnessing Bayesian analysis for business process simulation]]
+- [[turnover-signal-and-noise|Nothing changed. The dashboard disagrees.]]
 - [[doppelganger-for-career-pathing|Using Doppelgänger for career pathing?]]
 - [[the-triple-filter-test|The Triple-Filter Test: How to prioritize HR interventions with panel data]]
 <!-- RELATED:END -->

@@ -42,6 +42,9 @@ CHUNK_RE = re.compile(r"^```\{(r|R)\b[^}]*\}\s*$", re.M)
 PY_CHUNK_RE = re.compile(r"^```\{python[^}]*\}\s*$", re.M)
 OTHER_CHUNK_RE = re.compile(r"^```\{[^}]*\}\s*$", re.M)
 R_CHUNK_RE = re.compile(r"^```\{[rR]\b[^}]*\}\s*\n(.*?)^```\s*$", re.M | re.S)
+# Pandoc's raw HTML blocks need to remain HTML. Converting their fences to
+# ordinary markdown fences makes browsers display the markup as source code.
+RAW_HTML_FENCE_RE = re.compile(r"^```\{=html\}\s*\n(.*?)^```\s*$", re.M | re.S | re.I)
 YOUTUBE_CALL_RE = re.compile(
     r'''vembedr::embed_youtube\(\s*["']([A-Za-z0-9_-]{11})["']\s*\)'''
 )
@@ -63,7 +66,7 @@ LOCAL_HTML_ASSET_RE = re.compile(
     rb"|<(?:source|video|audio)\b[^>]*src\s*=\s*[\"'](?!https?://|//|data:)",
     re.I,
 )
-LOCAL_HTML_ASSET_HASH_MARKER = b"\0local-html-assets-v2"
+LOCAL_HTML_ASSET_HASH_MARKER = b"\0local-html-assets-v3"
 # Local documents can be referenced directly (rather than from a ``files/``
 # subdirectory), especially when the same attachment is embedded by multiple
 # posts. Hash those referenced files too, so a document-only update rebuilds
@@ -128,6 +131,7 @@ def convert_body(body: str, post_dir: Path, asset_dir: Path, slug: str, warnings
         )
 
     body = R_CHUNK_RE.sub(youtube_chunk_sub, body)
+    body = RAW_HTML_FENCE_RE.sub(lambda m: m.group(1).strip(), body)
     # code chunk headers -> plain fenced blocks
     body = CHUNK_RE.sub("```r", body)
     body = PY_CHUNK_RE.sub("```python", body)

@@ -41,8 +41,8 @@ Not sure if you’ll be interested in using this updated version of the image - 
 - [[doppelganger-for-career-pathing|Using Doppelgänger for career pathing?]]
 - [[exploration-vs-exploitation-tradeoff|Exploration vs. Exploitation trade-off in our calendars]]
 - [[matthew-effect-and-success-stories|Luck, cutoffs, and the stories we tell about success]]
-- [[passive-versus-active-information-acquisition|From passive to active information acquisition]]
 - [[decision-tree-foldback|What probability would change your mind about Sam?]]
+- [[passive-versus-active-information-acquisition|From passive to active information acquisition]]
 <!-- RELATED:END -->
 
 ---
