@@ -6,6 +6,7 @@ tags:
 - bayesian-statistics
 - simulation
 - python
+- decision-making
 original: https://blog-about-people-analytics.netlify.app/posts/2023-09-17-bayesian-simulation/
 ---
 

@@ -8,6 +8,7 @@ tags:
 - statistics
 - causal-inference
 - ai
+- people-analytics
 original: https://blog-about-people-analytics.netlify.app/posts/2026-05-12-value-added-modeling/
 ---
 

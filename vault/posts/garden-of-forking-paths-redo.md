@@ -42,7 +42,7 @@ Not sure if you’ll be interested in using this updated version of the image - 
 - [[exploration-vs-exploitation-tradeoff|Exploration vs. Exploitation trade-off in our calendars]]
 - [[matthew-effect-and-success-stories|Luck, cutoffs, and the stories we tell about success]]
 - [[passive-versus-active-information-acquisition|From passive to active information acquisition]]
-- [[trust-errors-learning-reflection|When to forgive, when to close the book]]
+- [[decision-tree-foldback|What probability would change your mind about Sam?]]
 <!-- RELATED:END -->
 
 ---

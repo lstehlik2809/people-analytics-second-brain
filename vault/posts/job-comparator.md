@@ -7,6 +7,8 @@ tags:
 - bayesian-statistics
 - r
 - shiny-app
+- decision-making
+- decision-analysis
 original: https://blog-about-people-analytics.netlify.app/posts/2023-06-28-job-comparator/
 ---
 
@@ -34,11 +36,11 @@ If you have at least two job offers to choose from, you may find the app as usef
 
 <!-- RELATED:BEGIN -->
 ## Related notes
+- [[decision-tree-foldback|What probability would change your mind about Sam?]]
 - [[cv-job-match-career-site|Improving a company career site with tools from OpenAI]]
 - [[bayesian-simulation|Harnessing Bayesian analysis for business process simulation]]
 - [[overview-of-predictors-of-voluntary-employee-turnover|Overview of predictors of voluntary employee turnover]]
 - [[linkedin-connections-analysis|R Shiny app for LinkedIn connections analysis]]
-- [[job-ai-exposure|How exposed are your job and other jobs to AI?]]
 <!-- RELATED:END -->
 
 ---

@@ -1,9 +1,10 @@
 # Ludek's People Analytics Second Brain
 
-> A public second brain of 219 posts on people analytics, statistics, causal inference, psychometrics, machine learning, and AI by Ludek Stehlik. Browsable knowledge graph at https://lstehlik2809.github.io/people-analytics-second-brain. The complete corpus is in /llms-full.txt.
+> A public second brain of 220 posts on people analytics, statistics, causal inference, psychometrics, machine learning, and AI by Ludek Stehlik. Browsable knowledge graph at https://lstehlik2809.github.io/people-analytics-second-brain. The complete corpus is in /llms-full.txt.
 
 ## Notes
 
+- [What probability would change your mind about Sam?](https://lstehlik2809.github.io/people-analytics-second-brain/posts/decision-tree-foldback): A practical look at decision analysis in People Analytics, and a simple tool for comparing options, propagating uncertainty, and finding the assumptions that would actually change a people decision.
 - [Change.org: AI outputs vs outcomes](https://lstehlik2809.github.io/people-analytics-second-brain/posts/change-org-ai-outputs-vs-outcomes): Change.org introduced a “write with AI” tool for petition writers. With access to it, petitions got longer and were rated as more persuasive, yet early engagement didn’t improve 🧐
 - [When does a coincidence become evidence?](https://lstehlik2809.github.io/people-analytics-second-brain/posts/coincidence-or-evidence): Why the same odd pattern can look like random noise to one person and a hidden cause to another - and what that says about human rationality. The topic of my dissertation that runs to more than 300 pages 😮 This is the version I wish I had ready whenever someone asked about it at a party 😉
 - [Nothing changed. The dashboard disagrees.](https://lstehlik2809.github.io/people-analytics-second-brain/posts/turnover-signal-and-noise): Sharing an app that grew as a byproduct of an internal discussion about how to report and interpret turnover rates.

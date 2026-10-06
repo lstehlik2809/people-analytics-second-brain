@@ -649,8 +649,8 @@ Finally, let's breathe some life into the dry numbers by watching a short clip f
 - [[moneyball-v-hr-od-hr-analytiky-ke-sportovn-analytice-a-zpt|Moneyball v HR]]
 - [[causal-inference-in-people-analytics|Beyond prediction: Exploiting organizational events for causal inference in people analytics]]
 - [[multilevel-modeling|Multilevel modeling in people analytics]]
-- [[value-added-modeling|Goals saved above expected… for managers?]]
 - [[bayesian-simulation|Harnessing Bayesian analysis for business process simulation]]
+- [[value-added-modeling|Goals saved above expected… for managers?]]
 <!-- RELATED:END -->
 
 ---

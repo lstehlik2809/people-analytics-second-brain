@@ -34,8 +34,8 @@ P.S. It was also a good opportunity to try out [Shiny for Python by Posit](https
 - [[employee-feedback-analysis-using-openai|Employee feedback analysis using tools from OpenAI]]
 - [[openai-personality-interpretation|Ask your personality using GPT]]
 - [[directionally-correct-podcast-topic-explorer|Turning 152 Directionally Correct podcast episodes into an interactive topic explorer]]
-- [[job-comparator|A bet on a new job]]
 - [[hr-tech-ai-shift|How AI is reshaping HR-tech]]
+- [[job-comparator|A bet on a new job]]
 <!-- RELATED:END -->
 
 ---
