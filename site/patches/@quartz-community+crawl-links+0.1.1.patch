@@ -1,0 +1,23 @@
+diff --git a/node_modules/@quartz-community/crawl-links/dist/index.js b/node_modules/@quartz-community/crawl-links/dist/index.js
+index 5005175..2ee637e 100644
+--- a/node_modules/@quartz-community/crawl-links/dist/index.js
++++ b/node_modules/@quartz-community/crawl-links/dist/index.js
+@@ -465,14 +465,13 @@ var CrawlLinks = (userOpts) => {
+                   }
+                 }
+               }
+-              if (["img", "video", "audio", "iframe"].includes(node.tagName) && node.properties && typeof node.properties.src === "string") {
++              const assetAttribute = node.tagName === "object" ? "data" : "src";
++              if (["img", "video", "audio", "iframe", "object"].includes(node.tagName) && node.properties && typeof node.properties[assetAttribute] === "string") {
+                 if (opts.lazyLoad) {
+                   node.properties.loading = "lazy";
+                 }
+-                if (!isAbsoluteUrlWithOptions(node.properties.src)) {
+-                  let dest = node.properties.src;
+-                  dest = node.properties.src = transformLink(fileSlug, dest, transformOptions);
+-                  node.properties.src = dest;
++                if (!isAbsoluteUrlWithOptions(node.properties[assetAttribute])) {
++                  node.properties[assetAttribute] = transformLink(fileSlug, node.properties[assetAttribute], transformOptions);
+                 }
+               }
+             });
