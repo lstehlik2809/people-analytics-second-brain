@@ -27,7 +27,7 @@ The central idea is that discovery and superstition may sometimes rely on the sa
 The comic also keeps the uncertainties, including an experiment that could not give a clear answer. Apparently, even an alien inspector cannot fix a weak manipulation check.
 If you prefer your Bayesian reasoning with speech bubbles and a flying saucer, this version is for you 🛸
 
-Note on how this was made: I used Claude Code to turn my dissertation summary into a comic script and detailed image prompts, and Codex to generate and refine the illustrations using OpenAI’s image generation, check the lettering, insert the original research charts, and assemble the final PDF. Neither tool was around to help with the actual PhD 😉
+Note on how this was made: I used Claude Code (Opus 5.5) to turn my dissertation summary into a comic script and detailed image prompts, and Codex (GPT-6.1 Sol) to generate and refine the illustrations using OpenAI’s image generation, check the lettering, insert the original research charts, and assemble the final PDF. Neither tool was around to help with the actual PhD 😉
 
 <!-- RELATED:BEGIN -->
 ## Related notes
@@ -35,7 +35,7 @@ Note on how this was made: I used Claude Code to turn my dissertation summary in
 - [[conspiracy-theories-and-overfitting|Conspiracy theories as a specific example of overfitting?]]
 - [[directionally-correct-podcast-topic-explorer|Turning 152 Directionally Correct podcast episodes into an interactive topic explorer]]
 - [[garden-of-forking-paths-redo|Refactoring the "Garden of Forking Paths"]]
-- [[bayesian-belief-updating|A visual introduction to Bayesian belief updating]]
+- [[ai-and-bullshit-asymmetry|Can AI help us fight the bullshit asymmetry?]]
 <!-- RELATED:END -->
 
 ---
