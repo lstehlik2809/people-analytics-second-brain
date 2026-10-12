@@ -9,6 +9,8 @@ tags:
 - rationality
 - cognitive-biases
 - causal-reasoning
+- psychometrics
+- cognitive-psychometrics
 original: https://blog-about-people-analytics.netlify.app/posts/2026-09-30-coincidence-or-evidence/
 ---
 
@@ -134,8 +136,8 @@ P.P.S. The project also included Czech pilot localizations of five psychometric 
 
 <!-- RELATED:BEGIN -->
 ## Related notes
-- [[the-coincidence-audit|The Coincidence Audit: my PhD dissertation, now with aliens]]
 - [[conspiracy-theories-and-overfitting|Conspiracy theories as a specific example of overfitting?]]
+- [[the-coincidence-audit|The Coincidence Audit: my PhD dissertation, now with aliens]]
 - [[car-accidents-near-home|Before you blame the driver, check the denominator]]
 - [[ai-and-bullshit-asymmetry|Can AI help us fight the bullshit asymmetry?]]
 - [[nobel-prize-and-causal-inference-popularity|Did the Nobel Prize put causal inference on the public radar?]]

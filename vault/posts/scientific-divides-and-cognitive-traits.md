@@ -33,8 +33,8 @@ The study thus serves as a valuable reminder that scientific disagreements may n
 - [[analytical-choices-and-variability|How variations in analytic choices affect results?]]
 - [[self-awareness-and-personality|Does your personality interfere with your self-awareness?]]
 - [[cognitive-diversity|Can there be too much cognitive diversity in teams?]]
-- [[personality-and-cultural-values|We are probably more similar - and different - than expected]]
 - [[coincidence-or-evidence|When does a coincidence become evidence?]]
+- [[personality-and-cultural-values|We are probably more similar - and different - than expected]]
 <!-- RELATED:END -->
 
 ---
