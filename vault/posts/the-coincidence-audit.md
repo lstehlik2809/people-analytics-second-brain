@@ -16,7 +16,7 @@ original: https://blog-about-people-analytics.netlify.app/posts/2026-10-11-the-c
 
 In [my earlier post](https://blog-about-people-analytics.netlify.app/posts/2026-09-30-coincidence-or-evidence/), I explained what my PhD was about: why the same odd pattern can look like random noise to one person and evidence of a hidden cause to another, even though both may be similarly good at reading the available evidence. This time, I tried telling that story as a comic that even my 13-year-old son could enjoy.
 
-*The Coincidence Audit* follows Inspector Odds, sent to Earth by the Galactic Council of Reason to investigate whether humans are rational. In Prague, he meets Max, who tends to dismiss unusual patterns as chance, and Tess, who sees signs everywhere. Together, they work through the questions, experiments, and findings of my dissertation.
+*The Coincidence Audit* follows Inspector Odds, sent to Earth by the Galactic Council of Reason to investigate whether humans are rational enough to join the club. In Prague, he meets Max, who tends to dismiss unusual patterns as chance, and Tess, who sees signs everywhere. Together, they work through the questions, experiments, and findings of my dissertation.
 
 The comic also keeps the uncertainties, including an experiment that could not give a clear answer. Apparently, even an alien inspector cannot fix a weak manipulation check 😉
 
