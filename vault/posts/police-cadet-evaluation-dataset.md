@@ -119,11 +119,11 @@ If you want to download the dataset, you can do so here via the table above or v
 
 <!-- RELATED:BEGIN -->
 ## Related notes
+- [[beyond-the-correlation|What might we miss when assessment scores and job ratings are strongly correlated?]]
 - [[econml-and-employee-attriton|How to get causal interpretation for the Employee Attrition dataset?]]
 - [[latent-class-analysis|Latent Class Analysis of responses from employee surveys]]
 - [[people-analytics-challenge-from-orgnostic|People Analytics Challenge from Orgnostic: Plan for high growth]]
 - [[psychometric-network-analysis|Psychometric network analysis & employee survey data]]
-- [[rwa|RWA – A go-to tool for key drivers analysis of employee survey data?]]
 <!-- RELATED:END -->
 
 ---

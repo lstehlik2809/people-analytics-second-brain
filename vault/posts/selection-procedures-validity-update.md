@@ -94,7 +94,7 @@ Maybe the visualization will come in handy for you as well when trying to "rewir
 - [[regression-to-the-mean|Employee commitment over time & regression to the mean]]
 - [[gender-gap-in-hiring-decisions|Evidence on the presence of gender bias in selection settings]]
 - [[career-hurdles|And what are your career hurdles?]]
-- [[visual-inference-statistics|Visual statistical inference]]
+- [[beyond-the-correlation|What might we miss when assessment scores and job ratings are strongly correlated?]]
 <!-- RELATED:END -->
 
 ---

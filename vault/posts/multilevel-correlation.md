@@ -130,9 +130,9 @@ ggplot2::ggplot(simulated_data, aes(y = JobSatisfaction, x = AgilityMaturity, co
 ## Related notes
 - [[multilevel-modeling|Multilevel modeling in people analytics]]
 - [[mixed-level-ml|Beyond the “flat Earth”]]
+- [[beyond-the-correlation|What might we miss when assessment scores and job ratings are strongly correlated?]]
 - [[rwa|RWA – A go-to tool for key drivers analysis of employee survey data?]]
 - [[conditional-inference-tree|Divide and... understand]]
-- [[psychometric-network-analysis|Psychometric network analysis & employee survey data]]
 <!-- RELATED:END -->
 
 ---
