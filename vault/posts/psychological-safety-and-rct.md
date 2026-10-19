@@ -7,6 +7,7 @@ tags:
 - experiments
 - evidence-based-management
 - causal-inference
+- impact-evaluation
 original: https://blog-about-people-analytics.netlify.app/posts/2024-01-21-psychological-safety-and-rct/
 ---
 

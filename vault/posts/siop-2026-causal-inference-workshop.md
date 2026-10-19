@@ -5,6 +5,7 @@ date: '2026-04-18'
 tags:
 - causal-inference
 - siop
+- impact-evaluation
 original: https://blog-about-people-analytics.netlify.app/posts/2026-04-18-siop-2026-causal-inference-workshop/
 ---
 
@@ -29,8 +30,8 @@ If you're at SIOP and interested in making causal thinking more practical in app
 <!-- RELATED:BEGIN -->
 ## Related notes
 - [[causal-inference-in-people-analytics|Beyond prediction: Exploiting organizational events for causal inference in people analytics]]
-- [[siop-2026-reflection|SIOP through the wisdom of crowds: What I may have missed]]
 - [[siop-2025-conference-events|What topics might you encounter at the SIOP 2025 conference?]]
+- [[siop-2026-reflection|SIOP through the wisdom of crowds: What I may have missed]]
 - [[siop-2026-recommender|SIOP 2026 Recommender]]
 - [[agentic-workflow-for-causal-inference|Agentic workflow for causal inference]]
 <!-- RELATED:END -->

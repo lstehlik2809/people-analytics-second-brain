@@ -5,6 +5,7 @@ date: '2026-03-12'
 tags:
 - causal-inference
 - experiments
+- impact-evaluation
 original: https://blog-about-people-analytics.netlify.app/posts/2026-03-12-encouragement-design-and-ivs/
 ---
 

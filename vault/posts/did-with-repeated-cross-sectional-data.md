@@ -8,6 +8,7 @@ tags:
 - employee-survey
 - difference-in-differences
 - double-machine-learning
+- impact-evaluation
 original: https://blog-about-people-analytics.netlify.app/posts/2026-04-15-did-with-repeated-cross-sectional-data/
 ---
 

@@ -7,6 +7,7 @@ tags:
 - agentic-ai
 - ai
 - generative-ai
+- impact-evaluation
 original: https://blog-about-people-analytics.netlify.app/posts/2026-05-16-agentic-workflow-for-causal-inference/
 ---
 

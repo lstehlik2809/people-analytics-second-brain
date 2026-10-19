@@ -6,6 +6,7 @@ tags:
 - experiments
 - difference-in-differences
 - people-analytics
+- impact-evaluation
 original: https://blog-about-people-analytics.netlify.app/posts/2023-04-11-app-piloting-and-dif/
 ---
 

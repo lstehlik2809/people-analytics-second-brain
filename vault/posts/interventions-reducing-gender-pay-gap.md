@@ -6,6 +6,7 @@ tags:
 - gender-pay-gap
 - gender-bias
 - evidence-based-management
+- impact-evaluation
 original: https://blog-about-people-analytics.netlify.app/posts/2022-11-18-interventions-reducing-gender-pay-gap/
 ---
 
@@ -52,8 +53,8 @@ A final note. As useful as it is to know which interventions have a decent chanc
 ## Related notes
 - [[paygap|Firemní audit rozdílu mezi platy mužů a žen]]
 - [[euptd-pay-gap-reporting|Pay gap estimation for small worker categories]]
-- [[gender-gap-in-hiring-decisions|Evidence on the presence of gender bias in selection settings]]
 - [[engagement-interventions|Effectiveness of interventions for encreasing employee engagement]]
+- [[gender-gap-in-hiring-decisions|Evidence on the presence of gender bias in selection settings]]
 - [[the-daughter-effect|The daughter effect]]
 <!-- RELATED:END -->
 

@@ -4,6 +4,32 @@ Source: https://lstehlik2809.github.io/people-analytics-second-brain | Author: L
 
 ---
 
+# Some inspiration for your next HR impact evaluation
+URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/hr-causal-evidence-map
+Date: 2026-10-19
+Tags: causal-inference, evidence-based-management, hr-management, research-methods, experiments, performance, people-analytics, data-visualization, impact-evaluation
+Original post: https://blog-about-people-analytics.netlify.app/posts/2026-10-19-hr-causal-evidence-map/
+
+I wanted some inspiration for causal impact evaluations of our internal people projects, so I took a look at recent research on HR practices and business performance.
+
+That turned into the [HR Causal Evidence Map, 2025–26](https://lstehlik2809.github.io/hr-evidence-atlas/). It’s a scoping overview of 68 papers first published online between January 2025 and mid of October 2026, found through a search of 49 selected journals in I/O psychology, organizational research and economics. It includes randomized experiments, quasi-experiments and observational studies using causal inference methods.
+
+31 of the papers measure business output, such as productivity, sales, quality or safety. Of these, 16 report an improvement, 7 report mixed results, 7 report a worse outcome and 1 finds no detectable effect. Public performance rankings and surprise bonuses are among the practices that backfired.
+
+For anyone planning their own evaluation: only 6 of those 31 studies randomized who got the practice. 14 used natural or quasi-experiments, such as policy thresholds or staggered rollouts.
+
+On the site you can scroll through these findings on an evidence map, then filter the studies and read each one’s finding, design and main limitation, with a link to the original paper. The result labels are a first-pass coding drafted with AI, mostly from abstracts, so check the paper before relying on any of them. It’s a one-off scoping review with gaps, not a systematic review.
+
+[Sharing it here](https://lstehlik2809.github.io/hr-evidence-atlas/) in case you find something interesting, or an approach worth trying in a project of your own. 
+
+![](./hr-causal-evidence-map/evidence-map2.png)
+
+
+---
+> 📄 Read the [original post with full outputs](https://blog-about-people-analytics.netlify.app/posts/2026-10-19-hr-causal-evidence-map/) on my blog.
+
+---
+
 # What might we miss when assessment scores and job ratings are strongly correlated?
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/beyond-the-correlation
 Date: 2026-10-16
@@ -128,7 +154,7 @@ Let me know what works, what's confusing, or what's missing. I'd especially like
 # Change.org: AI outputs vs outcomes
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/change-org-ai-outputs-vs-outcomes
 Date: 2026-10-03
-Tags: ai, generative-ai, causal-inference, difference-in-differences, embeddings, evidence-based-management
+Tags: ai, generative-ai, causal-inference, difference-in-differences, embeddings, evidence-based-management, impact-evaluation
 Original post: https://blog-about-people-analytics.netlify.app/posts/2026-10-03-change-org-ai-outputs-vs-outcomes/
 
 Corpus, Gilbert, Koenecke & Naaman report this pattern in a [Nature Human Behaviour paper](https://www.nature.com/articles/s41562-026-02580-8) on Change.org’s in-platform “write with AI” tool, which is, IMO, a useful reminder that, when evaluating AI’s impact at a company, we should always check whether better outputs translate into the results we actually need. 
@@ -3292,7 +3318,7 @@ P.S. If you don’t follow Paul, you should. His LinkedIn posts may challenge so
 # Agentic workflow for causal inference
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/agentic-workflow-for-causal-inference
 Date: 2026-05-16
-Tags: causal-inference, agentic-ai, ai, generative-ai
+Tags: causal-inference, agentic-ai, ai, generative-ai, impact-evaluation
 Original post: https://blog-about-people-analytics.netlify.app/posts/2026-05-16-agentic-workflow-for-causal-inference/
 
 While preparing causal inference workshops for two recent conferences - SIOP 2026 and Machine Learning Prague 2026 - our team started experimenting with adding AI automation to our usual causal analysis workflow.
@@ -3515,7 +3541,7 @@ P.S. If interested, you can check out [this simple interactive dashboard](https:
 # No Experiment, No Problem? Causal Inference in Applied Quasi-Experimental Settings (Session ID 830)
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/siop-2026-causal-inference-workshop
 Date: 2026-04-18
-Tags: causal-inference, siop
+Tags: causal-inference, siop, impact-evaluation
 Original post: https://blog-about-people-analytics.netlify.app/posts/2026-04-18-siop-2026-causal-inference-workshop/
 
 Excited to share that Marissa Post and I will be co-delivering a workshop at the [2026 SIOP Annual Conference in New Orleans](https://www.siop.org/events/the-annual-conference/program/schedule/).
@@ -3627,7 +3653,7 @@ htmltools::div(
 # What a European cigarette tax study taught me about employee listening
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/did-with-repeated-cross-sectional-data
 Date: 2026-04-15
-Tags: causal-inference, panel-data, employee-survey, difference-in-differences, double-machine-learning
+Tags: causal-inference, panel-data, employee-survey, difference-in-differences, double-machine-learning, impact-evaluation
 Original post: https://blog-about-people-analytics.netlify.app/posts/2026-04-15-did-with-repeated-cross-sectional-data/
 
 Recently, a LinkedIn recommendation algo brought a [working paper](https://arxiv.org/abs/2604.05841) by Stoller and Huber (April 2026) to my feed. It's a Difference-in-Differences study estimating how cigarette tax increases affected smoking rates across 27 EU countries between 2012 and 2020. The topic was outside my day job at Sanofi. The methodology wasn't. By the second read, I was redrawing how we should think about impact evaluation in our employee listening architecture.
@@ -4206,7 +4232,7 @@ Check out where these two landed in the attached pics. Does it resonate? 🙃 Fo
 # Encouragement Design using instrumental variables
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/encouragement-design-and-ivs
 Date: 2026-03-12
-Tags: causal-inference, experiments
+Tags: causal-inference, experiments, impact-evaluation
 Original post: https://blog-about-people-analytics.netlify.app/posts/2026-03-12-encouragement-design-and-ivs/
 
 This post can be seen as a follow-up to the [article](https://blog-about-people-analytics.netlify.app/posts/2025-05-21-causal-inference-in-people-analytics/) Cole Napper and I wrote on the use of causal inference methods in the People Analytics space. One of its sections discusses instrumental variables (IV) as a very useful and powerful - but also often very hard to find - method for estimating causal effects.
@@ -6841,7 +6867,7 @@ Curious if anyone has done a similar analysis on their data and put the findings
 # Beyond prediction: Exploiting organizational events for causal inference in people analytics
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/causal-inference-in-people-analytics
 Date: 2025-05-21
-Tags: causal-inference, experiments, data-science, people-analytics, python, r
+Tags: causal-inference, experiments, data-science, people-analytics, python, r, impact-evaluation
 Original post: https://blog-about-people-analytics.netlify.app/posts/2025-05-21-causal-inference-in-people-analytics/
 
 # Introduction
@@ -7877,7 +7903,7 @@ The study thus serves as a valuable reminder that scientific disagreements may n
 # Causal insights with no code?
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/visual-diff-in-diff
 Date: 2025-04-15
-Tags: data-science, causal-inference, difference-in-differences, people-analytics, evidence-based-management
+Tags: data-science, causal-inference, difference-in-differences, people-analytics, evidence-based-management, impact-evaluation
 Original post: https://blog-about-people-analytics.netlify.app/posts/2025-04-15-visual-diff-in-diff/
 
 If there’s one causal inference method that is both intuitive and easy to explain—even to non-data folks—it’s difference-in-differences (DiD).
@@ -12102,7 +12128,7 @@ for topic in topic_labels:
 # Fostering psychological safety in the workplace
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/psychological-safety-and-rct
 Date: 2024-01-21
-Tags: teams, experiments, evidence-based-management, causal-inference
+Tags: teams, experiments, evidence-based-management, causal-inference, impact-evaluation
 Original post: https://blog-about-people-analytics.netlify.app/posts/2024-01-21-psychological-safety-and-rct/
 
 At Sanofi, we recently welcomed [Prof. Dr. Florian Englmaier](https://www.linkedin.com/in/florian-englmaier-4759b05/?originalSubdomain=de) at our People Insights Seminar, where he shared with us his intriguing [research on interventions that enhance psychological safety](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4141538).
@@ -15871,7 +15897,7 @@ modelStudio::modelStudio(
 # Estimating the impact of a new business app by piloting & method of difference-in-differences
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/app-piloting-and-dif
 Date: 2023-04-11
-Tags: experiments, difference-in-differences, people-analytics
+Tags: experiments, difference-in-differences, people-analytics, impact-evaluation
 Original post: https://blog-about-people-analytics.netlify.app/posts/2023-04-11-app-piloting-and-dif/
 
 When considering the introduction of a new business app, one of the benefits of piloting it is that it provides a great opportunity to test its causal impact on business processes or outcomes of interest. For example, in our pilots, apps are typically implemented for 3 or 6 months only in some teams and not in others. Such a situation creates ideal conditions for applying the difference-in-differences (DiD) method, which is used to approximate an experimental research design with observational data only.  
@@ -15919,7 +15945,7 @@ Despite not being free of potential biases, these results add more weight to the
 # Effectiveness of interventions for encreasing employee engagement
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/engagement-interventions
 Date: 2023-04-11
-Tags: employee-engagement, causal-inference, meta-analysis, i-o-psychology
+Tags: employee-engagement, causal-inference, meta-analysis, i-o-psychology, impact-evaluation
 Original post: https://blog-about-people-analytics.netlify.app/posts/2023-04-11-engagement-interventions/
 
 There is some evidence that engagement of employees has positive causal impact on the bottom line of organizations (see, for example, the meta-analysis by [Harter et al. (2010)](https://journals.sagepub.com/doi/abs/10.1177/1745691610374589), however, be aware of the specific definition of engagement used there, which focuses more on the contextual factors and conditions enabling engagement and less on the psychological states of engagement). Consequently, we might be naturally interested in whether we can positively influence engagement of employees through the use of certain interventions.
@@ -17315,7 +17341,7 @@ Feel free to share any other resources on this topic you think might be useful t
 # Evidence-based interventions that help reduce the gender pay gap
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/interventions-reducing-gender-pay-gap
 Date: 2022-11-18
-Tags: gender-pay-gap, gender-bias, evidence-based-management
+Tags: gender-pay-gap, gender-bias, evidence-based-management, impact-evaluation
 Original post: https://blog-about-people-analytics.netlify.app/posts/2022-11-18-interventions-reducing-gender-pay-gap/
 
 If you are responsible for DEI initiatives in your company, you might be interested in a paper by [The Behavioural Insights Team](https://www.bi.team/) that lists several possible interventions to close the gender pay gap, divided into three categories based on the extent to which their effectiveness is supported by empirical evidence.

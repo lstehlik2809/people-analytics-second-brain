@@ -1,9 +1,10 @@
 # Ludek's People Analytics Second Brain
 
-> A public second brain of 222 posts on people analytics, statistics, causal inference, psychometrics, machine learning, and AI by Ludek Stehlik. Browsable knowledge graph at https://lstehlik2809.github.io/people-analytics-second-brain. The complete corpus is in /llms-full.txt.
+> A public second brain of 223 posts on people analytics, statistics, causal inference, psychometrics, machine learning, and AI by Ludek Stehlik. Browsable knowledge graph at https://lstehlik2809.github.io/people-analytics-second-brain. The complete corpus is in /llms-full.txt.
 
 ## Notes
 
+- [Some inspiration for your next HR impact evaluation](https://lstehlik2809.github.io/people-analytics-second-brain/posts/hr-causal-evidence-map): An interactive map of 68 causal studies from 2025–26 on HR practices and business performance, with their findings, designs and limitations.
 - [What might we miss when assessment scores and job ratings are strongly correlated?](https://lstehlik2809.github.io/people-analytics-second-brain/posts/beyond-the-correlation): A police cadet dataset illustrates how a strong overall correlation can mask distinct patterns in job ratings and generate questions for further investigation.
 - [The Coincidence Audit: my PhD dissertation, now with aliens](https://lstehlik2809.github.io/people-analytics-second-brain/posts/the-coincidence-audit): Description: A comic version of my dissertation about coincidences, hidden causes, and human rationality. Apparently, summarizing a 300-page dissertation in a blog post was only the first step. The next one involved an alien inspector, two teenagers, and a device called the Belief-o-Meter 😉
 - [What probability would change your mind about Sam?](https://lstehlik2809.github.io/people-analytics-second-brain/posts/decision-tree-foldback): A practical look at decision analysis in People Analytics, and a simple tool for comparing options, propagating uncertainty, and finding the assumptions that would actually change a people decision.

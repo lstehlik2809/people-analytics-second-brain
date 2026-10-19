@@ -34,7 +34,7 @@ original: https://blog-about-people-analytics.netlify.app/posts/2023-11-22-gende
 - [[the-daughter-effect|The daughter effect]]
 - [[selection-procedures-validity-update|Visualizing shifts in validity estimates for selection procedures]]
 - [[vocational-interests|Vocational interests don't seem so uninteresting after all]]
-- [[video-interviews-and-biases|Biases introduced by video backgrounds during video interviews]]
+- [[hr-causal-evidence-map|Some inspiration for your next HR impact evaluation]]
 <!-- RELATED:END -->
 
 ---

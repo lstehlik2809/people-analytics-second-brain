@@ -8,6 +8,7 @@ tags:
 - difference-in-differences
 - people-analytics
 - evidence-based-management
+- impact-evaluation
 original: https://blog-about-people-analytics.netlify.app/posts/2025-04-15-visual-diff-in-diff/
 ---
 

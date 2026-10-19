@@ -28,7 +28,7 @@ The long wait was probably simply because the PA problems I’d worked on hadn�
 - [[bayesian-networks-in-people-analytics|Use of Bayesian networks in people analytics?]]
 - [[self-selection-and-proxy-measures|When self-selected behavior is a blessing, not a headache]]
 - [[expected-remaining-time|Does your team belong among “light bulbs” or “wines”?]]
-- [[causal-inference-in-people-analytics|Beyond prediction: Exploiting organizational events for causal inference in people analytics]]
+- [[multilevel-modeling|Multilevel modeling in people analytics]]
 <!-- RELATED:END -->
 
 ---

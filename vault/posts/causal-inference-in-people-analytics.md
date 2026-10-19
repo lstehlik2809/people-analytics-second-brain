@@ -9,6 +9,7 @@ tags:
 - people-analytics
 - python
 - r
+- impact-evaluation
 original: https://blog-about-people-analytics.netlify.app/posts/2025-05-21-causal-inference-in-people-analytics/
 ---
 

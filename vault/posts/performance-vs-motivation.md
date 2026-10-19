@@ -44,8 +44,8 @@ For a deeper dive into this research, check out the full article [here](https://
 - [[job-insecurity-and-behavioral-outcomes|Does a stick work?]]
 - [[employee-satisfaction-and-company-bottom-line|Impact of employee satisfaction at work on a company's bottom line]]
 - [[time-management|Consequences of time management in the workplace]]
-- [[engagement-interventions|Effectiveness of interventions for encreasing employee engagement]]
 - [[job-attitudes-and-employee-outcomes|Employee outcomes & employees' job attitudes]]
+- [[engagement-interventions|Effectiveness of interventions for encreasing employee engagement]]
 <!-- RELATED:END -->
 
 ---

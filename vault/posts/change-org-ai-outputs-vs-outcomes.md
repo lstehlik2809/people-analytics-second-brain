@@ -9,6 +9,7 @@ tags:
 - difference-in-differences
 - embeddings
 - evidence-based-management
+- impact-evaluation
 original: https://blog-about-people-analytics.netlify.app/posts/2026-10-03-change-org-ai-outputs-vs-outcomes/
 ---
 

@@ -53,8 +53,8 @@ Have you seen similar patterns in your data? Where did the investigation lead, a
 
 <!-- RELATED:BEGIN -->
 ## Related notes
-- [[causal-inference-in-people-analytics|Beyond prediction: Exploiting organizational events for causal inference in people analytics]]
 - [[visual-diff-in-diff|Causal insights with no code?]]
+- [[causal-inference-in-people-analytics|Beyond prediction: Exploiting organizational events for causal inference in people analytics]]
 - [[insights-discovery-and-skills|Do Insights Discovery ‘colors’ relate to self-reported skills?]]
 - [[econml-and-employee-attriton|How to get causal interpretation for the Employee Attrition dataset?]]
 - [[regression-to-the-mean|Employee commitment over time & regression to the mean]]
