@@ -10,6 +10,7 @@ tags:
 - embeddings
 - evidence-based-management
 - impact-evaluation
+- human-ai-interaction
 original: https://blog-about-people-analytics.netlify.app/posts/2026-10-03-change-org-ai-outputs-vs-outcomes/
 ---
 
@@ -38,11 +39,11 @@ What I find also interesting is that lexical features that used to predict early
 
 <!-- RELATED:BEGIN -->
 ## Related notes
+- [[ai-assistance-reduces-persistence|What happens to our own performance when the AI is suddenly gone?]]
 - [[causal-inference-in-people-analytics|Beyond prediction: Exploiting organizational events for causal inference in people analytics]]
 - [[genai-and-disrupt-of-labor-market-signalling|Making talk cheap: How GenAI may disrupt labor-market signalling]]
 - [[chatgpt-emails-and-causalpy|ChatGPT as a new email writing coach?]]
 - [[ai-and-bullshit-asymmetry|Can AI help us fight the bullshit asymmetry?]]
-- [[ai-suggestibility|Loftus & Palmer 2.0: Replicating human bias in AI]]
 <!-- RELATED:END -->
 
 ---

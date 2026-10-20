@@ -7,6 +7,7 @@ tags:
 - learning-and-development
 - behavioral-science
 - time-management
+- human-ai-interaction
 original: https://blog-about-people-analytics.netlify.app/posts/2026-03-10-ai-as-friction/
 ---
 
@@ -27,10 +28,10 @@ Curious whether you’ve come across examples like this - or maybe you’re alre
 <!-- RELATED:BEGIN -->
 ## Related notes
 - [[hr-tech-ai-shift|How AI is reshaping HR-tech]]
+- [[ai-assistance-reduces-persistence|What happens to our own performance when the AI is suddenly gone?]]
 - [[gai-simulation-work-habits|Does GenAI make me a better (more rational) thinker?]]
 - [[dunning-kruger-effect-simulation|Making abstract ideas digestible with knobs and sliders]]
 - [[ai-and-bullshit-asymmetry|Can AI help us fight the bullshit asymmetry?]]
-- [[span-of-control-and-managerial-behavior|Can flatter orgs undermine people management?]]
 <!-- RELATED:END -->
 
 ---

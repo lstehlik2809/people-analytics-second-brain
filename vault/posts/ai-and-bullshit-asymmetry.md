@@ -7,6 +7,7 @@ tags:
 - critical-thinking
 - employee-experience
 - ai
+- human-ai-interaction
 original: https://blog-about-people-analytics.netlify.app/posts/2026-05-22-ai-and-bullshit-asymmetry/
 ---
 
@@ -56,10 +57,10 @@ P.S. If you don’t follow Paul, you should. His LinkedIn posts may challenge so
 <!-- RELATED:BEGIN -->
 ## Related notes
 - [[causal-inference-in-people-analytics|Beyond prediction: Exploiting organizational events for causal inference in people analytics]]
+- [[ai-assistance-reduces-persistence|What happens to our own performance when the AI is suddenly gone?]]
 - [[causal-impact-of-leadership-skills|Novel way to measure leadership skills via causal inference (and AI)?]]
 - [[hr-tech-ai-shift|How AI is reshaping HR-tech]]
 - [[beyond-belief|Evidence-Based Management: Boring basics and better questions]]
-- [[ai-powered-data-exploration-assistant|Testing my GenAI skepticism]]
 <!-- RELATED:END -->
 
 ---

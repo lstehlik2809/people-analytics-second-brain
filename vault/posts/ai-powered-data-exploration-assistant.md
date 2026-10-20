@@ -6,6 +6,7 @@ tags:
 - agentic-ai
 - data-science
 - generative-ai
+- human-ai-interaction
 original: https://blog-about-people-analytics.netlify.app/posts/2025-10-09-ai-powered-data-exploration-assistant/
 ---
 

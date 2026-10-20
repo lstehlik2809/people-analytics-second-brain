@@ -8,6 +8,7 @@ tags:
 - critical-thinking
 - decision-making
 - rationality
+- human-ai-interaction
 original: https://blog-about-people-analytics.netlify.app/posts/2023-12-13-gai-simulation-work-habits/
 ---
 
@@ -27,7 +28,7 @@ What about you? What work habits has GenAI changed in your case, if any?
 - [[genai-and-leadership-judgement|Can genAI help people managers lead better?]]
 - [[dunning-kruger-effect-simulation|Making abstract ideas digestible with knobs and sliders]]
 - [[hr-tech-ai-shift|How AI is reshaping HR-tech]]
-- [[chatgpt-emails-and-causalpy|ChatGPT as a new email writing coach?]]
+- [[ai-assistance-reduces-persistence|What happens to our own performance when the AI is suddenly gone?]]
 <!-- RELATED:END -->
 
 ---

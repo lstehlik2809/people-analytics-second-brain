@@ -7,6 +7,7 @@ tags:
 - i-o-psychology
 - generative-ai
 - ai
+- human-ai-interaction
 original: https://blog-about-people-analytics.netlify.app/posts/2023-11-29-ebm-gpt-bot/
 ---
 

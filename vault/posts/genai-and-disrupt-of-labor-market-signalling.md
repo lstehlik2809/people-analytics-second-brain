@@ -7,6 +7,7 @@ tags:
 - generative-ai
 - labor-economics
 - future-of-work
+- human-ai-interaction
 original: https://blog-about-people-analytics.netlify.app/posts/2025-11-06-genai-and-disrupt-of-labor-market-signalling/
 ---
 

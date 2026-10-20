@@ -7,6 +7,7 @@ tags:
 - behavioral-science
 - data-science
 - cognitive-science
+- human-ai-interaction
 original: https://blog-about-people-analytics.netlify.app/posts/2025-12-07-ai-suggestibility/
 ---
 
@@ -57,10 +58,10 @@ P.S. By coincidence, while working on this post I stumbled upon a much more rigo
 <!-- RELATED:BEGIN -->
 ## Related notes
 - [[chatgpt-emails-and-causalpy|ChatGPT as a new email writing coach?]]
+- [[ai-assistance-reduces-persistence|What happens to our own performance when the AI is suddenly gone?]]
 - [[genai-and-leadership-judgement|Can genAI help people managers lead better?]]
-- [[ai-powered-data-exploration-assistant|Testing my GenAI skepticism]]
 - [[change-org-ai-outputs-vs-outcomes|Change.org: AI outputs vs outcomes]]
-- [[openai-personality-interpretation|Ask your personality using GPT]]
+- [[ai-powered-data-exploration-assistant|Testing my GenAI skepticism]]
 <!-- RELATED:END -->
 
 ---

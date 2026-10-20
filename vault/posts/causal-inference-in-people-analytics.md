@@ -306,8 +306,8 @@ A [GitHub repository](https://github.com/lstehlik2809/Beyond-Prediction-Exploiti
 ## Related notes
 - [[visual-diff-in-diff|Causal insights with no code?]]
 - [[econml-and-employee-attriton|How to get causal interpretation for the Employee Attrition dataset?]]
-- [[encouragement-design-and-ivs|Encouragement Design using instrumental variables]]
 - [[chatgpt-emails-and-causalpy|ChatGPT as a new email writing coach?]]
+- [[encouragement-design-and-ivs|Encouragement Design using instrumental variables]]
 - [[did-with-repeated-cross-sectional-data|What a European cigarette tax study taught me about employee listening]]
 <!-- RELATED:END -->
 

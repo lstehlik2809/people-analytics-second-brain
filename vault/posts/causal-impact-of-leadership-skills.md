@@ -9,6 +9,7 @@ tags:
 - ai
 - generative-ai
 - agentic-ai
+- human-ai-interaction
 original: https://blog-about-people-analytics.netlify.app/posts/2025-06-12-causal-impact-of-leadership-skills/
 ---
 

@@ -8,6 +8,7 @@ tags:
 - fun-with-data
 - causal-inference
 - python
+- human-ai-interaction
 original: https://blog-about-people-analytics.netlify.app/posts/2024-11-13-chatgpt-emails-and-causalpy/
 ---
 
