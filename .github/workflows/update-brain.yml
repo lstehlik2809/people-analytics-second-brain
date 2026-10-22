@@ -108,7 +108,7 @@ jobs:
         run: python pipeline/verify_update.py
       - name: Build Quartz and copy public search exports
         run: |
-          (cd site && npx quartz build -d ../vault)
+          (cd site && node --no-deprecation quartz/bootstrap-cli.mjs build -d ../vault)
           cp pipeline/cache/llms.txt pipeline/cache/llms-full.txt pipeline/cache/semantic_index.json site/public/
           cp pipeline/static/semantic-search.html pipeline/static/hybrid-search.mjs site/public/
       - name: Verify built pages and record update summary

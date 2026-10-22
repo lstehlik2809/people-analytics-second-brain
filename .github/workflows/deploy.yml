@@ -50,7 +50,7 @@ jobs:
         run: npm ci
       - name: Build site
         working-directory: site
-        run: npx quartz build -d ../vault
+        run: node --no-deprecation quartz/bootstrap-cli.mjs build -d ../vault
       - name: Add llms.txt and semantic search
         run: |
           cp pipeline/cache/llms.txt site/public/llms.txt
