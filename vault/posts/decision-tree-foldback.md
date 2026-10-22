@@ -43,8 +43,8 @@ Let me know what works, what's confusing, or what's missing. I'd especially like
 <!-- RELATED:BEGIN -->
 ## Related notes
 - [[job-comparator|A bet on a new job]]
-- [[bayesian-simulation|Harnessing Bayesian analysis for business process simulation]]
 - [[turnover-signal-and-noise|Nothing changed. The dashboard disagrees.]]
+- [[bayesian-simulation|Harnessing Bayesian analysis for business process simulation]]
 - [[doppelganger-for-career-pathing|Using Doppelgänger for career pathing?]]
 - [[the-triple-filter-test|The Triple-Filter Test: How to prioritize HR interventions with panel data]]
 <!-- RELATED:END -->

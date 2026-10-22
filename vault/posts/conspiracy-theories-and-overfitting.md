@@ -34,7 +34,7 @@ P.S. This is also a topic close to me personally. In my Ph.D. dissertation, I lo
 - [[trust-errors-learning-reflection|When to forgive, when to close the book]]
 - [[ai-and-bullshit-asymmetry|Can AI help us fight the bullshit asymmetry?]]
 - [[matthew-effect-and-success-stories|Luck, cutoffs, and the stories we tell about success]]
-- [[job-fit|Are you crazy enough and in the right way to fit the craziness required by your job?]]
+- [[the-coincidence-audit|The Coincidence Audit: my PhD dissertation, now with aliens]]
 <!-- RELATED:END -->
 
 ---

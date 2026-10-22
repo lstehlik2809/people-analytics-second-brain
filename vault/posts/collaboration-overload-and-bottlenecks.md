@@ -189,8 +189,8 @@ For more tips on how to leverage collaboration data in the current uncertain eco
 - [[org-chart-and-collaboration|Org chart and collaboration]]
 - [[overloaded-employees|Warning system for overloaded employees]]
 - [[change-detection|How to quickly navigate dashboard users to what they need to know?]]
-- [[distracted-time|Not-so-hidden cost of working in an office]]
 - [[good-manager|Signals of a good manager]]
+- [[distracted-time|Not-so-hidden cost of working in an office]]
 <!-- RELATED:END -->
 
 ---

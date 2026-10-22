@@ -1196,9 +1196,9 @@ sessionInfo()
 ## Related notes
 - [[did-with-repeated-cross-sectional-data|What a European cigarette tax study taught me about employee listening]]
 - [[latent-class-analysis|Latent Class Analysis of responses from employee surveys]]
-- [[impact-of-pets-on-life-satisfaction|Before you believe the £70,000 cat]]
 - [[causal-inference-in-people-analytics|Beyond prediction: Exploiting organizational events for causal inference in people analytics]]
-- [[ols-vs-logistic-regression|The statistical "sin" as best / common practice?]]
+- [[impact-of-pets-on-life-satisfaction|Before you believe the £70,000 cat]]
+- [[segmentedregression|Modeling impact of the COVID-19 pandemic on people’s interest in work-life balance and well-being]]
 <!-- RELATED:END -->
 
 ---

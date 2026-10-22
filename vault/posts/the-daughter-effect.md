@@ -44,8 +44,8 @@ And fortunately, “have more daughters” is probably not the only intervention
 ## Related notes
 - [[gender-gap-in-hiring-decisions|Evidence on the presence of gender bias in selection settings]]
 - [[managerial-quality|Unexpected protective effect of having a good manager?]]
-- [[causal-impact-of-leadership-skills|Novel way to measure leadership skills via causal inference (and AI)?]]
 - [[interventions-reducing-gender-pay-gap|Evidence-based interventions that help reduce the gender pay gap]]
+- [[causal-impact-of-leadership-skills|Novel way to measure leadership skills via causal inference (and AI)?]]
 - [[managers-and-performance-evaluations|"A new broom sweeps clean"]]
 <!-- RELATED:END -->
 

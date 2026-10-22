@@ -1,6 +1,6 @@
 ---
 title: 'The Coincidence Audit: my PhD dissertation, now with aliens'
-description: 'Description: A comic version of my dissertation about coincidences, hidden causes, and human rationality. Apparently, summarizing a 300-page dissertation in a blog post was only the first step. The next one involved an alien inspector, two teenagers, and a device called the Belief-o-Meter 😉'
+description: A comic version of my dissertation about coincidences, hidden causes, and human rationality. Apparently, summarizing a 300-page dissertation in a blog post was only the first step. The next one involved an alien inspector, two teenagers, and a device called the Belief-o-Meter 😉
 date: '2026-10-11'
 tags:
 - cognitive-science
@@ -36,7 +36,7 @@ Note on how this was made: I used Claude Code (Opus 5.5) to turn my dissertation
 - [[conspiracy-theories-and-overfitting|Conspiracy theories as a specific example of overfitting?]]
 - [[directionally-correct-podcast-topic-explorer|Turning 152 Directionally Correct podcast episodes into an interactive topic explorer]]
 - [[garden-of-forking-paths-redo|Refactoring the "Garden of Forking Paths"]]
-- [[people-analytics-second-brain|My second People Analytics brain - both for people and AI agents]]
+- [[ai-and-bullshit-asymmetry|Can AI help us fight the bullshit asymmetry?]]
 <!-- RELATED:END -->
 
 ---

@@ -32,8 +32,8 @@ And here is the original research paper on which the shiny app is based.
 
 <!-- RELATED:BEGIN -->
 ## Related notes
-- [[resources-on-retention-and-downsizing|Some resources on staff retention and downsizing]]
 - [[hr-analytika-a-odchodovost-zamstnanc|HR analytika a odchodovost zaměstnanců]]
+- [[resources-on-retention-and-downsizing|Some resources on staff retention and downsizing]]
 - [[survey-participation-and-attrition-prediction|People may signal their exit intentions not only by their actions but also by their inactions]]
 - [[instrumental-and-expressive-networks|Not all workplace relationships are created equal when it comes to retaining talent]]
 - [[predictors-of-stay-intentions-vs-actual-resignations|Talk vs. Walk: Predictors of staying intentions vs. actual quitting behavior]]

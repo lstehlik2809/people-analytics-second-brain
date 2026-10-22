@@ -61,7 +61,7 @@ out = (pd.DataFrame(rows, columns=['manager_id','direct','indirect','total'])
 - [[multilevel-modeling|Multilevel modeling in people analytics]]
 - [[org-chart-and-collaboration|Org chart and collaboration]]
 - [[network-graph-employee-comments|Using network graph modeling to capture overarching thematic clusters in employee comments]]
-- [[induced-centrality|Induced centralities]]
+- [[mixed-level-ml|Beyond the “flat Earth”]]
 <!-- RELATED:END -->
 
 ---
