@@ -49,6 +49,11 @@ Actions and configure Pages to use GitHub Actions. The update job requests
 The key is available only to the embedding step; only the ignored embedding
 vectors are cached. The first cloud run needs to embed the corpus. Later runs
 reuse that cache and embed only changed notes.
+The browser index also reuses its existing file when all metadata, ordered
+passages and model/chunking settings match and its vectors are valid. This avoids
+CPU rounding differences creating content commits on unchanged runs. Changes to
+pooling, normalization, model revision or other vector-generation semantics must
+invalidate the index schema/configuration contract before reusing old vectors.
 
 Run **Actions → Update second brain in the cloud → Run workflow** on `main`:
 
