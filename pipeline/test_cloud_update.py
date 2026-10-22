@@ -5,6 +5,7 @@ import subprocess
 import sys
 import tempfile
 import unittest
+import uuid
 from unittest.mock import patch
 
 import cloud_update as cloud
@@ -15,6 +16,41 @@ SOURCE_SHA = "a" * 40
 
 
 class RequestTests(unittest.TestCase):
+    def test_dispatch_supplied_or_generated_uuid(self):
+        supplied = cloud.resolve_request(cloud.ROOT, "workflow_dispatch", {}, "preview",
+                                         "refs/heads/main", REQUEST_ID)
+        self.assertEqual(supplied, {"mode": "preview", "request_id": REQUEST_ID})
+        for value in (None, ""):
+            generated = cloud.resolve_request(cloud.ROOT, "workflow_dispatch", {}, "preview",
+                                              "refs/heads/main", value)
+            self.assertEqual(str(uuid.UUID(generated["request_id"])), generated["request_id"])
+            self.assertNotEqual(generated["request_id"], REQUEST_ID)
+        for value in ("invalid", " ", REQUEST_ID.upper(), "$(touch unexpected)"):
+            with self.subTest(value=value), self.assertRaisesRegex(ValueError, "canonical UUID"):
+                cloud.resolve_request(cloud.ROOT, "workflow_dispatch", {}, "preview",
+                                      "refs/heads/main", value)
+
+    def test_two_dispatches_at_same_sha_keep_distinct_ids_and_cli_override(self):
+        other_id = "7fab854a-aa4f-4018-b3be-5650356e2cff"
+        before = cloud.git(cloud.ROOT, "rev-parse", "HEAD").stdout.strip()
+        with tempfile.TemporaryDirectory() as directory:
+            event = Path(directory) / "event.json"
+            event.write_text("{}")
+            env = {**os.environ, "GITHUB_EVENT_PATH": str(event), "GITHUB_EVENT_NAME": "workflow_dispatch",
+                   "DISPATCH_MODE": "preview", "GITHUB_REF": "refs/heads/main",
+                   "DISPATCH_REQUEST_ID": REQUEST_ID, "GITHUB_OUTPUT": str(Path(directory) / "outputs")}
+            command = [sys.executable, str(Path(cloud.__file__)), "validate-request"]
+            first = subprocess.run(command, env=env, text=True, capture_output=True, check=True)
+            second = subprocess.run(command + ["--request-id", other_id], env=env,
+                                    text=True, capture_output=True, check=True)
+            self.assertEqual(json.loads(first.stdout)["request_id"], REQUEST_ID)
+            self.assertEqual(json.loads(second.stdout)["request_id"], other_id)
+            invalid = subprocess.run(command + ["--request-id", "not-a-uuid"], env=env,
+                                     text=True, capture_output=True)
+            self.assertEqual(invalid.returncode, 1)
+            self.assertIn("canonical UUID", invalid.stderr)
+        self.assertEqual(cloud.git(cloud.ROOT, "rev-parse", "HEAD").stdout.strip(), before)
+
     def test_fixed_data_schema_accepts_preview_and_publish(self):
         for mode in ("preview", "publish"):
             self.assertEqual(cloud.parse_request(json.dumps(
@@ -172,6 +208,19 @@ class VerificationTests(unittest.TestCase):
 
     def test_matching_source_note_and_exports_pass(self):
         self.assertEqual(self.check()["note_count"], 1)
+
+    def test_verification_report_and_summary_retain_request_id(self):
+        report = self.root / "report.json"
+        summary = self.root / "summary.md"
+        with patch.object(verify, "ROOT", self.root), \
+                patch.object(verify, "changed_files", return_value=[]), \
+                patch.object(verify, "git", return_value=subprocess.CompletedProcess([], 0, SOURCE_SHA)), \
+                patch.dict(os.environ, {"REQUEST_ID": REQUEST_ID, "GITHUB_STEP_SUMMARY": str(summary)}), \
+                patch("sys.stdout"), \
+                patch.object(sys, "argv", ["verify_update.py", "--source", str(self.source), "--report", str(report)]):
+            self.assertEqual(verify.main(), 0)
+        self.assertEqual(json.loads(report.read_text())["request_id"], REQUEST_ID)
+        self.assertIn(REQUEST_ID, summary.read_text())
 
     def test_source_metadata_and_index_mismatch_fail(self):
         self.index["posts"][0]["tags"] = ["obsolete"]

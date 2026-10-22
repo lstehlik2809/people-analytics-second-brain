@@ -1,5 +1,5 @@
 name: Update second brain in the cloud
-run-name: Brain update (${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'request file' }})
+run-name: Brain update (${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'request file' }})${{ inputs.request_id && format(' [{0}]', inputs.request_id) || '' }}
 
 on:
   workflow_dispatch:
@@ -10,6 +10,11 @@ on:
         options: [preview, publish]
         default: preview
         required: true
+      request_id:
+        description: Optional fresh canonical UUID to identify this exact request
+        type: string
+        required: false
+        default: ''
   push:
     branches: [main]
     paths: [.github/brain-update-request.json]
@@ -44,6 +49,7 @@ jobs:
         id: request
         env:
           DISPATCH_MODE: ${{ inputs.mode || 'preview' }}
+          DISPATCH_REQUEST_ID: ${{ inputs.request_id }}
         run: python3 pipeline/cloud_update.py validate-request
       - name: Check clean starting checkout
         run: |
@@ -114,6 +120,7 @@ jobs:
       - name: Verify built pages and record update summary
         env:
           UPDATE_MODE: ${{ steps.request.outputs.mode }}
+          REQUEST_ID: ${{ steps.request.outputs.request_id }}
         run: python pipeline/verify_update.py --built site/public --report "$RUNNER_TEMP/brain-update-report.json"
       - name: Check generated diff
         run: git diff --check

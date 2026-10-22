@@ -58,6 +58,14 @@ Run **Actions → Update second brain in the cloud → Run workflow** on `main`:
   pushing to `main`. The same run deploys that exact new commit. If generated
   content is unchanged, it creates no content commit or deployment.
 
+For direct workflow dispatch, pass `mode` and optionally a fresh canonical UUID
+as `request_id`. The UUID appears in the Actions run title, summary and preview
+report, so callers can identify their exact run even when several requests use
+the same commit. For example, dispatch with `{"mode":"preview", "request_id":
+"a84ea198-2302-442a-869b-06e678c489da"}`. Omit `request_id` for ordinary manual
+runs; the updater generates one internally. Reuse neither a UUID nor another
+request's run when checking completion.
+
 From a connected assistant that can update GitHub files, submit a fresh UUID in
 the fixed `.github/brain-update-request.json` file on `main`:
 

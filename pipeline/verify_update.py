@@ -192,12 +192,14 @@ def main():
         result = verify(ROOT, Path(args.source), built=args.built)
         files = changed_files(ROOT)
         result.update(changed_files=files, changed_slugs=changed_slugs(files),
-                      source_sha=git(Path(args.source), "rev-parse", "HEAD").stdout.strip())
+                      source_sha=git(Path(args.source), "rev-parse", "HEAD").stdout.strip(),
+                      request_id=os.environ.get("REQUEST_ID", ""))
         if args.report:
             args.report.write_text(json.dumps(result, indent=2) + "\n", encoding="utf-8")
         if os.environ.get("GITHUB_STEP_SUMMARY"):
             with open(os.environ["GITHUB_STEP_SUMMARY"], "a", encoding="utf-8") as summary:
                 summary.write(f"### Verified update ({os.environ.get('UPDATE_MODE', 'local')})\n\n"
+                              f"Request: `{result['request_id'] or '(local)'}`\n\n"
                               f"Source commit: `{result['source_sha']}`\n\n"
                               f"Notes: {result['note_count']}; vectors: {result['vector_count']}\n\n"
                               f"Changed slugs: {', '.join(result['changed_slugs']) or '(none)'}\n\n")

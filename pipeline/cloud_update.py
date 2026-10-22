@@ -49,9 +49,11 @@ def parse_request(text):
     return request
 
 
-def resolve_request(root, event_name, event, dispatch_mode, ref):
+def resolve_request(root, event_name, event, dispatch_mode, ref, dispatch_request_id=None):
     if event_name == "workflow_dispatch":
-        request = {"mode": dispatch_mode, "request_id": str(uuid.uuid4())}
+        request_id = (str(uuid.uuid4()) if dispatch_request_id in (None, "")
+                      else dispatch_request_id)
+        request = {"mode": dispatch_mode, "request_id": request_id}
         request = parse_request(json.dumps(request))
     elif event_name == "push":
         request = parse_request((root / REQUEST_PATH).read_text(encoding="utf-8"))
@@ -134,7 +136,8 @@ def outputs(values):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     subparsers = parser.add_subparsers(dest="command", required=True)
-    subparsers.add_parser("validate-request")
+    validation = subparsers.add_parser("validate-request")
+    validation.add_argument("--request-id", default=os.environ.get("DISPATCH_REQUEST_ID", ""))
     publication = subparsers.add_parser("publish")
     publication.add_argument("--mode", required=True, choices=("preview", "publish"))
     publication.add_argument("--request-id", required=True)
@@ -145,7 +148,7 @@ def main():
             event = json.loads(Path(os.environ["GITHUB_EVENT_PATH"]).read_text(encoding="utf-8"))
             result = resolve_request(ROOT, os.environ["GITHUB_EVENT_NAME"], event,
                                      os.environ.get("DISPATCH_MODE", "preview"),
-                                     os.environ.get("GITHUB_REF", ""))
+                                     os.environ.get("GITHUB_REF", ""), args.request_id)
         else:
             result = publish(ROOT, args.mode, args.request_id, args.source_sha)
         outputs(result)
