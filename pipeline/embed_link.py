@@ -8,6 +8,7 @@ window. Usage: python pipeline/embed_link.py [--top-k 5] [--min-sim 0.3]
 import argparse
 import hashlib
 import json
+import os
 import re
 import shutil
 import sys
@@ -157,15 +158,33 @@ def pair_score(cross_similarities: np.ndarray) -> float:
     return (strongest_mean(a_best) + strongest_mean(b_best)) / 2
 
 
+def embedding_config(env_file=None):
+    """Actions environment wins; retain the local .env configuration fallback."""
+    env_key = os.environ.get("OPENAI_API_KEY")
+    env_model = os.environ.get("OPENAI_EMBEDDING_MODEL")
+    local = (dotenv_values(env_file or ROOT / ".env")
+             if not env_key or not env_model else {})
+    key = env_key or local.get("OPENAI_API_KEY")
+    model = (env_model or
+             local.get("OPENAI_EMBEDDING_MODEL") or "text-embedding-3-large")
+    if not key or not key.strip():
+        raise ValueError("Missing OPENAI_API_KEY: set the environment variable "
+                         "(Actions repository secret) or add it to the local .env file.")
+    return key, model
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--top-k", type=int, default=5)
     ap.add_argument("--min-sim", type=float, default=0.3)
     args = ap.parse_args()
 
-    env = dotenv_values(ROOT / ".env")
-    client = OpenAI(api_key=env["OPENAI_API_KEY"])
-    model = env.get("OPENAI_EMBEDDING_MODEL", "text-embedding-3-large")
+    try:
+        key, model = embedding_config()
+    except ValueError as error:
+        print(str(error), file=sys.stderr)
+        return 1
+    client = OpenAI(api_key=key)
 
     cache = load_cache()
     notes = {path.stem: parse_note(path, model)

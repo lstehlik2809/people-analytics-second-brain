@@ -9,12 +9,12 @@ import { pipeline } from "@huggingface/transformers";
 import { readdirSync, readFileSync, writeFileSync, statSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
+import { parseNoteText } from "./note_metadata.mjs";
 import {
   CHUNK_CHARS,
   CHUNK_OVERLAP,
   MAX_CHUNKS,
   chunkBody,
-  cleanBody,
 } from "./semantic_text.mjs";
 
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
@@ -24,14 +24,7 @@ const MODEL = "Xenova/all-MiniLM-L6-v2";
 const INDEX_SCHEMA = 3;
 
 function parseNote(file) {
-  const text = readFileSync(file, "utf-8");
-  const fm = text.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n/);
-  const head = fm[1];
-  const get = (key) =>
-    (head.match(new RegExp(`^${key}:\\s*(.+)$`, "m")) || [])[1]?.trim().replace(/^['"]|['"]$/g, "") ?? "";
-  const tags = [...head.matchAll(/^- (.+)$/gm)].map((m) => m[1].trim());
-  const body = cleanBody(text.slice(fm[0].length));
-  return { title: get("title"), description: get("description"), date: get("date"), tags, body };
+  return parseNoteText(readFileSync(file, "utf-8"), file);
 }
 
 const files = readdirSync(NOTES).filter((f) => f.endsWith(".md"));

@@ -10,6 +10,7 @@ import base64
 import binascii
 import hashlib
 import json
+import os
 import re
 import shutil
 import sys
@@ -21,7 +22,8 @@ import yaml
 from bs4 import BeautifulSoup
 from urllib.parse import unquote, unquote_to_bytes
 
-BLOG_POSTS = Path(r"D:\_WORKFORCE_ANALYTICS\People_Analytics_Blog\_posts")
+DEFAULT_BLOG_POSTS = r"D:\_WORKFORCE_ANALYTICS\People_Analytics_Blog\_posts"
+BLOG_POSTS = Path(os.environ.get("BLOG_POSTS") or DEFAULT_BLOG_POSTS)
 BLOG_BASE_URL = "https://blog-about-people-analytics.netlify.app/posts/"
 ROOT = Path(__file__).resolve().parent.parent
 VAULT = ROOT / "vault"
@@ -705,6 +707,33 @@ def preserve_related_block(note: str, previous: str) -> str:
     return RELATED_BLOCK_RE.sub(lambda _: old.group(0), note, count=1)
 
 
+def source_fingerprint(post_dir: Path, rmd: Path) -> str:
+    """Keep textual source hashes stable across Windows and Linux checkouts."""
+    rmd_bytes = rmd.read_bytes().replace(b"\r\n", b"\n")
+    h = hashlib.sha256(b"v2:" + rmd_bytes)
+    html = post_dir / f"{rmd.stem}.html"
+    if html.exists():
+        html_bytes = html.read_bytes().replace(b"\r\n", b"\n")
+        h.update(html_bytes)
+        if EMBEDDED_FIGURE_RE.search(html_bytes):
+            h.update(EMBEDDED_FIGURE_HASH_MARKER)
+        if LOCAL_HTML_ASSET_RE.search(html_bytes):
+            h.update(LOCAL_HTML_ASSET_HASH_MARKER)
+        if PLOTLY_WIDGET_RE.search(html_bytes):
+            h.update(PLOTLY_WIDGET_HASH_MARKER)
+        if OUTPUT_WIDGET_RE.search(html_bytes):
+            h.update(OUTPUT_WIDGET_HASH_MARKER)
+    for path_bytes in LOCAL_DIRECT_ATTACHMENT_RE.findall(rmd_bytes):
+        path = unquote_to_bytes(path_bytes.decode("utf-8", errors="replace")).decode(
+            "utf-8", errors="replace")
+        asset = post_dir / path.split("?", 1)[0]
+        if asset.is_file():
+            h.update(LOCAL_DIRECT_ATTACHMENT_HASH_MARKER)
+            h.update(path_bytes)
+            h.update(asset.read_bytes())
+    return h.hexdigest()
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--force", action="store_true", help="rebuild all notes")
@@ -724,29 +753,9 @@ def main():
         if not rmds:
             print(f"  warn: no .Rmd in {post_dir.name}")
             continue
-        # hash .Rmd + rendered .html so re-rendered figures also trigger updates
-        h = hashlib.sha256(b"v2:" + rmds[0].read_bytes())
-        html = post_dir / f"{rmds[0].stem}.html"
-        if html.exists():
-            html_bytes = html.read_bytes()
-            h.update(html_bytes)
-            if EMBEDDED_FIGURE_RE.search(html_bytes):
-                h.update(EMBEDDED_FIGURE_HASH_MARKER)
-            if LOCAL_HTML_ASSET_RE.search(html_bytes):
-                h.update(LOCAL_HTML_ASSET_HASH_MARKER)
-            if PLOTLY_WIDGET_RE.search(html_bytes):
-                h.update(PLOTLY_WIDGET_HASH_MARKER)
-            if OUTPUT_WIDGET_RE.search(html_bytes):
-                h.update(OUTPUT_WIDGET_HASH_MARKER)
-        for path_bytes in LOCAL_DIRECT_ATTACHMENT_RE.findall(rmds[0].read_bytes()):
-            path = unquote_to_bytes(path_bytes.decode("utf-8", errors="replace")).decode(
-                "utf-8", errors="replace")
-            asset = post_dir / path.split("?", 1)[0]
-            if asset.is_file():
-                h.update(LOCAL_DIRECT_ATTACHMENT_HASH_MARKER)
-                h.update(path_bytes)
-                h.update(asset.read_bytes())
-        src_hash = h.hexdigest()
+        # Include rendered output and binary attachments, but ignore the
+        # checkout's newline representation for textual source files.
+        src_hash = source_fingerprint(post_dir, rmds[0])
         slug = note_slug(post_dir.name)
         if slug in seen_slugs:
             slug = post_dir.name  # de-collide by keeping the date prefix

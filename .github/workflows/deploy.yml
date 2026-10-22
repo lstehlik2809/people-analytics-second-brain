@@ -3,7 +3,15 @@ name: Deploy second brain to GitHub Pages
 on:
   push:
     branches: [main]
+    paths-ignore: [.github/brain-update-request.json]
   workflow_dispatch:
+  workflow_call:
+    inputs:
+      sha:
+        description: Exact generated commit to build and deploy
+        type: string
+        required: false
+        default: ''
 
 permissions:
   contents: read
@@ -17,8 +25,23 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    outputs:
+      sha: ${{ steps.revision.outputs.sha }}
     steps:
       - uses: actions/checkout@v7
+        with:
+          ref: ${{ inputs.sha || github.sha }}
+      - name: Record exact build revision
+        id: revision
+        env:
+          EXPECTED_SHA: ${{ inputs.sha }}
+        run: |
+          actual=$(git rev-parse HEAD)
+          if [ -n "$EXPECTED_SHA" ] && [ "$actual" != "$EXPECTED_SHA" ]; then
+            echo 'Reusable deployment requires an exact full commit SHA.' >&2
+            exit 1
+          fi
+          echo "sha=$actual" >> "$GITHUB_OUTPUT"
       - uses: actions/setup-node@v7
         with:
           node-version: 22
@@ -35,6 +58,11 @@ jobs:
           cp pipeline/cache/semantic_index.json site/public/semantic_index.json
           cp pipeline/static/semantic-search.html site/public/semantic-search.html
           cp pipeline/static/hybrid-search.mjs site/public/hybrid-search.mjs
+      - name: Add public revision marker
+        env:
+          BUILD_SHA: ${{ steps.revision.outputs.sha }}
+        run: |
+          python3 -c 'import json,os,pathlib; pathlib.Path("site/public/brain-build.json").write_text(json.dumps({"sha": os.environ["BUILD_SHA"]}) + "\n")'
       - uses: actions/upload-pages-artifact@v5
         with:
           path: site/public
@@ -50,12 +78,14 @@ jobs:
       - id: deployment
         name: Deploy to GitHub Pages with extended monitoring
         uses: actions/github-script@v9
+        env:
+          BUILD_SHA: ${{ needs.build.outputs.sha }}
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             const owner = context.repo.owner
             const repo = context.repo.repo
-            const buildVersion = context.sha
+            const buildVersion = process.env.BUILD_SHA
             const artifactName = "github-pages"
 
             const artifactsResponse = await github.request(
@@ -129,3 +159,31 @@ jobs:
             throw new Error(
               `Pages deployment ${deploymentId} is still active after 30 minutes`
             )
+      - name: Verify the live revision and public exports
+        uses: actions/github-script@v9
+        env:
+          BUILD_SHA: ${{ needs.build.outputs.sha }}
+          PAGE_URL: ${{ steps.deployment.outputs.page_url }}
+        with:
+          script: |
+            const base = process.env.PAGE_URL.replace(/\/$/, "")
+            if (!base) throw new Error("Pages did not return a deployment URL")
+            const delay = ms => new Promise(resolve => setTimeout(resolve, ms))
+            for (let attempt = 1; attempt <= 12; attempt++) {
+              try {
+                const marker = await fetch(`${base}/brain-build.json?run=${context.runId}-${attempt}`, { cache: "no-store" })
+                if (!marker.ok) throw new Error(`Revision marker HTTP ${marker.status}`)
+                const revision = await marker.json()
+                if (revision.sha !== process.env.BUILD_SHA) throw new Error("Live revision has not caught up")
+                for (const name of ["llms.txt", "llms-full.txt", "semantic_index.json", "semantic-search.html", "hybrid-search.mjs"]) {
+                  const response = await fetch(`${base}/${name}`, { cache: "no-store" })
+                  if (!response.ok || !(await response.text()).length) throw new Error(`Missing live export: ${name}`)
+                }
+                await core.summary.addRaw(`Verified live revision ${revision.sha} at ${base}\n`).write()
+                return
+              } catch (error) {
+                if (attempt === 12) throw error
+                core.info(`Live check ${attempt}/12: ${error.message}`)
+                await delay(10_000)
+              }
+            }

@@ -1,0 +1,156 @@
+name: Update second brain in the cloud
+run-name: Brain update (${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'request file' }})
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: Preview generated files, or publish verified changes
+        type: choice
+        options: [preview, publish]
+        default: preview
+        required: true
+  push:
+    branches: [main]
+    paths: [.github/brain-update-request.json]
+
+permissions:
+  contents: read
+
+# GitHub may replace an older pending request with a newer one. Inspect the
+# exact triggering run; never infer completion from another request's run.
+concurrency:
+  group: brain-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    permissions:
+      contents: write
+    defaults:
+      run:
+        working-directory: brain
+    outputs:
+      published: ${{ steps.publish.outputs.published }}
+      sha: ${{ steps.publish.outputs.sha }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          path: brain
+          fetch-depth: 0
+      - name: Validate request before generation
+        id: request
+        env:
+          DISPATCH_MODE: ${{ inputs.mode || 'preview' }}
+        run: python3 pipeline/cloud_update.py validate-request
+      - name: Check clean starting checkout
+        run: |
+          test -z "$(git status --porcelain)" || { echo 'Checkout is dirty; refusing generation.' >&2; exit 1; }
+      - uses: actions/checkout@v7
+        with:
+          repository: lstehlik2809/People_Analytics_Blog
+          ref: master
+          path: blog
+          persist-credentials: false
+      - name: Set absolute source path and revision
+        id: source
+        run: |
+          echo "BLOG_POSTS=$(realpath ../blog/_posts)" >> "$GITHUB_ENV"
+          echo "sha=$(git -C ../blog rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: brain/pipeline/requirements.txt
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: |
+            brain/pipeline/package-lock.json
+            brain/site/package-lock.json
+      - name: Install Python and locked Node dependencies
+        run: |
+          python -m pip install -r pipeline/requirements.txt
+          npm ci --prefix pipeline
+          npm ci --prefix site
+      - name: Run pipeline regression tests
+        run: |
+          python -m unittest discover -s pipeline -p 'test_*.py'
+          npm test --prefix pipeline
+      - name: Restore only the paid embedding cache
+        id: embeddings
+        uses: actions/cache/restore@v6
+        with:
+          path: brain/pipeline/cache/embeddings.json
+          key: brain-embeddings-v2-${{ runner.os }}-${{ vars.OPENAI_EMBEDDING_MODEL || 'text-embedding-3-large' }}-${{ hashFiles('brain/pipeline/embed_link.py') }}-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: |
+            brain-embeddings-v2-${{ runner.os }}-${{ vars.OPENAI_EMBEDDING_MODEL || 'text-embedding-3-large' }}-${{ hashFiles('brain/pipeline/embed_link.py') }}-
+      - name: Convert new or changed source posts
+        run: python pipeline/convert.py
+      - name: Embed and relink notes
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_EMBEDDING_MODEL: ${{ vars.OPENAI_EMBEDDING_MODEL }}
+        run: python pipeline/embed_link.py
+      - name: Save only the paid embedding cache
+        uses: actions/cache/save@v6
+        with:
+          path: brain/pipeline/cache/embeddings.json
+          key: ${{ steps.embeddings.outputs.cache-primary-key }}
+      - name: Build corpus exports and browser search index
+        run: |
+          python pipeline/build_llms.py
+          node pipeline/build_semantic_index.mjs
+      - name: Verify generated metadata, links, assets and indexes
+        run: python pipeline/verify_update.py
+      - name: Build Quartz and copy public search exports
+        run: |
+          (cd site && npx quartz build -d ../vault)
+          cp pipeline/cache/llms.txt pipeline/cache/llms-full.txt pipeline/cache/semantic_index.json site/public/
+          cp pipeline/static/semantic-search.html pipeline/static/hybrid-search.mjs site/public/
+      - name: Verify built pages and record update summary
+        env:
+          UPDATE_MODE: ${{ steps.request.outputs.mode }}
+        run: python pipeline/verify_update.py --built site/public --report "$RUNNER_TEMP/brain-update-report.json"
+      - name: Check generated diff
+        run: git diff --check
+      - name: Downloadable preview (explicit generated paths only)
+        if: steps.request.outputs.mode == 'preview'
+        uses: actions/upload-artifact@v7
+        with:
+          name: brain-preview-${{ github.run_id }}-${{ github.run_attempt }}
+          retention-days: 7
+          if-no-files-found: error
+          path: |
+            brain/README.md
+            brain/vault
+            brain/pipeline/cache/manifest.json
+            brain/pipeline/cache/llms.txt
+            brain/pipeline/cache/llms-full.txt
+            brain/pipeline/cache/semantic_index.json
+            brain/site/public
+            ${{ runner.temp }}/brain-update-report.json
+      - name: Publish scoped changes or finish without a content commit
+        id: publish
+        env:
+          UPDATE_MODE: ${{ steps.request.outputs.mode }}
+          REQUEST_ID: ${{ steps.request.outputs.request_id }}
+          SOURCE_SHA: ${{ steps.source.outputs.sha }}
+        run: |
+          python pipeline/cloud_update.py publish --mode "$UPDATE_MODE" --request-id "$REQUEST_ID" --source-sha "$SOURCE_SHA"
+          echo "Mode: $UPDATE_MODE; request: $REQUEST_ID" >> "$GITHUB_STEP_SUMMARY"
+          echo 'Preview and unchanged runs create no content commit or deployment. A published SHA starts the deployment job below.' >> "$GITHUB_STEP_SUMMARY"
+
+  deploy:
+    needs: update
+    if: needs.update.outputs.published == 'true'
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    uses: ./.github/workflows/deploy.yml
+    with:
+      sha: ${{ needs.update.outputs.sha }}

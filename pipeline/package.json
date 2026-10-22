@@ -3,13 +3,14 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "node --test test_semantic_text.mjs test_hybrid_search.mjs"
+    "test": "node --test test_semantic_text.mjs test_hybrid_search.mjs test_note_metadata.mjs"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@huggingface/transformers": "^4.2.0"
+    "@huggingface/transformers": "^4.2.0",
+    "yaml": "2.9.0"
   }
 }
