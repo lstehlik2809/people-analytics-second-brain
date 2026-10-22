@@ -3,9 +3,72 @@ import sys
 import tempfile
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import convert
+
+
+class AssetFilenameTests(unittest.TestCase):
+    def setUp(self):
+        self.temp = tempfile.TemporaryDirectory()
+        self.root = Path(self.temp.name)
+        self.assets = self.root / "outputs"
+
+    def tearDown(self):
+        self.temp.cleanup()
+
+    def test_exact_filename_takes_precedence_over_casefold_matches(self):
+        first = self.root / "Chart.PNG"
+        second = self.root / "chart.png"
+        first.write_bytes(b"first image")
+        second.write_bytes(b"second image")
+        # Linux has two real files. On Windows supply both directory entries
+        # explicitly to exercise the same exact-match precedence.
+        with patch.object(Path, "iterdir", return_value=iter([second, first])):
+            self.assertEqual(convert.resolve_asset_source(first).name, "Chart.PNG")
+
+    def test_unique_casefold_fallback_copies_markdown_and_raw_html_images(self):
+        (self.root / "Capture1.PNG").write_bytes(b"committed image")
+        body = '![Markdown](./Capture1.png)\n<img src="./Capture1.png" alt="HTML">'
+        warnings = []
+        result = convert.convert_body(body, self.root, self.assets, "post", warnings)
+        self.assertIn('![Markdown](./post/Capture1.png)', result)
+        self.assertIn('![HTML](./post/Capture1.png)', result)
+        self.assertEqual((self.assets / "Capture1.png").read_bytes(), b"committed image")
+        self.assertEqual([p.name for p in self.assets.iterdir()], ["Capture1.png"])
+        self.assertEqual(warnings, [])
+
+    def test_ambiguous_casefold_fallback_fails_without_copying(self):
+        first = self.root / "Chart.PNG"
+        second = self.root / "chart.png"
+        first.write_bytes(b"first image")
+        second.write_bytes(b"second image")
+        entries = [p.name for p in self.root.iterdir()]
+        if sys.platform.startswith("linux"):
+            self.assertIn("Chart.PNG", entries)
+            self.assertIn("chart.png", entries)
+        if "Chart.PNG" in entries and "chart.png" in entries:
+            # A case-sensitive Linux checkout exercises the real ambiguity.
+            with self.assertRaisesRegex(ValueError, "Ambiguous local asset.*CHART.PNG.*Chart.PNG.*chart.png"):
+                convert.convert_body('![Chart](./CHART.PNG)', self.root, self.assets, "post", [])
+        else:
+            # Windows cannot store both names; emulate its directory inventory
+            # without skipping the ambiguity behavior test.
+            with patch.object(Path, "iterdir", return_value=iter([first, second])):
+                with self.assertRaisesRegex(ValueError, "Ambiguous local asset.*CHART.PNG.*Chart.PNG.*chart.png"):
+                    convert.convert_body('![Chart](./CHART.PNG)', self.root, self.assets, "post", [])
+        self.assertFalse(self.assets.exists())
+
+    def test_missing_reference_keeps_warning_and_does_not_search_other_directories(self):
+        (self.root / "Elsewhere.PNG").write_bytes(b"not in requested parent")
+        body = '![Missing](./missing.png)\n<img src="nested/Elsewhere.png" alt="Other">'
+        warnings = []
+        result = convert.convert_body(body, self.root, self.assets, "post", warnings)
+        self.assertEqual(result, body)
+        self.assertEqual(warnings, ["post: missing image ./missing.png",
+                                    "post: missing image nested/Elsewhere.png"])
+        self.assertFalse(self.assets.exists())
 
 
 class EmbeddedFigureTests(unittest.TestCase):

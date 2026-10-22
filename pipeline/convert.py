@@ -115,6 +115,21 @@ def clean_description(desc) -> str:
     return re.sub(r"\s+", " ", str(desc)).strip()
 
 
+def resolve_asset_source(requested: Path) -> Path | None:
+    """Resolve filename case differences without guessing between candidates."""
+    if not requested.parent.is_dir():
+        return None
+    files = [entry for entry in requested.parent.iterdir() if entry.is_file()]
+    exact = next((entry for entry in files if entry.name == requested.name), None)
+    if exact is not None:
+        return exact
+    matches = [entry for entry in files if entry.name.casefold() == requested.name.casefold()]
+    if len(matches) > 1:
+        names = ", ".join(sorted(entry.name for entry in matches))
+        raise ValueError(f"Ambiguous local asset {requested}: {names}")
+    return matches[0] if matches else None
+
+
 def convert_body(body: str, post_dir: Path, asset_dir: Path, slug: str, warnings: list) -> str:
     # A vembedr chunk produces a video in the rendered blog, but Quartz does
     # not run R. Replace simple video-only chunks with the equivalent embed.
@@ -144,12 +159,14 @@ def convert_body(body: str, post_dir: Path, asset_dir: Path, slug: str, warnings
         or None if it is remote or missing."""
         if path.startswith(("http://", "https://", "data:")):
             return None
-        src = post_dir / unquote(path)
-        if not src.exists():
+        requested = post_dir / unquote(path)
+        src = resolve_asset_source(requested)
+        if src is None:
             warnings.append(f"{slug}: missing image {path}")
             return None
         # spaces in a filename break markdown links, so normalize on copy
-        dest_name = src.name.replace(" ", "-")
+        # Keep the requested spelling so Windows and Linux emit the same paths.
+        dest_name = requested.name.replace(" ", "-")
         asset_dir.mkdir(parents=True, exist_ok=True)
         dest = asset_dir / dest_name
         if not dest.exists() or src.read_bytes() != dest.read_bytes():
