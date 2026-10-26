@@ -44,10 +44,10 @@ P.S. Link to the [paper](https://arxiv.org/abs/2604.04721) and [project site](ht
 <!-- RELATED:BEGIN -->
 ## Related notes
 - [[change-org-ai-outputs-vs-outcomes|Change.org: AI outputs vs outcomes]]
+- [[manager-effect-lab|Good manager or lucky team?]]
 - [[ai-and-bullshit-asymmetry|Can AI help us fight the bullshit asymmetry?]]
 - [[ai-powered-data-exploration-assistant|Testing my GenAI skepticism]]
 - [[causal-inference-in-people-analytics|Beyond prediction: Exploiting organizational events for causal inference in people analytics]]
-- [[ai-suggestibility|Loftus & Palmer 2.0: Replicating human bias in AI]]
 <!-- RELATED:END -->
 
 ---

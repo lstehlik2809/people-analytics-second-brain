@@ -64,8 +64,8 @@ P.S. I didn't test the reliability of GPT-4's responses, nor did I set its tempe
 - [[evidence-based-hrm-knowledge-test-results|Evaluation of the results of the evidence-based HRM knowledge test]]
 - [[evidence-based-hrm-knowledge-test|Evidence-based HRM knowledge test]]
 - [[genai-and-leadership-judgement|Can genAI help people managers lead better?]]
+- [[manager-effect-lab|Good manager or lucky team?]]
 - [[causal-impact-of-leadership-skills|Novel way to measure leadership skills via causal inference (and AI)?]]
-- [[managers-overconfidence|Where do managers put on their rose-tinted glasses the most?]]
 <!-- RELATED:END -->
 
 ---

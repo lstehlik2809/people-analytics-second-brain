@@ -44,10 +44,10 @@ P.S. Thanks to my boss, Nadzeya Laurentsyeva, for pointing me to this interestin
 <!-- RELATED:BEGIN -->
 ## Related notes
 - [[genai-and-leadership-judgement|Can genAI help people managers lead better?]]
+- [[manager-effect-lab|Good manager or lucky team?]]
 - [[impact-of-leaders|Want to maximize your impact as a leader?]]
 - [[causal-inference-in-people-analytics|Beyond prediction: Exploiting organizational events for causal inference in people analytics]]
 - [[self-leadership|Self-Leadership: A New Superpower?]]
-- [[ai-and-bullshit-asymmetry|Can AI help us fight the bullshit asymmetry?]]
 <!-- RELATED:END -->
 
 ---

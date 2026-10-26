@@ -41,8 +41,8 @@ That sounds a lot like the description of our last family trip. `r emoji::emoji(
 - [[tas-c-suit-teams|Insights from the Team Assessment Survey results of C-suite teams]]
 - [[managers-overconfidence|Where do managers put on their rose-tinted glasses the most?]]
 - [[team-maps|Experiencing and seeing team similarities and differences]]
+- [[manager-effect-lab|Good manager or lucky team?]]
 - [[predictors-of-stay-intentions-vs-actual-resignations|Talk vs. Walk: Predictors of staying intentions vs. actual quitting behavior]]
-- [[expected-remaining-time|Does your team belong among “light bulbs” or “wines”?]]
 <!-- RELATED:END -->
 
 ---

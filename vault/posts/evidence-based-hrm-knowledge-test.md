@@ -44,7 +44,7 @@ Update: With more than 140 people completing the test, I was able to compare our
 - [[gpt4-and-e-b-hrm-practices|GPT-4's performance in the knowledge test of evidence-based HRM practices]]
 - [[hr-causal-evidence-map|Some inspiration for your next HR impact evaluation]]
 - [[beyond-belief|Evidence-Based Management: Boring basics and better questions]]
-- [[the-triple-filter-test|The Triple-Filter Test: How to prioritize HR interventions with panel data]]
+- [[manager-effect-lab|Good manager or lucky team?]]
 <!-- RELATED:END -->
 
 ---

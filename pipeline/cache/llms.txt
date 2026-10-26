@@ -1,9 +1,10 @@
 # Ludek's People Analytics Second Brain
 
-> A public second brain of 224 posts on people analytics, statistics, causal inference, psychometrics, machine learning, and AI by Ludek Stehlik. Browsable knowledge graph at https://lstehlik2809.github.io/people-analytics-second-brain. The complete corpus is in /llms-full.txt.
+> A public second brain of 225 posts on people analytics, statistics, causal inference, psychometrics, machine learning, and AI by Ludek Stehlik. Browsable knowledge graph at https://lstehlik2809.github.io/people-analytics-second-brain. The complete corpus is in /llms-full.txt.
 
 ## Notes
 
+- [Good manager or lucky team?](https://lstehlik2809.github.io/people-analytics-second-brain/posts/manager-effect-lab): Lead three AI teammates through hidden-clue puzzles and see how you bring their knowledge together.
 - [What happens to our own performance when the AI is suddenly gone?](https://lstehlik2809.github.io/people-analytics-second-brain/posts/ai-assistance-reduces-persistence): A short stint with an AI assistant, and then it’s gone. Do we do worse on our own and give up sooner? 🤔
 - [Some inspiration for your next HR impact evaluation](https://lstehlik2809.github.io/people-analytics-second-brain/posts/hr-causal-evidence-map): An interactive map of 68 causal studies from 2025–26 on HR practices and business performance, with their findings, designs and limitations.
 - [What might we miss when assessment scores and job ratings are strongly correlated?](https://lstehlik2809.github.io/people-analytics-second-brain/posts/beyond-the-correlation): A police cadet dataset illustrates how a strong overall correlation can mask distinct patterns in job ratings and generate questions for further investigation.

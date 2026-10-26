@@ -139,10 +139,10 @@ The possible takeaway? With full awareness of the obvious limitations of this sm
 <!-- RELATED:BEGIN -->
 ## Related notes
 - [[causal-impact-of-leadership-skills|Novel way to measure leadership skills via causal inference (and AI)?]]
+- [[manager-effect-lab|Good manager or lucky team?]]
 - [[ai-powered-data-exploration-assistant|Testing my GenAI skepticism]]
 - [[chatgpt-and-employee-feedback|Using ChatGPT to summarize and explore employee feedback?]]
 - [[gpt4-and-e-b-hrm-practices|GPT-4's performance in the knowledge test of evidence-based HRM practices]]
-- [[gai-simulation-work-habits|Does GenAI make me a better (more rational) thinker?]]
 <!-- RELATED:END -->
 
 ---
