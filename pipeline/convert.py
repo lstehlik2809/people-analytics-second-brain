@@ -226,7 +226,12 @@ def convert_body(body: str, post_dir: Path, asset_dir: Path, slug: str, warnings
     body = ATTR_RE.sub(r"\1", body)
     body = escape_inline_hashtags(body)
     body = blank_pad_html_wrappers(body)
-    return body.strip()
+    # Remove accidental single trailing spaces in prose, preserving Markdown
+    # hard breaks (two or more spaces) and whitespace inside fenced code.
+    parts = FENCE_SPLIT_RE.split(body)
+    for i in range(0, len(parts), 2):
+        parts[i] = re.sub(r"(?m)(?<=\S)[ \t]$", "", parts[i])
+    return "".join(parts).strip()
 
 
 FENCE_SPLIT_RE = re.compile(r"(```.*?```)", re.S)
