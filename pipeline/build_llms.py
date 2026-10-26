@@ -73,7 +73,9 @@ def main():
         ])
 
     (CACHE / "llms.txt").write_text("\n".join(index), encoding="utf-8", newline="\n")
-    (CACHE / "llms-full.txt").write_text("\n".join(full), encoding="utf-8", newline="\n")
+    # Plain-text exports must not carry source-line trailing whitespace.
+    full_text = "\n".join(line.rstrip(" \t") for line in "\n".join(full).split("\n"))
+    (CACHE / "llms-full.txt").write_text(full_text, encoding="utf-8", newline="\n")
     size = (CACHE / "llms-full.txt").stat().st_size
     print(f"llms.txt: {len(notes)} entries; llms-full.txt: {size/1e6:.1f} MB")
 
