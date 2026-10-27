@@ -15,7 +15,7 @@ I know I’m a little bit late to the party, but I only recently learned that yo
 
 What caught my attention was the possibility of building small, accessible data products with Bayesian analyses, without maintaining an expensive backend to fit the models.
 
-This seems useful for people analytics, where we often work with relatively small datasets. With a suitable model and defensible priors, we can use relevant prior knowledge and express uncertainty in quantities people actually care about. Small samples still leave us with uncertainty, of course, and make our assumptions matter more.
+This seems especially useful for people analytics, where we often work with relatively small datasets. With a suitable model and defensible priors, we can bring in relevant prior knowledge and express uncertainty in quantities people actually care about. Small samples still leave us with uncertainty, of course, and make our assumptions matter more.
 
 To try this out, I built a [small site](https://lstehlik2809.github.io/bayes-in-your-browser/) inspired by [Andrew Marritt’s free online book, Bayesian Thinking for People Analytics](https://bayesian-thinking.andrewmarritt.ch/), which [I recommended here recently](https://blog-about-people-analytics.netlify.app/posts/2026-09-16-bayesian-thinking-for-people-analytics/).
 

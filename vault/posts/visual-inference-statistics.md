@@ -177,8 +177,8 @@ If you would like to apply the visual statistical inference approach to your own
 
 <!-- RELATED:BEGIN -->
 ## Related notes
-- [[bayes-in-your-browser|Bayes in your browser]]
 - [[bayesian-belief-updating|A visual introduction to Bayesian belief updating]]
+- [[bayes-in-your-browser|Bayes in your browser]]
 - [[visual-diff-in-diff|Causal insights with no code?]]
 - [[nobel-prize-and-causal-inference-popularity|Did the Nobel Prize put causal inference on the public radar?]]
 - [[segmentedregression|Modeling impact of the COVID-19 pandemic on people’s interest in work-life balance and well-being]]
