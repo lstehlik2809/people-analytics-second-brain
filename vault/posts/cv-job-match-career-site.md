@@ -3,6 +3,7 @@ title: Improving a company career site with tools from OpenAI
 description: How my own experience of exploring new job opportunities gave me the idea of how the company's career site could be easily improved using OpenAI's tools.
 date: '2023-05-04'
 tags:
+- web-apps
 - recruitment
 - generative-ai
 - embeddings
@@ -14,7 +15,7 @@ original: https://blog-about-people-analytics.netlify.app/posts/2023-05-04-cv-jo
 My recent exploration of new job opportunities has inspired me to consider what I would appreciate as a job candidate when visiting the career site of a company I'd like to work for. Specifically, I would appreciate the following flow:
 
 1. Uploading my CV on the company's career site.
-2. Receiving a list of jobs sorted by the degree of match to my CV. 
+2. Receiving a list of jobs sorted by the degree of match to my CV.
 3. Obtaining an overview of my major mis/matches for the selected job.
 4. Having the option to ask specific questions about the job (e.g. What could be the biggest challenge for me?)
 5. Not/Applying for the job after considering the provided information.
@@ -32,10 +33,10 @@ P.S. It was also a good opportunity to try out [Shiny for Python by Posit](https
 <!-- RELATED:BEGIN -->
 ## Related notes
 - [[employee-feedback-analysis-using-openai|Employee feedback analysis using tools from OpenAI]]
-- [[openai-personality-interpretation|Ask your personality using GPT]]
 - [[directionally-correct-podcast-topic-explorer|Turning 152 Directionally Correct podcast episodes into an interactive topic explorer]]
-- [[hr-tech-ai-shift|How AI is reshaping HR-tech]]
-- [[job-comparator|A bet on a new job]]
+- [[openai-personality-interpretation|Ask your personality using GPT]]
+- [[agentic-ai-for-visual-data-exploration|Agentic AI for visual data exploration]]
+- [[ai-powered-data-exploration-assistant|Testing my GenAI skepticism]]
 <!-- RELATED:END -->
 
 ---

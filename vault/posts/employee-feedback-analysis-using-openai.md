@@ -3,6 +3,7 @@ title: Employee feedback analysis using tools from OpenAI
 description: How to use GPT and embeddings from OpenAI for identifying topics and related sentiments in employee feedback.
 date: '2023-04-28'
 tags:
+- web-apps
 - generative-ai
 - embeddings
 - employee-survey
@@ -24,7 +25,7 @@ To address these limitations, I experimented with another approach that includes
 5. Interactive exploration of specific topics clustered by their semantic similarity based on their respective embeddings and visualized with the help of t-SNE dimensionality reduction technique.
 6. Creating a filterable table with identified topics and all original and extracted information that may be useful for further exploration of the feedback and for checking the precision of the topic identification.
 
-I had to experiment a bit with the prompts and include some data-munging inter-steps to get useful outputs, however, it now works relatively smoothly and provides pretty good results. To test the plausibility of this approach, I tried it on publicly available feedback from more than 300 current and former employees of an unnamed company published on Glassdoor and shared on [Kaggle](https://www.kaggle.com/datasets/davidgauthier/glassdoor-job-reviews/code). You can check the results of the analysis yourself in [this simple dashboard](https://aanalytics.shinyapps.io/employeeFeedback/). 
+I had to experiment a bit with the prompts and include some data-munging inter-steps to get useful outputs, however, it now works relatively smoothly and provides pretty good results. To test the plausibility of this approach, I tried it on publicly available feedback from more than 300 current and former employees of an unnamed company published on Glassdoor and shared on [Kaggle](https://www.kaggle.com/datasets/davidgauthier/glassdoor-job-reviews/code). You can check the results of the analysis yourself in [this simple dashboard](https://aanalytics.shinyapps.io/employeeFeedback/).
 
 ![](./employee-feedback-analysis-using-openai/Screenshot.png)
 

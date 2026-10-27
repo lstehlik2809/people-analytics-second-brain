@@ -139,8 +139,8 @@ I would also be very interested to see related efforts. If you are building agen
 
 <!-- RELATED:BEGIN -->
 ## Related notes
-- [[ai-powered-data-exploration-assistant|Testing my GenAI skepticism]]
 - [[causal-inference-in-people-analytics|Beyond prediction: Exploiting organizational events for causal inference in people analytics]]
+- [[ai-powered-data-exploration-assistant|Testing my GenAI skepticism]]
 - [[agentic-ai-for-visual-data-exploration|Agentic AI for visual data exploration]]
 - [[causal-impact-of-leadership-skills|Novel way to measure leadership skills via causal inference (and AI)?]]
 - [[dag-and-double-ml|A plausible model of data-generating process eats ML algorithms for breakfast]]

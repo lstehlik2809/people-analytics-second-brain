@@ -44,9 +44,9 @@ Despite all the uncertainty, it was a very useful exercise to confront my though
 <!-- RELATED:BEGIN -->
 ## Related notes
 - [[glassdoor|When flawed statistical & causal reasoning leads to a valid conclusion anyway]]
-- [[survey-participation-and-attrition-prediction|People may signal their exit intentions not only by their actions but also by their inactions]]
 - [[probability-of-comments-in-a-survey|What makes people more likely to comment on a question in an employee survey?]]
 - [[you-said-we-did|‘You Said, We Did’ matters - maybe just not as distinctly as we assume]]
+- [[survey-participation-and-attrition-prediction|People may signal their exit intentions not only by their actions but also by their inactions]]
 - [[managerial-quality|Unexpected protective effect of having a good manager?]]
 <!-- RELATED:END -->
 

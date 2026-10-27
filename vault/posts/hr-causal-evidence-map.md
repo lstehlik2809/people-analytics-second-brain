@@ -3,6 +3,7 @@ title: Some inspiration for your next HR impact evaluation
 description: An interactive map of 68 causal studies from 2025–26 on HR practices and business performance, with their findings, designs and limitations.
 date: '2026-10-19'
 tags:
+- web-apps
 - causal-inference
 - evidence-based-management
 - hr-management
@@ -25,7 +26,7 @@ For anyone planning their own evaluation: only 6 of those 31 studies randomized 
 
 On the site you can scroll through these findings on an evidence map, then filter the studies and read each one’s finding, design and main limitation, with a link to the original paper. The result labels are a first-pass coding drafted with AI, mostly from abstracts, so check the paper before relying on any of them. It’s a one-off scoping review with gaps, not a systematic review.
 
-[Sharing it here](https://lstehlik2809.github.io/hr-evidence-atlas/) in case you find something interesting, or an approach worth trying in a project of your own. 
+[Sharing it here](https://lstehlik2809.github.io/hr-evidence-atlas/) in case you find something interesting, or an approach worth trying in a project of your own.
 
 ![](./hr-causal-evidence-map/evidence-map2.png)
 

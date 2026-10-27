@@ -27,8 +27,8 @@ P.S. The illustrative pic is from the 1998 movie *[Sliding Doors](https://en.wik
 - [[causal-inference-in-people-analytics|Beyond prediction: Exploiting organizational events for causal inference in people analytics]]
 - [[visual-diff-in-diff|Causal insights with no code?]]
 - [[garden-of-forking-paths-redo|Refactoring the "Garden of Forking Paths"]]
-- [[cv-job-match-career-site|Improving a company career site with tools from OpenAI]]
 - [[econml-and-employee-attriton|How to get causal interpretation for the Employee Attrition dataset?]]
+- [[cv-job-match-career-site|Improving a company career site with tools from OpenAI]]
 <!-- RELATED:END -->
 
 ---

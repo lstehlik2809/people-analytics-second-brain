@@ -3,6 +3,7 @@ title: How does your company stack up in the Big Nine Cultural Values?
 description: A quick intro to the Culture 500 - a tool for assessing company culture using Glassdoor reviews.
 date: '2024-11-11'
 tags:
+- web-apps
 - organizational-culture
 - employee-survey
 - glassdoor

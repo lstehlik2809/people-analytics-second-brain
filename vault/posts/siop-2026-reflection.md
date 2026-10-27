@@ -3,6 +3,7 @@ title: 'SIOP through the wisdom of crowds: What I may have missed'
 description: A brief “wisdom of crowds” reflection on which SIOP sessions and topics drew unusually high agenda interest - and what that suggests I may want to catch up on.
 date: '2026-05-06'
 tags:
+- web-apps
 - siop
 - topic-analysis
 - decision-making
@@ -39,7 +40,7 @@ At the session level, the five biggest positive residuals were:
 
 These seem to combine several strong attention drivers: the promise of learning something new in a fun and original way, the possibility of creating real-world impact, and curiosity about what the future holds - an ideal recipe for sparking people’s interest, right? 🙂 Personally, I attended the two most connected to impact, but apparently I left some fun and future-looking sessions on the table. Maybe next time?
 
-Methodological note: Results are based on Whova data from the three main conference days. Topics were identified through an LLM-assisted active-learning loop using only session titles, and topics are not mutually exclusive. Poster sessions were excluded because they likely come from a different data-generating process compared with other session types. 
+Methodological note: Results are based on Whova data from the three main conference days. Topics were identified through an LLM-assisted active-learning loop using only session titles, and topics are not mutually exclusive. Poster sessions were excluded because they likely come from a different data-generating process compared with other session types.
 
 P.S. If interested, you can check out [this simple interactive dashboard](https://lstehlik2809.github.io/siop-2026-reflection/), where you can explore the topics from other perspectives and drill down to individual sessions by topic and topic combinations.
 

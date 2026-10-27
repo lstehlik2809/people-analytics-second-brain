@@ -3,6 +3,7 @@ title: Interpretable machine learning with modelStudio
 description: There's a new kid on the block in the R ecosystem that can help analysts understand the behavior of their ML models.
 date: '2023-04-13'
 tags:
+- web-apps
 - interpretability
 - machine-learning
 - predictive-analytics
@@ -122,7 +123,7 @@ xgb_tuning %>%
 
 ```
 
-Now we can set up the final model training workflow and fit the model to the entire training dataset and check its performance on out-of-sample data using k-fold cross-validation and testing dataset. As we see below, in both cases the model performance as measured by AUC is around the value of 0.8. 
+Now we can set up the final model training workflow and fit the model to the entire training dataset and check its performance on out-of-sample data using k-fold cross-validation and testing dataset. As we see below, in both cases the model performance as measured by AUC is around the value of 0.8.
 
 ```r
 # setting the final model
@@ -212,8 +213,8 @@ modelStudio::modelStudio(
 
 <!-- RELATED:BEGIN -->
 ## Related notes
-- [[personas-based-on-ml-local-interpretation-algos|Personas based on ML local interpretation algorithms]]
 - [[r-and-power-bi|Embedding R (or Python) ML models in Power BI dashboards]]
+- [[personas-based-on-ml-local-interpretation-algos|Personas based on ML local interpretation algorithms]]
 - [[econml-and-employee-attriton|How to get causal interpretation for the Employee Attrition dataset?]]
 - [[conditional-inference-tree|Divide and... understand]]
 - [[causal-inference-in-people-analytics|Beyond prediction: Exploiting organizational events for causal inference in people analytics]]

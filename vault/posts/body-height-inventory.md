@@ -3,12 +3,13 @@ title: Estimating body height using an inventory?
 description: Why not?
 date: '2024-05-30'
 tags:
+- web-apps
 - psychometrics
 - learning-and-development
 original: https://blog-about-people-analytics.netlify.app/posts/2024-05-30-body-height-inventory/
 ---
 
-Out of curiosity and a bit for fun, I just completed the 11-item height inventory by Hynek Cigler from the Department of Psychology, FSS MU, a teaching aid designed to demonstrate some of the basics of measurement in psychology and related fields. 
+Out of curiosity and a bit for fun, I just completed the 11-item height inventory by Hynek Cigler from the Department of Psychology, FSS MU, a teaching aid designed to demonstrate some of the basics of measurement in psychology and related fields.
 
 Instead of using a ruler, you indicate how much you agree with statements like “*I often have to stand on my tiptoes to see better.*” or “*I have plenty of legroom on the bus.*”
 
@@ -31,7 +32,7 @@ The inventory is in Czech, but the online translation in Chrome does a pretty go
 - [[openai-personality-interpretation|Ask your personality using GPT]]
 - [[evidence-based-hrm-knowledge-test|Evidence-based HRM knowledge test]]
 - [[detecting-personality-in-the-face|Can a simple algorithm read your personality from your face?]]
-- [[self-awareness-and-personality|Does your personality interfere with your self-awareness?]]
+- [[bayes-in-your-browser|Bayes in your browser]]
 <!-- RELATED:END -->
 
 ---

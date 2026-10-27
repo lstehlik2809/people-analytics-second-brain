@@ -3,6 +3,7 @@ title: A nerdy way to choose your next holiday destination
 description: How I sacrificed an hour of Netflix to build a weird travel app.
 date: '2026-06-21'
 tags:
+- web-apps
 - cross-cultural-differences
 - organizational-culture
 - work-life-balance

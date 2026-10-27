@@ -4,10 +4,44 @@ Source: https://lstehlik2809.github.io/people-analytics-second-brain | Author: L
 
 ---
 
+# Bayes in your browser
+URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/bayes-in-your-browser
+Date: 2026-10-27
+Tags: bayesian-statistics, people-analytics, regression-analysis, multilevel-modeling, web-apps
+Original post: https://blog-about-people-analytics.netlify.app/posts/2026-10-27-bayes-in-your-browser/
+
+I know I’m a little bit late to the party, but I only recently learned that you can run Bayesian analyses directly in a web browser, including complex regression models whose posteriors we approximate through sampling.
+
+What caught my attention was the possibility of building small, accessible data products with Bayesian analyses, without maintaining an expensive backend to fit the models.
+
+This seems useful for people analytics, where we often work with relatively small datasets. With a suitable model and defensible priors, we can use relevant prior knowledge and express uncertainty in quantities people actually care about. Small samples still leave us with uncertainty, of course, and make our assumptions matter more.
+
+To try this out, I built a [small site](https://lstehlik2809.github.io/bayes-in-your-browser/) inspired by [Andrew Marritt’s free online book, Bayesian Thinking for People Analytics](https://bayesian-thinking.andrewmarritt.ch/), which [I recommended here recently](https://blog-about-people-analytics.netlify.app/posts/2026-09-16-bayesian-thinking-for-people-analytics/).
+
+![](./bayes-in-your-browser/bayes-in-your-browser-demo.gif)
+
+It uses the familiar [IBM attrition dataset](https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset) and lets you estimate attrition proportions, compare income between groups, and fit linear and logistic regressions. It also includes ordinal regression for satisfaction ratings and a hierarchical income model that makes partial pooling across groups visible.
+
+You choose the variables, run the model, and inspect posterior distributions, credible intervals and results tables. You can follow the sampling progress, and diagnostics help you spot when a fit needs more attention.
+
+The calculations run in your browser. The site is plain HTML, CSS and JavaScript hosted on GitHub Pages, with a background worker handling the sampling so the interface stays responsive. There’s no model-fitting server to set up or pay for.
+
+A couple of caveats: the IBM data are fictional, so this is a demonstration, not evidence about an actual workforce. And a friendly interface doesn’t remove the need to think about priors, model fit or what the data can and cannot tell us.
+
+I find this a useful way to make some Bayesian tools available to people who wouldn’t otherwise run R or Python themselves. It also reminded me how much can happen inside a browser these days 🤓
+
+Feel free to [give it a try here](https://lstehlik2809.github.io/bayes-in-your-browser/).
+
+
+---
+> 📄 Read the [original post with full outputs](https://blog-about-people-analytics.netlify.app/posts/2026-10-27-bayes-in-your-browser/) on my blog.
+
+---
+
 # Good manager or lucky team?
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/manager-effect-lab
 Date: 2026-10-26
-Tags: leadership, human-ai-interaction, generative-ai, teams, decision-making, communication, psychometrics, causal-inference, learning-and-development
+Tags: web-apps, leadership, human-ai-interaction, generative-ai, teams, decision-making, communication, psychometrics, causal-inference, learning-and-development
 Original post: https://blog-about-people-analytics.netlify.app/posts/2026-10-26-manager-effect-lab/
 
 Last year I posted about [two NBER working papers by Weidmann, Deming, and colleagues](https://blog-about-people-analytics.netlify.app/posts/2025-06-12-causal-impact-of-leadership-skills/) that tried to answer a simple-sounding question: how do you tell a good manager from one who just got lucky with their team?
@@ -85,7 +119,7 @@ P.S. Link to the [paper](https://arxiv.org/abs/2604.04721) and [project site](ht
 # Some inspiration for your next HR impact evaluation
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/hr-causal-evidence-map
 Date: 2026-10-19
-Tags: causal-inference, evidence-based-management, hr-management, research-methods, experiments, performance, people-analytics, data-visualization, impact-evaluation
+Tags: web-apps, causal-inference, evidence-based-management, hr-management, research-methods, experiments, performance, people-analytics, data-visualization, impact-evaluation
 Original post: https://blog-about-people-analytics.netlify.app/posts/2026-10-19-hr-causal-evidence-map/
 
 I wanted some inspiration for causal impact evaluations of our internal people projects, so I took a look at recent research on HR practices and business performance.
@@ -191,7 +225,7 @@ Note on how this was made: I used Claude Code (Opus 5.5) to turn my dissertation
 # What probability would change your mind about Sam?
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/decision-tree-foldback
 Date: 2026-10-06
-Tags: decision-analysis, decision-making, people-analytics, simulation, performance-management
+Tags: web-apps, decision-analysis, decision-making, people-analytics, simulation, performance-management
 Original post: https://blog-about-people-analytics.netlify.app/posts/2026-10-06-decision-tree-foldback/
 
 Andrew Marritt recently published a very useful article, [*Should you replace Sam?*](https://andrewmarritt.substack.com/p/should-you-replace-sam), that shows how to bring People Analytics insights closer to real impact on people-related decisions.
@@ -399,7 +433,7 @@ P.P.S. The project also included Czech pilot localizations of five psychometric 
 # Nothing changed. The dashboard disagrees.
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/turnover-signal-and-noise
 Date: 2026-09-28
-Tags: employee-turnover, hr-metrics, statistics, time-series, simulation
+Tags: web-apps, employee-turnover, hr-metrics, statistics, time-series, simulation
 Original post: https://blog-about-people-analytics.netlify.app/posts/2026-09-28-turnover-signal-and-noise/
 
 The question sounded simple: is it OK to show monthly TR annualized, next to the annual number, and react when it jumps? To make the answer tangible, I built a small interactive app. It simulates a company of 1,000 people with a true turnover of 10% that never changes, and then measures it annually, quarterly and monthly (the latter two annualized).
@@ -663,7 +697,7 @@ P.S. Curious if anyone in my network has done the same or a similar exercise wit
 # How exposed are your job and other jobs to AI?
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/job-ai-exposure
 Date: 2026-09-18
-Tags: ai, future-of-work, skills, labor-economics, data-visualization
+Tags: web-apps, ai, future-of-work, skills, labor-economics, data-visualization
 Original post: https://blog-about-people-analytics.netlify.app/posts/2026-09-18-job-ai-exposure/
 
 As part of a recent training on using AI effectively, I created Work & AI - a [small app](https://lstehlik2809.github.io/work-and-ai/) for anyone curious about how AI might affect our jobs.
@@ -788,7 +822,7 @@ P.S. For reproducibility, you can find the data sources, scripts, results, and s
 # The Big Five and different ways of succeeding
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/life-success-personality-profiles
 Date: 2026-09-07
-Tags: personality, big-five, meta-analysis, career-development, psychometrics
+Tags: web-apps, personality, big-five, meta-analysis, career-development, psychometrics
 Original post: https://blog-about-people-analytics.netlify.app/posts/2026-09-07-life-success-personality-profiles/
 
 Recently, I came across a [study by Michael Wilmot, Brenton Wiernik and Deniz Ones (2025)](https://www.researchgate.net/publication/393373619_Mapping_Domains_of_Life_Success_Insights_From_Meta-Analytic_Criterion_Profile_Analysis) that looks at how Big Five personality traits relate to different forms of life success.
@@ -1625,7 +1659,7 @@ render_comparison_gif()
 # Turning 152 Directionally Correct podcast episodes into an interactive topic explorer
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/directionally-correct-podcast-topic-explorer
 Date: 2026-08-18
-Tags: knowledge-management, topic-analysis, network-analysis, data-visualization, generative-ai, embeddings, people-analytics
+Tags: web-apps, knowledge-management, topic-analysis, network-analysis, data-visualization, generative-ai, embeddings, people-analytics
 Original post: https://blog-about-people-analytics.netlify.app/posts/2026-08-18-directionally-correct-podcast-topic-explorer/
 
 Currently, I’m exploring different ways to represent, visualize, and make knowledge and ideas easier to consume and navigate. As part of that, I recently shared the result of my attempt to build [a second brain rooted in my People Analytics blog](https://lstehlik2809.github.io/people-analytics-second-brain/), accessible to both people and AI agents.
@@ -1675,7 +1709,7 @@ P.P.S. The [repo](https://github.com/lstehlik2809/directionally-correct-topic-ma
 # Turning Outlook calendar data into a collaboration map
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/meeting-ego-network-app
 Date: 2026-08-11
-Tags: network-analysis, collaboration, meetings, generative-ai, people-analytics
+Tags: web-apps, network-analysis, collaboration, meetings, generative-ai, people-analytics
 Original post: https://blog-about-people-analytics.netlify.app/posts/2026-08-11-meeting-ego-network-app/
 
 Recently, at work, I came across another example of GenAI-driven commoditization of a data product that was once relatively rare and accessible only through collaboration with a third-party vendor or an internal expert equipped with highly specialized software.
@@ -2894,7 +2928,7 @@ sessionInfo()
 # My second People Analytics brain - both for people and AI agents
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/people-analytics-second-brain
 Date: 2026-07-28
-Tags: people-analytics, ai, agentic-ai, embeddings, nlp, knowledge-management, data-visualization
+Tags: web-apps, people-analytics, ai, agentic-ai, embeddings, nlp, knowledge-management, data-visualization
 Original post: https://blog-about-people-analytics.netlify.app/posts/2026-07-28-people-analytics-second-brain/
 
 Specifically, I built a public knowledge base from more than 200 posts on this People Analytics blog. It is browsable as a knowledge graph, searchable by keywords or meaning, and accessible to AI agents through a public MCP server. The complete corpus is also available as `llms-full.txt` - roughly 290k tokens, so it fits in one go only in the largest context windows - plus a compact `llms.txt` index.
@@ -3155,7 +3189,7 @@ P.S. If you would like to replicate or extend the analysis, you can find the dat
 # A nerdy way to choose your next holiday destination
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/cultural-traveler
 Date: 2026-06-21
-Tags: cross-cultural-differences, organizational-culture, work-life-balance, generative-ai
+Tags: web-apps, cross-cultural-differences, organizational-culture, work-life-balance, generative-ai
 Original post: https://blog-about-people-analytics.netlify.app/posts/2026-06-21-cultural-traveler/
 
 My recent encounter with [Hofstede’s cultural dimensions model](https://geerthofstede.com/culture-geert-hofstede-gert-jan-hofstede/6d-model-of-national-culture/) in the context of the [work-from-home topic](https://blog-about-people-analytics.netlify.app/posts/2026-06-18-hofstede-wfh/) reminded me of a nerdy and probably not very practical idea I had some time ago.
@@ -3203,7 +3237,7 @@ P.S. Hofstede’s country scores are broad national averages. They capture only 
 # What does national culture have to do with working from home?
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/hofstede-wfh
 Date: 2026-06-18
-Tags: remote-work, cross-cultural-differences, organizational-culture, open-science
+Tags: web-apps, remote-work, cross-cultural-differences, organizational-culture, open-science
 Original post: https://blog-about-people-analytics.netlify.app/posts/2026-06-18-hofstede-wfh/
 
 Recently, I listened to a podcast episode featuring Nicholas Bloom, where he mentioned an interesting finding from his recent research with colleagues ([Zarate et al., 2025](https://www.pnas.org/doi/10.1073/pnas.2529036122)):
@@ -3567,7 +3601,7 @@ Question for the PA folks here: Are you using "above expected" style models in P
 # SIOP through the wisdom of crowds: What I may have missed
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/siop-2026-reflection
 Date: 2026-05-06
-Tags: siop, topic-analysis, decision-making
+Tags: web-apps, siop, topic-analysis, decision-making
 Original post: https://blog-about-people-analytics.netlify.app/posts/2026-05-06-siop-2026-reflection/
 
 After my first SIOP conference, I found myself wondering what useful content I might have missed simply because of the sessions I chose to attend. Think of it as a retrospective “lost opportunity cost” analysis 🤓
@@ -3649,7 +3683,7 @@ If you're at SIOP and interested in making causal thinking more practical in app
 # SIOP 2026 Recommender
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/siop-2026-recommender
 Date: 2026-04-18
-Tags: siop, machine-learning
+Tags: web-apps, siop, machine-learning
 Original post: https://blog-about-people-analytics.netlify.app/posts/2026-04-18-siop-2026-recommender/
 
 Attending SIOP for the first time this year confronted me with something that more seasoned attendees are probably already used to and may even have a few tricks for handling.
@@ -4603,7 +4637,7 @@ And of course, school entry dates are just one example. We could start with bein
 # Making abstract ideas digestible with knobs and sliders
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/dunning-kruger-effect-simulation
 Date: 2026-01-20
-Tags: learning-and-development, generative-ai, ai, cognitive-biases
+Tags: web-apps, learning-and-development, generative-ai, ai, cognitive-biases
 Original post: https://blog-about-people-analytics.netlify.app/posts/2026-01-20-dunning-kruger-effect-simulation/
 
 As an illustration from my own practice, I wanted to give the audience in a lecture on cognitive biases a tangible experience of the ideas behind the famous [“debunking”](https://www.sciencedirect.com/science/article/pii/S0160289620300271?via%3Dihub) of the even more famous phenomenon of the [Dunning-Kruger Effect](https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect) (DKE).
@@ -5680,7 +5714,7 @@ P.S. The whole exercise reminded me of a [*semantic differential*](https://en.wi
 # Testing my GenAI skepticism
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/ai-powered-data-exploration-assistant
 Date: 2025-10-09
-Tags: agentic-ai, data-science, generative-ai, human-ai-interaction
+Tags: web-apps, agentic-ai, data-science, generative-ai, human-ai-interaction
 Original post: https://blog-about-people-analytics.netlify.app/posts/2025-10-09-ai-powered-data-exploration-assistant/
 
 As a data scientist and analyst who spends a lot of time knee-deep in data, trying to figure out how to use it to answer stakeholders’ questions and help them solve the problems they’re facing, I used to be pretty skeptical about the quality and actual value that GenAI could bring to data analysis.
@@ -5752,7 +5786,7 @@ P.S. This is also a topic close to me personally. In my Ph.D. dissertation, I lo
 # Agentic AI for visual data exploration
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/agentic-ai-for-visual-data-exploration
 Date: 2025-09-24
-Tags: agentic-ai, generative-ai, organizational-culture, employee-experience, glassdoor
+Tags: web-apps, agentic-ai, generative-ai, organizational-culture, employee-experience, glassdoor
 Original post: https://blog-about-people-analytics.netlify.app/posts/2025-09-24-agentic-ai-for-visual-data-exploration/
 
 It’s a [simple agentic app](https://ai-dataviz-exploration.streamlit.app/) for plain-language exploration of corporate culture data. Ask a question in everyday language, and a team of AI agents will plan the analysis, generate the visualization, and explain the findings - all in a few seconds.
@@ -6079,7 +6113,7 @@ datatable(
 # Dimensional Traits vs. Personality Types
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/dimensional-traits-vs-personality-types
 Date: 2025-09-09
-Tags: personality, big-five, machine-learning, psychometrics
+Tags: web-apps, personality, big-five, machine-learning, psychometrics
 Original post: https://blog-about-people-analytics.netlify.app/posts/2025-09-09-dimensional-traits-vs-personality-types/
 
 For a guest lecture I’m giving on personality in the business world, I built a [simple interactive dataviz](https://sanofi-people-analytics.shinyapps.io/personality-mapping/) that clearly demonstrates just how futile (and a bit naïve) it is to try to squeeze the huge variability of personality characteristics into a handful of types like… [insert your favorite typology 😉].
@@ -6882,7 +6916,7 @@ P.S. Thanks to my boss, Nadzeya Laurentsyeva, for pointing me to this interestin
 # An interactive demo of Computerized Adaptive Testing
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/cat-and-irt-demo
 Date: 2025-06-02
-Tags: psychometrics, bayesian-statistics, python
+Tags: web-apps, psychometrics, bayesian-statistics, python
 Original post: https://blog-about-people-analytics.netlify.app/posts/2025-06-02-cat-and-irt-demo/
 
 Specifically, I decided to reimplement in [Streamlit](https://streamlit.io/) a [Computerized Adaptive Testing (CAT)](https://en.wikipedia.org/wiki/Computerized_adaptive_testing) and [Item Response Theory (IRT)](https://en.wikipedia.org/wiki/Item_response_theory) demo I originally built years ago in good old Excel.
@@ -9658,7 +9692,7 @@ az.summary(last_cumulative_estimate)
 # How does your company stack up in the Big Nine Cultural Values?
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/culture-500
 Date: 2024-11-11
-Tags: organizational-culture, employee-survey, glassdoor, nlp
+Tags: web-apps, organizational-culture, employee-survey, glassdoor, nlp
 Original post: https://blog-about-people-analytics.netlify.app/posts/2024-11-11-culture-500/
 
 I recently came across the [Culture 500](https://sloanreview.mit.edu/culture500) - an interesting tool created by MIT Sloan Management Review and CultureX, which offers a data-driven evaluation of corporate culture across the Big Nine Cultural Values as assessed through analysis of over 1 million employee reviews on Glassdoor. The model used includes the following nine culture values:
@@ -9704,7 +9738,7 @@ To learn more about the methodology behind the tool, check out [this site](https
 # Do you use XmR charts for People Analytics use cases?
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/xmr-charts-in-people-analytics
 Date: 2024-10-30
-Tags: time-series, statistics, data-visualization, people-analytics
+Tags: web-apps, time-series, statistics, data-visualization, people-analytics
 Original post: https://blog-about-people-analytics.netlify.app/posts/2024-10-30-xmr-charts-in-people-analytics/
 
 I'm curious if anyone in People Analytics space has experience - good, bad, or a bit of both - using XmR charts for tracking and interpreting HR-related metrics and guiding follow-up process improvements, especially among non-technical end users.
@@ -9738,7 +9772,7 @@ P.S. The attached charts were created with [Xmrit, a free online tool](https://c
 # Do people’s personalities vary across different jobs?
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/job-personality-fit
 Date: 2024-10-29
-Tags: personality, big-five, career-development
+Tags: web-apps, personality, big-five, career-development
 Original post: https://blog-about-people-analytics.netlify.app/posts/2024-10-29-job-personality-fit/
 
 Over the years, it seems I’ve gravitated toward a job family that aligns well with my personality - or at least, that’s how it appears when you find job choices of other similarly-minded people as a validation of your own choices 😉
@@ -10674,7 +10708,7 @@ DT::datatable(
 # People may signal their exit intentions not only by their actions but also by their inactions
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/survey-participation-and-attrition-prediction
 Date: 2024-08-29
-Tags: employee-turnover, employee-survey
+Tags: web-apps, employee-turnover, employee-survey
 Original post: https://blog-about-people-analytics.netlify.app/posts/2024-08-29-survey-participation-and-attrition-prediction/
 
 I recently came across a LI post discussing a more or less surprising fact about the relatively high predictive power of a single item from employee surveys in relation to employee turnover. The item in question was a simple question about the employee's intention to stay with the company if they were offered the same job at another organization. An insight corresponding to my mom’s wise advice she gave me when I was a small child: If you don’t know, just ask, most people will be happy to answer 🙂
@@ -11502,7 +11536,7 @@ These results thus suggest that good old "moderation" might be a sound guiding p
 # Estimating body height using an inventory?
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/body-height-inventory
 Date: 2024-05-30
-Tags: psychometrics, learning-and-development
+Tags: web-apps, psychometrics, learning-and-development
 Original post: https://blog-about-people-analytics.netlify.app/posts/2024-05-30-body-height-inventory/
 
 Out of curiosity and a bit for fun, I just completed the 11-item height inventory by Hynek Cigler from the Department of Psychology, FSS MU, a teaching aid designed to demonstrate some of the basics of measurement in psychology and related fields.
@@ -13131,7 +13165,7 @@ df['sentiment_score_mixed'] = prediction.apply(lambda x: x['scores'][x['labels']
 # Using NLP & LLM to combat 'tip-of-the-tongue' moments during onboarding
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/nlp-llm-and-onboarding
 Date: 2023-10-23
-Tags: employee-experience, nlp, generative-ai, embeddings, ai
+Tags: web-apps, employee-experience, nlp, generative-ai, embeddings, ai
 Original post: https://blog-about-people-analytics.netlify.app/posts/2023-10-23-nlp-llm-and-onboarding/
 
 I believe that many of you have had a similar experience when you joined a new company: you have taken a ton of notes from various meetings and trainings, you know that the answer to your immediate question is in there somewhere, but it is too hard to find the right notes, so you capitulate and decide to try to find the answer in a different way, e.g. by asking a more tenured colleague.
@@ -14108,7 +14142,7 @@ ggraph::ggraph(g, layout = "kk") + # other available layouts: 'star', 'circle', 
 # Searching & querying AIHR blog posts on People Analytics topics
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/searching-and-querying-aihr-blog-posts
 Date: 2023-07-11
-Tags: people-analytics, embeddings, learning-and-development
+Tags: web-apps, people-analytics, embeddings, learning-and-development
 Original post: https://blog-about-people-analytics.netlify.app/posts/2023-07-11-searching-and-querying-aihr-blog-posts/
 
 It’s an app that allows you to quickly search for People Analytics topics in a database of almost 260 [AIHR blog posts](https://www.aihr.com/blog/) and get key ideas and insights from the posts that best match your search topic, with the possibility to go to the original post via a provided link.
@@ -14267,7 +14301,7 @@ If you are trying to deal with this effect in your reporting practice, can you s
 # A bet on a new job
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/job-comparator
 Date: 2023-06-28
-Tags: career-development, bayesian-statistics, r, shiny-app, decision-making, decision-analysis
+Tags: web-apps, career-development, bayesian-statistics, r, shiny-app, decision-making, decision-analysis
 Original post: https://blog-about-people-analytics.netlify.app/posts/2023-06-28-job-comparator/
 
 Being in the final phase of my new job search, I wanted to be able to aggregate the information and impressions I gathered during the hiring process, with all the uncertainties, to make the best decision possible.
@@ -14301,7 +14335,7 @@ If you have at least two job offers to choose from, you may find the app as usef
 # Themes in Deloitte's Global Human Capital Trends between 2011 and 2023
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/deloitte-hc-trends-themes
 Date: 2023-06-27
-Tags: future-of-work, generative-ai, r, python
+Tags: web-apps, future-of-work, generative-ai, r, python
 Original post: https://blog-about-people-analytics.netlify.app/posts/2023-06-27-deloitte-hc-trends-themes/
 
 Aside from satisfying a simple curiosity, it was also a good opportunity to try out a nerdy combination of various cool DS tools: openAI’s embeddings for determining trends similarity, UMAP for dimensionality reduction, DBSCAN for cluster analysis, openAI’s chat completion for cluster summarization and naming, Plotly for interactive dataviz, Shiny for dashboarding, and Python and R for orchestrating it all.
@@ -15325,7 +15359,7 @@ Feel free to share your own experiences and encounters with the phenomena of reg
 # Improving a company career site with tools from OpenAI
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/cv-job-match-career-site
 Date: 2023-05-04
-Tags: recruitment, generative-ai, embeddings, python, shiny-app
+Tags: web-apps, recruitment, generative-ai, embeddings, python, shiny-app
 Original post: https://blog-about-people-analytics.netlify.app/posts/2023-05-04-cv-job-match-career-site/
 
 My recent exploration of new job opportunities has inspired me to consider what I would appreciate as a job candidate when visiting the career site of a company I'd like to work for. Specifically, I would appreciate the following flow:
@@ -15415,7 +15449,7 @@ P.S. I didn't test the reliability of GPT-4's responses, nor did I set its tempe
 # Employee feedback analysis using tools from OpenAI
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/employee-feedback-analysis-using-openai
 Date: 2023-04-28
-Tags: generative-ai, embeddings, employee-survey, topic-analysis, python, r, shiny-app
+Tags: web-apps, generative-ai, embeddings, employee-survey, topic-analysis, python, r, shiny-app
 Original post: https://blog-about-people-analytics.netlify.app/posts/2023-04-28-employee-feedback-analysis-using-openai/
 
 A while ago, I posted about the [potential of using GPT for processing open-ended feedback from employees](https://blog-about-people-analytics.netlify.app/posts/2023-02-26-chatgpt-and-employee-feedback/). I simply inputted a block of text into GPT and asked for a summary of the major topics found in the feedback. Although the output was quite accurate and the information compression achieved was very useful, this approach was somewhat limited in terms of scalability and granularity of the information provided.
@@ -15763,7 +15797,7 @@ Original post: https://blog-about-people-analytics.netlify.app/posts/2023-04-17-
 # Interpretable machine learning with modelStudio
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/interpretable-ml
 Date: 2023-04-13
-Tags: interpretability, machine-learning, predictive-analytics, r
+Tags: web-apps, interpretability, machine-learning, predictive-analytics, r
 Original post: https://blog-about-people-analytics.netlify.app/posts/2023-04-13-interpretable-ml/
 
 There's a great new R package, [modelStudio](https://cran.r-project.org/web/packages/modelStudio/index.html), that makes it much easier for analysts to create both global and local interpretations of predictive models using an interactive interface.
@@ -16154,7 +16188,7 @@ While the client couldn’t rule out that there might be some individuals fittin
 # Ask your personality using GPT
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/openai-personality-interpretation
 Date: 2023-04-11
-Tags: generative-ai, ai, personality, shiny-app, r
+Tags: web-apps, generative-ai, ai, personality, shiny-app, r
 Original post: https://blog-about-people-analytics.netlify.app/posts/2023-04-11-openai-personality-interpretation/
 
 One of my friends recently asked me if I could provide him with an interpretation of a free personality test he took on the internet. As a joke, I asked him if he had already tried using GPT for this.
@@ -17226,7 +17260,7 @@ How are you doing in this respect? And do you have any tricks that help you unpl
 # Evidence-based HRM knowledge test
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/evidence-based-hrm-knowledge-test
 Date: 2022-12-17
-Tags: evidence-based-management, hr-management, people-management, shiny-app
+Tags: web-apps, evidence-based-management, hr-management, people-management, shiny-app
 Original post: https://blog-about-people-analytics.netlify.app/posts/2022-12-17-evidence-based-hrm-knowledge-test/
 
 ```r
@@ -17397,7 +17431,7 @@ Btw, what is your guess as to how much time you spend in each cell of the meetin
 # Some resources on staff retention and downsizing
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/resources-on-retention-and-downsizing
 Date: 2022-11-26
-Tags: employee-turnover, layoffs, people-analytics, evidence-based-management
+Tags: web-apps, employee-turnover, layoffs, people-analytics, evidence-based-management
 Original post: https://blog-about-people-analytics.netlify.app/posts/2022-11-26-resources-on-retention-and-downsizing/
 
 I referred them to the following resources - maybe some of you will find them useful as well:
@@ -20084,7 +20118,7 @@ How about your perception of probability words? Is there anything in the graphs 
 # Hofstede's theory of cultural dimensions
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/hofstede-theory-of-cultural-dimensions
 Date: 2022-01-03
-Tags: cross-cultural-differences, shiny-app
+Tags: web-apps, cross-cultural-differences, shiny-app
 Original post: https://blog-about-people-analytics.netlify.app/posts/2022-01-03-hofstede-theory-of-cultural-dimensions/
 
 One of the advantages of switch to remote working is that companies can expand the pool of talent from which they choose their employees, without being too constrained by country or even continental boundaries. However, the resulting cultural diversity can bring not only positive effects (e.g. a broader set of perspectives, a more diverse skill base, local market knowledge and insight, better creativity and innovation, etc.) but also some challenges (e.g. risk of prejudice or negative cultural stereotypes, misinterpretation of communication, conflicting work styles, different understanding of professional etiquette, etc.).
@@ -20146,7 +20180,7 @@ How about you? Where would you fit in? And is there anyone among you who would f
 # R Shiny app for LinkedIn connections analysis
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/linkedin-connections-analysis
 Date: 2021-12-16
-Tags: linkedin, collaboration, network-analysis, shiny-app
+Tags: web-apps, linkedin, collaboration, network-analysis, shiny-app
 Original post: https://blog-about-people-analytics.netlify.app/posts/2021-12-16-linkedin-connections-analysis/
 
 If you like to use the end of the year as an opportunity for deeper self-reflection, you might enjoy [this simple app](https://peopleanalyticsblog.shinyapps.io/linkedIn_connections_analysis/) I have put together over the past weekend.
@@ -20186,7 +20220,7 @@ P.P.S. Big thanks to [Sebastian Vorac](https://www.linkedin.com/in/sebastian-vor
 # Overview of predictors of voluntary employee turnover
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/overview-of-predictors-of-voluntary-employee-turnover
 Date: 2021-12-12
-Tags: employee-turnover, meta-analysis, shiny-app
+Tags: web-apps, employee-turnover, meta-analysis, shiny-app
 Original post: https://blog-about-people-analytics.netlify.app/posts/2021-12-12-overview-of-predictors-of-voluntary-employee-turnover/
 
 ```r
@@ -21396,7 +21430,7 @@ In conclusion, we can say that there is some evidence that the COVID-19 pandemic
 # HR analytika a odchodovost zaměstnanců
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/hr-analytika-a-odchodovost-zamstnanc
 Date: 2018-10-14
-Tags: employee-turnover, evidence-based-management, shiny-app
+Tags: web-apps, employee-turnover, evidence-based-management, shiny-app
 Original post: https://blog-about-people-analytics.netlify.app/posts/2018-10-14-hr-analytika-a-odchodovost-zamstnanc/
 
 ```r

@@ -3,6 +3,7 @@ title: A bet on a new job
 description: Sharing a by-product of my search for a new full-time job.
 date: '2023-06-28'
 tags:
+- web-apps
 - career-development
 - bayesian-statistics
 - r
@@ -12,7 +13,7 @@ tags:
 original: https://blog-about-people-analytics.netlify.app/posts/2023-06-28-job-comparator/
 ---
 
-Being in the final phase of my new job search, I wanted to be able to aggregate the information and impressions I gathered during the hiring process, with all the uncertainties, to make the best decision possible. 
+Being in the final phase of my new job search, I wanted to be able to aggregate the information and impressions I gathered during the hiring process, with all the uncertainties, to make the best decision possible.
 
 To do this, I put together a “back-of-the-envelope” calculation that combines, in a Bayesian way, the impressions one has of various aspects of the jobs one is applying for.  
 
@@ -36,11 +37,11 @@ If you have at least two job offers to choose from, you may find the app as usef
 
 <!-- RELATED:BEGIN -->
 ## Related notes
+- [[bayes-in-your-browser|Bayes in your browser]]
 - [[decision-tree-foldback|What probability would change your mind about Sam?]]
 - [[cv-job-match-career-site|Improving a company career site with tools from OpenAI]]
 - [[bayesian-simulation|Harnessing Bayesian analysis for business process simulation]]
 - [[overview-of-predictors-of-voluntary-employee-turnover|Overview of predictors of voluntary employee turnover]]
-- [[linkedin-connections-analysis|R Shiny app for LinkedIn connections analysis]]
 <!-- RELATED:END -->
 
 ---

@@ -3,6 +3,7 @@ title: Some resources on staff retention and downsizing
 description: Probably due to the current situation in the talent market, where many companies are laying people off and at the same time are worried about losing their key employees, a few people have contacted me in recent weeks asking for some tips on evidence-based approaches to dealing with retention and downsizing.
 date: '2022-11-26'
 tags:
+- web-apps
 - employee-turnover
 - layoffs
 - people-analytics
@@ -25,7 +26,7 @@ Feel free to share any other resources on this topic you think might be useful t
 - [[overview-of-predictors-of-voluntary-employee-turnover|Overview of predictors of voluntary employee turnover]]
 - [[bayesian-shrinkage|Using Bayesian shrinkage in reporting employee turnover]]
 - [[regression-to-the-mean|Employee commitment over time & regression to the mean]]
-- [[instrumental-and-expressive-networks|Not all workplace relationships are created equal when it comes to retaining talent]]
+- [[evidence-based-hrm-knowledge-test|Evidence-based HRM knowledge test]]
 - [[glassdoor|When flawed statistical & causal reasoning leads to a valid conclusion anyway]]
 <!-- RELATED:END -->
 

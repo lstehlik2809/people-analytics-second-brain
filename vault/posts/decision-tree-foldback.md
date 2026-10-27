@@ -3,6 +3,7 @@ title: What probability would change your mind about Sam?
 description: A practical look at decision analysis in People Analytics, and a simple tool for comparing options, propagating uncertainty, and finding the assumptions that would actually change a people decision.
 date: '2026-10-06'
 tags:
+- web-apps
 - decision-analysis
 - decision-making
 - people-analytics
@@ -44,9 +45,9 @@ Let me know what works, what's confusing, or what's missing. I'd especially like
 ## Related notes
 - [[manager-effect-lab|Good manager or lucky team?]]
 - [[job-comparator|A bet on a new job]]
+- [[bayes-in-your-browser|Bayes in your browser]]
 - [[turnover-signal-and-noise|Nothing changed. The dashboard disagrees.]]
 - [[bayesian-simulation|Harnessing Bayesian analysis for business process simulation]]
-- [[doppelganger-for-career-pathing|Using Doppelgänger for career pathing?]]
 <!-- RELATED:END -->
 
 ---

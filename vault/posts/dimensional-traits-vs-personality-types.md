@@ -3,6 +3,7 @@ title: Dimensional Traits vs. Personality Types
 description: Sharing an interactive dataviz showing why cramming the complexity of personality into a few types just doesn’t work.
 date: '2025-09-09'
 tags:
+- web-apps
 - personality
 - big-five
 - machine-learning
@@ -24,11 +25,11 @@ If you find it useful for your teaching or training, check out the dataviz [here
 
 <!-- RELATED:BEGIN -->
 ## Related notes
-- [[kohonen-self-organizing-maps|Kohonen's Self-Organizing Maps]]
 - [[team-maps|Experiencing and seeing team similarities and differences]]
+- [[kohonen-self-organizing-maps|Kohonen's Self-Organizing Maps]]
 - [[personality-and-non-linearities|Nonlinear relationships between personality traits and business outcomes seem to be the norm rather than the exception]]
 - [[life-success-personality-profiles|The Big Five and different ways of succeeding]]
-- [[detecting-personality-in-the-face|Can a simple algorithm read your personality from your face?]]
+- [[job-personality-fit|Do people’s personalities vary across different jobs?]]
 <!-- RELATED:END -->
 
 ---

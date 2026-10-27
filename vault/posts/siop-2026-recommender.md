@@ -3,6 +3,7 @@ title: SIOP 2026 Recommender
 description: A practical AI assistant for finding the most relevant SIOP 2026 sessions and building a conflict-free personal schedule.
 date: '2026-04-18'
 tags:
+- web-apps
 - siop
 - machine-learning
 original: https://blog-about-people-analytics.netlify.app/posts/2026-04-18-siop-2026-recommender/
@@ -82,9 +83,9 @@ htmltools::div(
 ## Related notes
 - [[siop-2026-reflection|SIOP through the wisdom of crowds: What I may have missed]]
 - [[siop-2025-conference-events|What topics might you encounter at the SIOP 2025 conference?]]
-- [[siop-2026-causal-inference-workshop|No Experiment, No Problem? Causal Inference in Applied Quasi-Experimental Settings (Session ID 830)]]
 - [[directionally-correct-podcast-topic-explorer|Turning 152 Directionally Correct podcast episodes into an interactive topic explorer]]
 - [[cv-job-match-career-site|Improving a company career site with tools from OpenAI]]
+- [[siop-2026-causal-inference-workshop|No Experiment, No Problem? Causal Inference in Applied Quasi-Experimental Settings (Session ID 830)]]
 <!-- RELATED:END -->
 
 ---

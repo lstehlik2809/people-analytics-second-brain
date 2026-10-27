@@ -3,6 +3,7 @@ title: Do people’s personalities vary across different jobs?
 description: And if they do, are those differences big enough to be useful for career counseling and personal development?
 date: '2024-10-29'
 tags:
+- web-apps
 - personality
 - big-five
 - career-development
@@ -37,7 +38,7 @@ If you’d like to try the tool yourself, here’s the [link](https://apps.psych
 - [[big-five-personality-and-earnings|Link between the Big Five personality traits and earnings]]
 - [[collaboration-and-personality|Collaboration and personality]]
 - [[personality-and-work-engagement|Putting the "ideal" personality for high work engagement in a broader context]]
-- [[personality-and-cultural-values|We are probably more similar - and different - than expected]]
+- [[dimensional-traits-vs-personality-types|Dimensional Traits vs. Personality Types]]
 <!-- RELATED:END -->
 
 ---

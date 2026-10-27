@@ -29,8 +29,8 @@ Curious if anyone here has experience with this specific decision aid and how it
 ## Related notes
 - [[mindfulness-and-objectivity|Another positive effect of mindfulness meditation on the horizon?]]
 - [[coincidence-or-evidence|When does a coincidence become evidence?]]
-- [[decision-tree-foldback|What probability would change your mind about Sam?]]
 - [[analytical-choices-and-variability|How variations in analytic choices affect results?]]
+- [[decision-tree-foldback|What probability would change your mind about Sam?]]
 - [[gai-simulation-work-habits|Does GenAI make me a better (more rational) thinker?]]
 <!-- RELATED:END -->
 

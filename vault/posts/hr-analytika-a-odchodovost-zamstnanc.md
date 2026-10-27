@@ -3,6 +3,7 @@ title: HR analytika a odchodovost zaměstnanců
 description: Které faktory přispívají k odchodovosti zaměstnanců a u kterých konkrétních zaměstnanců je zvýšené riziko, že firmu během několika příštích měsíců opustí? Na tyto otázky se čím dál tím více firem snaží odpovědět pomocí analýzy dat o svých vlastních zaměstnancích. V tomto článku se prostřednictvím analytického nástroje R a vizualizačního nástroje Shiny podíváme, jak může být tento druh HR analytického projektu pro firmy užitečný.
 date: '2018-10-14'
 tags:
+- web-apps
 - employee-turnover
 - evidence-based-management
 - shiny-app
@@ -18,20 +19,20 @@ Sys.setlocale("LC_CTYPE", "czech")
 
 ## Co je to HR analytika?  
 
-HR analytika ve své podstatě vychází ze známé zásady managementu, že **co nelze měřit, nelze ani (efektivně) řídit a zlepšovat**, a aplikuje tuto zásadu na lidské zdroje. V několika posledních letech potom k tomu navíc přidává nadstavbu v podobě pokročilejších analytických postupů, které mají větší potenciál přijít s hlubšími vhledy a s doporučeními s větším efektem. Ale ať už využíváte pouze základní reporting nebo nějakou pokročilejší analytiku, cíl je vždy stejný – snažit se s pomocí dat a jejich analýzy žádoucím způsobem ovlivnit jednotlivé HR procesy, které organizacím pomáhají dosahovat jejich strategických cílů. Názorně to ilustruje níže uvedené schéma zachycující mechanismus propojující HR procesy s (nejen) finančními výsledky organizace ([Paauwe & Richardson, 1997](https://www.tandfonline.com/doi/abs/10.1080/095851997341621?journalCode=rijh20)). 
+HR analytika ve své podstatě vychází ze známé zásady managementu, že **co nelze měřit, nelze ani (efektivně) řídit a zlepšovat**, a aplikuje tuto zásadu na lidské zdroje. V několika posledních letech potom k tomu navíc přidává nadstavbu v podobě pokročilejších analytických postupů, které mají větší potenciál přijít s hlubšími vhledy a s doporučeními s větším efektem. Ale ať už využíváte pouze základní reporting nebo nějakou pokročilejší analytiku, cíl je vždy stejný – snažit se s pomocí dat a jejich analýzy žádoucím způsobem ovlivnit jednotlivé HR procesy, které organizacím pomáhají dosahovat jejich strategických cílů. Názorně to ilustruje níže uvedené schéma zachycující mechanismus propojující HR procesy s (nejen) finančními výsledky organizace ([Paauwe & Richardson, 1997](https://www.tandfonline.com/doi/abs/10.1080/095851997341621?journalCode=rijh20)).
 
 ![](./hr-analytika-a-odchodovost-zamstnanc/HR_Value_Chain.png)
 
 HR analytika pomáhá optimalizovat nastavení tohoto mechanismu tím, že umožňuje nalézat odpovědi na některé klíčové otázky, jako např.:
 
 * Kterými kanály se k nám dostávají ti nejlepší kandidáti?
-* Jaké charakteristiky od sebe odlišují úspěšné a neúspěšné kandidáty? 
-* Které faktory přispívají k úspěšnému onboardingu? 
-* Která „kápéíčka“ mají nejsilnější vazbu na finanční výsledky firmy? 
+* Jaké charakteristiky od sebe odlišují úspěšné a neúspěšné kandidáty?
+* Které faktory přispívají k úspěšnému onboardingu?
+* Která „kápéíčka“ mají nejsilnější vazbu na finanční výsledky firmy?
 * Jaké tréninky vedou s nejvyšší pravděpodobností ke zlepšení pracovního výkonu?
-* Které intervence mají největší dopad na zaměstnanci pociťovaný well-being nebo work-life balance? 
+* Které intervence mají největší dopad na zaměstnanci pociťovaný well-being nebo work-life balance?
 * Co u zaměstnanců zvyšuje, nebo naopak snižuje míru jejich angažovanosti?
-* Kde se v organizaci nachází izolovaná sila a úzká hrdla znemožňující efektivní komunikaci a spolupráci mezi jednotlivými zaměstnanci, týmy nebo i celými odděleními? 
+* Kde se v organizaci nachází izolovaná sila a úzká hrdla znemožňující efektivní komunikaci a spolupráci mezi jednotlivými zaměstnanci, týmy nebo i celými odděleními?
 * Kdo představuje skrytý talent, který je potřeba podchytit a dále rozvíjet?  
 * Kde lze očekávat odpor v souvislosti s plánovanými změnami ve firmě a kdo naopak může být jejich ambasadorem a katalyzátorem?
 * Které faktory přispívají k odchodovosti zaměstnanců a u kterých konkrétních zaměstnanců je zvýšené riziko, že firmu během několika příštích měsíců opustí?
@@ -133,18 +134,18 @@ S pomocí [tohoto dashboardu](https://aanalytics.shinyapps.io/turnover_analytics
 * Jaké faktory přispívají k odchodu specificky našich zaměstnanců?
 * Jaká pro-retenční opatření jsou obecně k dispozici?
 * Jaká pro-retenční opatření bychom měli zvolit vzhledem k pravděpodobným důvodům odchodů našich zaměstnanců?  
-* Na jaké skupiny zaměstnanců se především zaměřit z hlediska prevence jejich odchodovosti? 
-* U kterých konkrétních zaměstnanců existuje zvýšené riziko, že odejdou, a na jaké konkrétní retenční faktory se u nich zaměřit v rámci pravidelného stay interview? 
+* Na jaké skupiny zaměstnanců se především zaměřit z hlediska prevence jejich odchodovosti?
+* U kterých konkrétních zaměstnanců existuje zvýšené riziko, že odejdou, a na jaké konkrétní retenční faktory se u nich zaměřit v rámci pravidelného stay interview?
 
-Jak je z výše uvedeného výčtu otázek patrné, dashboard obsahuje informace, které při svém rozhodování mohou využít **nejen HR manažeři, ale také HR business partneři nebo přímo team-leadeři a linioví manažeři** jednotlivých týmů či oddělení. Kromě toho dashboard obsahuje také řadu technických detailů o použitém predikčním modelu a samotná data, které stojí v pozadí všech prezentovaných vizualizací a analýz. S jejich pomocí tak **HR/Business analytik** může např. hledat optimální způsob, jak nastavit skórovací algoritmus, aby se maximalizoval pozitivní efekt pro-retenčních opatření, nebo může v dostupných datech sám hledat nějaké další užitečné informace. Více viz již [samotný dashboard](https://aanalytics.shinyapps.io/Turnover_Analytics_Dashboard_Demo/), z něhož můžete níže vidět několik screenshotů. 
+Jak je z výše uvedeného výčtu otázek patrné, dashboard obsahuje informace, které při svém rozhodování mohou využít **nejen HR manažeři, ale také HR business partneři nebo přímo team-leadeři a linioví manažeři** jednotlivých týmů či oddělení. Kromě toho dashboard obsahuje také řadu technických detailů o použitém predikčním modelu a samotná data, které stojí v pozadí všech prezentovaných vizualizací a analýz. S jejich pomocí tak **HR/Business analytik** může např. hledat optimální způsob, jak nastavit skórovací algoritmus, aby se maximalizoval pozitivní efekt pro-retenčních opatření, nebo může v dostupných datech sám hledat nějaké další užitečné informace. Více viz již [samotný dashboard](https://aanalytics.shinyapps.io/Turnover_Analytics_Dashboard_Demo/), z něhož můžete níže vidět několik screenshotů.
 
 *Screenshot části dashboardu, která obsahuje různé řezy odchodovostí zaměstnanců, a dává tak dobrý přehled o tom, které skupiny zaměstnanců jsou odchodovostí nejvíce ohrožené.*  
 ![](./hr-analytika-a-odchodovost-zamstnanc/DSHB1.png)
 
-*Screenshot části dashboardu, která obsahuje informace o pravděpodobnosti odchodu jednotlivých zaměstnanců společně s dalšími informacemi, které mohou posloužit jako podklad pro individuální intervence s cílem předejít nežádoucím odchodům zaměstnanců.* 
+*Screenshot části dashboardu, která obsahuje informace o pravděpodobnosti odchodu jednotlivých zaměstnanců společně s dalšími informacemi, které mohou posloužit jako podklad pro individuální intervence s cílem předejít nežádoucím odchodům zaměstnanců.*
 ![](./hr-analytika-a-odchodovost-zamstnanc/DSHB2.png)
 
-*Screenshot části dashboardu, která obsahuje informace o výkonu/kvalitě statistického modelu použitého k identifikaci významných prediktorů odchodovosti zaměstnanců a k odhadu pravděpodobnosti odchodu jednotlivých zaměstnanců.* 
+*Screenshot části dashboardu, která obsahuje informace o výkonu/kvalitě statistického modelu použitého k identifikaci významných prediktorů odchodovosti zaměstnanců a k odhadu pravděpodobnosti odchodu jednotlivých zaměstnanců.*
 ![](./hr-analytika-a-odchodovost-zamstnanc/DSHB3.png)
 
 ## Figures

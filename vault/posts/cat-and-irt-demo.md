@@ -3,13 +3,14 @@ title: An interactive demo of Computerized Adaptive Testing
 description: Sharing a byproduct of my recent efforts to learn Streamlit—an interactive demo that might be useful for anyone teaching psychometrics or simply curious about how modern psychometrics (relatively speaking 😉) works.
 date: '2025-06-02'
 tags:
+- web-apps
 - psychometrics
 - bayesian-statistics
 - python
 original: https://blog-about-people-analytics.netlify.app/posts/2025-06-02-cat-and-irt-demo/
 ---
 
-Specifically, I decided to reimplement in [Streamlit](https://streamlit.io/) a [Computerized Adaptive Testing (CAT)](https://en.wikipedia.org/wiki/Computerized_adaptive_testing) and [Item Response Theory (IRT)](https://en.wikipedia.org/wiki/Item_response_theory) demo I originally built years ago in good old Excel. 
+Specifically, I decided to reimplement in [Streamlit](https://streamlit.io/) a [Computerized Adaptive Testing (CAT)](https://en.wikipedia.org/wiki/Computerized_adaptive_testing) and [Item Response Theory (IRT)](https://en.wikipedia.org/wiki/Item_response_theory) demo I originally built years ago in good old Excel.
 
 The app illustrates the estimation of a psychological trait of [learning agility](https://psycnet.apa.org/buy/2022-19273-004) and showcases several key ideas behind CAT and IRT-based testing:
 
@@ -30,11 +31,11 @@ Here’s the [link](https://cat-irt-demo.streamlit.app/) to the app (given that 
 
 <!-- RELATED:BEGIN -->
 ## Related notes
+- [[bayes-in-your-browser|Bayes in your browser]]
 - [[passive-versus-active-information-acquisition|From passive to active information acquisition]]
 - [[openai-personality-interpretation|Ask your personality using GPT]]
 - [[agentic-ai-for-visual-data-exploration|Agentic AI for visual data exploration]]
-- [[job-comparator|A bet on a new job]]
-- [[cv-job-match-career-site|Improving a company career site with tools from OpenAI]]
+- [[dunning-kruger-effect-simulation|Making abstract ideas digestible with knobs and sliders]]
 <!-- RELATED:END -->
 
 ---

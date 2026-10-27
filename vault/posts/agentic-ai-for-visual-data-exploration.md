@@ -3,6 +3,7 @@ title: Agentic AI for visual data exploration
 description: For those who might be interested, I'm sharing an output from my experimentation with agentic AI frameworks like LangChain and LangGraph in the context of data insights democratization.
 date: '2025-09-24'
 tags:
+- web-apps
 - agentic-ai
 - generative-ai
 - organizational-culture
@@ -46,9 +47,9 @@ P.P.S. Click the GitHub icon in the top right corner of the app to get to the co
 ## Related notes
 - [[ai-powered-data-exploration-assistant|Testing my GenAI skepticism]]
 - [[directionally-correct-podcast-topic-explorer|Turning 152 Directionally Correct podcast episodes into an interactive topic explorer]]
-- [[hr-tech-ai-shift|How AI is reshaping HR-tech]]
 - [[employee-feedback-analysis-using-openai|Employee feedback analysis using tools from OpenAI]]
-- [[agentic-workflow-for-causal-inference|Agentic workflow for causal inference]]
+- [[hr-tech-ai-shift|How AI is reshaping HR-tech]]
+- [[meeting-ego-network-app|Turning Outlook calendar data into a collaboration map]]
 <!-- RELATED:END -->
 
 ---

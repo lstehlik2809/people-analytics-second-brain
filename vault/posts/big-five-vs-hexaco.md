@@ -250,8 +250,8 @@ Curious about others’ experiences with switching from the Big Five to HEXACO. 
 - [[personality-frameworks-contest|A showdown between the Big Five, Enneagram, MBTI, and astrology]]
 - [[life-success-personality-profiles|The Big Five and different ways of succeeding]]
 - [[personality-and-cultural-values|We are probably more similar - and different - than expected]]
-- [[personality-and-work-engagement|Putting the "ideal" personality for high work engagement in a broader context]]
 - [[job-personality-fit|Do people’s personalities vary across different jobs?]]
+- [[personality-and-work-engagement|Putting the "ideal" personality for high work engagement in a broader context]]
 <!-- RELATED:END -->
 
 ---

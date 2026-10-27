@@ -3,6 +3,7 @@ title: Turning Outlook calendar data into a collaboration map
 description: About another example of how generative AI is commoditizing previously specialized data products - this time, turning Outlook calendar data into a simple collaboration ego-network.
 date: '2026-08-11'
 tags:
+- web-apps
 - network-analysis
 - collaboration
 - meetings

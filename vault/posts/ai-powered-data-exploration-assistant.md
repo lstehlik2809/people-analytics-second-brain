@@ -3,6 +3,7 @@ title: Testing my GenAI skepticism
 description: About my hands-on test of agentic AI in data analysis.
 date: '2025-10-09'
 tags:
+- web-apps
 - agentic-ai
 - data-science
 - generative-ai
@@ -29,7 +30,7 @@ For that purpose I built a simple app consisting of several agent-like component
 
 </div>
 
-*The attached video above shows the app in action, answering a question about the employee attitudes that are the most predictive of attrition using the [IBM Employee Attrition dataset](https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset).* 
+*The attached video above shows the app in action, answering a question about the employee attitudes that are the most predictive of attrition using the [IBM Employee Attrition dataset](https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset).*
 
 I was surprised by how reasonably well the whole system worked. Sure, sometimes the AI chose - at least in my opinion - not exactly the best way to analyze the data or answer the question, but more often than not, it handled the tasks just fine, at a level I’d expect from a junior or mid-level data analyst.
 

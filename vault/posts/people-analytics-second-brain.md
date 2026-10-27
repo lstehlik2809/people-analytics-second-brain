@@ -3,6 +3,7 @@ title: My second People Analytics brain - both for people and AI agents
 description: So I finally gave the “second brain” idea a try - to see how it works in practice and whether it’s actually useful.
 date: '2026-07-28'
 tags:
+- web-apps
 - people-analytics
 - ai
 - agentic-ai
@@ -52,8 +53,8 @@ GitHub repo
 ## Related notes
 - [[directionally-correct-podcast-topic-explorer|Turning 152 Directionally Correct podcast episodes into an interactive topic explorer]]
 - [[searching-and-querying-aihr-blog-posts|Searching & querying AIHR blog posts on People Analytics topics]]
-- [[hr-tech-ai-shift|How AI is reshaping HR-tech]]
 - [[agentic-ai-for-visual-data-exploration|Agentic AI for visual data exploration]]
+- [[hr-tech-ai-shift|How AI is reshaping HR-tech]]
 - [[nlp-llm-and-onboarding|Using NLP & LLM to combat 'tip-of-the-tongue' moments during onboarding]]
 <!-- RELATED:END -->
 

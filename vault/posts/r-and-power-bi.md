@@ -329,7 +329,7 @@ This completed the work on our local computer. You can download the final dashbo
 - [[personas-based-on-ml-local-interpretation-algos|Personas based on ML local interpretation algorithms]]
 - [[dag-and-double-ml|A plausible model of data-generating process eats ML algorithms for breakfast]]
 - [[bayesian-simulation|Harnessing Bayesian analysis for business process simulation]]
-- [[employee-feedback-analysis-using-openai|Employee feedback analysis using tools from OpenAI]]
+- [[bayes-in-your-browser|Bayes in your browser]]
 <!-- RELATED:END -->
 
 ---

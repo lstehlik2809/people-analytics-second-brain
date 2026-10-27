@@ -37,9 +37,9 @@ There are plenty more gems and learnings in the book itself - so if you still ha
 
 <!-- RELATED:BEGIN -->
 ## Related notes
-- [[evidence-based-hrm-knowledge-test|Evidence-based HRM knowledge test]]
 - [[the-triple-filter-test|The Triple-Filter Test: How to prioritize HR interventions with panel data]]
 - [[causal-inference-in-people-analytics|Beyond prediction: Exploiting organizational events for causal inference in people analytics]]
+- [[evidence-based-hrm-knowledge-test|Evidence-based HRM knowledge test]]
 - [[evidence-based-hrm-knowledge-test-results|Evaluation of the results of the evidence-based HRM knowledge test]]
 - [[ai-and-bullshit-asymmetry|Can AI help us fight the bullshit asymmetry?]]
 <!-- RELATED:END -->

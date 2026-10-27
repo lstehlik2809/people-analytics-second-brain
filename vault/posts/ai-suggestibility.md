@@ -60,8 +60,8 @@ P.S. By coincidence, while working on this post I stumbled upon a much more rigo
 - [[chatgpt-emails-and-causalpy|ChatGPT as a new email writing coach?]]
 - [[ai-assistance-reduces-persistence|What happens to our own performance when the AI is suddenly gone?]]
 - [[genai-and-leadership-judgement|Can genAI help people managers lead better?]]
-- [[ai-powered-data-exploration-assistant|Testing my GenAI skepticism]]
 - [[change-org-ai-outputs-vs-outcomes|Change.org: AI outputs vs outcomes]]
+- [[ai-powered-data-exploration-assistant|Testing my GenAI skepticism]]
 <!-- RELATED:END -->
 
 ---

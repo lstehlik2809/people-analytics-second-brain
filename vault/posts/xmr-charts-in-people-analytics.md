@@ -3,6 +3,7 @@ title: Do you use XmR charts for People Analytics use cases?
 description: Looking for tips from those who answered "Yes" to the question in the title of this post 🙂
 date: '2024-10-30'
 tags:
+- web-apps
 - time-series
 - statistics
 - data-visualization
@@ -34,10 +35,10 @@ P.S. The attached charts were created with [Xmrit, a free online tool](https://c
 
 <!-- RELATED:BEGIN -->
 ## Related notes
-- [[9-box-grid-dataviz-over-time|Tracking talent moves in the (in)famous 9-box grid over time]]
-- [[cross-lagged-panel-modeling|Getting (more) causal insights from employee survey data (without an RCT)]]
 - [[turnover-signal-and-noise|Nothing changed. The dashboard disagrees.]]
+- [[9-box-grid-dataviz-over-time|Tracking talent moves in the (in)famous 9-box grid over time]]
 - [[change-detection|How to quickly navigate dashboard users to what they need to know?]]
+- [[cross-lagged-panel-modeling|Getting (more) causal insights from employee survey data (without an RCT)]]
 - [[bayesian-networks-in-people-analytics|Use of Bayesian networks in people analytics?]]
 <!-- RELATED:END -->
 

@@ -3,6 +3,7 @@ title: How exposed are your job and other jobs to AI?
 description: I built a small app to explore that using data from the U.S. Bureau of Labor Statistics and O*NET.
 date: '2026-09-18'
 tags:
+- web-apps
 - ai
 - future-of-work
 - skills

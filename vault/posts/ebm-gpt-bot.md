@@ -30,8 +30,8 @@ Give it a try and let me know what you think about this approach. Or even better
 - [[chatgpt-and-employee-feedback|Using ChatGPT to summarize and explore employee feedback?]]
 - [[genai-and-leadership-judgement|Can genAI help people managers lead better?]]
 - [[gpt4-and-e-b-hrm-practices|GPT-4's performance in the knowledge test of evidence-based HRM practices]]
+- [[employee-feedback-analysis-using-openai|Employee feedback analysis using tools from OpenAI]]
 - [[openai-personality-interpretation|Ask your personality using GPT]]
-- [[beyond-belief|Evidence-Based Management: Boring basics and better questions]]
 <!-- RELATED:END -->
 
 ---

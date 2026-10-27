@@ -25,11 +25,11 @@ Thanks to Andrew for putting something like this together and sharing it with th
 
 <!-- RELATED:BEGIN -->
 ## Related notes
+- [[bayes-in-your-browser|Bayes in your browser]]
 - [[bayesian-networks-in-people-analytics|Use of Bayesian networks in people analytics?]]
 - [[causal-inference-in-people-analytics|Beyond prediction: Exploiting organizational events for causal inference in people analytics]]
 - [[beyond-belief|Evidence-Based Management: Boring basics and better questions]]
 - [[people-analytics-popularity-after-covid|The impact of the COVID pandemic on the popularity of people analytics]]
-- [[causal-inference-with-bayesian-networks|Causal Inference with Bayesian Networks]]
 <!-- RELATED:END -->
 
 ---

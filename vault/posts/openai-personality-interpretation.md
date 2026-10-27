@@ -3,6 +3,7 @@ title: Ask your personality using GPT
 description: Can Generative AI like GPT meaningfully interpret personality profiles?
 date: '2023-04-11'
 tags:
+- web-apps
 - generative-ai
 - ai
 - personality

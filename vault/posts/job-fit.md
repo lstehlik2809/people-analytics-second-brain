@@ -33,8 +33,8 @@ Definitely [worth reading](https://open.substack.com/pub/experimentalhistory/p/f
 - [[job-personality-fit|Do people’s personalities vary across different jobs?]]
 - [[personality-and-work-engagement|Putting the "ideal" personality for high work engagement in a broader context]]
 - [[self-awareness-and-personality|Does your personality interfere with your self-awareness?]]
-- [[conspiracy-theories-and-overfitting|Conspiracy theories as a specific example of overfitting?]]
 - [[life-success-personality-profiles|The Big Five and different ways of succeeding]]
+- [[conspiracy-theories-and-overfitting|Conspiracy theories as a specific example of overfitting?]]
 <!-- RELATED:END -->
 
 ---

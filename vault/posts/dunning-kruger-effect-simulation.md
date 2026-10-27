@@ -3,6 +3,7 @@ title: Making abstract ideas digestible with knobs and sliders
 description: With the currently available GenAI tools, it’s really a golden age for teachers who like using interactive demonstrations of abstract ideas they’re trying to convey to their students.
 date: '2026-01-20'
 tags:
+- web-apps
 - learning-and-development
 - generative-ai
 - ai
@@ -32,8 +33,8 @@ If you’ve come across or built simple simulators, demos, or visualizations tha
 ## Related notes
 - [[ai-powered-data-exploration-assistant|Testing my GenAI skepticism]]
 - [[gai-simulation-work-habits|Does GenAI make me a better (more rational) thinker?]]
-- [[directionally-correct-podcast-topic-explorer|Turning 152 Directionally Correct podcast episodes into an interactive topic explorer]]
 - [[agentic-ai-for-visual-data-exploration|Agentic AI for visual data exploration]]
+- [[directionally-correct-podcast-topic-explorer|Turning 152 Directionally Correct podcast episodes into an interactive topic explorer]]
 - [[ai-as-friction|AI as friction]]
 <!-- RELATED:END -->
 

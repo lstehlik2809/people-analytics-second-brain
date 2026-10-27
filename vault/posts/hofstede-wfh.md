@@ -3,6 +3,7 @@ title: What does national culture have to do with working from home?
 description: A small extension of a research paper on why working from home varies across countries and people.
 date: '2026-06-18'
 tags:
+- web-apps
 - remote-work
 - cross-cultural-differences
 - organizational-culture
@@ -50,7 +51,7 @@ Do any of these findings surprise you - or do they mostly support your existing 
 
 ⚠️ Note: Interesting as these patterns may be, they should be interpreted cautiously. The Hofstede dimensions are intercorrelated, hidden confounders may remain, the sample covers only 37 countries, and WFH was measured specifically among full-time, college-educated workers.
 
-P.S. If interested in exploring the data visually, visit [this dashboard](https://lstehlik2809.github.io/hofstede-wfh/). 
+P.S. If interested in exploring the data visually, visit [this dashboard](https://lstehlik2809.github.io/hofstede-wfh/).
 
 <div style="text-align:center">
 

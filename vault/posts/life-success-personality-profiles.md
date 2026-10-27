@@ -3,6 +3,7 @@ title: The Big Five and different ways of succeeding
 description: See how your Big Five traits compare with 10 different success profiles from a large meta-analysis.
 date: '2026-09-07'
 tags:
+- web-apps
 - personality
 - big-five
 - meta-analysis
@@ -17,7 +18,7 @@ The authors combined 111 meta-analyses covering 206 variables, more than 3,300 s
 
 One thing I found interesting, though not super-surprising, is that there isn’t a single personality profile associated with all forms of success. The pattern linked to leadership, for example, looks different from those linked to ingenuity, balance, inclusion or high performance.
 
-Specifically, they estimated the contributions of both profile shape (the relative peaks and valleys across the five traits) and elevation (the average level across those traits). 
+Specifically, they estimated the contributions of both profile shape (the relative peaks and valleys across the five traits) and elevation (the average level across those traits).
 
 <figure style="text-align:center;">
 

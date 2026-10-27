@@ -3,6 +3,7 @@ title: Good manager or lucky team?
 description: Lead three AI teammates through hidden-clue puzzles and see how you bring their knowledge together.
 date: '2026-10-26'
 tags:
+- web-apps
 - leadership
 - human-ai-interaction
 - generative-ai

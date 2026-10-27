@@ -3,6 +3,7 @@ title: Themes in Deloitte's Global Human Capital Trends between 2011 and 2023
 description: Reading the latest release of Deloitte Global HC Trends made me wonder what common themes this regular series has been covering throughout its 12 years long history.
 date: '2023-06-27'
 tags:
+- web-apps
 - future-of-work
 - generative-ai
 - r
@@ -40,9 +41,9 @@ If you would like to check the analysis output interactively and in greater deta
 ## Related notes
 - [[hr-tech-ai-shift|How AI is reshaping HR-tech]]
 - [[network-graph-employee-comments|Using network graph modeling to capture overarching thematic clusters in employee comments]]
-- [[siop-2026-reflection|SIOP through the wisdom of crowds: What I may have missed]]
 - [[people-analytics-popularity-after-covid|The impact of the COVID pandemic on the popularity of people analytics]]
-- [[big-consultancies-in-the-skills-semantic-space|Big consultancies in the skills semantic space]]
+- [[siop-2026-reflection|SIOP through the wisdom of crowds: What I may have missed]]
+- [[hr-causal-evidence-map|Some inspiration for your next HR impact evaluation]]
 <!-- RELATED:END -->
 
 ---

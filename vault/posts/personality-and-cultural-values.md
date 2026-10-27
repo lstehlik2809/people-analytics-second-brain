@@ -38,7 +38,7 @@ All this suggests that the next time you feel an urge to guess someone’s perso
 - [[personality-and-work-engagement|Putting the "ideal" personality for high work engagement in a broader context]]
 - [[life-success-personality-profiles|The Big Five and different ways of succeeding]]
 - [[collaboration-and-personality|Collaboration and personality]]
-- [[job-personality-fit|Do people’s personalities vary across different jobs?]]
+- [[self-awareness-and-personality|Does your personality interfere with your self-awareness?]]
 <!-- RELATED:END -->
 
 ---

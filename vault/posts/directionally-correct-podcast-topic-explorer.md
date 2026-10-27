@@ -3,6 +3,7 @@ title: Turning 152 Directionally Correct podcast episodes into an interactive to
 description: On using GenAI, topic analysis, and network visualization to make 152 Directionally Correct podcast episodes easier to explore.
 date: '2026-08-18'
 tags:
+- web-apps
 - knowledge-management
 - topic-analysis
 - network-analysis
@@ -56,8 +57,8 @@ P.P.S. The [repo](https://github.com/lstehlik2809/directionally-correct-topic-ma
 - [[people-analytics-second-brain|My second People Analytics brain - both for people and AI agents]]
 - [[agentic-ai-for-visual-data-exploration|Agentic AI for visual data exploration]]
 - [[linkedin-contacts-job-positions|Analyzing LinkedIn connections' jobs using LLMs and the BERTopic package]]
-- [[employee-feedback-analysis-using-openai|Employee feedback analysis using tools from OpenAI]]
 - [[searching-and-querying-aihr-blog-posts|Searching & querying AIHR blog posts on People Analytics topics]]
+- [[employee-feedback-analysis-using-openai|Employee feedback analysis using tools from OpenAI]]
 <!-- RELATED:END -->
 
 ---
