@@ -188,9 +188,9 @@ For more tips on how to leverage collaboration data in the current uncertain eco
 ## Related notes
 - [[org-chart-and-collaboration|Org chart and collaboration]]
 - [[overloaded-employees|Warning system for overloaded employees]]
+- [[ai-and-collaboration-networks|What happens to collaboration when AI joins the team?]]
 - [[change-detection|How to quickly navigate dashboard users to what they need to know?]]
 - [[good-manager|Signals of a good manager]]
-- [[distracted-time|Not-so-hidden cost of working in an office]]
 <!-- RELATED:END -->
 
 ---

@@ -40,10 +40,10 @@ What I find also interesting is that lexical features that used to predict early
 <!-- RELATED:BEGIN -->
 ## Related notes
 - [[ai-assistance-reduces-persistence|What happens to our own performance when the AI is suddenly gone?]]
+- [[ai-and-collaboration-networks|What happens to collaboration when AI joins the team?]]
 - [[causal-inference-in-people-analytics|Beyond prediction: Exploiting organizational events for causal inference in people analytics]]
 - [[genai-and-disrupt-of-labor-market-signalling|Making talk cheap: How GenAI may disrupt labor-market signalling]]
 - [[chatgpt-emails-and-causalpy|ChatGPT as a new email writing coach?]]
-- [[ai-and-bullshit-asymmetry|Can AI help us fight the bullshit asymmetry?]]
 <!-- RELATED:END -->
 
 ---

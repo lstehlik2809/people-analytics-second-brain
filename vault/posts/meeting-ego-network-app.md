@@ -33,10 +33,10 @@ P.S. To get a better sense of how the app works, you can check it out [here](htt
 <!-- RELATED:BEGIN -->
 ## Related notes
 - [[hr-tech-ai-shift|How AI is reshaping HR-tech]]
+- [[ai-and-collaboration-networks|What happens to collaboration when AI joins the team?]]
 - [[ai-powered-data-exploration-assistant|Testing my GenAI skepticism]]
 - [[directionally-correct-podcast-topic-explorer|Turning 152 Directionally Correct podcast episodes into an interactive topic explorer]]
 - [[agentic-ai-for-visual-data-exploration|Agentic AI for visual data exploration]]
-- [[linkedin-contacts-job-positions|Analyzing LinkedIn connections' jobs using LLMs and the BERTopic package]]
 <!-- RELATED:END -->
 
 ---
