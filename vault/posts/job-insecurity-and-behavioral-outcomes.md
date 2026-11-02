@@ -6,6 +6,7 @@ tags:
 - motivation
 - meta-analysis
 - performance-management
+- incentives
 original: https://blog-about-people-analytics.netlify.app/posts/2024-07-01-job-insecurity-and-behavioral-outcomes/
 ---
 
@@ -33,8 +34,8 @@ For more interesting details of the study, check the original paper [here](https
 - [[performance-vs-motivation|Motivation vs. Performance: What causes what?]]
 - [[job-demands-job-control-wellbeing|Surprising finding on the impact of job demands and control on workers’ well-being]]
 - [[instrumental-and-expressive-networks|Not all workplace relationships are created equal when it comes to retaining talent]]
+- [[pay-for-prominence|What if your bonus depended on being the office go-to person?]]
 - [[predictors-of-stay-intentions-vs-actual-resignations|Talk vs. Walk: Predictors of staying intentions vs. actual quitting behavior]]
-- [[managers-and-performance-evaluations|"A new broom sweeps clean"]]
 <!-- RELATED:END -->
 
 ---

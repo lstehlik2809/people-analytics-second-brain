@@ -40,8 +40,8 @@ For policy and practice, we must stop assuming "what works" and demand fundament
 - [[systematic-review-of-happiness-interventions|What actually makes us happier?]]
 - [[analytical-choices-and-variability|How variations in analytic choices affect results?]]
 - [[engagement-interventions|Effectiveness of interventions for encreasing employee engagement]]
+- [[job-insecurity-and-behavioral-outcomes|Does a stick work?]]
 - [[encouragement-design-and-ivs|Encouragement Design using instrumental variables]]
-- [[causal-inference-in-people-analytics|Beyond prediction: Exploiting organizational events for causal inference in people analytics]]
 <!-- RELATED:END -->
 
 ---

@@ -102,7 +102,7 @@
  "body-height-inventory": "7a730f410a43c37ffa51fcf9c4d1cd988a3ab6d8befcb1590d214e73ff906c72",
  "cognitive-diversity": "b3ad572b54617f6635e590bc6896253996ccd236ab61f8ddce3121658ffa35b4",
  "network-graph-employee-comments": "e68d4470cbf45c61d82b3e2cb2f411420b16cf6f450ae605d2a53b6dcd39aa70",
- "job-insecurity-and-behavioral-outcomes": "5227c4d1095c6289113f72b8b19daa6e30259feb3f266971f0d3673dd036fc94",
+ "job-insecurity-and-behavioral-outcomes": "d846439c51f0ce608f1c192b236a225d4119d7f53e05ac091941a262ff30dcd3",
  "linkedin-contacts-job-positions": "15f3dcde74234a1553819f0acf2910fecfcf4c90360193c6acc9ef125bedc16d",
  "kohonen-self-organizing-maps": "deed62ad07efd1a0e22c2f5b8694f5add150e2a69c541cacda0a517951188dc6",
  "survey-participation-and-attrition-prediction": "49b60f9d652c6156629d277947e90984c582c436081fb7864731cab94b03d6ae",
@@ -225,5 +225,6 @@
  "ai-assistance-reduces-persistence": "d49be125bc31ce7f94616a4977d59a822e21a915bd2331470d771f2e397d9b11",
  "manager-effect-lab": "f50deec929feda08dfc88ef24e2bba9bb7f10e0c31db53735085532da017ec61",
  "bayes-in-your-browser": "832be1a2c1f138ee393b497b811a216804ae021b42265e3b965b23750fed73f8",
- "ai-and-collaboration-networks": "47c417ef80fe97fc62340ce7d380f650319827d7cc725bf3d372804c030543b2"
+ "ai-and-collaboration-networks": "47c417ef80fe97fc62340ce7d380f650319827d7cc725bf3d372804c030543b2",
+ "pay-for-prominence": "425d1a4777179e34dc44487ebb716ee78173229f836f8fcf4d85c67556fae023"
 }

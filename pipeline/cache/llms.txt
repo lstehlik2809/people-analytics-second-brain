@@ -1,9 +1,10 @@
 # Ludek's People Analytics Second Brain
 
-> A public second brain of 227 posts on people analytics, statistics, causal inference, psychometrics, machine learning, and AI by Ludek Stehlik. Browsable knowledge graph at https://lstehlik2809.github.io/people-analytics-second-brain. The complete corpus is in /llms-full.txt.
+> A public second brain of 228 posts on people analytics, statistics, causal inference, psychometrics, machine learning, and AI by Ludek Stehlik. Browsable knowledge graph at https://lstehlik2809.github.io/people-analytics-second-brain. The complete corpus is in /llms-full.txt.
 
 ## Notes
 
+- [What if your bonus depended on being the office go-to person?](https://lstehlik2809.github.io/people-analytics-second-brain/posts/pay-for-prominence): A closer look at pay-for-prominence incentives, wider advice networks, and an unexpected link to employee turnover.
 - [What happens to collaboration when AI joins the team?](https://lstehlik2809.github.io/people-analytics-second-brain/posts/ai-and-collaboration-networks): Giving people an AI assistant might leave them talking to more colleagues 🤔
 - [Bayes in your browser](https://lstehlik2809.github.io/people-analytics-second-brain/posts/bayes-in-your-browser): Running Bayesian models for people analytics without a model-fitting server.
 - [Good manager or lucky team?](https://lstehlik2809.github.io/people-analytics-second-brain/posts/manager-effect-lab): Lead three AI teammates through hidden-clue puzzles and see how you bring their knowledge together.

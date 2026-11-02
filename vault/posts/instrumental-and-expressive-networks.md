@@ -28,11 +28,11 @@ While there are some limitations to consider - such as the relatively small numb
 
 <!-- RELATED:BEGIN -->
 ## Related notes
+- [[pay-for-prominence|What if your bonus depended on being the office go-to person?]]
 - [[contagious-turnover|Is contagious turnover overrated? Probably only if you ignore the managers.]]
 - [[psychometric-network-analysis|Psychometric network analysis & employee survey data]]
 - [[predictors-of-stay-intentions-vs-actual-resignations|Talk vs. Walk: Predictors of staying intentions vs. actual quitting behavior]]
 - [[glassdoor|When flawed statistical & causal reasoning leads to a valid conclusion anyway]]
-- [[survey-participation-and-attrition-prediction|People may signal their exit intentions not only by their actions but also by their inactions]]
 <!-- RELATED:END -->
 
 ---
