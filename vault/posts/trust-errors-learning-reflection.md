@@ -25,9 +25,9 @@ P.S. This rant-ish post was prompted by my recent reading on causal inference, w
 ## Related notes
 - [[conspiracy-theories-and-overfitting|Conspiracy theories as a specific example of overfitting?]]
 - [[coincidence-or-evidence|When does a coincidence become evidence?]]
+- [[probability-words-humans-vs-ai|Probability words: humans vs. AI]]
 - [[ols-vs-logistic-regression|The statistical "sin" as best / common practice?]]
 - [[ai-and-bullshit-asymmetry|Can AI help us fight the bullshit asymmetry?]]
-- [[causal-inference-with-bayesian-networks|Causal Inference with Bayesian Networks]]
 <!-- RELATED:END -->
 
 ---
