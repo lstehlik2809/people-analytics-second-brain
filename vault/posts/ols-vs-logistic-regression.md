@@ -34,9 +34,9 @@ Seems that sometimes sin is the way 🙃
 ## Related notes
 - [[causal-inference-in-people-analytics|Beyond prediction: Exploiting organizational events for causal inference in people analytics]]
 - [[dag-and-double-ml|A plausible model of data-generating process eats ML algorithms for breakfast]]
+- [[randomized-trial-vs-observational-estimates|Can observational estimates get close to randomized trial results?]]
 - [[did-with-repeated-cross-sectional-data|What a European cigarette tax study taught me about employee listening]]
 - [[visual-diff-in-diff|Causal insights with no code?]]
-- [[encouragement-design-and-ivs|Encouragement Design using instrumental variables]]
 <!-- RELATED:END -->
 
 ---

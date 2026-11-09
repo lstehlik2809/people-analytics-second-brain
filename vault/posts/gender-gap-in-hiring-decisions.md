@@ -32,9 +32,9 @@ original: https://blog-about-people-analytics.netlify.app/posts/2023-11-22-gende
 ## Related notes
 - [[interventions-reducing-gender-pay-gap|Evidence-based interventions that help reduce the gender pay gap]]
 - [[the-daughter-effect|The daughter effect]]
+- [[randomized-trial-vs-observational-estimates|Can observational estimates get close to randomized trial results?]]
 - [[selection-procedures-validity-update|Visualizing shifts in validity estimates for selection procedures]]
 - [[vocational-interests|Vocational interests don't seem so uninteresting after all]]
-- [[hr-causal-evidence-map|Some inspiration for your next HR impact evaluation]]
 <!-- RELATED:END -->
 
 ---

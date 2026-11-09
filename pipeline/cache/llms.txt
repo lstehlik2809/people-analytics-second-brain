@@ -1,9 +1,10 @@
 # Ludek's People Analytics Second Brain
 
-> A public second brain of 229 posts on people analytics, statistics, causal inference, psychometrics, machine learning, and AI by Ludek Stehlik. Browsable knowledge graph at https://lstehlik2809.github.io/people-analytics-second-brain. The complete corpus is in /llms-full.txt.
+> A public second brain of 230 posts on people analytics, statistics, causal inference, psychometrics, machine learning, and AI by Ludek Stehlik. Browsable knowledge graph at https://lstehlik2809.github.io/people-analytics-second-brain. The complete corpus is in /llms-full.txt.
 
 ## Notes
 
+- [Can observational estimates get close to randomized trial results?](https://lstehlik2809.github.io/people-analytics-second-brain/posts/randomized-trial-vs-observational-estimates): What 37 job-training RCTs say about observational estimates in the age of big data.
 - [Probability words: humans vs. AI](https://lstehlik2809.github.io/people-analytics-second-brain/posts/probability-words-humans-vs-ai): Comparing how people and three LLMs translate probability words into numbers.
 - [What if your bonus depended on being the office go-to person?](https://lstehlik2809.github.io/people-analytics-second-brain/posts/pay-for-prominence): A closer look at pay-for-prominence incentives, wider advice networks, and an unexpected link to employee turnover.
 - [What happens to collaboration when AI joins the team?](https://lstehlik2809.github.io/people-analytics-second-brain/posts/ai-and-collaboration-networks): Giving people an AI assistant might leave them talking to more colleagues 🤔

@@ -56,7 +56,7 @@ The question was about the pros/cons of the nudging approach versus a difference
 - [[did-with-repeated-cross-sectional-data|What a European cigarette tax study taught me about employee listening]]
 - [[cross-lagged-panel-modeling|Getting (more) causal insights from employee survey data (without an RCT)]]
 - [[visual-diff-in-diff|Causal insights with no code?]]
-- [[the-triple-filter-test|The Triple-Filter Test: How to prioritize HR interventions with panel data]]
+- [[randomized-trial-vs-observational-estimates|Can observational estimates get close to randomized trial results?]]
 <!-- RELATED:END -->
 
 ---

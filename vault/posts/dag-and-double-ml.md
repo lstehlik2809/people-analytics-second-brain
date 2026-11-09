@@ -232,9 +232,9 @@ dml_plr_xgb.confint()
 ## Related notes
 - [[causal-inference-in-people-analytics|Beyond prediction: Exploiting organizational events for causal inference in people analytics]]
 - [[econml-and-employee-attriton|How to get causal interpretation for the Employee Attrition dataset?]]
+- [[randomized-trial-vs-observational-estimates|Can observational estimates get close to randomized trial results?]]
 - [[mixed-level-ml|Beyond the “flat Earth”]]
 - [[causal-identification-and-feature-selection|A way to make prediction models more precise and interpretable at the same time?]]
-- [[did-with-repeated-cross-sectional-data|What a European cigarette tax study taught me about employee listening]]
 <!-- RELATED:END -->
 
 ---
