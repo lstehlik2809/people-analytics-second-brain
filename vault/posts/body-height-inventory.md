@@ -30,9 +30,9 @@ The inventory is in Czech, but the online translation in Chrome does a pretty go
 ## Related notes
 - [[cat-and-irt-demo|An interactive demo of Computerized Adaptive Testing]]
 - [[openai-personality-interpretation|Ask your personality using GPT]]
+- [[detecting-personality-in-the-face-app|Reading personality from a face, now in your browser]]
 - [[evidence-based-hrm-knowledge-test|Evidence-based HRM knowledge test]]
 - [[detecting-personality-in-the-face|Can a simple algorithm read your personality from your face?]]
-- [[bayes-in-your-browser|Bayes in your browser]]
 <!-- RELATED:END -->
 
 ---

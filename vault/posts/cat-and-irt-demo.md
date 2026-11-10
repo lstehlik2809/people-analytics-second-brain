@@ -32,10 +32,10 @@ Here’s the [link](https://cat-irt-demo.streamlit.app/) to the app (given that 
 <!-- RELATED:BEGIN -->
 ## Related notes
 - [[bayes-in-your-browser|Bayes in your browser]]
+- [[detecting-personality-in-the-face-app|Reading personality from a face, now in your browser]]
 - [[passive-versus-active-information-acquisition|From passive to active information acquisition]]
 - [[openai-personality-interpretation|Ask your personality using GPT]]
 - [[agentic-ai-for-visual-data-exploration|Agentic AI for visual data exploration]]
-- [[dunning-kruger-effect-simulation|Making abstract ideas digestible with knobs and sliders]]
 <!-- RELATED:END -->
 
 ---

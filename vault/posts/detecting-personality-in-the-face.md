@@ -192,11 +192,11 @@ It worked surprisingly well given how simple the approach is—at least for me a
 
 <!-- RELATED:BEGIN -->
 ## Related notes
+- [[detecting-personality-in-the-face-app|Reading personality from a face, now in your browser]]
 - [[openai-personality-interpretation|Ask your personality using GPT]]
 - [[ona-and-face-similarity|When facial similarity meets Network Science]]
 - [[life-success-personality-profiles|The Big Five and different ways of succeeding]]
 - [[personality-frameworks-contest|A showdown between the Big Five, Enneagram, MBTI, and astrology]]
-- [[self-awareness-and-personality|Does your personality interfere with your self-awareness?]]
 <!-- RELATED:END -->
 
 ---
