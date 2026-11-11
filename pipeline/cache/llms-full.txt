@@ -4,10 +4,40 @@ Source: https://lstehlik2809.github.io/people-analytics-second-brain | Author: L
 
 ---
 
+# What does my face do in meetings?
+URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/face-reader
+Date: 2026-11-11
+Tags: web-apps, meetings, fun-with-data, validity, computer-vision
+Original post: https://blog-about-people-analytics.netlify.app/posts/2026-11-11-face-reader/
+
+Recently, I ran a small, fun “experiment” with my own facial expressions during a week of meetings.
+
+As a private side project, I built a little app for that. It shows live scores for eight basic facial expressions. You can fine-tune it for your own face and camera placement by teaching it what you look like when you’re relaxed and giving it examples of other expressions. You can also record the scores and export them with timestamps as a CSV. It all runs in your browser, so your video stays on your device. It only uses your own webcam, so it never sees the other people on your screen.
+
+What did I find? Well, not much, which can actually be a good thing, as it means my face is apparently less of a giveaway than I feared 🤭
+
+Still, I found a few things interesting. My “happy” faces tended to show up most often at the beginning and end of meetings 🙂 A lower camera made me look angry to the app even when I wasn’t 👺 And I can’t make a clean contempt face, however hard I try. Probably for the best 🙃
+
+If you want to run your own small “experiment”, you can try the app for free [here](https://lstehlik2809.github.io/face-emotion-reader/).
+
+⚠️ Just keep in mind that the scores are guesses about what your face looks like on camera. The same expression can go with very different feelings. Lighting and camera angle can change the scores. The model can mislabel subtle expressions, and smoothing can hide brief ones. Your browser can also slow or pause the recording if you leave it running in the background.
+
+<span style="color: #8B0000;"><strong>One more thing: this is a toy for self-curiosity only. Please don’t point it at colleagues, employees, or candidates. In the EU, that kind of use is prohibited, and rightly so.</strong></span>
+
+Have fun!
+
+![](./face-reader/face_reader_pic.png)
+
+
+---
+> 📄 Read the [original post with full outputs](https://blog-about-people-analytics.netlify.app/posts/2026-11-11-face-reader/) on my blog.
+
+---
+
 # Reading personality from a face, now in your browser
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/detecting-personality-in-the-face-app
 Date: 2026-11-10
-Tags: personality, big-five, web-apps, machine-learning, embeddings, generative-ai, fun-with-data, agentic-ai, validity
+Tags: personality, big-five, web-apps, machine-learning, embeddings, generative-ai, fun-with-data, agentic-ai, validity, computer-vision
 Original post: https://blog-about-people-analytics.netlify.app/posts/2026-11-10-detecting-personality-in-the-face-app/
 
 Back in May 2025, I wrote about [a small experiment](https://blog-about-people-analytics.netlify.app/posts/2025-05-20-detecting-personality-in-the-face/): a Python script that compares your facial photo with composite faces of people scoring high and low on the Big Five traits (borrowed from [Little & Perrett, 2007](https://bpspsychub.onlinelibrary.wiley.com/doi/10.1348/000712606X109648)) and then guesses which side of each trait you fall on.
@@ -5278,7 +5308,7 @@ For policy and practice, we must stop assuming "what works" and demand fundament
 # When facial similarity meets Network Science
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/ona-and-face-similarity
 Date: 2025-12-11
-Tags: psychology, network-analysis, ai, fun-with-data
+Tags: psychology, network-analysis, ai, fun-with-data, computer-vision
 Original post: https://blog-about-people-analytics.netlify.app/posts/2025-12-11-ona-and-face-similarity/
 
 As psychological research suggests, we tend to be drawn to people who are like us - psychologically, sociodemographically, and physically.
@@ -7496,7 +7526,7 @@ A [GitHub repository](https://github.com/lstehlik2809/Beyond-Prediction-Exploiti
 # Can a simple algorithm read your personality from your face?
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/detecting-personality-in-the-face
 Date: 2025-05-20
-Tags: personality, big-five, machine-learning, python, r
+Tags: personality, big-five, machine-learning, python, r, computer-vision
 Original post: https://blog-about-people-analytics.netlify.app/posts/2025-05-20-detecting-personality-in-the-face/
 
 Recently, I happened to stumble across some data I collected during my general psychology lab sessions with my students, where we explored whether our faces really show detectable traces of our personalities.

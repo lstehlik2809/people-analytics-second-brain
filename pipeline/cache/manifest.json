@@ -140,7 +140,7 @@
  "rwa": "9c279027a5416089a681719062f6c5559a1721b386ffa0a5fa2ace278b647ec6",
  "people-analytics-and-market-basket-analysis": "157d56390b167454cc963c1e5159936f2d87373e3544ca9b4631b832648dd8c8",
  "systematic-review-of-happiness-interventions": "05fcbb052c26aaa2bc2bf36248f5db9730c1967910cac6668035384d63a3a0b1",
- "detecting-personality-in-the-face": "62f5c06d6167f57d714fabf815bc6d5036dac3ab84082fac7ae7374cfd179e44",
+ "detecting-personality-in-the-face": "698c0899e4425db2891b3cad7fc85f8e2bf4924e035458affe1da83efbf2ef92",
  "causal-inference-in-people-analytics": "6248495894ba054efb8a42b0c391fff668ca3dc58c617f6001da316b1992a7a1",
  "predictors-of-stay-intentions-vs-actual-resignations": "9c7ec2ebf609902bbfcacfd7039dde674bd45437b5d0070fbcc5d5cee566d19a",
  "cat-and-irt-demo": "43d89fb5fe3e10ac7d8ad4b43929824567f41315b52812a4e760c86d5a1ae5a0",
@@ -171,7 +171,7 @@
  "insights-discovery-and-skills": "4a17b97a1f687ad4ba999b515aa1c721bb8ea19779b38dfc7fbcbc2521616e86",
  "hr-tech-ai-shift": "ce98cb4ced5f9a4112bb9f5f7947c966d039ad9ab0248241e2a3fb8115f748b9",
  "ai-suggestibility": "2de9839f86c1a195469e60ab35a9ade427a96c89e4d3466f88dba107441529a5",
- "ona-and-face-similarity": "9bb14fd48178f8924cd138e13fe5ef2faf6e8bce65e949c6da18bad45980f663",
+ "ona-and-face-similarity": "944e43b26fe82df789e2709b47685b16e0fc811ff8614275108767a7f7a7d02c",
  "git-and-dags": "12edbf240921e195b4d537f30b0d48266c27786328fa5ad3c504d543846fc82d",
  "nudge-effectiveness": "6aa53f935eb765c864b9b6a927525f0b7c816f27b56d7c33fb7663edf6d69c94",
  "garden-of-forking-paths-redo": "0519111281ad054e648c8d01ab517316d069b51634701c60dd9138aa8ae69930",
@@ -229,5 +229,6 @@
  "pay-for-prominence": "425d1a4777179e34dc44487ebb716ee78173229f836f8fcf4d85c67556fae023",
  "probability-words-humans-vs-ai": "826e49195979fb7a7375f396592df541a1b7fdcb71f9f3959ecf29a72242f463",
  "randomized-trial-vs-observational-estimates": "1c57394588812261f027e1cd68515198582dc1141abe2cf3296667ecd7a46554",
- "detecting-personality-in-the-face-app": "22eb2478c3abb4e15ab9aafe3002db76dd99a9d828b6ff5fba8448bdfa746ea8"
+ "detecting-personality-in-the-face-app": "bb71fdad384b82f0e08e88a55bacb5529c23bb56295e626df580afb728825619",
+ "face-reader": "f10d2b098181993019129592125c8c1bbfcdfbb1373e4263b51bf2604fe584a2"
 }

@@ -8,6 +8,7 @@ tags:
 - machine-learning
 - python
 - r
+- computer-vision
 original: https://blog-about-people-analytics.netlify.app/posts/2025-05-20-detecting-personality-in-the-face/
 ---
 
@@ -178,7 +179,7 @@ final_plot +
 
 ![](./detecting-personality-in-the-face/unnamed-chunk-1-1.png)
 
-That inspired me to put together a simple Python script that compares someone’s facial photo to the “prototypical” high/low trait faces, and then makes a guess about that person’s trait level—all powered by the [FaceNet-512d](https://huggingface.co/py-feat/facenet) deep convolutional neural network (via the [deepface](https://github.com/serengil/deepface) package), which generates 512-dimensional embeddings of facial images, capturing the unique features of a face, and facilitating tasks like face recognition, verification, and clustering. 
+That inspired me to put together a simple Python script that compares someone’s facial photo to the “prototypical” high/low trait faces, and then makes a guess about that person’s trait level—all powered by the [FaceNet-512d](https://huggingface.co/py-feat/facenet) deep convolutional neural network (via the [deepface](https://github.com/serengil/deepface) package), which generates 512-dimensional embeddings of facial images, capturing the unique features of a face, and facilitating tasks like face recognition, verification, and clustering.
 
 <div style="text-align:center">
 
@@ -193,9 +194,9 @@ It worked surprisingly well given how simple the approach is—at least for me a
 <!-- RELATED:BEGIN -->
 ## Related notes
 - [[detecting-personality-in-the-face-app|Reading personality from a face, now in your browser]]
+- [[face-reader|What does my face do in meetings?]]
 - [[openai-personality-interpretation|Ask your personality using GPT]]
 - [[ona-and-face-similarity|When facial similarity meets Network Science]]
-- [[life-success-personality-profiles|The Big Five and different ways of succeeding]]
 - [[personality-frameworks-contest|A showdown between the Big Five, Enneagram, MBTI, and astrology]]
 <!-- RELATED:END -->
 

@@ -12,6 +12,7 @@ tags:
 - fun-with-data
 - agentic-ai
 - validity
+- computer-vision
 original: https://blog-about-people-analytics.netlify.app/posts/2026-11-10-detecting-personality-in-the-face-app/
 ---
 
@@ -61,10 +62,10 @@ If you give it a shot, let me know how far off it was 😉
 <!-- RELATED:BEGIN -->
 ## Related notes
 - [[detecting-personality-in-the-face|Can a simple algorithm read your personality from your face?]]
+- [[face-reader|What does my face do in meetings?]]
 - [[openai-personality-interpretation|Ask your personality using GPT]]
 - [[ona-and-face-similarity|When facial similarity meets Network Science]]
 - [[life-success-personality-profiles|The Big Five and different ways of succeeding]]
-- [[dimensional-traits-vs-personality-types|Dimensional Traits vs. Personality Types]]
 <!-- RELATED:END -->
 
 ---

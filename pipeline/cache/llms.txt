@@ -1,9 +1,10 @@
 # Ludek's People Analytics Second Brain
 
-> A public second brain of 231 posts on people analytics, statistics, causal inference, psychometrics, machine learning, and AI by Ludek Stehlik. Browsable knowledge graph at https://lstehlik2809.github.io/people-analytics-second-brain. The complete corpus is in /llms-full.txt.
+> A public second brain of 232 posts on people analytics, statistics, causal inference, psychometrics, machine learning, and AI by Ludek Stehlik. Browsable knowledge graph at https://lstehlik2809.github.io/people-analytics-second-brain. The complete corpus is in /llms-full.txt.
 
 ## Notes
 
+- [What does my face do in meetings?](https://lstehlik2809.github.io/people-analytics-second-brain/posts/face-reader): A week of tracking my facial expressions with a webcam.
 - [Reading personality from a face, now in your browser](https://lstehlik2809.github.io/people-analytics-second-brain/posts/detecting-personality-in-the-face-app): Please still don't take it seriously 😉
 - [Can observational estimates get close to randomized trial results?](https://lstehlik2809.github.io/people-analytics-second-brain/posts/randomized-trial-vs-observational-estimates): What 37 job-training RCTs say about observational estimates in the age of big data.
 - [Probability words: humans vs. AI](https://lstehlik2809.github.io/people-analytics-second-brain/posts/probability-words-humans-vs-ai): Comparing how people and three LLMs translate probability words into numbers.

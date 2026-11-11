@@ -7,6 +7,7 @@ tags:
 - network-analysis
 - ai
 - fun-with-data
+- computer-vision
 original: https://blog-about-people-analytics.netlify.app/posts/2025-12-11-ona-and-face-similarity/
 ---
 
@@ -43,8 +44,8 @@ P.S. Out of curiosity, I also ran the analysis with my own photo, and it seems I
 - [[detecting-personality-in-the-face|Can a simple algorithm read your personality from your face?]]
 - [[detecting-personality-in-the-face-app|Reading personality from a face, now in your browser]]
 - [[linkedin-contacts-job-positions|Analyzing LinkedIn connections' jobs using LLMs and the BERTopic package]]
+- [[face-reader|What does my face do in meetings?]]
 - [[cultural-traveler|A nerdy way to choose your next holiday destination]]
-- [[david-green-hr-people-sna-network|Mapping the People Analytics universe]]
 <!-- RELATED:END -->
 
 ---
