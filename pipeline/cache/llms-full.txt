@@ -6,7 +6,7 @@ Source: https://lstehlik2809.github.io/people-analytics-second-brain | Author: L
 
 # How many fewer people would have to quit for a retention pilot to pay for itself?
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/retention-break-even
-Date: 2026-11-12
+Date: 2026-11-13
 Tags: bayesian-statistics, causal-inference, impact-evaluation, decision-analysis, employee-turnover, people-analytics
 Original post: https://blog-about-people-analytics.netlify.app/posts/2026-11-12-retention-break-even/
 

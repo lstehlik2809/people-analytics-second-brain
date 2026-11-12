@@ -1,7 +1,7 @@
 ---
 title: How many fewer people would have to quit for a retention pilot to pay for itself?
 description: What Chicago’s ShotSpotter study can teach us about using Bayesian analysis to make rollout decisions when the pilot data are noisy.
-date: '2026-11-12'
+date: '2026-11-13'
 tags:
 - bayesian-statistics
 - causal-inference
