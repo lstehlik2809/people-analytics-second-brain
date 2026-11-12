@@ -13,6 +13,7 @@ from bs4 import BeautifulSoup
 import yaml
 
 from cloud_update import changed_files, changed_slugs, git, ROOT
+from convert import source_date
 
 SITE_URL = "https://lstehlik2809.github.io/people-analytics-second-brain"
 BLOG_URL = "https://blog-about-people-analytics.netlify.app/posts/"
@@ -46,11 +47,10 @@ def expected_notes(source):
         slug = re.sub(r"^\d{4}-\d{2}-\d{2}-", "", directory.name)
         if slug in notes:
             slug = directory.name
-        date = re.match(r"^\d{4}-\d{2}-\d{2}", directory.name)
         notes[slug] = {
             "title": str(meta.get("title", slug)),
             "description": re.sub(r"\s+", " ", str(meta.get("description") or "")).strip(),
-            "date": date.group() if date else str(meta.get("date", "")),
+            "date": source_date(directory.name, meta),
             "tags": [re.sub(r"[^a-z0-9]+", "-", tag.lower().strip()).strip("-")
                      for tag in meta.get("categories") or []],
             "original": f"{BLOG_URL}{directory.name}/",

@@ -175,10 +175,11 @@ class VerificationTests(unittest.TestCase):
         self.temp = tempfile.TemporaryDirectory()
         self.root = Path(self.temp.name)
         self.source = self.root / "blog/_posts"
-        post = self.source / "2026-10-01-alpha"
-        post.mkdir(parents=True)
-        (post / "alpha.Rmd").write_text(
-            '---\ntitle: Fixture\ndescription: Some evidence.\ncategories: [People Analytics]\n---\n\nBody.\n')
+        self.post = self.source / "2026-10-01-alpha/alpha.Rmd"
+        self.post.parent.mkdir(parents=True)
+        self.post.write_text(
+            '---\ntitle: Fixture\ndescription: Some evidence.\ndate: 2026-10-02\n'
+            'categories: [People Analytics]\n---\n\nBody.\n')
         self.note = self.root / "vault/posts/alpha.md"
         self.note.parent.mkdir(parents=True)
         self.note.write_text(
@@ -207,6 +208,19 @@ class VerificationTests(unittest.TestCase):
         return verify.verify(self.root, self.source, asset_slugs={"alpha"})
 
     def test_matching_source_note_and_exports_pass(self):
+        self.assertEqual(self.check()["note_count"], 1)
+
+    def test_date_override_requires_current_note_and_index_dates(self):
+        self.post.write_text(self.post.read_text().replace(
+            "date: 2026-10-02\n", "date: 2026-10-02\nuse_frontmatter_date: true\n"
+        ))
+        with self.assertRaisesRegex(ValueError, "Source metadata mismatch: alpha: date"):
+            self.check()
+        self.note.write_text(self.note.read_text().replace('date: "2026-10-01"', 'date: "2026-10-02"'))
+        with self.assertRaisesRegex(ValueError, "Semantic index metadata mismatch: alpha: date"):
+            self.check()
+        self.index["posts"][0]["date"] = "2026-10-02"
+        self.write_index()
         self.assertEqual(self.check()["note_count"], 1)
 
     def test_verification_report_and_summary_retain_request_id(self):

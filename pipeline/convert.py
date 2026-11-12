@@ -14,6 +14,7 @@ import os
 import re
 import shutil
 import sys
+from datetime import date
 from html import escape as html_escape
 from html import unescape as html_unescape
 from pathlib import Path
@@ -99,6 +100,21 @@ def slugify_tag(tag: str) -> str:
 
 def note_slug(post_dir_name: str) -> str:
     return re.sub(r"^\d{4}-\d{2}-\d{2}-", "", post_dir_name)
+
+
+def source_date(post_dir_name: str, meta: dict) -> str:
+    """Resolve the publication date while preserving legacy directory dates."""
+    if meta.get("use_frontmatter_date") is not True:
+        match = re.match(r"^\d{4}-\d{2}-\d{2}", post_dir_name)
+        return match.group() if match else str(meta.get("date", ""))
+
+    value = str(meta.get("date", ""))
+    try:
+        if date.fromisoformat(value).isoformat() == value:
+            return value
+    except ValueError:
+        pass
+    raise ValueError(f"{post_dir_name}: use_frontmatter_date requires a valid date in YYYY-MM-DD format")
 
 
 def split_frontmatter(text: str):
@@ -684,9 +700,7 @@ def build_note(post_dir: Path) -> tuple[str, str] | None:
         return None
 
     slug = note_slug(post_dir.name)
-    # dir names always start with an ISO date; source YAML dates are mixed-format
-    m = re.match(r"^\d{4}-\d{2}-\d{2}", post_dir.name)
-    date = m.group(0) if m else str(meta.get("date", ""))
+    publication_date = source_date(post_dir.name, meta)
     tags = [slugify_tag(c) for c in (meta.get("categories") or [])]
     original_url = f"{BLOG_BASE_URL}{post_dir.name}/"
     warnings = []
@@ -706,7 +720,7 @@ def build_note(post_dir: Path) -> tuple[str, str] | None:
     fm = {
         "title": str(meta.get("title", slug)),
         "description": clean_description(meta.get("description")),
-        "date": date,
+        "date": publication_date,
         "tags": tags,
         "original": original_url,
     }

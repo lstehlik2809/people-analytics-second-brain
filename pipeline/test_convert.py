@@ -9,6 +9,47 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import convert
 
 
+class SourceDateTests(unittest.TestCase):
+    def note_metadata(self, directory, frontmatter):
+        with tempfile.TemporaryDirectory() as root:
+            post = Path(root) / directory
+            post.mkdir()
+            (post / "post.Rmd").write_text(
+                f"---\ntitle: Fixture\n{frontmatter}---\n\nBody.\n", encoding="utf-8"
+            )
+            slug, note = convert.build_note(post)
+            meta, _ = convert.split_frontmatter(note)
+            return slug, meta
+
+    def test_frontmatter_date_override_keeps_slug_and_original_url(self):
+        directory = "2026-11-12-retention-break-even"
+        slug, meta = self.note_metadata(
+            directory, "date: 2026-11-13\nuse_frontmatter_date: true\n"
+        )
+        self.assertEqual(slug, "retention-break-even")
+        self.assertEqual(meta["date"], "2026-11-13")
+        self.assertEqual(meta["original"], f"{convert.BLOG_BASE_URL}{directory}/")
+
+    def test_directory_date_wins_without_a_boolean_opt_in(self):
+        for flag in ("", "use_frontmatter_date: false\n", 'use_frontmatter_date: "true"\n'):
+            with self.subTest(flag=flag):
+                _, meta = self.note_metadata("2026-11-12-post", "date: 2026-11-13\n" + flag)
+                self.assertEqual(meta["date"], "2026-11-12")
+
+    def test_undated_directory_retains_frontmatter_fallback(self):
+        for fields, expected in (('date: "Nov. 13, 2026"\n', "Nov. 13, 2026"), ("", "")):
+            with self.subTest(fields=fields):
+                _, meta = self.note_metadata("undated-post", fields)
+                self.assertEqual(meta["date"], expected)
+
+    def test_opt_in_requires_an_iso_calendar_date(self):
+        for fields in ("", 'date: "2026-02-30"\n', 'date: "20261113"\n',
+                       "date: 2026-11-13T12:00:00Z\n"):
+            with self.subTest(fields=fields):
+                with self.assertRaisesRegex(ValueError, "2026-11-12-post.*YYYY-MM-DD"):
+                    self.note_metadata("2026-11-12-post", "use_frontmatter_date: true\n" + fields)
+
+
 class AssetFilenameTests(unittest.TestCase):
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory()
