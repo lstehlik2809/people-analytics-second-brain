@@ -54,10 +54,10 @@ P.S. For reproducibility, you can find the data sources, scripts, results, and s
 <!-- RELATED:BEGIN -->
 ## Related notes
 - [[company-culture-and-financial-performance|Company culture as a forward signal of financial performance?]]
+- [[retention-break-even|How many fewer people would have to quit for a retention pilot to pay for itself?]]
 - [[nobel-prize-and-causal-inference-popularity|Did the Nobel Prize put causal inference on the public radar?]]
 - [[people-analytics-popularity-after-covid|The impact of the COVID pandemic on the popularity of people analytics]]
 - [[ai-and-bullshit-asymmetry|Can AI help us fight the bullshit asymmetry?]]
-- [[causal-inference-in-people-analytics|Beyond prediction: Exploiting organizational events for causal inference in people analytics]]
 <!-- RELATED:END -->
 
 ---

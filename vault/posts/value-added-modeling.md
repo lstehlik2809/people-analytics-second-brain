@@ -38,9 +38,9 @@ Question for the PA folks here: Are you using "above expected" style models in P
 ## Related notes
 - [[causal-inference-in-people-analytics|Beyond prediction: Exploiting organizational events for causal inference in people analytics]]
 - [[multilevel-modeling|Multilevel modeling in people analytics]]
+- [[retention-break-even|How many fewer people would have to quit for a retention pilot to pay for itself?]]
 - [[impact-of-leaders|Want to maximize your impact as a leader?]]
 - [[genai-and-leadership-judgement|Can genAI help people managers lead better?]]
-- [[the-triple-filter-test|The Triple-Filter Test: How to prioritize HR interventions with panel data]]
 <!-- RELATED:END -->
 
 ---

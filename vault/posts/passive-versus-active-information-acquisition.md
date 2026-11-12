@@ -700,7 +700,7 @@ render_comparison_gif()
 - [[cat-and-irt-demo|An interactive demo of Computerized Adaptive Testing]]
 - [[coincidence-or-evidence|When does a coincidence become evidence?]]
 - [[bayesian-simulation|Harnessing Bayesian analysis for business process simulation]]
-- [[visual-inference-statistics|Visual statistical inference]]
+- [[retention-break-even|How many fewer people would have to quit for a retention pilot to pay for itself?]]
 <!-- RELATED:END -->
 
 ---

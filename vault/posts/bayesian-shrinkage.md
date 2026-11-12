@@ -140,10 +140,10 @@ If you are trying to deal with this effect in your reporting practice, can you s
 <!-- RELATED:BEGIN -->
 ## Related notes
 - [[turnover-signal-and-noise|Nothing changed. The dashboard disagrees.]]
+- [[retention-break-even|How many fewer people would have to quit for a retention pilot to pay for itself?]]
 - [[euptd-pay-gap-reporting|Pay gap estimation for small worker categories]]
 - [[contagious-turnover|Is contagious turnover overrated? Probably only if you ignore the managers.]]
 - [[regression-to-the-mean|Employee commitment over time & regression to the mean]]
-- [[resources-on-retention-and-downsizing|Some resources on staff retention and downsizing]]
 <!-- RELATED:END -->
 
 ---

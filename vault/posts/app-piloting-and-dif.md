@@ -26,7 +26,7 @@ So, next time you consider introducing a new business app, consider piloting it 
 - [[causal-inference-in-people-analytics|Beyond prediction: Exploiting organizational events for causal inference in people analytics]]
 - [[did-with-repeated-cross-sectional-data|What a European cigarette tax study taught me about employee listening]]
 - [[encouragement-design-and-ivs|Encouragement Design using instrumental variables]]
-- [[cross-lagged-panel-modeling|Getting (more) causal insights from employee survey data (without an RCT)]]
+- [[retention-break-even|How many fewer people would have to quit for a retention pilot to pay for itself?]]
 <!-- RELATED:END -->
 
 ---

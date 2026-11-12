@@ -160,10 +160,10 @@ And it doesn't have to end there. For example, this estimate can be combined wit
 <!-- RELATED:BEGIN -->
 ## Related notes
 - [[bayes-in-your-browser|Bayes in your browser]]
+- [[retention-break-even|How many fewer people would have to quit for a retention pilot to pay for itself?]]
 - [[bayesian-networks-in-people-analytics|Use of Bayesian networks in people analytics?]]
 - [[causal-inference-in-people-analytics|Beyond prediction: Exploiting organizational events for causal inference in people analytics]]
 - [[bayesian-belief-updating|A visual introduction to Bayesian belief updating]]
-- [[hrm-value-chain-and-sem|HRM value chain and structural equation modeling - Moneyball case]]
 <!-- RELATED:END -->
 
 ---

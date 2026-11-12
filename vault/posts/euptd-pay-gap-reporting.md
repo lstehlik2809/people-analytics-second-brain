@@ -42,9 +42,9 @@ June 2027 is closer than it looks 😉
 ## Related notes
 - [[multilevel-modeling|Multilevel modeling in people analytics]]
 - [[bayesian-shrinkage|Using Bayesian shrinkage in reporting employee turnover]]
+- [[retention-break-even|How many fewer people would have to quit for a retention pilot to pay for itself?]]
 - [[causal-inference-in-people-analytics|Beyond prediction: Exploiting organizational events for causal inference in people analytics]]
 - [[interventions-reducing-gender-pay-gap|Evidence-based interventions that help reduce the gender pay gap]]
-- [[mixed-level-ml|Beyond the “flat Earth”]]
 <!-- RELATED:END -->
 
 ---
