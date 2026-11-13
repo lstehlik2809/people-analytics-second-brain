@@ -23,8 +23,8 @@ Last but not least, a big "thank you" goes to AIHR and all the contributing auth
 - [[directionally-correct-podcast-topic-explorer|Turning 152 Directionally Correct podcast episodes into an interactive topic explorer]]
 - [[people-analytics-second-brain|My second People Analytics brain - both for people and AI agents]]
 - [[linkedin-contacts-job-positions|Analyzing LinkedIn connections' jobs using LLMs and the BERTopic package]]
+- [[people-analytics-news-feed|A daily AI briefer for People Analytics]]
 - [[cv-job-match-career-site|Improving a company career site with tools from OpenAI]]
-- [[employee-feedback-analysis-using-openai|Employee feedback analysis using tools from OpenAI]]
 <!-- RELATED:END -->
 
 ---

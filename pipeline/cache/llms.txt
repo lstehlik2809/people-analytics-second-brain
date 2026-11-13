@@ -1,9 +1,10 @@
 # Ludek's People Analytics Second Brain
 
-> A public second brain of 233 posts on people analytics, statistics, causal inference, psychometrics, machine learning, and AI by Ludek Stehlik. Browsable knowledge graph at https://lstehlik2809.github.io/people-analytics-second-brain. The complete corpus is in /llms-full.txt.
+> A public second brain of 234 posts on people analytics, statistics, causal inference, psychometrics, machine learning, and AI by Ludek Stehlik. Browsable knowledge graph at https://lstehlik2809.github.io/people-analytics-second-brain. The complete corpus is in /llms-full.txt.
 
 ## Notes
 
+- [A daily AI briefer for People Analytics](https://lstehlik2809.github.io/people-analytics-second-brain/posts/people-analytics-news-feed): An experiment with an agent that runs on GitHub Actions, finds up to five recent reads a day, and suggests how each might be useful in People Analytics practice.
 - [How many fewer people would have to quit for a retention pilot to pay for itself?](https://lstehlik2809.github.io/people-analytics-second-brain/posts/retention-break-even): What Chicago’s ShotSpotter study can teach us about using Bayesian analysis to make rollout decisions when the pilot data are noisy.
 - [What does my face do in meetings?](https://lstehlik2809.github.io/people-analytics-second-brain/posts/face-reader): A week of tracking my facial expressions with a webcam.
 - [Reading personality from a face, now in your browser](https://lstehlik2809.github.io/people-analytics-second-brain/posts/detecting-personality-in-the-face-app): Please still don't take it seriously 😉
