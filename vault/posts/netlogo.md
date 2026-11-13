@@ -35,8 +35,8 @@ Btw, I can't wait for my son to stumble upon the topic of how order can arise wi
 <!-- RELATED:BEGIN -->
 ## Related notes
 - [[dunning-kruger-effect-simulation|Making abstract ideas digestible with knobs and sliders]]
-- [[exploration-vs-exploitation-tradeoff|Exploration vs. Exploitation trade-off in our calendars]]
 - [[bayesian-belief-updating|A visual introduction to Bayesian belief updating]]
+- [[exploration-vs-exploitation-tradeoff|Exploration vs. Exploitation trade-off in our calendars]]
 - [[kohonen-self-organizing-maps|Kohonen's Self-Organizing Maps]]
 - [[passive-versus-active-information-acquisition|From passive to active information acquisition]]
 <!-- RELATED:END -->

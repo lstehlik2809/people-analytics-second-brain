@@ -4,11 +4,10 @@ description: 'Teacher: "Bayesian belief updating involves combining existing or 
 date: '2022-10-27'
 tags:
 - bayesian-statistics
-- decision-making
-- time-series
+- simulation
 - critical-thinking
-- r
 - rationality
+- r
 original: https://blog-about-people-analytics.netlify.app/posts/2022-10-27-bayesian-belief-updating/
 ---
 

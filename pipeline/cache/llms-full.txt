@@ -18199,7 +18199,7 @@ P.S. If you ever need to check the shape distribution of any of your metrics, yo
 # A visual introduction to Bayesian belief updating
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/bayesian-belief-updating
 Date: 2022-10-27
-Tags: bayesian-statistics, decision-making, time-series, critical-thinking, r, rationality
+Tags: bayesian-statistics, simulation, critical-thinking, rationality, r
 Original post: https://blog-about-people-analytics.netlify.app/posts/2022-10-27-bayesian-belief-updating/
 
 When trying to reduce uncertainty, even very small pieces of information count if you are patient and have some tool to combine them effectively. I recently re-read [Philip Tetlock's](https://en.wikipedia.org/wiki/Philip_E._Tetlock) book [Superforecasting](https://en.wikipedia.org/wiki/Superforecasting:_The_Art_and_Science_of_Prediction) and came across an excellent illustration of such a tool: [Bayesian belief updating](https://en.wikipedia.org/wiki/Bayesian_inference).
