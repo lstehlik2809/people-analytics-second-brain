@@ -6,10 +6,11 @@ tags:
 - leadership
 - generative-ai
 - human-ai-interaction
+- ai-at-work
 original: https://blog-about-people-analytics.netlify.app/posts/2025-09-22-genai-and-leadership-judgement/
 ---
 
-Many of us have probably read about recent [OpenAI research](https://go.sparkpostmail2.com/f/a/2coy4p_7T3W9fFCvydrRxA~~/AAA-fBA~/SrWxfCzqkYIc4YBJbUbAcKC1heZK5iLCyQsE-BKLz5oLGJBugTP8-oWsMWMPo6mGTQFbvhUFGRY3qhVAmCLhEOkN9ijhDjGtO_0yfkjWxeCCZfeAMyUmEuSFgFCNsAcqrU-LvdmeplQkrvKnoJPh3Kc1t4ejHe9lGQUoP_UEdzNlbsl6rMBJlLXlr5SYECoCEUSth9AdamjpMrCzNT5HQHexqveh27VgiSIXdCNi_Vo~) on how customers are using their tool. The study found, among other things, that asking for information or advice to support decision-making is the single biggest use case, making up 49% of all user interactions. 
+Many of us have probably read about recent [OpenAI research](https://go.sparkpostmail2.com/f/a/2coy4p_7T3W9fFCvydrRxA~~/AAA-fBA~/SrWxfCzqkYIc4YBJbUbAcKC1heZK5iLCyQsE-BKLz5oLGJBugTP8-oWsMWMPo6mGTQFbvhUFGRY3qhVAmCLhEOkN9ijhDjGtO_0yfkjWxeCCZfeAMyUmEuSFgFCNsAcqrU-LvdmeplQkrvKnoJPh3Kc1t4ejHe9lGQUoP_UEdzNlbsl6rMBJlLXlr5SYECoCEUSth9AdamjpMrCzNT5HQHexqveh27VgiSIXdCNi_Vo~) on how customers are using their tool. The study found, among other things, that asking for information or advice to support decision-making is the single biggest use case, making up 49% of all user interactions.
 
 That got me wondering: how good could genAI be at helping managers make better decisions about their teams?
 
@@ -140,8 +141,8 @@ The possible takeaway? With full awareness of the obvious limitations of this sm
 ## Related notes
 - [[causal-impact-of-leadership-skills|Novel way to measure leadership skills via causal inference (and AI)?]]
 - [[manager-effect-lab|Good manager or lucky team?]]
-- [[ai-powered-data-exploration-assistant|Testing my GenAI skepticism]]
 - [[chatgpt-and-employee-feedback|Using ChatGPT to summarize and explore employee feedback?]]
+- [[ai-powered-data-exploration-assistant|Testing my GenAI skepticism]]
 - [[gpt4-and-e-b-hrm-practices|GPT-4's performance in the knowledge test of evidence-based HRM practices]]
 <!-- RELATED:END -->
 

@@ -10,7 +10,6 @@ tags:
 - machine-learning
 - learning-and-development
 - labor-economics
-- people-analytics
 original: https://blog-about-people-analytics.netlify.app/posts/2026-11-09-randomized-trial-vs-observational-estimates/
 ---
 

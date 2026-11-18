@@ -3,7 +3,7 @@ title: A daily AI briefer for People Analytics
 description: An experiment with an agent that runs on GitHub Actions, finds up to five recent reads a day, and suggests how each might be useful in People Analytics practice.
 date: '2026-11-14'
 tags:
-- people-analytics
+- people-analytics-practice
 - agentic-ai
 - knowledge-management
 original: https://blog-about-people-analytics.netlify.app/posts/2026-11-13-people-analytics-news-feed/
@@ -27,7 +27,7 @@ If you fancy making your own, give your reading list and a brief about what’s 
 - [[hr-tech-ai-shift|How AI is reshaping HR-tech]]
 - [[directionally-correct-podcast-topic-explorer|Turning 152 Directionally Correct podcast episodes into an interactive topic explorer]]
 - [[agentic-ai-for-visual-data-exploration|Agentic AI for visual data exploration]]
-- [[ai-powered-data-exploration-assistant|Testing my GenAI skepticism]]
+- [[searching-and-querying-aihr-blog-posts|Searching & querying AIHR blog posts on People Analytics topics]]
 <!-- RELATED:END -->
 
 ---

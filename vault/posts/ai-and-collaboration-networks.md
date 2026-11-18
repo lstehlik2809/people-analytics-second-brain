@@ -9,10 +9,10 @@ tags:
 - meetings
 - network-analysis
 - human-ai-interaction
-- people-analytics
 - impact-evaluation
 - causal-inference
 - difference-in-differences
+- ai-at-work
 original: https://blog-about-people-analytics.netlify.app/posts/2026-10-29-ai-and-collaboration-networks/
 ---
 

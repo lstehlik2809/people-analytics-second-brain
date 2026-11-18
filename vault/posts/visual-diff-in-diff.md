@@ -6,7 +6,6 @@ tags:
 - data-science
 - causal-inference
 - difference-in-differences
-- people-analytics
 - evidence-based-management
 - impact-evaluation
 original: https://blog-about-people-analytics.netlify.app/posts/2025-04-15-visual-diff-in-diff/
@@ -28,15 +27,15 @@ As an example, check out the chart below. It was created in one of those BI plat
 
 </div>
 
-I'm definitely not saying this lighter version of DiD is a silver bullet for all causal questions in people analytics—especially since it depends on specific quasi-experimental setups, like the one shown above, and doesn’t deal with the uncertainty present in the data. That said, IMO, it can still help non-technical folks handle some of the lower-stakes cases on their own, giving data science teams more room to focus on the big stuff. 
+I'm definitely not saying this lighter version of DiD is a silver bullet for all causal questions in people analytics—especially since it depends on specific quasi-experimental setups, like the one shown above, and doesn’t deal with the uncertainty present in the data. That said, IMO, it can still help non-technical folks handle some of the lower-stakes cases on their own, giving data science teams more room to focus on the big stuff.
 
 What do you think? Could this be a useful piece of the puzzle in boosting data literacy among HR professionals? Do you see any substantial risks?
 
 <!-- RELATED:BEGIN -->
 ## Related notes
 - [[causal-inference-in-people-analytics|Beyond prediction: Exploiting organizational events for causal inference in people analytics]]
-- [[app-piloting-and-dif|Estimating the impact of a new business app by piloting & method of difference-in-differences]]
 - [[did-with-repeated-cross-sectional-data|What a European cigarette tax study taught me about employee listening]]
+- [[app-piloting-and-dif|Estimating the impact of a new business app by piloting & method of difference-in-differences]]
 - [[econml-and-employee-attriton|How to get causal interpretation for the Employee Attrition dataset?]]
 - [[cross-lagged-panel-modeling|Getting (more) causal insights from employee survey data (without an RCT)]]
 <!-- RELATED:END -->

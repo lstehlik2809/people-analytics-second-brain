@@ -29,8 +29,8 @@ P.S. If you want to see how your own approach would shape the results, you can d
 - [[scientific-divides-and-cognitive-traits|Why do psychologists disagree—even when they use the same data and methods?]]
 - [[causal-inference-in-people-analytics|Beyond prediction: Exploiting organizational events for causal inference in people analytics]]
 - [[visual-diff-in-diff|Causal insights with no code?]]
-- [[beyond-the-correlation|What might we miss when assessment scores and job ratings are strongly correlated?]]
 - [[coincidence-or-evidence|When does a coincidence become evidence?]]
+- [[beyond-the-correlation|What might we miss when assessment scores and job ratings are strongly correlated?]]
 <!-- RELATED:END -->
 
 ---

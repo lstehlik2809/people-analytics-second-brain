@@ -4,7 +4,7 @@ description: A recommendation for a free online book on Bayesian thinking in peo
 date: '2026-09-16'
 tags:
 - bayesian-statistics
-- people-analytics
+- people-analytics-practice
 - decision-making
 original: https://blog-about-people-analytics.netlify.app/posts/2026-09-16-bayesian-thinking-for-people-analytics/
 ---
@@ -29,7 +29,7 @@ Thanks to Andrew for putting something like this together and sharing it with th
 - [[bayesian-networks-in-people-analytics|Use of Bayesian networks in people analytics?]]
 - [[causal-inference-in-people-analytics|Beyond prediction: Exploiting organizational events for causal inference in people analytics]]
 - [[beyond-belief|Evidence-Based Management: Boring basics and better questions]]
-- [[people-analytics-popularity-after-covid|The impact of the COVID pandemic on the popularity of people analytics]]
+- [[causal-inference-with-bayesian-networks|Causal Inference with Bayesian Networks]]
 <!-- RELATED:END -->
 
 ---

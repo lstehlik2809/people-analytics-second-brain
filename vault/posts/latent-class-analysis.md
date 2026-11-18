@@ -5,7 +5,6 @@ date: '2023-06-19'
 tags:
 - psychometrics
 - employee-survey
-- people-analytics
 - r
 original: https://blog-about-people-analytics.netlify.app/posts/2023-06-19-latent-class-analysis/
 ---
@@ -251,7 +250,7 @@ It would certainly be possible to delve deeper into the results, but for a basic
 - [[rwa|RWA – A go-to tool for key drivers analysis of employee survey data?]]
 - [[cross-lagged-panel-modeling|Getting (more) causal insights from employee survey data (without an RCT)]]
 - [[multilevel-modeling|Multilevel modeling in people analytics]]
-- [[personas-based-on-ml-local-interpretation-algos|Personas based on ML local interpretation algorithms]]
+- [[did-with-repeated-cross-sectional-data|What a European cigarette tax study taught me about employee listening]]
 <!-- RELATED:END -->
 
 ---

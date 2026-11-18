@@ -44,8 +44,8 @@ P.S. The first part of the app builds on a neat Monte Carlo illustration credite
 
 <!-- RELATED:BEGIN -->
 ## Related notes
-- [[change-detection|How to quickly navigate dashboard users to what they need to know?]]
 - [[bayesian-shrinkage|Using Bayesian shrinkage in reporting employee turnover]]
+- [[change-detection|How to quickly navigate dashboard users to what they need to know?]]
 - [[xmr-charts-in-people-analytics|Do you use XmR charts for People Analytics use cases?]]
 - [[contagious-turnover|Is contagious turnover overrated? Probably only if you ignore the managers.]]
 - [[tenure-vs-satisfaction|Simulating the "survivorship" effect in employee satisfaction data over time]]

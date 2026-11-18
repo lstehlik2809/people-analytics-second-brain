@@ -43,8 +43,8 @@ P.P.S. Big thanks to [Sebastian Vorac](https://www.linkedin.com/in/sebastian-vor
 ## Related notes
 - [[linkedin-contacts-job-positions|Analyzing LinkedIn connections' jobs using LLMs and the BERTopic package]]
 - [[david-green-hr-people-sna-network|Mapping the People Analytics universe]]
-- [[directionally-correct-podcast-topic-explorer|Turning 152 Directionally Correct podcast episodes into an interactive topic explorer]]
 - [[overview-of-predictors-of-voluntary-employee-turnover|Overview of predictors of voluntary employee turnover]]
+- [[directionally-correct-podcast-topic-explorer|Turning 152 Directionally Correct podcast episodes into an interactive topic explorer]]
 - [[cv-job-match-career-site|Improving a company career site with tools from OpenAI]]
 <!-- RELATED:END -->
 

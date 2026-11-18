@@ -4,10 +4,44 @@ Source: https://lstehlik2809.github.io/people-analytics-second-brain | Author: L
 
 ---
 
+# AI implementation at work: worker preferences for task changes
+URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/ai-at-work-worker-preferences
+Date: 2026-11-18
+Tags: employee-listening, human-ai-interaction, ai-at-work
+Original post: https://blog-about-people-analytics.netlify.app/posts/2026-11-18-ai-at-work-worker-preferences/
+
+What if an employee survey asked you to pick between two versions of your own job?
+
+Lara Fleck and colleagues did something along those lines with 423 quality control operators at an automotive supplier. The operators saw pairs of hypothetical jobs and picked the one they thought would be better for their well-being. The options varied in what they’d do on a shift, when they could take breaks, what training they’d get, how much say they’d have over their tasks, and what they’d earn.
+
+The choices were based on an actual AI rollout. In the first stage, a pop-up asked operators to take another look when the system disagreed with them. The operator still made the call. In the planned second stage, the system would clear the easy cases, leaving operators with fewer, harder ones.
+
+![An example pair of hypothetical jobs from the survey. Job A involves fewer, difficult inspections without pop-up support, flexible short breaks, more training, task choice, and a 6% raise. Job B involves more, mostly easy inspections with pop-up support, no flexible short breaks, basic training, fixed task rotation, and no raise. Operators chose the job they thought would be better for their well-being.](./ai-at-work-worker-preferences/which-job-would-you-choose.png)
+
+Workers preferred the version where they got a second opinion. The 6% raise in the example above was part of one hypothetical job offer. The chart below summarizes choices across the experiment. From those choices, the researchers estimated that workers valued AI-assisted inspection about as much as a 2.8% raise in the old job without AI.
+
+![Estimated pay equivalents of job changes, with 95% confidence intervals: AI-assisted inspection, 2.8%; more automated inspection, 0.7%; advanced training, 1.3%; intermediate training, 1.0%; flexible breaks, 0.6%; and more choice over tasks, 0.6%. Inspection estimates use the old workflow without AI as the baseline. Other baselines were basic training, no flexible breaks, and fixed task rotation.](./ai-at-work-worker-preferences/ai-assisted-inspection-survey-results.png)
+
+What I like about this as a form of employee listening is how specific you can get. Say you’re about to automate the routine checks. Would people be more interested in the redesigned job if they got more practice on the difficult cases? How much would it matter if they could decide when to switch to another task?
+
+I’d work out a few realistic options with the people doing the job, then use their choices to help decide what to try on the floor.
+
+Have you used a choice experiment in employee listening? What did you ask people to choose between?
+
+Here’s the [IZA working paper](https://www.iza.org/publications/dp/19076) and an [example of what workers saw in the survey](https://docs.iza.org/dp19076.pdf#page=42).
+
+P.S. I focused on the survey design here, but it struck me that the operators who found the AI assistant especially helpful were less keen on the more automated job. A good reminder that when you roll out a change in stages, it’s worth asking people how they’d feel about the next step, even if they’re happy with how things are going so far.
+
+
+---
+> 📄 Read the [original post with full outputs](https://blog-about-people-analytics.netlify.app/posts/2026-11-18-ai-at-work-worker-preferences/) on my blog.
+
+---
+
 # A daily AI briefer for People Analytics
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/people-analytics-news-feed
 Date: 2026-11-14
-Tags: people-analytics, agentic-ai, knowledge-management
+Tags: people-analytics-practice, agentic-ai, knowledge-management
 Original post: https://blog-about-people-analytics.netlify.app/posts/2026-11-13-people-analytics-news-feed/
 
 Recently, I’ve been experimenting with a daily AI briefer to help me stay on top of new research that might be relevant for People Analytics practice. I thought some of you might find it useful too, so I added a [News feed](https://blog-about-people-analytics.netlify.app/news) to my blog.
@@ -31,7 +65,7 @@ If you fancy making your own, give your reading list and a brief about what’s 
 # How many fewer people would have to quit for a retention pilot to pay for itself?
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/retention-break-even
 Date: 2026-11-13
-Tags: bayesian-statistics, causal-inference, impact-evaluation, decision-analysis, employee-turnover, people-analytics
+Tags: bayesian-statistics, causal-inference, impact-evaluation, decision-analysis, employee-turnover
 Original post: https://blog-about-people-analytics.netlify.app/posts/2026-11-12-retention-break-even/
 
 Say you’ve piloted a retention programme in a handful of teams. Voluntary attrition was lower than in the comparison group, but the estimate was noisy and the result wasn’t statistically significant. The budget meeting is next week.
@@ -142,7 +176,7 @@ If you give it a shot, let me know how far off it was 😉
 # Can observational estimates get close to randomized trial results?
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/randomized-trial-vs-observational-estimates
 Date: 2026-11-09
-Tags: causal-inference, impact-evaluation, double-machine-learning, experiments, machine-learning, learning-and-development, labor-economics, people-analytics
+Tags: causal-inference, impact-evaluation, double-machine-learning, experiments, machine-learning, learning-and-development, labor-economics
 Original post: https://blog-about-people-analytics.netlify.app/posts/2026-11-09-randomized-trial-vs-observational-estimates/
 
 For job-training evaluations, the answer since [LaLonde (1986)](https://www.researchgate.net/publication/4900843_Evaluating_the_Econometric_Evaluations_of_Training_Programs_with_Experiment_Data) has mostly been “not really”. A new [preprint by Raj Chetty and colleagues](https://arxiv.org/abs/2611.03938) revisits this with U.S. tax records covering all adults and 37 randomized trials of 24 job-training and employment programs.
@@ -262,7 +296,7 @@ Has anyone here tried ONA-based incentives or used network centrality in perform
 # What happens to collaboration when AI joins the team?
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/ai-and-collaboration-networks
 Date: 2026-10-29
-Tags: ai, generative-ai, collaboration, meetings, network-analysis, human-ai-interaction, people-analytics, impact-evaluation, causal-inference, difference-in-differences
+Tags: ai, generative-ai, collaboration, meetings, network-analysis, human-ai-interaction, impact-evaluation, causal-inference, difference-in-differences, ai-at-work
 Original post: https://blog-about-people-analytics.netlify.app/posts/2026-10-29-ai-and-collaboration-networks/
 
 A new [preprint by Giuseppe Soda, Alessandro Iorio and Leonardo Rizzo](https://arxiv.org/abs/2610.32461) followed 12,040 employees in one business unit of a multinational company over 13 months of a Microsoft Copilot rollout.
@@ -303,7 +337,7 @@ Has anyone checked what happened to their collaboration networks after an AI rol
 # Bayes in your browser
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/bayes-in-your-browser
 Date: 2026-10-27
-Tags: bayesian-statistics, people-analytics, regression-analysis, multilevel-modeling, web-apps
+Tags: bayesian-statistics, regression-analysis, multilevel-modeling, web-apps
 Original post: https://blog-about-people-analytics.netlify.app/posts/2026-10-27-bayes-in-your-browser/
 
 I know I’m a little bit late to the party, but I only recently learned that you can run Bayesian analyses directly in a web browser, including complex regression models whose posteriors we approximate through sampling.
@@ -415,7 +449,7 @@ P.S. Link to the [paper](https://arxiv.org/abs/2604.04721) and [project site](ht
 # Some inspiration for your next HR impact evaluation
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/hr-causal-evidence-map
 Date: 2026-10-19
-Tags: web-apps, causal-inference, evidence-based-management, hr-management, research-methods, experiments, performance, people-analytics, data-visualization, impact-evaluation
+Tags: web-apps, causal-inference, evidence-based-management, hr-management, research-methods, experiments, performance, people-analytics-practice, data-visualization, impact-evaluation
 Original post: https://blog-about-people-analytics.netlify.app/posts/2026-10-19-hr-causal-evidence-map/
 
 I wanted some inspiration for causal impact evaluations of our internal people projects, so I took a look at recent research on HR practices and business performance.
@@ -441,7 +475,7 @@ On the site you can scroll through these findings on an evidence map, then filte
 # What might we miss when assessment scores and job ratings are strongly correlated?
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/beyond-the-correlation
 Date: 2026-10-16
-Tags: people-analytics, data-visualization, statistics, performance-management, causal-reasoning
+Tags: data-visualization, statistics, performance-management, causal-reasoning
 Original post: https://blog-about-people-analytics.netlify.app/posts/2026-10-16-beyond-the-correlation/
 
 We all know that summary statistics such as correlation can be misleading and that it’s worth examining the data visually.
@@ -521,7 +555,7 @@ Note on how this was made: I used Claude Code (Opus 5.5) to turn my dissertation
 # What probability would change your mind about Sam?
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/decision-tree-foldback
 Date: 2026-10-06
-Tags: web-apps, decision-analysis, decision-making, people-analytics, simulation, performance-management
+Tags: web-apps, decision-analysis, decision-making, simulation, performance-management
 Original post: https://blog-about-people-analytics.netlify.app/posts/2026-10-06-decision-tree-foldback/
 
 Andrew Marritt recently published a very useful article, [*Should you replace Sam?*](https://andrewmarritt.substack.com/p/should-you-replace-sam), that shows how to bring People Analytics insights closer to real impact on people-related decisions.
@@ -993,7 +1027,7 @@ P.S. Curious if anyone in my network has done the same or a similar exercise wit
 # How exposed are your job and other jobs to AI?
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/job-ai-exposure
 Date: 2026-09-18
-Tags: web-apps, ai, future-of-work, skills, labor-economics, data-visualization
+Tags: web-apps, ai, future-of-work, skills, labor-economics, data-visualization, ai-at-work
 Original post: https://blog-about-people-analytics.netlify.app/posts/2026-09-18-job-ai-exposure/
 
 As part of a recent training on using AI effectively, I created Work & AI - a [small app](https://lstehlik2809.github.io/work-and-ai/) for anyone curious about how AI might affect our jobs.
@@ -1040,7 +1074,7 @@ If you want to play with it, go [here](https://lstehlik2809.github.io/work-and-a
 # Bayesian Thinking for People Analytics
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/bayesian-thinking-for-people-analytics
 Date: 2026-09-16
-Tags: bayesian-statistics, people-analytics, decision-making
+Tags: bayesian-statistics, people-analytics-practice, decision-making
 Original post: https://blog-about-people-analytics.netlify.app/posts/2026-09-16-bayesian-thinking-for-people-analytics/
 
 If you are a PA professional and you don’t know about it yet, then I highly recommend to your attention a free online book, [Bayesian Thinking for People Analytics](https://bayesian-thinking.andrewmarritt.ch/), by [Andrew Marritt](https://www.linkedin.com/in/andrewmarritt/).
@@ -1955,7 +1989,7 @@ render_comparison_gif()
 # Turning 152 Directionally Correct podcast episodes into an interactive topic explorer
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/directionally-correct-podcast-topic-explorer
 Date: 2026-08-18
-Tags: web-apps, knowledge-management, topic-analysis, network-analysis, data-visualization, generative-ai, embeddings, people-analytics
+Tags: web-apps, knowledge-management, topic-analysis, network-analysis, data-visualization, generative-ai, embeddings, people-analytics-practice
 Original post: https://blog-about-people-analytics.netlify.app/posts/2026-08-18-directionally-correct-podcast-topic-explorer/
 
 Currently, I’m exploring different ways to represent, visualize, and make knowledge and ideas easier to consume and navigate. As part of that, I recently shared the result of my attempt to build [a second brain rooted in my People Analytics blog](https://lstehlik2809.github.io/people-analytics-second-brain/), accessible to both people and AI agents.
@@ -2005,7 +2039,7 @@ P.P.S. The [repo](https://github.com/lstehlik2809/directionally-correct-topic-ma
 # Turning Outlook calendar data into a collaboration map
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/meeting-ego-network-app
 Date: 2026-08-11
-Tags: web-apps, network-analysis, collaboration, meetings, generative-ai, people-analytics
+Tags: web-apps, network-analysis, collaboration, meetings, generative-ai
 Original post: https://blog-about-people-analytics.netlify.app/posts/2026-08-11-meeting-ego-network-app/
 
 Recently, at work, I came across another example of GenAI-driven commoditization of a data product that was once relatively rare and accessible only through collaboration with a third-party vendor or an internal expert equipped with highly specialized software.
@@ -3224,7 +3258,7 @@ sessionInfo()
 # My second People Analytics brain - both for people and AI agents
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/people-analytics-second-brain
 Date: 2026-07-28
-Tags: web-apps, people-analytics, ai, agentic-ai, embeddings, nlp, knowledge-management, data-visualization
+Tags: web-apps, people-analytics-practice, ai, agentic-ai, embeddings, nlp, knowledge-management, data-visualization
 Original post: https://blog-about-people-analytics.netlify.app/posts/2026-07-28-people-analytics-second-brain/
 
 Specifically, I built a public knowledge base from more than 200 posts on this People Analytics blog. It is browsable as a knowledge graph, searchable by keywords or meaning, and accessible to AI agents through a public MCP server. The complete corpus is also available as `llms-full.txt` - roughly 290k tokens, so it fits in one go only in the largest context windows - plus a compact `llms.txt` index.
@@ -3863,7 +3897,7 @@ I would also be very interested to see related efforts. If you are building agen
 # Goals saved above expected… for managers?
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/value-added-modeling
 Date: 2026-05-12
-Tags: performance-management, people-management, statistics, causal-inference, ai, people-analytics
+Tags: performance-management, people-management, statistics, causal-inference, ai
 Original post: https://blog-about-people-analytics.netlify.app/posts/2026-05-12-value-added-modeling/
 
 A hockey stat sent me down a rabbit hole this weekend 🤓
@@ -4175,7 +4209,7 @@ The shift to pulse-based listening can feel like a methodological downgrade beca
 # Mapping the People Analytics universe
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/david-green-hr-people-sna-network
 Date: 2026-03-29
-Tags: network-analysis, people-analytics
+Tags: network-analysis, people-analytics-practice
 Original post: https://blog-about-people-analytics.netlify.app/posts/2026-03-29-david-green-hr-people-sna-network/
 
 Being featured in [David Green](https://www.linkedin.com/in/davidrgreen)'s "Best HR & People Analytics Articles" newsletter inspired me to put together a quick-and-dirty SNA based on the co-occurrence of people mentioned across all 60 editions, from April 2021 to March 2026.
@@ -4693,7 +4727,7 @@ The question was about the pros/cons of the nudging approach versus a difference
 # AI as friction
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/ai-as-friction
 Date: 2026-03-10
-Tags: ai, learning-and-development, behavioral-science, time-management, human-ai-interaction
+Tags: ai, learning-and-development, behavioral-science, time-management, human-ai-interaction, ai-at-work
 Original post: https://blog-about-people-analytics.netlify.app/posts/2026-03-10-ai-as-friction/
 
 When we think about using AI, we often think about how to make things easier for us. But maybe we’re missing the use cases where AI can help us introduce some meaningful friction into our lives.
@@ -5454,7 +5488,7 @@ P.S. By coincidence, while working on this post I stumbled upon a much more rigo
 # How AI is reshaping HR-tech
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/hr-tech-ai-shift
 Date: 2025-12-02
-Tags: ai, generative-ai, agentic-ai, collaboration
+Tags: ai, generative-ai, agentic-ai, collaboration, ai-at-work
 Original post: https://blog-about-people-analytics.netlify.app/posts/2025-12-02-hr-tech-ai-shift/
 
 As many of you can probably attest, AI is dominating a lot of today’s debates about the future of work - both near and distant. And, unsurprisingly, this is also showing up in the more or less aggressive pivots of several HR-tech vendors that not so long ago focused on different workplace topics.
@@ -5572,7 +5606,7 @@ There are obvious limitations - the study focuses on one platform and one type o
 # A graph approach to reporting structures: stop wrestling recursion
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/org-stats-and-graph-analysis
 Date: 2025-10-31
-Tags: people-analytics, network-analysis, python
+Tags: network-analysis, python
 Original post: https://blog-about-people-analytics.netlify.app/posts/2025-10-31-org-stats-and-graph-analysis/
 
 From time to time, I need to compute organizational stats related to manager-report relationships.
@@ -6125,7 +6159,7 @@ P.P.S. Click the GitHub icon in the top right corner of the app to get to the co
 # Can genAI help people managers lead better?
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/genai-and-leadership-judgement
 Date: 2025-09-22
-Tags: leadership, generative-ai, human-ai-interaction
+Tags: leadership, generative-ai, human-ai-interaction, ai-at-work
 Original post: https://blog-about-people-analytics.netlify.app/posts/2025-09-22-genai-and-leadership-judgement/
 
 Many of us have probably read about recent [OpenAI research](https://go.sparkpostmail2.com/f/a/2coy4p_7T3W9fFCvydrRxA~~/AAA-fBA~/SrWxfCzqkYIc4YBJbUbAcKC1heZK5iLCyQsE-BKLz5oLGJBugTP8-oWsMWMPo6mGTQFbvhUFGRY3qhVAmCLhEOkN9ijhDjGtO_0yfkjWxeCCZfeAMyUmEuSFgFCNsAcqrU-LvdmeplQkrvKnoJPh3Kc1t4ejHe9lGQUoP_UEdzNlbsl6rMBJlLXlr5SYECoCEUSth9AdamjpMrCzNT5HQHexqveh27VgiSIXdCNi_Vo~) on how customers are using their tool. The study found, among other things, that asking for information or advice to support decision-making is the single biggest use case, making up 49% of all user interactions.
@@ -7057,7 +7091,7 @@ Would love to hear if you’ve come across any solid sources on this topic—or 
 # When self-selected behavior is a blessing, not a headache
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/self-selection-and-proxy-measures
 Date: 2025-07-03
-Tags: psychometrics, causal-inference, people-analytics
+Tags: psychometrics, causal-inference
 Original post: https://blog-about-people-analytics.netlify.app/posts/2025-07-03-self-selection-and-proxy-measures/
 
 Situations where people act on their own can be a nightmare for a researcher trying to tease apart the causal effects of specific factors of interest. At the same time, though, such situations can be a valuable opportunity to indirectly tap into people’s otherwise unobserved characteristics or states that may impact or predict outcomes of interest.
@@ -7275,7 +7309,7 @@ Curious if anyone has done a similar analysis on their data and put the findings
 # Beyond prediction: Exploiting organizational events for causal inference in people analytics
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/causal-inference-in-people-analytics
 Date: 2025-05-21
-Tags: causal-inference, experiments, data-science, people-analytics, python, r, impact-evaluation
+Tags: causal-inference, experiments, data-science, people-analytics-practice, python, r, impact-evaluation
 Original post: https://blog-about-people-analytics.netlify.app/posts/2025-05-21-causal-inference-in-people-analytics/
 
 # Introduction
@@ -8311,7 +8345,7 @@ The study thus serves as a valuable reminder that scientific disagreements may n
 # Causal insights with no code?
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/visual-diff-in-diff
 Date: 2025-04-15
-Tags: data-science, causal-inference, difference-in-differences, people-analytics, evidence-based-management, impact-evaluation
+Tags: data-science, causal-inference, difference-in-differences, evidence-based-management, impact-evaluation
 Original post: https://blog-about-people-analytics.netlify.app/posts/2025-04-15-visual-diff-in-diff/
 
 If there’s one causal inference method that is both intuitive and easy to explain—even to non-data folks—it’s difference-in-differences (DiD).
@@ -9153,7 +9187,7 @@ Have you tried similar methods in your employee survey analyses? What's your exp
 # Are age and gender variables really so non-actionable in the context of People Analytics?
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/non-actionable-vars-in-pa
 Date: 2025-03-05
-Tags: people-analytics, hr-metrics
+Tags: people-analytics-practice, hr-metrics
 Original post: https://blog-about-people-analytics.netlify.app/posts/2025-03-05-non-actionable-vars-in-pa/
 
 Are age and gender variables really so non-actionable in the context of People Analytics?
@@ -10034,7 +10068,7 @@ To learn more about the methodology behind the tool, check out [this site](https
 # Do you use XmR charts for People Analytics use cases?
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/xmr-charts-in-people-analytics
 Date: 2024-10-30
-Tags: web-apps, time-series, statistics, data-visualization, people-analytics
+Tags: web-apps, time-series, statistics, data-visualization
 Original post: https://blog-about-people-analytics.netlify.app/posts/2024-10-30-xmr-charts-in-people-analytics/
 
 I'm curious if anyone in People Analytics space has experience - good, bad, or a bit of both - using XmR charts for tracking and interpreting HR-related metrics and guiding follow-up process improvements, especially among non-technical end users.
@@ -12854,7 +12888,7 @@ Given these results, one should feel motivated to identify among the mix of fact
 # Does GenAI make me a better (more rational) thinker?
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/gai-simulation-work-habits
 Date: 2023-12-13
-Tags: time-management, generative-ai, critical-thinking, decision-making, rationality, human-ai-interaction
+Tags: time-management, generative-ai, critical-thinking, decision-making, rationality, human-ai-interaction, ai-at-work
 Original post: https://blog-about-people-analytics.netlify.app/posts/2023-12-13-gai-simulation-work-habits/
 
 When someone recently asked me how GenAI has changed my work habits, I realized that one of the profound changes is that I'm more often testing my ideas, assumptions, and hypotheses with various simulations, usually implemented in Python or R.
@@ -13461,7 +13495,7 @@ df['sentiment_score_mixed'] = prediction.apply(lambda x: x['scores'][x['labels']
 # Using NLP & LLM to combat 'tip-of-the-tongue' moments during onboarding
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/nlp-llm-and-onboarding
 Date: 2023-10-23
-Tags: web-apps, employee-experience, nlp, generative-ai, embeddings, ai
+Tags: web-apps, employee-experience, nlp, generative-ai, embeddings, ai, ai-at-work
 Original post: https://blog-about-people-analytics.netlify.app/posts/2023-10-23-nlp-llm-and-onboarding/
 
 I believe that many of you have had a similar experience when you joined a new company: you have taken a ton of notes from various meetings and trainings, you know that the answer to your immediate question is in there somewhere, but it is too hard to find the right notes, so you capitulate and decide to try to find the answer in a different way, e.g. by asking a more tenured colleague.
@@ -14438,7 +14472,7 @@ ggraph::ggraph(g, layout = "kk") + # other available layouts: 'star', 'circle', 
 # Searching & querying AIHR blog posts on People Analytics topics
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/searching-and-querying-aihr-blog-posts
 Date: 2023-07-11
-Tags: web-apps, people-analytics, embeddings, learning-and-development
+Tags: web-apps, people-analytics-practice, embeddings, learning-and-development
 Original post: https://blog-about-people-analytics.netlify.app/posts/2023-07-11-searching-and-querying-aihr-blog-posts/
 
 It’s an app that allows you to quickly search for People Analytics topics in a database of almost 260 [AIHR blog posts](https://www.aihr.com/blog/) and get key ideas and insights from the posts that best match your search topic, with the possibility to go to the original post via a provided link.
@@ -14669,7 +14703,7 @@ If you would like to check the analysis output interactively and in greater deta
 # Team-level predictors of innovation at work
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/team-level-predictors-of-innovation
 Date: 2023-06-22
-Tags: innovation, teams, meta-analysis, people-analytics
+Tags: innovation, teams, meta-analysis
 Original post: https://blog-about-people-analytics.netlify.app/posts/2023-06-22-team-level-predictors-of-innovation/
 
 At least this is suggested by an interesting [meta-analysis of team-level predictors of innovation at work](https://www.researchgate.net/publication/26762638_Team-Level_Predictors_of_Innovation_at_Work_A_Comprehensive_Meta-Analysis_Spanning_Three_Decades_of_Research) by Hülsheger, Anderson, & Salgado (2009).
@@ -14733,7 +14767,7 @@ If that's true, not sure whether it's good news or bad news for companies' innov
 # Latent Class Analysis of responses from employee surveys
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/latent-class-analysis
 Date: 2023-06-19
-Tags: psychometrics, employee-survey, people-analytics, r
+Tags: psychometrics, employee-survey, r
 Original post: https://blog-about-people-analytics.netlify.app/posts/2023-06-19-latent-class-analysis/
 
 I recently listened to a podcast about a very interesting study about [conspiracies and disinformation in Czech society](https://www.investigace.cz/pocitani-neduvery/), and one of the authors of the study, [Matous Pilnacek](https://www.linkedin.com/in/matous-pilnacek-218b1a91), a sociologist, spoke very enthusiastically and positively during the interview about the analytical possibilities offered by [Latent Class Analysis](https://en.wikipedia.org/wiki/Latent_class_model) (LCA).
@@ -14980,7 +15014,7 @@ It would certainly be possible to delve deeper into the results, but for a basic
 # Use of Bayesian networks in people analytics?
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/bayesian-networks-in-people-analytics
 Date: 2023-06-05
-Tags: bayesian-statistics, people-analytics
+Tags: bayesian-statistics
 Original post: https://blog-about-people-analytics.netlify.app/posts/2023-06-05-bayesian-networks-in-people-analytics/
 
 In a people analytics project I'm involved in, we were asked to come up with a prediction model that would perform reasonably well while being very easy to understand and interpret for non-technical users.
@@ -15511,7 +15545,7 @@ I hope you find this post useful and that it inspires you to try PNA on your own
 # Employee commitment over time & regression to the mean
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/regression-to-the-mean
 Date: 2023-05-10
-Tags: people-analytics, critical-thinking, statistics, r
+Tags: critical-thinking, statistics, r
 Original post: https://blog-about-people-analytics.netlify.app/posts/2023-05-10-regression-to-the-mean/
 
 A vendor specializing in employee engagement measurements recently [presented their findings](https://www.cultureamp.com/blog/company-layoffs-myths) that companies with the highest and lowest levels of commitment prior to a layoff compared to the benchmark, experienced the largest decreases and largest increases in commitment post-layoff, respectively. They post-hoc-hypothesized that highly committed employees feel especially hurt and betrayed when layoffs occur.
@@ -16305,7 +16339,7 @@ modelStudio::modelStudio(
 # Estimating the impact of a new business app by piloting & method of difference-in-differences
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/app-piloting-and-dif
 Date: 2023-04-11
-Tags: experiments, difference-in-differences, people-analytics, impact-evaluation
+Tags: experiments, difference-in-differences, impact-evaluation
 Original post: https://blog-about-people-analytics.netlify.app/posts/2023-04-11-app-piloting-and-dif/
 
 When considering the introduction of a new business app, one of the benefits of piloting it is that it provides a great opportunity to test its causal impact on business processes or outcomes of interest. For example, in our pilots, apps are typically implemented for 3 or 6 months only in some teams and not in others. Such a situation creates ideal conditions for applying the difference-in-differences (DiD) method, which is used to approximate an experimental research design with observational data only.
@@ -16556,7 +16590,7 @@ I suppose it's a **trade-off** that can't be completely solved in principle, but
 # Using ChatGPT to summarize and explore employee feedback?
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/chatgpt-and-employee-feedback
 Date: 2023-02-26
-Tags: generative-ai, ai, hr-management, people-analytics, employee-engagement, employee-survey
+Tags: generative-ai, ai, hr-management, employee-engagement, employee-survey, ai-at-work
 Original post: https://blog-about-people-analytics.netlify.app/posts/2023-02-26-chatgpt-and-employee-feedback/
 
 IMHO, ChatGPT and similar tools may be quite useful in the near future (and probably to some extent even today) to quickly summarize and explore the feedback provided by employees through open-ended questions in employee engagement and satisfaction surveys.
@@ -16630,7 +16664,7 @@ Would you add some other best practices for IM that have worked well for you and
 # HRM value chain and structural equation modeling - Moneyball case
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/hrm-value-chain-and-sem
 Date: 2023-02-08
-Tags: hr-management, people-analytics, structural-equation-modeling, bayesian-statistics, r
+Tags: hr-management, people-analytics-practice, structural-equation-modeling, bayesian-statistics, r
 Original post: https://blog-about-people-analytics.netlify.app/posts/2023-02-08-hrm-value-chain-and-sem/
 
 As the economy cooled, more posts started appearing in my social bubble about how people analytics can prove its value, justify its existence, and increase its resilience to layoffs.
@@ -17672,7 +17706,7 @@ That sounds a lot like the description of our last family trip. `r emoji::emoji(
 # How to quickly navigate dashboard users to what they need to know?
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/change-detection
 Date: 2022-12-02
-Tags: data-visualization, people-analytics, time-series, python
+Tags: data-visualization, time-series, python
 Original post: https://blog-about-people-analytics.netlify.app/posts/2022-12-02-change-detection/
 
 Since the beginning of our efforts at [Time is Ltd.](https://www.timeisltd.com/) to develop a comprehensive collaboration analytics platform, we have created several hundred collaboration metrics. As you can probably imagine, with such a huge amount of metrics, it was quite difficult for users to get something useful out of the platform.
@@ -17727,7 +17761,7 @@ Btw, what is your guess as to how much time you spend in each cell of the meetin
 # Some resources on staff retention and downsizing
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/resources-on-retention-and-downsizing
 Date: 2022-11-26
-Tags: web-apps, employee-turnover, layoffs, people-analytics, evidence-based-management
+Tags: web-apps, employee-turnover, layoffs, evidence-based-management
 Original post: https://blog-about-people-analytics.netlify.app/posts/2022-11-26-resources-on-retention-and-downsizing/
 
 I referred them to the following resources - maybe some of you will find them useful as well:
@@ -18374,7 +18408,7 @@ For those who would like to incorporate Bayesian reasoning into their managerial
 # Police cadet evaluation dataset
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/police-cadet-evaluation-dataset
 Date: 2022-10-24
-Tags: people-analytics, data-science, recruitment, learning-and-development
+Tags: data-science, recruitment, learning-and-development
 Original post: https://blog-about-people-analytics.netlify.app/posts/2022-10-24-police-cadet-evaluation-dataset/
 
 While cleaning out my (very) old computer, I came across a hidden gem: a dataset with real-world data about police cadet evaluation. It was part of a tutorial from [Peltarion](https://en.wikipedia.org/wiki/Peltarion), an AI software company providing specialized software ([Synapse](https://en.wikipedia.org/wiki/Peltarion_Synapse)) for creating, training, evaluating, and deploying artificial neural networks and other adaptive systems (recently acquired by [King](https://en.wikipedia.org/wiki/King_(company))). AFAIK, this dataset is not part of any publicly available database with training datasets, so it may add a bit to the portfolio of possibilities for those involved and interested in people analytics.
@@ -19545,7 +19579,7 @@ For an accessible discussion of this topic in the context of people analytics, i
 # People Analytics Challenge from Orgnostic: Plan for high growth
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/people-analytics-challenge-from-orgnostic
 Date: 2022-08-20
-Tags: recruitment, people-analytics, statistics, r
+Tags: recruitment, statistics, r
 Original post: https://blog-about-people-analytics.netlify.app/posts/2022-08-20-people-analytics-challenge-from-orgnostic/
 
 During the last few nights, I had the opportunity to participate in an interesting **People Analytics Challenge** from [Orgnostic](https://orgnostic.com/), a company providing people analytics platform that links scattered HR and finance data, run surveys on top, analyses the data, and get answers to the critical questions about organizations and their employees.
@@ -19574,7 +19608,7 @@ P.S. Oh, I almost forgot - there are exciting prizes in the form of tickets to H
 # The impact of the COVID pandemic on the popularity of people analytics
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/people-analytics-popularity-after-covid
 Date: 2022-08-20
-Tags: people-analytics, remote-work, segmented-regression, time-series, bayesian-statistics, r
+Tags: remote-work, segmented-regression, time-series, bayesian-statistics, r
 Original post: https://blog-about-people-analytics.netlify.app/posts/2022-08-20-people-analytics-popularity-after-covid/
 
 ## People analytics popularity after pandemic

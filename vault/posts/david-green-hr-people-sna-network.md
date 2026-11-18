@@ -4,7 +4,7 @@ description: Sharing an interactive network of 2,500+ professionals featured acr
 date: '2026-03-29'
 tags:
 - network-analysis
-- people-analytics
+- people-analytics-practice
 original: https://blog-about-people-analytics.netlify.app/posts/2026-03-29-david-green-hr-people-sna-network/
 ---
 

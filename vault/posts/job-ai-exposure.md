@@ -9,6 +9,7 @@ tags:
 - skills
 - labor-economics
 - data-visualization
+- ai-at-work
 original: https://blog-about-people-analytics.netlify.app/posts/2026-09-18-job-ai-exposure/
 ---
 
@@ -53,7 +54,7 @@ If you want to play with it, go [here](https://lstehlik2809.github.io/work-and-a
 - [[linkedin-contacts-job-positions|Analyzing LinkedIn connections' jobs using LLMs and the BERTopic package]]
 - [[cv-job-match-career-site|Improving a company career site with tools from OpenAI]]
 - [[agentic-ai-for-visual-data-exploration|Agentic AI for visual data exploration]]
-- [[ai-powered-data-exploration-assistant|Testing my GenAI skepticism]]
+- [[ai-at-work-worker-preferences|AI implementation at work: worker preferences for task changes]]
 <!-- RELATED:END -->
 
 ---

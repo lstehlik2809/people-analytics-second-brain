@@ -4,13 +4,12 @@ description: A brief summary of my participation in Orgnostic's People Analytics
 date: '2022-08-20'
 tags:
 - recruitment
-- people-analytics
 - statistics
 - r
 original: https://blog-about-people-analytics.netlify.app/posts/2022-08-20-people-analytics-challenge-from-orgnostic/
 ---
 
-During the last few nights, I had the opportunity to participate in an interesting **People Analytics Challenge** from [Orgnostic](https://orgnostic.com/), a company providing people analytics platform that links scattered HR and finance data, run surveys on top, analyses the data, and get answers to the critical questions about organizations and their employees. 
+During the last few nights, I had the opportunity to participate in an interesting **People Analytics Challenge** from [Orgnostic](https://orgnostic.com/), a company providing people analytics platform that links scattered HR and finance data, run surveys on top, analyses the data, and get answers to the critical questions about organizations and their employees.
 
 Out of three possible challenges, I chose one that was quite far from what I'm currently usually working on or what I've worked on in the past. The chosen task was to analyze the **effectiveness of recruiting sources** for a company that plans to double in size from its current 750+ employees.
 
@@ -23,7 +22,7 @@ Although the dummy data provided was quite limited for obvious reasons and did n
 </object>
 <br>
 
-If you'd like to look more into the guts of the analyses conducted, you can find both the data provided by Orgnostic and the R script used to analyze it on [my GitHub page](https://github.com/lstehlik2809/People-Analytics-Challenge). 
+If you'd like to look more into the guts of the analyses conducted, you can find both the data provided by Orgnostic and the R script used to analyze it on [my GitHub page](https://github.com/lstehlik2809/People-Analytics-Challenge).
 
 P.S. Oh, I almost forgot - there are exciting prizes in the form of tickets to HRtechX Copenhagen or HR Technology Conference in Las Vegas. So please keep your fingers crossed for me 🤞😉
 

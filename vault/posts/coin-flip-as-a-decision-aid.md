@@ -31,7 +31,7 @@ Curious if anyone here has experience with this specific decision aid and how it
 - [[coincidence-or-evidence|When does a coincidence become evidence?]]
 - [[analytical-choices-and-variability|How variations in analytic choices affect results?]]
 - [[decision-tree-foldback|What probability would change your mind about Sam?]]
-- [[gai-simulation-work-habits|Does GenAI make me a better (more rational) thinker?]]
+- [[nudge-effectiveness|Signal vs. Noise: Why we can’t yet identify effective nudges]]
 <!-- RELATED:END -->
 
 ---

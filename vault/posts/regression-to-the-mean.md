@@ -3,7 +3,6 @@ title: Employee commitment over time & regression to the mean
 description: A nice illustration of the regression to the mean phenomenon in the space of people analytics.
 date: '2023-05-10'
 tags:
-- people-analytics
 - critical-thinking
 - statistics
 - r
@@ -14,11 +13,11 @@ A vendor specializing in employee engagement measurements recently [presented th
 
 However, when a similar pattern emerges, a warning light should always flash that regression to the mean (RTM) might actually be behind it. When a variable is imperfectly correlated with another variable, extreme values tend to gravitate towards the mean in subsequent measurements, which can make natural variations in repeated data appear like genuine change.
 
-This doesn't mean that RTM was the sole factor in the aforementioned case. However, to know better, it's necessary to control for it. 
+This doesn't mean that RTM was the sole factor in the aforementioned case. However, to know better, it's necessary to control for it.
 
 What follows is a simple simulation to illustrate how the reported finding could occur purely or partially due to RTM, and how one might control for it.
 
-First, let's create correlated employee commitment observations per company from time 1 (T1) and time 2 (T2). 
+First, let's create correlated employee commitment observations per company from time 1 (T1) and time 2 (T2).
 
 ```r
 # uploading necessary libraries
@@ -65,7 +64,7 @@ df1 <- df %>%
 
 ```
 
-Now we can contrast the differences between T1 values and T1 benchmark on the one hand and the differences between T2 and T1 on the other. As we can see in the chart below, the pattern matches well with the originally reported finding 
+Now we can contrast the differences between T1 values and T1 benchmark on the one hand and the differences between T2 and T1 on the other. As we can see in the chart below, the pattern matches well with the originally reported finding
 - companies with the highest and lowest levels of commitment prior to a layoff compared to the benchmark, experienced the largest decreases and largest increases in commitment post-layoff, respectively, but now purely as a result of RTM.      
 
 ```r
@@ -146,8 +145,8 @@ Feel free to share your own experiences and encounters with the phenomena of reg
 ## Related notes
 - [[tenure-vs-satisfaction|Simulating the "survivorship" effect in employee satisfaction data over time]]
 - [[cross-lagged-panel-modeling|Getting (more) causal insights from employee survey data (without an RCT)]]
-- [[causal-inference-in-people-analytics|Beyond prediction: Exploiting organizational events for causal inference in people analytics]]
 - [[glassdoor|When flawed statistical & causal reasoning leads to a valid conclusion anyway]]
+- [[causal-inference-in-people-analytics|Beyond prediction: Exploiting organizational events for causal inference in people analytics]]
 - [[multilevel-modeling|Multilevel modeling in people analytics]]
 <!-- RELATED:END -->
 

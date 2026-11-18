@@ -10,7 +10,7 @@ tags:
 - research-methods
 - experiments
 - performance
-- people-analytics
+- people-analytics-practice
 - data-visualization
 - impact-evaluation
 original: https://blog-about-people-analytics.netlify.app/posts/2026-10-19-hr-causal-evidence-map/

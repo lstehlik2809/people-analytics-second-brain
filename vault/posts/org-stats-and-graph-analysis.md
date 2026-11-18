@@ -3,7 +3,6 @@ title: 'A graph approach to reporting structures: stop wrestling recursion'
 description: About a cleaner, faster way to compute some org metrics.
 date: '2025-10-31'
 tags:
-- people-analytics
 - network-analysis
 - python
 original: https://blog-about-people-analytics.netlify.app/posts/2025-10-31-org-stats-and-graph-analysis/
@@ -61,7 +60,7 @@ out = (pd.DataFrame(rows, columns=['manager_id','direct','indirect','total'])
 - [[multilevel-modeling|Multilevel modeling in people analytics]]
 - [[org-chart-and-collaboration|Org chart and collaboration]]
 - [[network-graph-employee-comments|Using network graph modeling to capture overarching thematic clusters in employee comments]]
-- [[mixed-level-ml|Beyond the “flat Earth”]]
+- [[induced-centrality|Induced centralities]]
 <!-- RELATED:END -->
 
 ---

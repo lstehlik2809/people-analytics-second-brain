@@ -50,8 +50,8 @@ Has anyone here tried ONA-based incentives or used network centrality in perform
 - [[instrumental-and-expressive-networks|Not all workplace relationships are created equal when it comes to retaining talent]]
 - [[induced-centrality|Induced centralities]]
 - [[contagious-turnover|Is contagious turnover overrated? Probably only if you ignore the managers.]]
-- [[ai-and-collaboration-networks|What happens to collaboration when AI joins the team?]]
 - [[psychometric-network-analysis|Psychometric network analysis & employee survey data]]
+- [[ai-and-collaboration-networks|What happens to collaboration when AI joins the team?]]
 <!-- RELATED:END -->
 
 ---

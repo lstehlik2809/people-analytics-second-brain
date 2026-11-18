@@ -4,7 +4,7 @@ description: So I finally gave the “second brain” idea a try - to see how it
 date: '2026-07-28'
 tags:
 - web-apps
-- people-analytics
+- people-analytics-practice
 - ai
 - agentic-ai
 - embeddings
@@ -55,7 +55,7 @@ GitHub repo
 - [[people-analytics-news-feed|A daily AI briefer for People Analytics]]
 - [[searching-and-querying-aihr-blog-posts|Searching & querying AIHR blog posts on People Analytics topics]]
 - [[agentic-ai-for-visual-data-exploration|Agentic AI for visual data exploration]]
-- [[hr-tech-ai-shift|How AI is reshaping HR-tech]]
+- [[nlp-llm-and-onboarding|Using NLP & LLM to combat 'tip-of-the-tongue' moments during onboarding]]
 <!-- RELATED:END -->
 
 ---

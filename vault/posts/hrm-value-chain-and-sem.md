@@ -4,7 +4,7 @@ description: What's the link between the HRM value chain and structural equation
 date: '2023-02-08'
 tags:
 - hr-management
-- people-analytics
+- people-analytics-practice
 - structural-equation-modeling
 - bayesian-statistics
 - r
@@ -15,35 +15,35 @@ As the economy cooled, more posts started appearing in my social bubble about ho
 
 One of the often-mentioned conceptual tools in this context is the **HRM value chain** which shows how people processes lead to achieving companies’ desired business outcomes. There are more versions of this tool, e.g. one from [Jaap Paauwe and Ray Richardson](https://www.tandfonline.com/doi/abs/10.1080/095851997341621?journalCode=rijh20) or another one from [Max Blumberg](https://www.hrzone.com/lead/strategy/why-hr-needs-to-up-its-game-in-strategic-people-analytics), but what they have in common is a kind of causal flow from HRM activities to HRM outcomes to business outcomes.
 
-![](./hrm-value-chain-and-sem/hrmValueChain1.png) 
-*Example of the HRM value chain model from [Paauwe & Richardson (1997)](https://www.tandfonline.com/doi/abs/10.1080/095851997341621?journalCode=rijh20).* 
+![](./hrm-value-chain-and-sem/hrmValueChain1.png)
+*Example of the HRM value chain model from [Paauwe & Richardson (1997)](https://www.tandfonline.com/doi/abs/10.1080/095851997341621?journalCode=rijh20).*
 
 <br />
 
-![](./hrm-value-chain-and-sem/hrmValueChain2.png) 
-*Example of the HRM value chain model from [Blumberg (2018)](https://www.hrzone.com/lead/strategy/why-hr-needs-to-up-its-game-in-strategic-people-analytics).* 
+![](./hrm-value-chain-and-sem/hrmValueChain2.png)
+*Example of the HRM value chain model from [Blumberg (2018)](https://www.hrzone.com/lead/strategy/why-hr-needs-to-up-its-game-in-strategic-people-analytics).*
 
 However, as potentially useful as this metaphor of the organization as a kind of "machine" with certain inputs, processes, and outputs is, it is still only a conceptual tool that may or may not correspond to the reality of a particular organization.  
 
 In this regard, it may help if we try to operationalize this metaphor. In this effort, **[structural equation modeling](https://en.wikipedia.org/wiki/Structural_equation_modeling)** can be very handy, as it allows us to formalize our ideas about the relationships between several different variables and to assess the extent to which these ideas are consistent with the available data. After all, no one wants to make decisions based on false assumptions.  
 
-To illustrate this with a more tangible example, let’s use [sabermetric](https://en.wikipedia.org/wiki/Sabermetrics) data from the famous **[Moneyball](https://en.wikipedia.org/wiki/Moneyball)** case and let’s try to formally model the [Oakland A's](https://en.wikipedia.org/wiki/Oakland_Athletics) (OAK) as a “machine” that produces playoffs by trying to win more games or score more points than opposing teams, using inputs in the form of players' ability to play well at bat and in the field. 
+To illustrate this with a more tangible example, let’s use [sabermetric](https://en.wikipedia.org/wiki/Sabermetrics) data from the famous **[Moneyball](https://en.wikipedia.org/wiki/Moneyball)** case and let’s try to formally model the [Oakland A's](https://en.wikipedia.org/wiki/Oakland_Athletics) (OAK) as a “machine” that produces playoffs by trying to win more games or score more points than opposing teams, using inputs in the form of players' ability to play well at bat and in the field.
 
 Based on our expert knowledge of the game of baseball, our working hypotheses, and the results of some previous analyses, we can construct a conceptual model of how a baseball team functions, as outlined below.
 
-![](./hrm-value-chain-and-sem/conceptualModel.png) 
+![](./hrm-value-chain-and-sem/conceptualModel.png)
 *Conceptual model of how a baseball team works.*
 
-The diagram shows clearly how this “machine” works: Its outputs are qualifications for the playoffs, which it achieves by trying to win more games or score more points than the opposing teams; to do this, it uses inputs in the form of the players' ability to play well at bat and in the field; the inputs affecting the “machine's” operation are also the similar abilities of the opposing teams' players. This is, of course, a very simplistic causal model of how the OAK team operates, but as the famous statistical aphorism states, [all models are wrong, but some are useful](https://en.wikipedia.org/wiki/All_models_are_wrong). 
+The diagram shows clearly how this “machine” works: Its outputs are qualifications for the playoffs, which it achieves by trying to win more games or score more points than the opposing teams; to do this, it uses inputs in the form of the players' ability to play well at bat and in the field; the inputs affecting the “machine's” operation are also the similar abilities of the opposing teams' players. This is, of course, a very simplistic causal model of how the OAK team operates, but as the famous statistical aphorism states, [all models are wrong, but some are useful](https://en.wikipedia.org/wiki/All_models_are_wrong).
 
 However incomplete our models of how an organization works will always be, it is essential to check that these models sufficiently reflect reality as conveyed by the available data. Only after such an assessment of the plausibility of the model it is reasonable to base further, e.g. hiring or L&D decisions on it. And, as hinted at the beginning of this post, we will use the statistical method of structural equation modeling to do this. So let's apply this method to our model of the OAK and test its plausibility.
 
 We will use data from a publicly available [database of MLB historical statistics](https://drive.google.com/file/d/0B5YUO0Asd9KfMG1UaXpEVjJqQWc/view). Specifically, we will use the following variables:
 
-* qualification for the playoffs in a given season (*Playoffs*), 
-* number of wins in a given season (*W*), 
+* qualification for the playoffs in a given season (*Playoffs*),
+* number of wins in a given season (*W*),
 * number of points won in a given season (*RS*),
-* number of points lost in a given season (*RA*), 
+* number of points lost in a given season (*RA*),
 * average frequency with which a player reaches base per plate appearance in a given season (*OBP* - On-Base Percentage) and analogous statistics for opponent teams (*OOBP*),
 * average number of bases players earn per at bat in a given season (*SLG* - Slugging Percentage) and analogous statistics for opponent teams (*OSLG*).
 
@@ -142,7 +142,7 @@ print(ppc)
 
 ![](./hrm-value-chain-and-sem/unnamed-chunk-3-1.png)
 
-As you can see, the model fits the data pretty well. Now we can look at the coefficients in the individual parts of the model. All of them show non-zero values and are in directions that are consistent with our expectations embodied in our conceptual model, i.e., all are positive except for the coefficient of the *RA* variable (number of points lost) as a predictor of the number of games won (*W*). These results thus give us greater confidence in following our conceptual model of team functioning when making decisions about allocating our limited resources. 
+As you can see, the model fits the data pretty well. Now we can look at the coefficients in the individual parts of the model. All of them show non-zero values and are in directions that are consistent with our expectations embodied in our conceptual model, i.e., all are positive except for the coefficient of the *RA* variable (number of points lost) as a predictor of the number of games won (*W*). These results thus give us greater confidence in following our conceptual model of team functioning when making decisions about allocating our limited resources.
 
 ```r
 # uploading library for plotting functions for posterior analysis, MCMC diagnostics, prior and posterior predictive checks, and other visualizations to support the applied Bayesian workflow
@@ -565,7 +565,7 @@ simDf %>%
 
 ![](./hrm-value-chain-and-sem/unnamed-chunk-10-1.png)
 
-As many of you know, thanks to similar analyses, the OAK management began to select players for their team who, although they did not meet the traditional criteria by which scouts judged the quality of baseball players, exhibited exactly those characteristics that, according to conducted analyses, predicted the number of points won and lost, and thus the likelihood of advancing to the playoffs, which was the management's main goal. Because competing teams underestimated the importance of these player statistics and overestimated other, less important variables (e.g., batting average), OAK management was able to purchase players relatively inexpensively who enabled them to achieve their goals. As a result, the OAK won 20 more games per season than similarly "poor" teams and about the same number of games as 2 to 3 times richer competition. The power of data in practice! 
+As many of you know, thanks to similar analyses, the OAK management began to select players for their team who, although they did not meet the traditional criteria by which scouts judged the quality of baseball players, exhibited exactly those characteristics that, according to conducted analyses, predicted the number of points won and lost, and thus the likelihood of advancing to the playoffs, which was the management's main goal. Because competing teams underestimated the importance of these player statistics and overestimated other, less important variables (e.g., batting average), OAK management was able to purchase players relatively inexpensively who enabled them to achieve their goals. As a result, the OAK won 20 more games per season than similarly "poor" teams and about the same number of games as 2 to 3 times richer competition. The power of data in practice!
 
 ```r
 # salaries vs number of matches won 
@@ -649,8 +649,8 @@ Finally, let's breathe some life into the dry numbers by watching a short clip f
 - [[moneyball-v-hr-od-hr-analytiky-ke-sportovn-analytice-a-zpt|Moneyball v HR]]
 - [[causal-inference-in-people-analytics|Beyond prediction: Exploiting organizational events for causal inference in people analytics]]
 - [[multilevel-modeling|Multilevel modeling in people analytics]]
-- [[value-added-modeling|Goals saved above expected… for managers?]]
 - [[bayesian-simulation|Harnessing Bayesian analysis for business process simulation]]
+- [[value-added-modeling|Goals saved above expected… for managers?]]
 <!-- RELATED:END -->
 
 ---

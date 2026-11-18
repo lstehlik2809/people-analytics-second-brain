@@ -3,7 +3,6 @@ title: Police cadet evaluation dataset
 description: A "new" real-world dataset useful for training in people analytics.
 date: '2022-10-24'
 tags:
-- people-analytics
 - data-science
 - recruitment
 - learning-and-development

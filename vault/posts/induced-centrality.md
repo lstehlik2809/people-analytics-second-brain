@@ -180,8 +180,8 @@ ggraph::ggraph(g, layout = "kk") + # other available layouts: 'star', 'circle', 
 ## Related notes
 - [[psychometric-network-analysis|Psychometric network analysis & employee survey data]]
 - [[pay-for-prominence|What if your bonus depended on being the office go-to person?]]
-- [[david-green-hr-people-sna-network|Mapping the People Analytics universe]]
 - [[instrumental-and-expressive-networks|Not all workplace relationships are created equal when it comes to retaining talent]]
+- [[david-green-hr-people-sna-network|Mapping the People Analytics universe]]
 - [[network-graph-employee-comments|Using network graph modeling to capture overarching thematic clusters in employee comments]]
 <!-- RELATED:END -->
 

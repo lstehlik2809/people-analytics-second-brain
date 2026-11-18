@@ -7,6 +7,7 @@ tags:
 - generative-ai
 - agentic-ai
 - collaboration
+- ai-at-work
 original: https://blog-about-people-analytics.netlify.app/posts/2025-12-02-hr-tech-ai-shift/
 ---
 
@@ -34,8 +35,8 @@ P.S. This was also a nice test of current agentic tools (Google [Antigravity](ht
 
 <!-- RELATED:BEGIN -->
 ## Related notes
-- [[ai-powered-data-exploration-assistant|Testing my GenAI skepticism]]
 - [[ai-and-collaboration-networks|What happens to collaboration when AI joins the team?]]
+- [[ai-powered-data-exploration-assistant|Testing my GenAI skepticism]]
 - [[meeting-ego-network-app|Turning Outlook calendar data into a collaboration map]]
 - [[agentic-ai-for-visual-data-exploration|Agentic AI for visual data exploration]]
 - [[people-analytics-news-feed|A daily AI briefer for People Analytics]]

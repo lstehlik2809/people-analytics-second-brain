@@ -43,8 +43,8 @@ P.S. Link to the [paper](https://arxiv.org/abs/2604.04721) and [project site](ht
 
 <!-- RELATED:BEGIN -->
 ## Related notes
-- [[change-org-ai-outputs-vs-outcomes|Change.org: AI outputs vs outcomes]]
 - [[ai-and-collaboration-networks|What happens to collaboration when AI joins the team?]]
+- [[change-org-ai-outputs-vs-outcomes|Change.org: AI outputs vs outcomes]]
 - [[manager-effect-lab|Good manager or lucky team?]]
 - [[ai-and-bullshit-asymmetry|Can AI help us fight the bullshit asymmetry?]]
 - [[ai-powered-data-exploration-assistant|Testing my GenAI skepticism]]

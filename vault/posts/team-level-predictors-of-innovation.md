@@ -6,11 +6,10 @@ tags:
 - innovation
 - teams
 - meta-analysis
-- people-analytics
 original: https://blog-about-people-analytics.netlify.app/posts/2023-06-22-team-level-predictors-of-innovation/
 ---
 
-At least this is suggested by an interesting [meta-analysis of team-level predictors of innovation at work](https://www.researchgate.net/publication/26762638_Team-Level_Predictors_of_Innovation_at_Work_A_Comprehensive_Meta-Analysis_Spanning_Three_Decades_of_Research) by Hülsheger, Anderson, & Salgado (2009). 
+At least this is suggested by an interesting [meta-analysis of team-level predictors of innovation at work](https://www.researchgate.net/publication/26762638_Team-Level_Predictors_of_Innovation_at_Work_A_Comprehensive_Meta-Analysis_Spanning_Three_Decades_of_Research) by Hülsheger, Anderson, & Salgado (2009).
 
 ```r
 # uploading library
@@ -66,8 +65,8 @@ If that's true, not sure whether it's good news or bad news for companies' innov
 ## Related notes
 - [[team-design-creativity-innovation|How should teams be designed to be creative and innovative?]]
 - [[reflective-and-intuitive-thinking-styles|Reflective and intuitive thinking styles]]
-- [[tas-c-suit-teams|Insights from the Team Assessment Survey results of C-suite teams]]
 - [[cognitive-diversity|Can there be too much cognitive diversity in teams?]]
+- [[tas-c-suit-teams|Insights from the Team Assessment Survey results of C-suite teams]]
 - [[self-leadership|Self-Leadership: A New Superpower?]]
 <!-- RELATED:END -->
 

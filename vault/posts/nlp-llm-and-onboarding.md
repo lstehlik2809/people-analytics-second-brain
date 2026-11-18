@@ -9,6 +9,7 @@ tags:
 - generative-ai
 - embeddings
 - ai
+- ai-at-work
 original: https://blog-about-people-analytics.netlify.app/posts/2023-10-23-nlp-llm-and-onboarding/
 ---
 

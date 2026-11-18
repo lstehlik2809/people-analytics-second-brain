@@ -3,7 +3,6 @@ title: What might we miss when assessment scores and job ratings are strongly co
 description: A police cadet dataset illustrates how a strong overall correlation can mask distinct patterns in job ratings and generate questions for further investigation.
 date: '2026-10-16'
 tags:
-- people-analytics
 - data-visualization
 - statistics
 - performance-management
@@ -57,7 +56,7 @@ Have you seen similar patterns in your data? Where did the investigation lead, a
 - [[causal-inference-in-people-analytics|Beyond prediction: Exploiting organizational events for causal inference in people analytics]]
 - [[insights-discovery-and-skills|Do Insights Discovery ‘colors’ relate to self-reported skills?]]
 - [[econml-and-employee-attriton|How to get causal interpretation for the Employee Attrition dataset?]]
-- [[regression-to-the-mean|Employee commitment over time & regression to the mean]]
+- [[visual-inference-statistics|Visual statistical inference]]
 <!-- RELATED:END -->
 
 ---

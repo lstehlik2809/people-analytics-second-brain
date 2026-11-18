@@ -5,7 +5,6 @@ date: '2025-07-03'
 tags:
 - psychometrics
 - causal-inference
-- people-analytics
 original: https://blog-about-people-analytics.netlify.app/posts/2025-07-03-self-selection-and-proxy-measures/
 ---
 

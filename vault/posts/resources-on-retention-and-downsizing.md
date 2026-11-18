@@ -6,7 +6,6 @@ tags:
 - web-apps
 - employee-turnover
 - layoffs
-- people-analytics
 - evidence-based-management
 original: https://blog-about-people-analytics.netlify.app/posts/2022-11-26-resources-on-retention-and-downsizing/
 ---

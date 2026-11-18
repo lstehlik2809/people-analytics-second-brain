@@ -6,7 +6,6 @@ tags:
 - web-apps
 - decision-analysis
 - decision-making
-- people-analytics
 - simulation
 - performance-management
 original: https://blog-about-people-analytics.netlify.app/posts/2026-10-06-decision-tree-foldback/

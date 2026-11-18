@@ -7,7 +7,6 @@ tags:
 - time-series
 - statistics
 - data-visualization
-- people-analytics
 original: https://blog-about-people-analytics.netlify.app/posts/2024-10-30-xmr-charts-in-people-analytics/
 ---
 
@@ -37,9 +36,9 @@ P.S. The attached charts were created with [Xmrit, a free online tool](https://c
 ## Related notes
 - [[turnover-signal-and-noise|Nothing changed. The dashboard disagrees.]]
 - [[9-box-grid-dataviz-over-time|Tracking talent moves in the (in)famous 9-box grid over time]]
-- [[change-detection|How to quickly navigate dashboard users to what they need to know?]]
 - [[cross-lagged-panel-modeling|Getting (more) causal insights from employee survey data (without an RCT)]]
-- [[bayesian-networks-in-people-analytics|Use of Bayesian networks in people analytics?]]
+- [[visual-diff-in-diff|Causal insights with no code?]]
+- [[people-analytics-popularity-after-covid|The impact of the COVID pandemic on the popularity of people analytics]]
 <!-- RELATED:END -->
 
 ---

@@ -8,7 +8,6 @@ tags:
 - collaboration
 - meetings
 - generative-ai
-- people-analytics
 original: https://blog-about-people-analytics.netlify.app/posts/2026-08-11-meeting-ego-network-app/
 ---
 
@@ -35,8 +34,8 @@ P.S. To get a better sense of how the app works, you can check it out [here](htt
 - [[hr-tech-ai-shift|How AI is reshaping HR-tech]]
 - [[ai-and-collaboration-networks|What happens to collaboration when AI joins the team?]]
 - [[ai-powered-data-exploration-assistant|Testing my GenAI skepticism]]
-- [[directionally-correct-podcast-topic-explorer|Turning 152 Directionally Correct podcast episodes into an interactive topic explorer]]
 - [[agentic-ai-for-visual-data-exploration|Agentic AI for visual data exploration]]
+- [[directionally-correct-podcast-topic-explorer|Turning 152 Directionally Correct podcast episodes into an interactive topic explorer]]
 <!-- RELATED:END -->
 
 ---

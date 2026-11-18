@@ -10,7 +10,7 @@ tags:
 - data-visualization
 - generative-ai
 - embeddings
-- people-analytics
+- people-analytics-practice
 original: https://blog-about-people-analytics.netlify.app/posts/2026-08-18-directionally-correct-podcast-topic-explorer/
 ---
 
@@ -58,7 +58,7 @@ P.P.S. The [repo](https://github.com/lstehlik2809/directionally-correct-topic-ma
 - [[agentic-ai-for-visual-data-exploration|Agentic AI for visual data exploration]]
 - [[linkedin-contacts-job-positions|Analyzing LinkedIn connections' jobs using LLMs and the BERTopic package]]
 - [[searching-and-querying-aihr-blog-posts|Searching & querying AIHR blog posts on People Analytics topics]]
-- [[employee-feedback-analysis-using-openai|Employee feedback analysis using tools from OpenAI]]
+- [[ai-powered-data-exploration-assistant|Testing my GenAI skepticism]]
 <!-- RELATED:END -->
 
 ---

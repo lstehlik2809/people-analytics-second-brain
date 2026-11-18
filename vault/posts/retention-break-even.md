@@ -8,7 +8,6 @@ tags:
 - impact-evaluation
 - decision-analysis
 - employee-turnover
-- people-analytics
 original: https://blog-about-people-analytics.netlify.app/posts/2026-11-12-retention-break-even/
 ---
 
@@ -29,9 +28,9 @@ P.S. If you’d like to try this with people data, Andrew Marritt’s free onlin
 <!-- RELATED:BEGIN -->
 ## Related notes
 - [[bayesian-simulation|Harnessing Bayesian analysis for business process simulation]]
-- [[randomized-trial-vs-observational-estimates|Can observational estimates get close to randomized trial results?]]
-- [[causal-inference-in-people-analytics|Beyond prediction: Exploiting organizational events for causal inference in people analytics]]
 - [[bayesian-shrinkage|Using Bayesian shrinkage in reporting employee turnover]]
+- [[causal-inference-in-people-analytics|Beyond prediction: Exploiting organizational events for causal inference in people analytics]]
+- [[randomized-trial-vs-observational-estimates|Can observational estimates get close to randomized trial results?]]
 - [[value-added-modeling|Goals saved above expected… for managers?]]
 <!-- RELATED:END -->
 
