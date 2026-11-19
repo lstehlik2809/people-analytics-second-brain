@@ -56,11 +56,11 @@ out = (pd.DataFrame(rows, columns=['manager_id','direct','indirect','total'])
 
 <!-- RELATED:BEGIN -->
 ## Related notes
+- [[people-graph-query-demo|Querying a people graph: where graphs add value]]
 - [[span-of-control-and-managerial-behavior|Can flatter orgs undermine people management?]]
 - [[multilevel-modeling|Multilevel modeling in people analytics]]
 - [[org-chart-and-collaboration|Org chart and collaboration]]
 - [[network-graph-employee-comments|Using network graph modeling to capture overarching thematic clusters in employee comments]]
-- [[induced-centrality|Induced centralities]]
 <!-- RELATED:END -->
 
 ---
