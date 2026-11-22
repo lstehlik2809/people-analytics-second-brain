@@ -33,9 +33,9 @@ Have fun!
 ## Related notes
 - [[detecting-personality-in-the-face-app|Reading personality from a face, now in your browser]]
 - [[detecting-personality-in-the-face|Can a simple algorithm read your personality from your face?]]
+- [[personality-and-body-language|Personality in motion: body language and the Big Five]]
 - [[ona-and-face-similarity|When facial similarity meets Network Science]]
 - [[manager-effect-lab|Good manager or lucky team?]]
-- [[openai-personality-interpretation|Ask your personality using GPT]]
 <!-- RELATED:END -->
 
 ---

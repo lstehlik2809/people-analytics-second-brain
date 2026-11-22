@@ -1,9 +1,10 @@
 # Ludek's People Analytics Second Brain
 
-> A public second brain of 236 posts on people analytics, statistics, causal inference, psychometrics, machine learning, and AI by Ludek Stehlik. Browsable knowledge graph at https://lstehlik2809.github.io/people-analytics-second-brain. The complete corpus is in /llms-full.txt.
+> A public second brain of 237 posts on people analytics, statistics, causal inference, psychometrics, machine learning, and AI by Ludek Stehlik. Browsable knowledge graph at https://lstehlik2809.github.io/people-analytics-second-brain. The complete corpus is in /llms-full.txt.
 
 ## Notes
 
+- [Personality in motion: body language and the Big Five](https://lstehlik2809.github.io/people-analytics-second-brain/posts/personality-and-body-language): An interactive field guide to the facial, body and voice cues that a meta-analysis of 65 studies links to the Big Five traits - and to how small those links are.
 - [Querying a people graph: where graphs add value](https://lstehlik2809.github.io/people-analytics-second-brain/posts/people-graph-query-demo): An interactive demo of skills gaps, career paths, and internal mobility - and a look at when graph queries offer more than SQL.
 - [AI implementation at work: worker preferences for task changes](https://lstehlik2809.github.io/people-analytics-second-brain/posts/ai-at-work-worker-preferences): How a choice experiment with 423 quality control operators can inform employee listening and AI-driven job redesign.
 - [A daily AI briefer for People Analytics](https://lstehlik2809.github.io/people-analytics-second-brain/posts/people-analytics-news-feed): An experiment with an agent that runs on GitHub Actions, finds up to five recent reads a day, and suggests how each might be useful in People Analytics practice.

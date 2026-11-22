@@ -194,10 +194,10 @@ It worked surprisingly well given how simple the approach is—at least for me a
 <!-- RELATED:BEGIN -->
 ## Related notes
 - [[detecting-personality-in-the-face-app|Reading personality from a face, now in your browser]]
+- [[personality-and-body-language|Personality in motion: body language and the Big Five]]
 - [[face-reader|What does my face do in meetings?]]
 - [[openai-personality-interpretation|Ask your personality using GPT]]
 - [[ona-and-face-similarity|When facial similarity meets Network Science]]
-- [[personality-frameworks-contest|A showdown between the Big Five, Enneagram, MBTI, and astrology]]
 <!-- RELATED:END -->
 
 ---

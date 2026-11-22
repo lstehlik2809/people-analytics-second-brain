@@ -63,9 +63,9 @@ If you give it a shot, let me know how far off it was 😉
 ## Related notes
 - [[detecting-personality-in-the-face|Can a simple algorithm read your personality from your face?]]
 - [[face-reader|What does my face do in meetings?]]
+- [[personality-and-body-language|Personality in motion: body language and the Big Five]]
 - [[openai-personality-interpretation|Ask your personality using GPT]]
 - [[ona-and-face-similarity|When facial similarity meets Network Science]]
-- [[life-success-personality-profiles|The Big Five and different ways of succeeding]]
 <!-- RELATED:END -->
 
 ---

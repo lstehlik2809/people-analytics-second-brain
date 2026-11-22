@@ -65,9 +65,9 @@ I’d treat it as something useful for reflection and conversation, rather than 
 ## Related notes
 - [[job-personality-fit|Do people’s personalities vary across different jobs?]]
 - [[big-five-personality-and-earnings|Link between the Big Five personality traits and earnings]]
+- [[personality-and-body-language|Personality in motion: body language and the Big Five]]
 - [[personality-and-work-engagement|Putting the "ideal" personality for high work engagement in a broader context]]
 - [[collaboration-and-personality|Collaboration and personality]]
-- [[personality-frameworks-contest|A showdown between the Big Five, Enneagram, MBTI, and astrology]]
 <!-- RELATED:END -->
 
 ---
