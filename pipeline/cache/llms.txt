@@ -1,9 +1,10 @@
 # Ludek's People Analytics Second Brain
 
-> A public second brain of 238 posts on people analytics, statistics, causal inference, psychometrics, machine learning, and AI by Ludek Stehlik. Browsable knowledge graph at https://lstehlik2809.github.io/people-analytics-second-brain. The complete corpus is in /llms-full.txt.
+> A public second brain of 239 posts on people analytics, statistics, causal inference, psychometrics, machine learning, and AI by Ludek Stehlik. Browsable knowledge graph at https://lstehlik2809.github.io/people-analytics-second-brain. The complete corpus is in /llms-full.txt.
 
 ## Notes
 
+- [Wow, even mindfulness might have some “contraindications” 😯](https://lstehlik2809.github.io/people-analytics-second-brain/posts/mindfulness-and-machiavellianism): ...at least when it’s used at work…
 - [Tabular Foundation Models in People Analytics?](https://lstehlik2809.github.io/people-analytics-second-brain/posts/tabular-foundation-models-in-people-analytics): A small browser app for comparing a tabular foundation model with random forest and regression on fictional employee data.
 - [Personality in motion: body language and the Big Five](https://lstehlik2809.github.io/people-analytics-second-brain/posts/personality-and-body-language): An interactive field guide to the facial, body and voice cues that a meta-analysis of 65 studies links to the Big Five traits - and to how small those links are.
 - [Querying a people graph: where graphs add value](https://lstehlik2809.github.io/people-analytics-second-brain/posts/people-graph-query-demo): An interactive demo of skills gaps, career paths, and internal mobility - and a look at when graph queries offer more than SQL.

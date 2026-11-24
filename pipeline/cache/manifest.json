@@ -62,7 +62,7 @@
  "psychometric-network-analysis": "f292dc2415c8fb3e4fbed6aceec987088542db4ad92a13bf089adaba2789c93a",
  "selection-procedures-validity-update": "cbe99a0d052be89cef79de94ce55f702bcfec758ca237ba72c069d9c22501b7a",
  "bayesian-networks-in-people-analytics": "9d26bd8d7e91a64d932f2888ddcdaac5b166523b60a39305bf5a97728f977d8b",
- "mindfulness-and-objectivity": "dfd2c64ab253277f74b3dee463a2fedacae747c5b420eb57bcb454ed49383159",
+ "mindfulness-and-objectivity": "51261e372fa63da9f4568e234bd12abf81c38170166637642941b83b627904f9",
  "latent-class-analysis": "c7f40ad5b522ec5fa9e279b3264a9368b7677edfaccb9c3566d922ec391475f6",
  "team-level-predictors-of-innovation": "192197ad3ffd8112cf2543a120801fe3608b1c62c944ef76cbaf729e57d3f956",
  "deloitte-hc-trends-themes": "33d2c3b6eaea985eea575a82e2b90a24eeb17acaa45ed3bb20ece88e00daa1b2",
@@ -236,5 +236,6 @@
  "ai-at-work-worker-preferences": "8f2f04c4dfb3049052c75da7d250d12ae6e4bc1f760358f965c78d1e2c59be3e",
  "people-graph-query-demo": "2c4571c8888e563ea87981d86afdf3ba01e7afa154cfd23b5d5ce11e0874f4cd",
  "personality-and-body-language": "ad4145508381cc9fc71dd16eb6b7bab7006c179df1f794b1467ac59a9924826c",
- "tabular-foundation-models-in-people-analytics": "32a0ab44539f36a663a4793143bd1f5e3749b9207a81a79df57885cb5c823815"
+ "tabular-foundation-models-in-people-analytics": "32a0ab44539f36a663a4793143bd1f5e3749b9207a81a79df57885cb5c823815",
+ "mindfulness-and-machiavellianism": "96010d6e0128afe09f690adf037ae284de1f47e879b6d9c091d9b9a6c0031932"
 }

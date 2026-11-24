@@ -32,8 +32,8 @@ The results showed that the effectiveness of FI indeed tends to decrease as the 
 - [[start-stop-continue-feedback|Do we give more "Try This", "Knock It Off", or "Keep It Up" recommendations in 360-degree feedback?]]
 - [[self-awareness-and-personality|Does your personality interfere with your self-awareness?]]
 - [[self-leadership|Self-Leadership: A New Superpower?]]
+- [[mindfulness-and-machiavellianism|Wow, even mindfulness might have some “contraindications” 😯]]
 - [[job-insecurity-and-behavioral-outcomes|Does a stick work?]]
-- [[you-said-we-did|‘You Said, We Did’ matters - maybe just not as distinctly as we assume]]
 <!-- RELATED:END -->
 
 ---

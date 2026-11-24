@@ -27,8 +27,8 @@ At the same time, however, the authors themselves emphasize that “*[these] fin
 - [[job-insecurity-and-behavioral-outcomes|Does a stick work?]]
 - [[time-management|Consequences of time management in the workplace]]
 - [[segmentedregression|Modeling impact of the COVID-19 pandemic on people’s interest in work-life balance and well-being]]
+- [[mindfulness-and-machiavellianism|Wow, even mindfulness might have some “contraindications” 😯]]
 - [[personality-and-work-engagement|Putting the "ideal" personality for high work engagement in a broader context]]
-- [[micro-breaks|Effectiveness of micro-breaks at work]]
 <!-- RELATED:END -->
 
 ---

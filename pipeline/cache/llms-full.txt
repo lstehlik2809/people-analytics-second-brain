@@ -4,6 +4,36 @@ Source: https://lstehlik2809.github.io/people-analytics-second-brain | Author: L
 
 ---
 
+# Wow, even mindfulness might have some “contraindications” 😯
+URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/mindfulness-and-machiavellianism
+Date: 2026-11-24
+Tags: personality, well-being, experiments, causal-inference, mindfulness
+Original post: https://blog-about-people-analytics.netlify.app/posts/2026-11-24-mindfulness-and-machiavellianism/
+
+Not an expert on mindfulness, especially in an org context. Most of what I’ve read about it has focused on the benefits, like [being less likely to avoid uncomfortable information](https://blog-about-people-analytics.netlify.app/posts/2023-06-05-mindfulness-and-objectivity/). So this particular finding caught me by surprise.
+
+In a randomized field experiment, employees high in Machiavellianism who received mindfulness training reported more contempt, anger, and disgust toward coworkers than those in either control group (regulated breathing or a waitlist). Those feelings were also linked to more self-reported workplace incivility.
+
+<figure>
+
+![Chart showing predicted scores for contempt, anger, and disgust toward coworkers. In the mindfulness group, scores were about 1.6 at low Machiavellianism and 2.0 at high Machiavellianism. Scores stayed near 1.6 across Machiavellianism levels in both the breathing and waitlist groups.](./mindfulness-and-machiavellianism/study_fig2_chart.png)
+<figcaption>Chart showing predicted scores for contempt, anger, and disgust toward coworkers. In the mindfulness group, scores were about 1.6 at low Machiavellianism and 2.0 at high Machiavellianism. Scores stayed near 1.6 across Machiavellianism levels in both the breathing and waitlist groups.<br>
+Figure 2 from <a href="https://link.springer.com/article/10.1007/s10551-026-06513-3#Fig2">Kay (2026)</a>. <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a>.</figcaption>
+
+</figure>
+
+A little reminder that what helps some people can backfire for others. Also a good selling point for estimating heterogeneous treatment effects. The average can hide who responds differently.
+
+And a separate point about having a testable theory of how things might work. Of all the things you could look at here, would Machiavellianism have come to mind? Kay’s theory gives a concrete reason to test it. His idea is that paying closer attention to what you’re feeling can bring existing contempt for coworkers into sharper focus.
+
+Link to the paper 👉 [The Dark Side of Mindfulness at Work](https://link.springer.com/article/10.1007/s10551-026-06513-3).
+
+
+---
+> 📄 Read the [original post with full outputs](https://blog-about-people-analytics.netlify.app/posts/2026-11-24-mindfulness-and-machiavellianism/) on my blog.
+
+---
+
 # Tabular Foundation Models in People Analytics?
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/tabular-foundation-models-in-people-analytics
 Date: 2026-11-24
@@ -15130,7 +15160,7 @@ However, when searching for information about this method, we found that it is n
 # Another positive effect of mindfulness meditation on the horizon?
 URL: https://lstehlik2809.github.io/people-analytics-second-brain/posts/mindfulness-and-objectivity
 Date: 2023-06-05
-Tags: decision-making, well-being, experiments
+Tags: decision-making, well-being, experiments, mindfulness
 Original post: https://blog-about-people-analytics.netlify.app/posts/2023-06-05-mindfulness-and-objectivity/
 
 Maybe, at least this is suggested by a pre-registered field experiment by [Ash et al. (2023)](https://www.sciencedirect.com/science/article/pii/S0165176523000228?via%3Dihub+), where people practicing [mindfulness meditation](https://en.wikipedia.org/wiki/Mindfulness) for 15 minutes a day for 2 weeks compared to an active control (listening to relaxing music) showed a reduced tendency to avoid painful information that may trigger worry or regret, with a likely mechanism for this effect being improved emotion regulation.
