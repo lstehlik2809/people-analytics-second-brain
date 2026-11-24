@@ -37,8 +37,8 @@ Feel free to [give it a try here](https://lstehlik2809.github.io/bayes-in-your-b
 - [[bayesian-simulation|Harnessing Bayesian analysis for business process simulation]]
 - [[job-comparator|A bet on a new job]]
 - [[bayesian-thinking-for-people-analytics|Bayesian Thinking for People Analytics]]
+- [[tabular-foundation-models-in-people-analytics|Tabular Foundation Models in People Analytics?]]
 - [[bayesian-networks-in-people-analytics|Use of Bayesian networks in people analytics?]]
-- [[decision-tree-foldback|What probability would change your mind about Sam?]]
 <!-- RELATED:END -->
 
 ---
